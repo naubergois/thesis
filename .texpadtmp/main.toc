@@ -1,0 +1,24 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{15}
+\contentsline {section}{\numberline {1.1}Research Hypothesis}{16}
+\contentsline {chapter}{\numberline {2}Load, Performance and Stress Testing}{17}
+\contentsline {subsection}{\numberline {2.0.1}Stress Test Process}{18}
+\contentsline {subsection}{\numberline {2.0.2}Automated Stress Test Tools}{20}
+\contentsline {subsection}{\numberline {2.0.3}Stress Test Results}{21}
+\contentsline {chapter}{\numberline {3}Workload Model}{23}
+\contentsline {chapter}{\numberline {4}Common performance application problems and performance antipatterns}{27}
+\contentsline {chapter}{\numberline {5}Search-Based Tests}{37}
+\contentsline {subsection}{\numberline {5.0.1}Load, Stress and Performance Search Based Testing}{38}
+\contentsline {chapter}{\numberline {6}Metaheuristics}{43}
+\contentsline {subsection}{\numberline {6.0.1}Test Module}{49}
+\contentsline {subsection}{\numberline {6.0.2}Emulator Module}{51}
+\contentsline {subsection}{\numberline {6.0.3}Test Scenario Representation Module}{54}
+\contentsline {subsection}{\numberline {6.0.4}Neighborhood provider service}{55}
+\contentsline {chapter}{\numberline {7}Hybrid Metaheuristic Approach}{57}
+\contentsline {subsection}{\numberline {7.0.1}Representation}{58}
+\contentsline {subsection}{\numberline {7.0.2}Initial population}{59}
+\contentsline {subsection}{\numberline {7.0.3}Objective (fitness) function}{60}
+\contentsline {subsection}{\numberline {7.0.4}The Ramp and Circuitous Treasure Hunt experiment}{63}
+\contentsline {subsection}{\numberline {7.0.5}The Tower Babel and Unbalanced Processing experiment}{65}
+\contentsline {chapter}{\numberline {A}Tables}{69}
+\contentsline {chapter}{\numberline {B}Figures}{71}

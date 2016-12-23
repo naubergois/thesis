@@ -1,0 +1,88 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: cover.aux
+A level-1 auxiliary file: contents.aux
+A level-1 auxiliary file: chap1.aux
+A level-1 auxiliary file: stresstest.aux
+A level-1 auxiliary file: chapworkload.aux
+A level-1 auxiliary file: chap2.aux
+A level-1 auxiliary file: searchbased.aux
+A level-1 auxiliary file: metaheuristic.aux
+A level-1 auxiliary file: testbed.aux
+A level-1 auxiliary file: hybridapproach.aux
+A level-1 auxiliary file: experiments.aux
+A level-1 auxiliary file: appa.aux
+A level-1 auxiliary file: appb.aux
+A level-1 auxiliary file: biblio.aux
+The style file: plain.bst
+Database file #1: ../main.bib
+Repeated entry---line 1148 of file ../main.bib
+ : @book{Halili2008
+ :                 ,
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in Afzal2009
+Warning--empty author in Afzal2009
+Warning--empty journal in Canfora
+Warning--empty year in Canfora
+Warning--empty journal in Cortellessa2007
+Warning--empty year in DiAlesio2014
+Warning--empty publisher in Erinle2013
+Warning--empty journal in Garousi2006
+Warning--there's a number but no volume in Garousi2006
+Warning--empty journal in Gay
+Warning--empty year in Gay
+Warning--empty publisher in GendreauMichelandPotvin2010
+Warning--empty journal in Goncalves2014
+Warning--empty publisher in Halili2008
+Warning--there's a number but no volume in Harman2015
+Warning--empty publisher in Jaziri2008
+Warning--empty school in Jiang2010
+Warning--there's a number but no volume in Pohlheim2005
+Warning--empty journal in Sandler2004
+Warning--empty journal in Sullivan
+Warning--empty year in Sullivan
+Warning--empty journal in Tracey1998
+Warning--there's a number but no volume in Wert2013a
+You've used 54 entries,
+            2118 wiz_defined-function locations,
+            830 strings with 14037 characters,
+and the built_in function-call counts, 17262 in all, are:
+= -- 1710
+> -- 746
+< -- 19
++ -- 297
+- -- 242
+* -- 1106
+:= -- 2832
+add.period$ -- 160
+call.type$ -- 54
+change.case$ -- 274
+chr.to.int$ -- 0
+cite$ -- 77
+duplicate$ -- 730
+empty$ -- 1337
+format.name$ -- 242
+if$ -- 3633
+int.to.chr$ -- 0
+int.to.str$ -- 54
+missing$ -- 59
+newline$ -- 271
+num.names$ -- 106
+pop$ -- 337
+preamble$ -- 2
+purify$ -- 229
+quote$ -- 0
+skip$ -- 540
+stack$ -- 0
+substring$ -- 987
+swap$ -- 183
+text.length$ -- 19
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 200
+warning$ -- 23
+while$ -- 177
+width$ -- 56
+write$ -- 560
+(There was 1 error message)
