@@ -1,4 +1,4 @@
-section{The IAdapter Testbed system}
+\chapter{IAdapter Testbed system}
 
 A Testbed makes possible follow a formalized methodology and reproduce tests for further analysis and comparison. It seems natural that one of the most important parts of a comparison among heuristics is the testbed on which the heuristics are tested. As a result, the testbed should be the first consideration when comparing two metaheuristics \cite{GendreauMichelandPotvin2010}. 
 
@@ -6,30 +6,31 @@ In this section, We devise a new testbed that has the ability to reproduce diffe
 
 This new testbed must accomplish three main goals. First, it must reproduce a workload by using an antipattern implementation. Second, it must be able to provide client and server metrics with the aim of being used for web performance evaluation studies. Finally, it is should be extensible, allowing create new test scenarios.
 
+The testbed tool proposed consists of four main elements. The first element is a emulator module that it is responsible to simulate the antipatterns in a specific context. The second it's a module named test module that it is responsible for use a previous selected metaheuristics and perform a search based test. The third module contains the test scenarios representation. The fourth module it is responsible for provide a service of explore the neighborhood of a given individual. 
+
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.5\textwidth]{./images/lifecycle2.png}
+\includegraphics[width=0.8\textwidth]{./images/lifecycle2.png}
 \caption{IAdapter life cycle}
 \label{fig:iadapterlifecycle}
 \end{figure}
 
 
-The testbed tool proposed consists of four main elements. The first element is a emulator module that it is responsible to simulate the antipatterns in a specific context. The second it's a module named test module that it is responsible for use a previous selected metaheuristics and perform a search based test. The third module contains the test scenarios representation. The fourth module it is responsible for provide a service of explore the neighborhood of a given individual. The Fig. \ref{fig:testbedarch} presents the main architecture of the Testbed solution proposed. The emulator module provides workloads to the Test module.The Test module uses a class loader to find all classes that extends AbstractAlgorithm in the classpath and run all tests for each metaheuristic found. The Test Scenario Representation and Persistent Module provides the scenario representation used by the metaheuristics and persist the testbed results data in a database. Neighborhood provider service is responsible to search neighbors of some individual provided as parameter to the service.
+The Fig. \ref{fig:testbedarch} presents the main architecture of the Testbed solution proposed. The emulator module provides workloads to the Test module.The Test module uses a class loader to find all classes that extends AbstractAlgorithm in the classpath and run all tests for each metaheuristic found. The Test Scenario Representation and Persistent Module provides the scenario representation used by the metaheuristics and persist the testbed results data in a database. Neighborhood provider service is responsible to search neighbors of some individual provided as parameter to the service.
 
 \begin{figure}[H]
-\begin{minipage}{.5\textwidth}
 \centering
-\includegraphics[width=1\textwidth]{./images/testbedarch.png}
+\includegraphics[width=0.8\textwidth]{./images/testbedarch.png}
 \caption{testbed main architecture.}
 \label{fig:testbedarch}
-\end{minipage}
-\begin{minipage}{.5\textwidth}
+\end{figure} 
+
+\begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth]{./images/myheuristic.png}
+\includegraphics[width=0.8\textwidth]{./images/myheuristic.png}
 \caption{Heuristic class diagram.}
 \label{fig:heuristicclassdiagram}
-\end{minipage}
 \end{figure} 
 
 
@@ -79,7 +80,7 @@ The Emulator Module is responsible for implement and provide successful scenario
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.5\textwidth]{./images/emulator.png}
+\includegraphics[width=0.6\textwidth]{./images/emulator.png}
 \caption{Heuristic class diagram.}
 \label{fig:emulator}
 \end{figure}  
@@ -147,29 +148,3 @@ The algorithm \ref{happyscenario1} presents the Happy Scenario 1. The response t
 
 A further 4 algorithms were developed for the scenarios  Circuitous Treasure Hunt, Happy Scenario 2, Traffic Jam and Tower of Babel.
 
-\subsection{Test Scenario Representation Module}
-
-This modules provides a set of scenarios in a common representation. The representation of a scenario is composed by a linear vector with 23 positions. The first position represents the name of an individual. The second position represents the algorithm (genetic algorithm, simulated annealing, or Tabu search) used by the individual. The third position represents the type of test (load, stress, or performance). The next positions represent 10 scenarios and their numbers of users. Each scenario is an atomic operation: the scenario must log into the application, run the task goal, and undo any changes performed, returning the application to its original state.
-
-Fig. \ref{fig:genomarepresentation} presents the solution representation and an example using the crossover operation. In the example, genotype 1 has the Login scenario with 2 users, the Form scenario with 0 users, and the Search scenario with 3 users. Genotype 2 has the Delete scenario with 10 users, the Search scenario with 0 users, and the Include scenario with 5 users. After the crossover operation, we obtain a genotype with the Login scenario with 2 users, the Search scenario with 0 users, and the Include scenario with 5 users.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.5\textwidth]{./images/genomerepresentation1.png}
-\caption{Solution representation and crossover example}
-\label{fig:genomarepresentation}
-\end{figure}
-
-
-\subsection{Neighborhood provider service}
-
-
-Fig. \ref{fig:neighbourtaby} shows the strategy used by the proposed solution to obtain the representation of the neighbors for the Tabu search and simulated annealing algorithms. The neighbors are obtained by the modification of a single position (scenario or number of users) in the vector.
-
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.4\textwidth]{./images/neighbor.png}
-\caption{Neighborhood provider strategy}
-\label{fig:neighbourtaby}
-\end{figure}

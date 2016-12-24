@@ -1,57 +1,55 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2-1}{\ignorespaces Load, Performance and Stress Test Process \cite {Jiang2010}\cite {Erinle2013}\relax }}{18}
+\contentsline {figure}{\numberline {2-1}{\ignorespaces Load, Performance and Stress Test Process \cite {Jiang2010}\cite {Erinle2013}\relax }}{17}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3-1}{\ignorespaces Workload modeling based on statistical data \cite {DiLucca2006}\relax }}{24}
-\contentsline {figure}{\numberline {3-2}{\ignorespaces Workload modeling based on the generative model \cite {DiLucca2006}\relax }}{24}
+\contentsline {figure}{\numberline {3-1}{\ignorespaces Workload modeling based on statistical data \cite {DiLucca2006}\relax }}{22}
+\contentsline {figure}{\numberline {3-2}{\ignorespaces Workload modeling based on the generative model \cite {DiLucca2006}\relax }}{23}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4-1}{\ignorespaces Symptoms of know performance problems \cite {Wert2013a}. \relax }}{27}
-\contentsline {figure}{\numberline {4-2}{\ignorespaces The God class\cite {Wert2013a}. \relax }}{29}
-\contentsline {figure}{\numberline {4-3}{\ignorespaces The God class\cite {Vetoio2011}. \relax }}{29}
-\contentsline {figure}{\numberline {4-4}{\ignorespaces Unbalanced Processing sample \cite {Wert2013a}. \relax }}{30}
-\contentsline {figure}{\numberline {4-5}{\ignorespaces Pipe and Filter sample \cite {Vetoio2011}\relax }}{31}
-\contentsline {figure}{\numberline {4-6}{\ignorespaces Extensive Processing sample \cite {Vetoio2011}.\relax }}{31}
-\contentsline {figure}{\numberline {4-7}{\ignorespaces Circuitous Treasure Hunt sample \cite {Vetoio2011}\relax }}{31}
-\contentsline {figure}{\numberline {4-8}{\ignorespaces Empty Semi Trucks sample \cite {Vetoio2011}.\relax }}{31}
-\contentsline {figure}{\numberline {4-9}{\ignorespaces Tower of Babel sample \cite {Vetoio2011}\relax }}{32}
-\contentsline {figure}{\numberline {4-10}{\ignorespaces One-Lane Bridge sample \cite {Vetoio2011}.\relax }}{32}
-\contentsline {figure}{\numberline {4-11}{\ignorespaces Excessive Dynamic Allocation.\relax }}{33}
-\contentsline {figure}{\numberline {4-12}{\ignorespaces Traffic Jam Response Time \cite {Vetoio2011}.\relax }}{33}
-\contentsline {figure}{\numberline {4-13}{\ignorespaces The Ramp sample \cite {Vetoio2011}.\relax }}{34}
-\contentsline {figure}{\numberline {4-14}{\ignorespaces More is Less sample \cite {Vetoio2011}.\relax }}{34}
+\contentsline {figure}{\numberline {4-1}{\ignorespaces Symptoms of know performance problems \cite {Wert2013a}. \relax }}{25}
+\contentsline {figure}{\numberline {4-2}{\ignorespaces The God class\cite {Wert2013a}. \relax }}{27}
+\contentsline {figure}{\numberline {4-3}{\ignorespaces The God class\cite {Vetoio2011}. \relax }}{28}
+\contentsline {figure}{\numberline {4-4}{\ignorespaces Unbalanced Processing sample \cite {Wert2013a}. \relax }}{29}
+\contentsline {figure}{\numberline {4-5}{\ignorespaces Pipe and Filter sample \cite {Vetoio2011}\relax }}{29}
+\contentsline {figure}{\numberline {4-6}{\ignorespaces Extensive Processing sample \cite {Vetoio2011}.\relax }}{29}
+\contentsline {figure}{\numberline {4-7}{\ignorespaces Circuitous Treasure Hunt sample \cite {Vetoio2011}\relax }}{30}
+\contentsline {figure}{\numberline {4-8}{\ignorespaces Empty Semi Trucks sample \cite {Vetoio2011}.\relax }}{30}
+\contentsline {figure}{\numberline {4-9}{\ignorespaces Tower of Babel sample \cite {Vetoio2011}\relax }}{31}
+\contentsline {figure}{\numberline {4-10}{\ignorespaces One-Lane Bridge sample \cite {Vetoio2011}.\relax }}{31}
+\contentsline {figure}{\numberline {4-11}{\ignorespaces Excessive Dynamic Allocation.\relax }}{32}
+\contentsline {figure}{\numberline {4-12}{\ignorespaces Traffic Jam Response Time \cite {Vetoio2011}.\relax }}{32}
+\contentsline {figure}{\numberline {4-13}{\ignorespaces The Ramp sample \cite {Vetoio2011}.\relax }}{33}
+\contentsline {figure}{\numberline {4-14}{\ignorespaces More is Less sample \cite {Vetoio2011}.\relax }}{33}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5-1}{\ignorespaces Range of metaheuristics by Type of non-functional Search Based Test\cite {Afzal2009a}. \relax }}{39}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6-1}{\ignorespaces IAdapter life cycle\relax }}{48}
-\contentsline {figure}{\numberline {6-2}{\ignorespaces testbed main architecture.\relax }}{49}
-\contentsline {figure}{\numberline {6-3}{\ignorespaces Heuristic class diagram.\relax }}{49}
-\contentsline {figure}{\numberline {6-4}{\ignorespaces Test Module first feature.\relax }}{50}
-\contentsline {figure}{\numberline {6-5}{\ignorespaces Test Module life cycle.\relax }}{50}
-\contentsline {figure}{\numberline {6-6}{\ignorespaces Heuristic class diagram.\relax }}{52}
-\contentsline {figure}{\numberline {6-7}{\ignorespaces Solution representation and crossover example\relax }}{54}
-\contentsline {figure}{\numberline {6-8}{\ignorespaces Neighborhood provider strategy\relax }}{55}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {7-1}{\ignorespaces Use of the algorithms independently\relax }}{58}
-\contentsline {figure}{\numberline {7-2}{\ignorespaces Use of the algorithms collaboratively\relax }}{59}
-\contentsline {figure}{\numberline {7-3}{\ignorespaces Solution representation and crossover example\relax }}{60}
-\contentsline {figure}{\numberline {7-4}{\ignorespaces Tabu search and simulated annealing neighbor strategy\relax }}{61}
-\contentsline {figure}{\numberline {7-5}{\ignorespaces Fitnesse value obtained by Search Method \relax }}{63}
-\contentsline {figure}{\numberline {7-6}{\ignorespaces Fitnesse value obtained by Search Method without SA metaheuristic.\relax }}{63}
-\contentsline {figure}{\numberline {7-7}{\ignorespaces Number of requests by Search Method\relax }}{64}
-\contentsline {figure}{\numberline {7-8}{\ignorespaces Average, median, maximum and minimal fitnesse value by Search Method\relax }}{64}
-\contentsline {figure}{\numberline {7-9}{\ignorespaces Fitnesse value by generation\relax }}{64}
-\contentsline {figure}{\numberline {7-10}{\ignorespaces Density graph of number of users by fitnesse value\relax }}{64}
-\contentsline {figure}{\numberline {7-11}{\ignorespaces Response time by number of users of individuals with Happy Scenario 1 and Happy Scenario 2\relax }}{65}
-\contentsline {figure}{\numberline {7-12}{\ignorespaces Response time by number of users of individuals with the Ramp and Circuitous Treasure antipatterns\relax }}{65}
-\contentsline {figure}{\numberline {7-13}{\ignorespaces itnesse value obtained by Search Method\relax }}{66}
-\contentsline {figure}{\numberline {7-14}{\ignorespaces Number of requests by Search Method\relax }}{66}
-\contentsline {figure}{\numberline {7-15}{\ignorespaces Finesse value by generation in all tests\relax }}{66}
-\contentsline {figure}{\numberline {7-16}{\ignorespaces Response time by generation in all tests scenarios\relax }}{67}
-\contentsline {figure}{\numberline {7-17}{\ignorespaces Finesse value by generation in all tests\relax }}{67}
-\contentsline {figure}{\numberline {7-18}{\ignorespaces Response time by number of users of individuals with Happy Scenario 1, Happy Scenario 2 and Tower Babel antipattern\relax }}{67}
-\contentsline {figure}{\numberline {7-19}{\ignorespaces Response time by number of users of individuals with Unbalanced Processing antipattern\relax }}{68}
+\contentsline {figure}{\numberline {5-1}{\ignorespaces Range of metaheuristics by Type of non-functional Search Based Test\cite {Afzal2009a}. \relax }}{37}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B-1}{\ignorespaces Armadillo slaying lawyer.\relax }}{72}
-\contentsline {figure}{\numberline {B-2}{\ignorespaces Armadillo eradicating national debt.\relax }}{73}
+\contentsline {figure}{\numberline {7-1}{\ignorespaces IAdapter life cycle\relax }}{46}
+\contentsline {figure}{\numberline {7-2}{\ignorespaces testbed main architecture.\relax }}{47}
+\contentsline {figure}{\numberline {7-3}{\ignorespaces Heuristic class diagram.\relax }}{47}
+\contentsline {figure}{\numberline {7-4}{\ignorespaces Test Module first feature.\relax }}{48}
+\contentsline {figure}{\numberline {7-5}{\ignorespaces Test Module life cycle.\relax }}{48}
+\contentsline {figure}{\numberline {7-6}{\ignorespaces Heuristic class diagram.\relax }}{50}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8-1}{\ignorespaces Use of the algorithms independently\relax }}{54}
+\contentsline {figure}{\numberline {8-2}{\ignorespaces Use of the algorithms collaboratively\relax }}{55}
+\contentsline {figure}{\numberline {8-3}{\ignorespaces Solution representation and crossover example\relax }}{56}
+\contentsline {figure}{\numberline {8-4}{\ignorespaces Tabu search and simulated annealing neighbor strategy\relax }}{57}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9-1}{\ignorespaces Fitnesse value obtained by Search Method \relax }}{61}
+\contentsline {figure}{\numberline {9-2}{\ignorespaces Fitnesse value obtained by Search Method without SA metaheuristic.\relax }}{61}
+\contentsline {figure}{\numberline {9-3}{\ignorespaces Number of requests by Search Method\relax }}{62}
+\contentsline {figure}{\numberline {9-4}{\ignorespaces Average, median, maximum and minimal fitnesse value by Search Method\relax }}{62}
+\contentsline {figure}{\numberline {9-5}{\ignorespaces Fitnesse value by generation\relax }}{63}
+\contentsline {figure}{\numberline {9-6}{\ignorespaces Density graph of number of users by fitnesse value\relax }}{63}
+\contentsline {figure}{\numberline {9-7}{\ignorespaces Response time by number of users of individuals with Happy Scenario 1 and Happy Scenario 2\relax }}{64}
+\contentsline {figure}{\numberline {9-8}{\ignorespaces Response time by number of users of individuals with the Ramp and Circuitous Treasure antipatterns\relax }}{65}
+\contentsline {figure}{\numberline {9-9}{\ignorespaces itnesse value obtained by Search Method\relax }}{66}
+\contentsline {figure}{\numberline {9-10}{\ignorespaces Number of requests by Search Method\relax }}{66}
+\contentsline {figure}{\numberline {9-11}{\ignorespaces Finesse value by generation in all tests\relax }}{66}
+\contentsline {figure}{\numberline {9-12}{\ignorespaces Response time by generation in all tests scenarios\relax }}{67}
+\contentsline {figure}{\numberline {9-13}{\ignorespaces Finesse value by generation in all tests\relax }}{67}
+\contentsline {figure}{\numberline {9-14}{\ignorespaces Response time by number of users of individuals with Happy Scenario 1, Happy Scenario 2 and Tower Babel antipattern\relax }}{68}
+\contentsline {figure}{\numberline {9-15}{\ignorespaces Response time by number of users of individuals with Unbalanced Processing antipattern\relax }}{69}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

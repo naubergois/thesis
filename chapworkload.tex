@@ -16,20 +16,23 @@ In descriptive models, one finds different levels of abstraction on the one hand
 
 
 \begin{figure}[!ht]
-\begin{minipage}{.5\textwidth}
+
 \centering
 \includegraphics[width=0.8\textwidth]{./images/workloadmodel1300dpi.png}
 \caption{Workload modeling based on statistical data \cite{DiLucca2006}}
 \label{fig:descriptivemodel}
-\end{minipage}
-\begin{minipage}{.5\textwidth}
+\end{figure}
+
+
+Generative models are indirect in the sense that they do not model the statistical distributions. Instead, they describe how users will behave when they generate the workload. An important benefit of the generative approach is that it facilitates manipulations of the workload. It is often desirable to be able to change the workload conditions as part of the evaluation. Descriptive models do not offer any option regarding how to do so. With the generative models, however, we can modify the workload-generation process to fit the desired conditions \cite{DiLucca2006}. The difference between the workflows of the descriptive and the generative models is that user behavior is not collected from logs, but simulated from a model that can receive feedback from the test execution (Fig. \ref{fig:generativemodel}).
+
+
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=0.8\textwidth]{./images/workloadmodel2300dpi.png}
 \caption{Workload modeling based on the generative model \cite{DiLucca2006}}
 \label{fig:generativemodel}
-\end{minipage}
-\end{figure}
 
-Generative models are indirect in the sense that they do not model the statistical distributions. Instead, they describe how users will behave when they generate the workload. An important benefit of the generative approach is that it facilitates manipulations of the workload. It is often desirable to be able to change the workload conditions as part of the evaluation. Descriptive models do not offer any option regarding how to do so. With the generative models, however, we can modify the workload-generation process to fit the desired conditions \cite{DiLucca2006}. The difference between the workflows of the descriptive and the generative models is that user behavior is not collected from logs, but simulated from a model that can receive feedback from the test execution (Fig. \ref{fig:generativemodel}).
+\end{figure}
 
 Both load model have their advantages and disadvantages. In general, loads resulting from realistic-load based design techniques (Descriptive models) can be used to detect both functional and non-functional problems. However, the test durations are usually longer and the test analysis is more difficult. Loads resulting from fault-inducing load design techniques (Generative models) take less time to uncover potential functional and non-functional problems, the resulting loads usually only cover a small portion of the testing objectives \cite{Jiang2010}. The presented research work uses a generative model.

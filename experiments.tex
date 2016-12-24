@@ -1,3 +1,5 @@
+\chapter{Experiments}
+
 In this section, We present the results of experiments which we carried out to verify the antipatterns  implementation, the fitnesse objective function and the metaheuristics used by the testbed tool. We conducted two experiments in order to verify the effectiveness of the testbed tool.
 
 The experiments ran for 17 generations. The experiments used an initial population of 4 individuals by metaheuristic. The genetic algorithm used the top 10 individuals from each generation in the crossover operation. The Tabu list was configured with the size of 10 individuals and expired every 2 generations.  The mutation operation was applied to 10\% of the population on each generation. The experiments uses tabu search, genetic algorithms and the hybrid metaheuristic approach proposed by Gois et al. \cite{Gois2016}. The objective function applied is intended to maximize the number of users and minimize the response time of the scenarios being tested.  In this experiments, better fitnesse values meaning to find scenarios with more users and a low values of response time. A penalty is applied when the response time is greater than the  maximum response time expected. The experiments used the following fitness (goal) function. :
@@ -30,60 +32,63 @@ The experiments addresses:
 \item Analyze and verify the best heuristics among those chosen to the experiments.
 \end{itemize}
 
-
-\subsection{The Ramp and Circuitous Treasure Hunt experiment}
+\pagebreak
+\section{The Ramp and Circuitous Treasure Hunt experiment}
 
 The experiment was carried out for 8 continuous hours.  All tests in the experiment were conducted without the need of a tester, automating the process of executing and designing performance test scenarios.In this experiment, Scenarios were generated with the Ramp and Circuitous Treasure antipattern as well as scenarios with Happy Scenario 1, Happy Scenario 2 and mixed scenarios. The Fig. \ref{fig:fitnessebygeneration1} and \ref{fig:fitnessebygeneration1-2} presents the fitnesse value obtained by each metaheuristic. The SA algorithm obtained the worst fitnesse values. Hybrid metaheuristic obtained the better fitnesse values. 
 
 
-\begin{figure}[h]
-\begin{minipage}{.5\textwidth}
+\begin{figure}[H]
+
 \centering
-\includegraphics[width=1\textwidth]{./images/experiment1-1.png}
+\includegraphics[width=0.7\textwidth]{./images/experiment1-1.png}
 \caption{Fitnesse value obtained by Search Method }
 \label{fig:fitnessebygeneration1}
-\end{minipage}
-\begin{minipage}{.5\textwidth}
+\end{figure}
+
+
+
+\begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth]{./images/experiment1-2.png}
+\includegraphics[width=0.7\textwidth]{./images/experiment1-2.png}
 \caption{Fitnesse value obtained by Search Method without SA metaheuristic.}
 \label{fig:fitnessebygeneration1-2}
-\end{minipage}
+
 \end{figure}
 
 Despite having obtained the best fitness value in each generation, the Hybrid algorithm performs twice as many requests as the second one, the tabu search (Fig. \ref{fig:numberofrequestsbysearchmethod}). The Fig. \ref{fig:boxplot1} shows the average, minimal e maximum value by search method.
 
 
-\begin{figure}[h]
-\begin{minipage}{.5\textwidth}
+\begin{figure}[H]
+
 \centering
-\includegraphics[width=1\textwidth]{./images/experiment1-3.png}
+\includegraphics[width=0.8\textwidth]{./images/experiment1-3.png}
 \caption{Number of requests by Search Method}
 \label{fig:numberofrequestsbysearchmethod}
-\end{minipage}
-\begin{minipage}{.5\textwidth}
+\end{figure}
+\begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth]{./images/experiment1-4.png}
+\includegraphics[width=0.8\textwidth]{./images/experiment1-4.png}
 \caption{Average, median, maximum and minimal fitnesse value by Search Method}
 \label{fig:boxplot1}
-\end{minipage}
+
 \end{figure}
 
 The Fig. \ref{fig:summaryboxplot1} presents the maximum, average, median and minimum fitnesse value by generation. The maximun fitnesse value increases at each generation. The Fig. \ref{fig:density1} presents the density graph of number of users by fitnesse value. The range between 100 and 150 users has the highest number of individuals found with higher fitnesse value.
 
-\begin{figure}[h]
-\begin{minipage}{.5\textwidth}
+\begin{figure}[H]
+
 \centering
 \includegraphics[width=1\textwidth]{./images/experiment1-5.png}
 \caption{Fitnesse value by generation}
 \label{fig:summaryboxplot1}
-\end{minipage}
-\begin{minipage}{.5\textwidth}
+\end{figure}
+\begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{./images/experiment1-6.png}
 \caption{Density graph of number of users by fitnesse value}
 \label{fig:density1}
-\end{minipage}
+
 \end{figure}
 
 Table \ref{tab:bestindividuals} shows 4 individuals with 143 to 146 users. These are the scenarios with the maximum number of users found with the best response time. The first individual has 64 users on Happy Scenario 2, 81 users on Happy Scenario 1 and a response time of 12 seconds. None of the best individuals has one of the antipatterns used in the experiment.
@@ -110,19 +115,20 @@ Hybrid & 16 & 143 & 426740 & 30 & 113 & 13
 Fig. \ref{fig:responsetimegenerationalltests1} presents the response time by number of users of individuals with Happy Scenario 1 and Happy Scenario 2. The Figure illustrates that the individuals with best fitnesse value has more users and minor response time. The Fig. \ref{fig:fitnessegenerationalltests1-1} presents the response time by number of users of individuals with the Ramp and Circuitous Treasure antipatterns scenarios. The Figure illustrates the smallest number of individuals with the antipatterns when compared to individuals who use the happy scenarios.
 
 
-\begin{figure}[h]
-\begin{minipage}{.5\textwidth}
+\begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{./images/experiment1-7.png}
 \caption{Response time by number of users of individuals with Happy Scenario 1 and Happy Scenario 2}
 \label{fig:responsetimegenerationalltests1}
-\end{minipage}
-\begin{minipage}{.5\textwidth}
+\end{figure}
+
+
+\begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{./images/experiment1-8.png}
 \caption{Response time by number of users of individuals with the Ramp and Circuitous Treasure antipatterns}
 \label{fig:fitnessegenerationalltests1-1}
-\end{minipage}
+
 \end{figure}
 
 In the first experiment, We conclude that the metaheuristics converged to scenarios with an happy path, excluding the scenarios with antipatterns. The hybrid metaheuristic returned individuals with higher fitness scores. However, the Hybrid metaheuristic made twice as many requests than Tabu Search to overcome it. The SA algorithm obtained the worst fitnesse values. The algorithm initially used a scenario with the Ramp and Circuitous Treasure antipatterns  and found neighbors that still using the antipatterns over the 17 generations of the experiment.
@@ -130,15 +136,15 @@ In the first experiment, We conclude that the metaheuristics converged to scenar
 
 
 
-
-\subsection{The Tower Babel  and Unbalanced Processing experiment}
+\FloatBarrier
+\section{The Tower Babel  and Unbalanced Processing experiment}
 
 The experiment was carried out for 6 continuous hours. All tests in the experiment were conducted without the need of a tester. In this experiment, Scenarios were generated with Tower Babel and Unbalanced Processing antipattern as well as scenarios with Happy Scenario 1, Happy Scenario 2 and mixed scenarios. The Fig. \ref{fig:fitnessebygeneration2}  presents the fitnesse value obtained by each metaheuristic. The SA algorithm obtained the worst fitnesse values. Hybrid metaheuristic obtained the better fitnesse values.
 
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=.7\textwidth]{./images/experiment2-7.png}
+\includegraphics[width=.9\textwidth]{./images/experiment2-7.png}
 \caption{itnesse value obtained by Search Method}
 \label{fig:fitnessebygeneration2}
 \end{figure}
@@ -188,7 +194,7 @@ Fig. \ref{fig:responsetimegenerationalltests2} presents the response time by num
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\textwidth]{./images/experiment2-5.png}
+\includegraphics[width=1\textwidth]{./images/experiment2-5.png}
 \caption{Response time by number of users of individuals with Happy Scenario 1, Happy Scenario 2 and Tower Babel antipattern}
 \label{fig:responsetimegenerationalltests2}
 \end{figure}
@@ -196,7 +202,7 @@ Fig. \ref{fig:responsetimegenerationalltests2} presents the response time by num
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\textwidth]{./images/experiment2-6.png}
+\includegraphics[width=1\textwidth]{./images/experiment2-6.png}
 \caption{Response time by number of users of individuals with Unbalanced Processing antipattern}
 \label{fig:fitnessegenerationalltests2-1}
 \end{figure}
@@ -220,4 +226,117 @@ We conclude that the metaheuristics converged to scenarios with an happy path an
 \multicolumn{1}{l}{Hybrid} & \multicolumn{1}{l}{17} & \multicolumn{1}{l}{145} & \multicolumn{1}{l}{428780} & \multicolumn{1}{l}{71} & \multicolumn{1}{l}{32} & \multicolumn{1}{l}{42} & \multicolumn{1}{l}{11} \\ 
 \end{tabular}
 \end{table}
+
+\subsection{Moodle Application Experiment}
+
+This experiment used a Moodle application installed in a machine with 500 GB of hard disk space and 8 GB of memory. The study used six application scenarios:
+
+\begin{itemize}
+\item PostDeleteMessage: This scenario posts and deletes messages in the Moodle application.
+\item MyHome: This scenario accesses the homepage of the user's application.
+\item Login: This scenario is responsible for user authentication by the application.
+\item Notifications: This scenario involves entering the notification page of each user.
+\item Start Page: This scenario shows the initial start page of the application.
+\item Badge: This scenario involves entering the badge page.
+\end{itemize}
+
+The maximum tolerated response time in the test was 30 seconds.  Any  individuals who obtained a time longer than the stipulated maximum time suffered penalties.  The whole process of stress and performance tests, which took 3 days and about 1800 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of six generations previously established. 
+
+Table \ref{tab:secondexperiment} presents the maximum fitness value obtained by the hybrid metaheuristic (HM) approach, genetic algorithm (GA), simulated annealing (SA), and Tabu search (TS) in each generation. 
+
+
+\begin{table}[h]
+\centering
+\caption{Results obtained from the second experiment}
+\label{tab:secondexperiment}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+GEN & HM    & TS    & GA    & SA    \\
+\hline
+1          & 32242 & 32242 & 32242 & 32242 \\
+\hline
+2          & 34599 & 32443 & 26290 & 35635 \\
+\hline
+3          & 35800 & 34896 & 34584 & 34248 \\
+\hline
+4          & 35782 & 34912 & 32689 & 25753 \\
+\hline
+5          & 35611 & 31833 & 34631 & 8366  \\
+\hline
+6          & 35362 & 35041 & 33397 & 9706 \\
+\hline
+\end{tabular}
+\end{table}
+
+
+The small number of samples of the experiment is insufficient to give a statistical significance to the results of the Wilcoxon procedure. However, it is noted that, in four of six generations, the collaborative approach presented the best values. The experiment succeeded in finding 29 individuals whose maximum time expected by the application was obtained.  Table \ref{tab:secondexperiment1} shows an example of the six individuals with the highest fitness values in the second experiment. The table shows the fitness value (Fit);  the name of the scenario (Scenario); the number of users (Users); and the percentiles of 90\%, 80\%, and 70\% (90per, 80per and 70per) in seconds.  
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[h]
+\centering
+\caption{Example of individuals obtained in the second experiment}
+\label{tab:secondexperiment1}
+\begin{tabular}{|p{0.2cm}|l|l|l|p{0.60cm}|p{0.60cm}|p{0.60cm}|}
+\hline
+Id&Fit&Scenario&Users&90per&80per&70per\\ \hline
+\multirow{2}{*}{1} & \multirow{2}{*}{35800} & MyHome        & 31              & \multirow{2}{*}{30} & \multirow{2}{*}{29} & \multirow{2}{*}{10} \\ \cline{3-4}
+                   &                        & Badges        & 4               &                     &                     &                     \\ \hline
+\multirow{3}{*}{2} & \multirow{3}{*}{35795} & MyHome        & 30              & \multirow{3}{*}{30} & \multirow{3}{*}{29} & \multirow{3}{*}{10} \\ \cline{3-4}
+                   &                        & Notifications & 2               &                     &                     &                     \\ \cline{3-4}
+                   &                        & Badges        & 2               &                     &                     &                     \\ \hline
+\multirow{2}{*}{3} & \multirow{2}{*}{35782} & MyHome        & 32              & \multirow{2}{*}{30} & \multirow{2}{*}{29} & \multirow{2}{*}{10} \\ \cline{3-4}
+                   &                        & Badges        & 3               &                     &                     &                     \\ \hline
+\multirow{3}{*}{4} & \multirow{3}{*}{35773} & MyHome        & 22              & \multirow{3}{*}{30} & \multirow{3}{*}{29} & \multirow{3}{*}{10} \\ \cline{3-4}
+                   &                        & Notifications & 6               &                     &                     &                     \\ \cline{3-4}
+                   &                        & Badges        & 9               &                     &                     &                     \\ \hline
+\multirow{2}{*}{5} & \multirow{2}{*}{35771} & MyHome        & 28              & \multirow{2}{*}{30} & \multirow{2}{*}{29} & \multirow{2}{*}{9}  \\ \cline{3-4}
+                   &                        & Badges        & 6               &                     &                     &                     \\ \hline
+\multirow{2}{*}{6} & \multirow{2}{*}{35683} & MyHome        & 27              & \multirow{2}{*}{30} & \multirow{2}{*}{29} & \multirow{2}{*}{8}  \\ \cline{3-4}
+                   &                        & Badges        & 10              &                     &                     &                     \\ \hline
+\end{tabular}
+\end{table}
+
+
+Table \ref{fig:gened} presents the percentage of genes in all test scenarios by generation with and without collaboration. Most of the genes converged to the MyHome feature, which had the highest application response time.
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[h]
+\centering
+\caption{Percentage of genes in each scenario by generation }
+\label{fig:gened}
+\begin{tabular}{c|c|c|c|c|c|c|c|}
+\hline
+\rowcolor[HTML]{D3D3D3} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Gen/}}   & \multicolumn{7}{c|}{\cellcolor[HTML]{D3D3D3}\textbf{Non collaboration approach}}                                                                                                                                                       \\ \cline{2-8} 
+\multicolumn{1}{|c|}{\textbf{Scenarios}}                      & \cellcolor[HTML]{F8FF00}Initial & \cellcolor[HTML]{F8FF00}1 & \cellcolor[HTML]{F8FF00}2 & \cellcolor[HTML]{F8FF00}3 & \cellcolor[HTML]{F8FF00}4 & \cellcolor[HTML]{F8FF00}5 & \cellcolor[HTML]{F8FF00}6                                \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{D3D3D3}Badges}          & 20                              & 18                        & 16                        & 24                        & 15                        & 16                        & 17                                                       \\ \hline
+\rowcolor[HTML]{F8FF00} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{F8FF00}\textbf{MyHome}} & \textbf{15}                     & \textbf{59}               & \textbf{55}               & \textbf{48}               & \textbf{53}               & \textbf{50}               & \multicolumn{1}{l|}{\cellcolor[HTML]{F8FF00}\textbf{52}} \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{D3D3D3}StartPage}       & 15                              & 10                        & 12                        & 11                        & 20                        & 18                        & \multicolumn{1}{l|}{19}                                  \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{D3D3D3}Notifications}   & 25                              & 5                         & 11                        & 10                        & 9                         & 10                        & \multicolumn{1}{l|}{9}                                   \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{D3D3D3}Post}            & 8                               & 3                         & 1                         & 3                         & 1                         & 2                         & \multicolumn{1}{l|}{1}                                   \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{D3D3D3}Login}           & 17                              & 5                         & 5                         & 4                         & 2                         & 4                         & \multicolumn{1}{l|}{2}                                   \\ \hline
+\multicolumn{1}{l|}{}                                         & \multicolumn{7}{c|}{\cellcolor[HTML]{D3D3D3}\textbf{Collaboration approach}}                                                                                                                                                           \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{D3D3D3}Badges}          & 20                              & 29                        & 16                        & 25                        & 9                         & 16                        & 9                                                        \\ \hline
+\rowcolor[HTML]{F8FF00} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{F8FF00}\textbf{MyHome}} & \textbf{15}                     & \textbf{29}               & \textbf{69}               & \textbf{49}               & \textbf{74}               & \textbf{66}               & \textbf{76}                                              \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{D3D3D3}StartPage}       & 15                              & 22                        & 10                        & 21                        & 10                        & 10                        & 8                                                        \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{D3D3D3}Nofications}     & 25                              & 10                        & 1                         & 1                         & 2                         & 1                         & 3                                                        \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{D3D3D3}Post}            & 8                               & 2                         & 1                         & 1                         & 1                         & 2                         & 1                                                        \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{D3D3D3}Login}           & 17                              & 8                         & 3                         & 3                         & 4                         & 5                         & 3                                                        \\ \hline
+\end{tabular}
+\end{table}
+
+
+%\begin{figure}[h]
+%\centering
+%\caption{Percentage of genes in all test scenarios by generation }
+%\includegraphics[width=0.5\textwidth]{./images/gened.png}
+%\label{fig:gened}
+%\end{figure}
+
 

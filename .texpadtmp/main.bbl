@@ -200,6 +200,11 @@ ZM~Jiang.
 \newblock {\em {Automated analysis of load testing results}}.
 \newblock PhD thesis, 2010.
 
+\bibitem{Lewis2005}
+William~E. Lewis, David Dobbs, and Gunasekaran Veerapillai.
+\newblock {\em {Software testing and continuous quality improvement}}.
+\newblock 2005.
+
 \bibitem{Molyneaux2009}
 Ian Molyneaux.
 \newblock {\em {The Art of Application Performance Testing: Help for

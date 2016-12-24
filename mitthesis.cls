@@ -472,8 +472,8 @@ at the
 %\signature{Author}{\@department \\ \@thesisdate}
 %\par
 %\vfill
-\signature{ }{\choosecase{ Dsc. Pedro Porfirio Muniz de Farias} \\ Advisor \\ Universidade de Fortaleza}
-\signature{ }{\choosecase{ Dsc. Andre Coelho} \\ Co-Advisor \\ Universidade de Fortaleza}
+\signature{ }{\choosecase{ Dsc. Pedro Porfirio Muniz de Farias} \\ Advisor - Universidade de Fortaleza}
+\signature{ }{\choosecase{ Dsc. Andre Coelho} \\ Co-Advisor - Universidade de Fortaleza}
 %\unvbox\@titlesupervisor
 %\par
 %\vfill

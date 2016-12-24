@@ -1,21 +1,44 @@
 \chapter{Load, Performance and Stress Testing}
 
+
 Load, performance, and stress testing are typically done to locate bottlenecks in a system, to support a performance-tuning effort, and to collect other performance-related indicators to help stakeholders get informed about the quality of the application being tested \cite{Sandler2004} \cite{Corporation2007}. 
 
 
 
-The performance testing aims at verifying a specified system performance. This kind of test is executed by simulating hundreds of simultaneous users or more over a defined time interval \cite{DiLucca2006}. The purpose of this assessment is to demonstrate that the system reaches its performance objectives \cite{Sandler2004}. 
+The performance testing aims at verifying a specified system performance. This kind of test is executed by simulating hundreds of simultaneous users or more over a defined time interval \cite{DiLucca2006}. The purpose of this assessment is to demonstrate that the system reaches its performance objectives \cite{Sandler2004}.  Term often used interchangeably with “stress” and “load” testing. Ideally “performance” testing is defined in requirements documentation or QA or Test Plans \cite{Lewis2005}.
 
 
 In a load testing, the system is evaluated at predefined load levels \cite{DiLucca2006}. The aim of this test is to determine whether the system can reach its performance targets for availability, concurrency, throughput, and response time. Load testing is the closest to real application use \cite{Molyneaux2009}. A typical load test can last from several hours to a few days, during which system behavior data like execution logs and various metrics are collected \cite{Afzal2009a}. 
 
-The stress testing verifies the system behavior against heavy workloads \cite{Sandler2004}, which are executed to evaluate a system beyond its limits, validate system response in activity peaks, and verify whether the system is able to recover from these conditions. It differs from other kinds of testing in that the system is executed on or beyond its breakpoints, forcing the application or the supporting infrastructure to fail \cite{DiLucca2006} \cite{Molyneaux2009}.
+Stress testing investigates the behavior of the system under conditions
+that overload its resources. The stress testing verifies the system behavior against heavy workloads \cite{Sandler2004} \cite{Lewis2005}, which are executed to evaluate a system beyond its limits, validate system response in activity peaks, and verify whether the system is able to recover from these conditions. It differs from other kinds of testing in that the system is executed on or beyond its breakpoints, forcing the application or the supporting infrastructure to fail \cite{DiLucca2006} \cite{Molyneaux2009}.
 
+
+Stress testing is boundary
+testing. Some of the resources that stress testing
+subjects to heavy loads include \cite{Lewis2005}:
+
+\begin{itemize}
+\item Memory
+\item Networks
+\item Transaction queues
+\item Transaction schedulers
+\item User of the system
+\end{itemize}
+
+The following are the suggested steps for stress testing \cite{Lewis2005}:
+
+\begin{itemize}
+\item Perform simple multitask tests.
+\item After the simple stress defects are corrected, stress the system to
+the breaking point.
+\item Perform the stress tests repeatedly for every development spiral.
+\end{itemize}
 
 While load testing is the process of assessing non-functional quality related problems under load. Performance testing is used to measure and/or evaluate performance
 related aspects (e.g., response time, throughput and resource utilizations) of algorithms, designs/architectures, modules, configurations, or the overall systems. Stress tests puts a system under extreme conditions to verify the robustness of the system and/or detect various functional bugs (e.g., memory leaks and deadlocks) \cite{Afzal2009a}. The next subsections present details about the stress test process, automated stress test tools and the stress test results.
 
-\subsection{Stress Test Process}
+\section{Stress Test Process}
 
 Contrary to functional testing, which has clear testing objectives, Stress testing objectives are not clear in the early development stages and are often defined later on a case-by-case basis. The Fig. \ref{fig:testprocess} shows a common Load, Performance and Stress test process  \cite{Jiang2010}.
 
@@ -38,7 +61,11 @@ The core activities in conducting an usual Load, Performance and Stress tests ar
 
 \item Identify acceptance criteria: identify the response time, throughput, and resource utilization goals and constraints.
 
-\item Plan and design tests:identify the test scenarios.In the context of testing, a scenario is a sequence of steps in an application. It can represent a use case or a business function such as searching a product catalog, adding an item to a shopping cart, or placing an order \cite{Corporation2007}.
+\item Plan and design tests:identify the test scenarios.In the context of testing, a scenario is a sequence of steps in an application. It can represent a use case or a business function such as searching a product catalog, adding an item to a shopping cart, or placing an order \cite{Corporation2007}. This task includes a description
+of the speed, availability, data volume throughput rate, response
+time, and recovery time of various functions, stress, and so on. This
+serves as a basis for understanding the level of performance and
+stress testing that may be required to each test scenario \cite{Lewis2005}.
 
 \item Prepare the test environment: configure the test environment, tools, and resources necessary to conduct the planned test scenarios.
 
@@ -50,9 +77,16 @@ The core activities in conducting an usual Load, Performance and Stress tests ar
 
 \end{itemize}
 
+The goal of the load design phase is to devise a load, which can uncover problems. Based on the objectives, there are two general schools of thought for designing a proper load to achieve such objectives \cite{Afzal2009a}:
 
+\begin{itemize}
+\item Designing Realistic Loads. 
+\item Designing Fault-Inducing Loads.
+\end{itemize}
 
-\subsection{Automated Stress Test Tools}
+In Designing Realistic Loads, the main goal of testing is to ensure that the system can function correctly once. Designing Fault-Inducing Loads  aims to design loads, which are likely to cause functional or non-functional problems \cite{Afzal2009a}.
+
+\section{Automated Stress Test Tools}
 
 Automated tools are needed to carry out serious load, stress, and performance testing. Sometimes, there is simply no practical way to provide reliable, repeatable performance tests without using some form of automation. The aim of any automated test tool is to simplify the testing process. Automated Test Tool  typically have the following components \cite{Molyneaux2009}:
 
@@ -71,7 +105,7 @@ JMeter has components organized  in a hierarchical manner. The Test Plan is the 
 \end{itemize}
 
 
-\subsection{Stress Test Results}
+\section{Stress Test Results}
 
 The system behavior recorded during the test execution phase needs to be analyzed to determine if there are any load-related functional or non-functional problems \cite{Jiang2010}.
 
