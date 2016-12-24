@@ -82,3 +82,26 @@ Algorithm \ref{gna} shows the basic structure of GA algorithms. In this algorith
       
   \end{algorithmic}
 \end{algorithm}
+
+\section{Hybrid  Metaheuristics}
+
+A combination of one metaheuristic with components from other metaheuristics is called a hybrid metaheuristic. The concept of hybrid metaheuristics has been commonly accepted only in recent years, even if the idea of combining different metaheuristic strategies and algorithms dates back to the 1980s. Today, we can observe a generalized common agreement on the advantage of combining components from different search techniques and the tendency of designing hybrid techniques is widespread in the fields of operations research and artificial intelligence \cite{raidl2010metaheuristic}. 
+
+
+There are two main categories of metaheuristic combinations: collaborative combinations and integrative combinations. These are presented in Fig. \ref{fig:metaheuristc} \cite{Raidl2006}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{./images/metaheuristc2.png}
+\caption{Categories of metaheuristc combinations \cite{Puchinger2005} }
+\label{fig:metaheuristc}
+\end{figure}
+
+Collaborative combinations use an approach where the algorithms exchange information, but are not part of each other. In this approach, algorithms may be executed sequentially or in parallel. 
+
+One of the most popular ways of metaheuristic hybridization consists in the use of trajectory methods inside population-based methods. Population-based methods are better in identifying promising areas in the search space from which trajectory methods can quickly reach good local optima. Therefore, metaheuristic hybrids that can effectively combine the strengths of both population-based methods and trajectory methods are often very successful \cite{raidl2010metaheuristic}.
+
+
+The work uses a type of collaborative combination with sequential execution with two trajectory methods (Tabu Search and Simulated Annealing) and Genetic Algorithms.
+
+

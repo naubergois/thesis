@@ -2,25 +2,30 @@ This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: cover.aux
+A level-1 auxiliary file: publications.aux
 A level-1 auxiliary file: contents.aux
 A level-1 auxiliary file: chap1.aux
 A level-1 auxiliary file: stresstest.aux
-A level-1 auxiliary file: chapworkload.aux
-A level-1 auxiliary file: chap2.aux
 A level-1 auxiliary file: searchbased.aux
 A level-1 auxiliary file: metaheuristic.aux
+A level-1 auxiliary file: qlearning.aux
 A level-1 auxiliary file: testbed.aux
-A level-1 auxiliary file: hybridapproach.aux
 A level-1 auxiliary file: experiments.aux
+A level-1 auxiliary file: conclusion.aux
 A level-1 auxiliary file: appa.aux
 A level-1 auxiliary file: appb.aux
 A level-1 auxiliary file: biblio.aux
 The style file: plain.bst
 Database file #1: ../main.bib
-Repeated entry---line 1148 of file ../main.bib
+Repeated entry---line 513 of file ../main.bib
+ : @inproceedings{Gois2016
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1184 of file ../main.bib
  : @book{Halili2008
  :                 ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Zhang2011"
 Warning--to sort, need author or key in Afzal2009
 Warning--empty author in Afzal2009
 Warning--empty journal in Canfora
@@ -45,45 +50,45 @@ Warning--empty journal in Sullivan
 Warning--empty year in Sullivan
 Warning--empty journal in Tracey1998
 Warning--there's a number but no volume in Wert2013a
-You've used 55 entries,
+You've used 60 entries,
             2118 wiz_defined-function locations,
-            835 strings with 14174 characters,
-and the built_in function-call counts, 17545 in all, are:
-= -- 1733
-> -- 764
-< -- 19
-+ -- 304
-- -- 248
-* -- 1125
-:= -- 2881
-add.period$ -- 163
-call.type$ -- 55
-change.case$ -- 279
+            866 strings with 15000 characters,
+and the built_in function-call counts, 19395 in all, are:
+= -- 1924
+> -- 848
+< -- 22
++ -- 337
+- -- 276
+* -- 1246
+:= -- 3179
+add.period$ -- 178
+call.type$ -- 60
+change.case$ -- 308
 chr.to.int$ -- 0
-cite$ -- 79
-duplicate$ -- 742
-empty$ -- 1359
-format.name$ -- 248
-if$ -- 3690
+cite$ -- 84
+duplicate$ -- 817
+empty$ -- 1490
+format.name$ -- 276
+if$ -- 4085
 int.to.chr$ -- 0
-int.to.str$ -- 55
-missing$ -- 61
-newline$ -- 276
-num.names$ -- 108
-pop$ -- 348
+int.to.str$ -- 60
+missing$ -- 66
+newline$ -- 301
+num.names$ -- 118
+pop$ -- 375
 preamble$ -- 2
-purify$ -- 234
+purify$ -- 258
 quote$ -- 0
-skip$ -- 546
+skip$ -- 608
 stack$ -- 0
-substring$ -- 992
-swap$ -- 184
-text.length$ -- 19
+substring$ -- 1114
+swap$ -- 210
+text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 202
+type$ -- 222
 warning$ -- 24
-while$ -- 179
-width$ -- 57
-write$ -- 569
-(There was 1 error message)
+while$ -- 200
+width$ -- 62
+write$ -- 623
+(There were 2 error messages)

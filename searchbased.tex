@@ -1,9 +1,22 @@
-\chapter{Search-Based Tests}
+\chapter{Search-Based Stress Tests}
 
 Search-based software engineering (SBSE) is the application of optimization techniques in solving software engineering problems [1,2]. The applicability of optimization techniques in solving software engineering problems is suitable as these problems frequently encounter competing constraints and require near optimal solutions \cite{Afzal2009a} \cite{Harman2015}. 
 
 
 Search Based Software Testing (SBST) is the sub-area of Search Based Software Engineering concerned with software testing. Search-based software testing is the application of metaheuristic search techniques to generate software tests. SBSE uses computational search techniques to tackle software engineering problems, typified by large complex search spaces. SBSE derives test inputs for a software system with the goal of improving various criteria. The test adequacy criterion is transformed into a fitness function and a set of solutions in the search space are evaluated with respect to the fitness function using a metaheuristic search technique \cite{Afzal2009a} \cite{Aleti2016} \cite{Harman2015}.
+
+Stress search-based testing is a application of SBST where the main goal it is to find test scenarios that produce execution times that exceed the timing constraints specified. If a temporal error is found, the test was successful \cite{Sullivan}.
+
+\section{Search-Based Tests}
+
+Search–Based Testing uses meta-heuristic algorithms to
+automate the generation of test inputs that meet a test
+adequacy criterion. Many algorithms have been considered in the past, including Parallel Evolutionary Algorithms [2],Evolution Strategies [1], Estimation of Distribution Algorithms [48], Scatter Search [11], Particle Swarm Optimization [57], Tabu Search [13] and the Alternating Variable Method [29]  \cite{Baars2011}. 
+
+One of the most popular search techniques used in SBST belong to the family of Evolutionary Algorithms in what is known as Evolutionary Testing. Evolutionary Algorithms represent a class of adaptive search techniques based on natural genetics and Darwin’s theory of evolution. They are characterized by an iterative procedure that works in parallel on a number of potential solutions to a problem. Figure  shows the cycle
+of an Evolutionary Algorithm when used in the context of
+Evolutionary Testing \cite{Baars2011}.
+
 
 SBST has made many achievements, and demonstrated its wide applicability and increasing uptake. Nevertheless, there are pressing open problems and challenges that need more attention like to extend SBST to test non-functional properties, a topic that remains relatively under-explored, compared to structural testing. There are many kinds of non-functional search based tests  \cite{Afzal2009a}:
 
@@ -25,9 +38,12 @@ A variety of metaheuristic search techniques are found to be applicable for non-
 \label{fig:metabykind}
 \end{figure}
 
-\subsection{Load, Stress and Performance Search Based Testing}
 
-A common goal of load, performance and stress search-based testing is to find test scenarios that produce execution times that exceed the timing constraints specified. If a temporal error is found, the test was successful \cite{Sullivan}. The search for the longest execution time is regarded as a discontinuous, nonlinear, optimization problem, with the input domain of the system under test as a search space \cite{Sullivan}.  The application of SBST algorithms to  stress tests involves finding the best- and worst-case execution times (B/WCET) to determine whether timing constraints are fulfilled \cite{Afzal2009a}. 
+
+
+\section{Search-Based Stress Testing}
+
+The search for the longest execution time is regarded as a discontinuous, nonlinear, optimization problem, with the input domain of the system under test as a search space \cite{Sullivan}.  The application of SBST algorithms to  stress tests involves finding the best- and worst-case execution times (B/WCET) to determine whether timing constraints are fulfilled \cite{Afzal2009a}. 
 
 There are two measurement units normally associated with the fitness function in stress test: processor cycles and execution time. The processor cycle approach describes a fitness function in terms of processor cycles. The execution time approach involves executing the application under test and measuring the execution time \cite{Afzal2009a} \cite{tracey2000search}.
 
@@ -39,7 +55,7 @@ Table \ref{tab:comparison}  shows a comparison between the research studies on l
 \centering
 \caption{Distribution of the research studies over the range of applied metaheuristics}
 \label{tab:comparison}
-\begin{tabular}{p{1.2cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|}
+\begin{tabular}{p{1.8cm}|p{1.8cm}|p{2.8cm}|p{2.8cm}|}
 \cline{2-4}
                                                                 & \multicolumn{2}{c|}{\textbf{Prototypes}}            & \textbf{Functional Tool} \\ \cline{2-4} 
                                                                 & \begin{minipage}{0.2\textwidth}\footnotesize Execution Time  \end{minipage}          & \begin{minipage}{0.2\textwidth}\footnotesize Processor Cycles \end{minipage}        & \begin{minipage}{0.2\textwidth}\footnotesize Execution Time \end{minipage}           \\ \cline{2-4} 

@@ -37,6 +37,24 @@ Davide Arcelli, Vittorio Cortellessa, and Catia Trubiani.
 \newblock {\em Proceedings of the 8th international ACM SIGSOFT conference on
   Quality of Software Architectures (QoSA '12)}, pages 33--42, 2012.
 
+\bibitem{Baars2011}
+Arthur~I Baars, Kiran Lakhotia, Tanja E~J Vos, and Joachim Wegener.
+\newblock {Search-based testing, the underlying engine of Future Internet
+  testing}.
+\newblock {\em Federated Conference on Computer Science and Information Systems
+  (FedCSIS 2011)}, pages 917--923, 2011.
+
+\bibitem{Babbar2011}
+C~Babbar, N~Bajpai, and Dk~Sarmah.
+\newblock {Web Application Performance Analysis based on Component Load
+  Testing}.
+\newblock {\em International Journal of Technology}, 2011.
+
+\bibitem{Barna2011}
+Cornel Barna, M~Litoiu, and H~Ghanbari.
+\newblock {Autonomic load-testing framework}.
+\newblock {\em International conference on Autonomi}, pages 91--100, 2011.
+
 \bibitem{Blum2003}
 C.~Blum and A.~Roli.
 \newblock {Metaheuristics in combinatorial optimization: overview and
@@ -248,6 +266,11 @@ G{\"u}nther~R Raidl, Jakob Puchinger, and Christian Blum.
 \newblock Metaheuristic hybrids.
 \newblock In {\em Handbook of metaheuristics}, pages 469--496. Springer, 2010.
 
+\bibitem{Raidl2006}
+R~Raidl.
+\newblock {A Unified View on Hybrid Metaheuristics}.
+\newblock {\em Hybrid Metaheuristics (LNCS 4030)}, pages 1--12, 2006.
+
 \bibitem{Sandler2004}
 Corey Sandler, Tom Badgett, and TM~Thomas.
 \newblock {The Art of Software Testing}.
@@ -299,6 +322,12 @@ Via Vetoio.
 \newblock {PhD Thesis in Computer Science Automated generation of architectural
   feedback from software performance analysis results Catia Trubiani}.
 \newblock {\em Language}, 2011.
+
+\bibitem{Wang2013}
+Xingen Wang, Bo~Zhou, and Wei Li.
+\newblock {Model-based load testing of web applications}.
+\newblock {\em Journal of the Chinese Institute of Engineers}, 36(1):74--86,
+  2013.
 
 \bibitem{Wegener1998}
 J~Wegener and M~Grochtmann.

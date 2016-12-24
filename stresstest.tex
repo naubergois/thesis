@@ -1,8 +1,6 @@
-\chapter{Load, Performance and Stress Testing}
-
+\chapter{A Survey on Stress Testing Software Systems}
 
 Load, performance, and stress testing are typically done to locate bottlenecks in a system, to support a performance-tuning effort, and to collect other performance-related indicators to help stakeholders get informed about the quality of the application being tested \cite{Sandler2004} \cite{Corporation2007}. 
-
 
 
 The performance testing aims at verifying a specified system performance. This kind of test is executed by simulating hundreds of simultaneous users or more over a defined time interval \cite{DiLucca2006}. The purpose of this assessment is to demonstrate that the system reaches its performance objectives \cite{Sandler2004}.  Term often used interchangeably with “stress” and “load” testing. Ideally “performance” testing is defined in requirements documentation or QA or Test Plans \cite{Lewis2005}.
@@ -14,9 +12,22 @@ Stress testing investigates the behavior of the system under conditions
 that overload its resources. The stress testing verifies the system behavior against heavy workloads \cite{Sandler2004} \cite{Lewis2005}, which are executed to evaluate a system beyond its limits, validate system response in activity peaks, and verify whether the system is able to recover from these conditions. It differs from other kinds of testing in that the system is executed on or beyond its breakpoints, forcing the application or the supporting infrastructure to fail \cite{DiLucca2006} \cite{Molyneaux2009}.
 
 
-Stress testing is boundary
-testing. Some of the resources that stress testing
-subjects to heavy loads include \cite{Lewis2005}:
+This chapter surveys the state of the art literature in stress testing research. This survey will be useful for stress testing practitioners and software engineering researchers with interests in testing and analyzing software systems. We proposed the following three research questions:
+
+
+\begin{itemize}
+\item How is a proper stress designed?
+\item How is a stress test executed and automated?
+\item What are the main problems found by stress tests?
+\end{itemize}
+
+The population in this study is the domain of software testing. Intervention includes application of stress test techniques to test different types of non-functional properties.
+
+
+\section{Background}
+
+
+Stress testing is boundary testing. Some of the resources that stress testing subjects to heavy loads include \cite{Lewis2005}:
 
 \begin{itemize}
 \item Memory
@@ -38,7 +49,7 @@ the breaking point.
 While load testing is the process of assessing non-functional quality related problems under load. Performance testing is used to measure and/or evaluate performance
 related aspects (e.g., response time, throughput and resource utilizations) of algorithms, designs/architectures, modules, configurations, or the overall systems. Stress tests puts a system under extreme conditions to verify the robustness of the system and/or detect various functional bugs (e.g., memory leaks and deadlocks) \cite{Afzal2009a}. The next subsections present details about the stress test process, automated stress test tools and the stress test results.
 
-\section{Stress Test Process}
+\subsection{Stress Test Process}
 
 Contrary to functional testing, which has clear testing objectives, Stress testing objectives are not clear in the early development stages and are often defined later on a case-by-case basis. The Fig. \ref{fig:testprocess} shows a common Load, Performance and Stress test process  \cite{Jiang2010}.
 
@@ -77,16 +88,9 @@ stress testing that may be required to each test scenario \cite{Lewis2005}.
 
 \end{itemize}
 
-The goal of the load design phase is to devise a load, which can uncover problems. Based on the objectives, there are two general schools of thought for designing a proper load to achieve such objectives \cite{Afzal2009a}:
 
-\begin{itemize}
-\item Designing Realistic Loads. 
-\item Designing Fault-Inducing Loads.
-\end{itemize}
 
-In Designing Realistic Loads, the main goal of testing is to ensure that the system can function correctly once. Designing Fault-Inducing Loads  aims to design loads, which are likely to cause functional or non-functional problems \cite{Afzal2009a}.
-
-\section{Automated Stress Test Tools}
+\subsection{Automated Stress Test Tools}
 
 Automated tools are needed to carry out serious load, stress, and performance testing. Sometimes, there is simply no practical way to provide reliable, repeatable performance tests without using some form of automation. The aim of any automated test tool is to simplify the testing process. Automated Test Tool  typically have the following components \cite{Molyneaux2009}:
 
@@ -105,8 +109,301 @@ JMeter has components organized  in a hierarchical manner. The Test Plan is the 
 \end{itemize}
 
 
-\section{Stress Test Results}
+\subsection{Stress Test Results}
 
-The system behavior recorded during the test execution phase needs to be analyzed to determine if there are any load-related functional or non-functional problems \cite{Jiang2010}.
+The system behavior recorded during the test execution phase needs to be analyzed to determine if there are any load-related functional or non-functional problems \cite{Jiang2010}. There can be many formats of system behavior like resource usage data or end-to-end response time, which is recorded as response time for each individual request. These types of data need to be processed before comparing against threshold values.A proper data summarization technique is needed to describe these many data instances into one number. Some researchers advocate that the 90-percentile response time is a better measurement than the average/medium response time, as the former accounts for most of the peaks, while eliminating the outliers \cite{Jiang2010}.
 
-There can be many formats of system behavior like resource usage data or end-to-end response time, which is recorded as response time for each individual request. These types of data need to be processed before comparing against threshold values.A proper data summarization technique is needed to describe these many data instances into one number. Some researchers advocate that the 90-percentile response time is a better measurement than the average/medium response time, as the former accounts for most of the peaks, while eliminating the outliers \cite{Jiang2010}.
+\section{Research Question 1:How is a proper stress designed?}
+
+The design of a stress test depends intrinsically on the load model applied to the software under test. Based on the objectives, there are two general schools of thought for designing a proper load to achieve such objectives \cite{Afzal2009a}:
+
+\begin{itemize}
+\item Designing Realistic Loads (Workload Descriptive). 
+\item Designing Fault-Inducing Loads ( Workload Generative).
+\end{itemize}
+
+In Designing Realistic Loads, the main goal of testing is to ensure that the system can function correctly once. Designing Fault-Inducing Loads  aims to design loads, which are likely to cause functional or non-functional problems \cite{Afzal2009a}.
+
+Stress testing projects should start with the development of a model for user workload that an application receives. This should take into consideration various performance aspects of the application and the infrastructure that a given workload will impact. A workload is a key component of such a model \cite{Molyneaux2009}.
+
+The term workload represents the size of the demand that will be imposed on the application under test in an execution. The metric  used for measure a workload is dependent on the application domain, such as the length of the video in a transcoding application for multimedia files or the size of the input files in a file compression application \cite{Feitelson2013} \cite{Molyneaux2009} \cite{Goncalves2014}. 
+
+Workload is also defined by the load distribution between the identified transactions at a given time. Workload helps researchers study the system behavior identified in several load models. A workload model can be designed to verify the predictability, repeatability, and scalability of a system \cite{Feitelson2013} \cite{Molyneaux2009}.
+
+
+Workload modeling is the attempt to create a simple and generic model that can then be used to generate synthetic workloads. The goal is typically to be able to create workloads that can be used in performance evaluation studies. Sometimes, the synthetic workload is supposed to be similar to those that occur in practice in real systems \cite{Feitelson2013} \cite{Molyneaux2009}.
+
+There are two kinds of workload models: descriptive and generative. The main difference between the two is that descriptive models just try to mimic the phenomena observed in the workload, whereas generative models try to emulate the process that generated the workload in the first place \cite{DiLucca2006}. 
+
+In descriptive models, one finds different levels of abstraction on the one hand and different levels of fidelity to the original data on the other hand. The most strictly faithful models try to mimic the data directly using the statistical distribution of the data. The most common strategy used in descriptive modeling is to create a statistical model of an observed workload (Fig. \ref{fig:descriptivemodel}). This model is applied to all the workload attributes, e.g., computation, memory usage, I/O behavior, communication, etc. \cite{DiLucca2006}. Fig. \ref{fig:descriptivemodel} shows a simplified workflow of a descriptive model. The workflow has six phases. In the first phase, the user uses the system in the production environment. In the second phase, the tester collects the user's data, such as logs, clicks, and preferences, from the system. The third phase consists in developing a model designed to emulate the user's behavior. The fourth phase is made up of the execution of the test, emulation of the user's behavior, and log gathering.
+
+
+
+\begin{figure}[!ht]
+
+\centering
+\includegraphics[width=0.8\textwidth]{./images/workloadmodel1300dpi.png}
+\caption{Workload modeling based on statistical data \cite{DiLucca2006}}
+\label{fig:descriptivemodel}
+\end{figure}
+
+
+Generative models are indirect in the sense that they do not model the statistical distributions. Instead, they describe how users will behave when they generate the workload. An important benefit of the generative approach is that it facilitates manipulations of the workload. It is often desirable to be able to change the workload conditions as part of the evaluation. Descriptive models do not offer any option regarding how to do so. With the generative models, however, we can modify the workload-generation process to fit the desired conditions \cite{DiLucca2006}. The difference between the workflows of the descriptive and the generative models is that user behavior is not collected from logs, but simulated from a model that can receive feedback from the test execution (Fig. \ref{fig:generativemodel}).
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\textwidth]{./images/workloadmodel2300dpi.png}
+\caption{Workload modeling based on the generative model \cite{DiLucca2006}}
+\label{fig:generativemodel}
+
+\end{figure}
+
+Both load model have their advantages and disadvantages. In general, loads resulting from realistic-load based design techniques (Descriptive models) can be used to detect both functional and non-functional problems. However, the test durations are usually longer and the test analysis is more difficult. Loads resulting from fault-inducing load design techniques (Generative models) take less time to uncover potential functional and non-functional problems, the resulting loads usually only cover a small portion of the testing objectives \cite{Jiang2010}. The presented research work uses a generative model.
+
+
+There are  several approaches to design generative or descriptive workloads:
+
+\begin{itemize}
+\item Model-based Stress testing: a usage model is proposed to simulate users’ behaviors.
+\item Search-based Stress testing:
+\end{itemize}
+
+Some research aproaches proposes models to simulate or  generate realistic loads. A User Community Modeling Language (UCML) is a set of symbols that can be used to create visual system usage models and depict associated parameters \cite{Wang2013}.
+
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{./images/ucml.png}
+\caption{User community modeling language \cite{Wang2013}}
+\label{fig:ucml}
+
+\end{figure}
+
+
+
+
+\section{Research Question 2:How How is a stress test executed and automated?}
+
+The stress test execution phase consists of three phases:
+
+\begin{itemize}
+\item  Setup: which includes system deployment and test execution setup;
+\item Load Generation and Termination: which consists of generating the load according to the configurations and terminating the load when the load test is completed;
+\item Test Monitoring and Data Collection, which includes recording the system behavior.
+\end{itemize}
+ 
+ 
+There are three general approaches of load test executions:
+
+\begin{itemize}
+\item Live-User Based Executions: The test examines a system’s behavior when the system is simultaneously used by many users or execute a load test by employing a group of human testers. 
+\item Driver Based Executions: The driver based execution approach automatically generate thousands or millions of concurrent requests for a long period of time using a software tool.
+\item Emulation Based Executions: The emulation based load test execution approach performs the load testing on special platforms and doesn't require a fully functional system and conduct load testing.
+\end{itemize}
+
+There are three categories of load drivers: 
+
+
+
+There are several tool to execution of Stress testing. In this tools, the procedure is semi-automated, whereas the execution of the tests itself is performed by a tool, the choice of scenarios to be executed as well as the decision to start new execution batteries are activities of the test designer or tester.
+
+Open STA is an open source software developed in C++, and released under the GPL licence. OpenSTA provides a script language which permits to simulate the activity of a user. This language can describe HTTP/S scenario and all the test executions is managed in a graphical interface. The composition of the test is
+very simple, allowing the tester choose scripts for a test and a remote computer that will execute each test.
+
+\section{Research Question 3: What are the main problems found by stress tests?}
+
+ Performance problems share common symptoms and many performance problems described in the literature are defined by a particular set of root causes. Fig. \ref{fig:symptoms}  shows the symptoms of known performance problems \cite{Wert2013a}. 
+
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{./images/symptoms.png}
+\caption{Symptoms of know performance problems \cite{Wert2013a}. }
+\label{fig:symptoms}
+\end{figure}
+
+
+There are several antipatterns that details features about  common performance problems. Antipatterns are conceptually similar to patterns in that they document recurring solutions to common design problems. They are known as
+antipatterns because their use produces negative consequences.  Performance antipatterns document common performance mistakes made in software architectures or designs. These software Performance antipatterns have four primary uses: identifying problems,
+focusing on the
+right level of abstraction,
+effectively communicating
+their causes to others, and prescribing solutions \cite{brown1998antipatterns}. The table \ref{antipatterns} present some of the most common performance antipatterns.
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[H]
+\centering
+\caption{Performance antipatterns}
+\label{antipatterns}
+\begin{tabular}{|l|l|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{C0C0C0}\textbf{antipattern}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{Derivations}} \\ \hline
+Blob or The God Class &  \\ \hline
+ & Concurrent processing Systems \\ \cline{2-2} 
+ & Piper and Filter Architectures \\ \cline{2-2} 
+\multirow{-3}{*}{Unbalanced-Processing} & Extensive Processing \\ \hline
+Circuitous Treasure Hunt &  \\ \cline{1-1}
+Empty Semi Trucks &  \\ \cline{1-1}
+Tower of Babel &  \\ \cline{1-1}
+One-Lane Bridge &  \\ \cline{1-1}
+Excessive Dynamic Allocation &  \\ \cline{1-1}
+Traffic Jam &  \\ \cline{1-1}
+The Ramp  &  \\ \cline{1-1}
+More is Less & \multirow{-10}{*}{} \\ \hline
+\end{tabular}
+\end{table}
+
+Blob antipattern is known by various names, including the “god” class [8] and the “blob” [2]. Blob is an antipattern whose problem is on the excessive message traffic generated by a single class or component, a particular resource does the majority of the work in a software. The Blob antipattern occurs when a single class or component either performs all of the work of an application or holds all of the application’s data. Either manifestation results in excessive message traffic that can degrade performance \cite{Cortellessa2007} \cite{Smith2000}.
+
+A project containing a “god” class is usually has a single, complex controller class that is surrounded by simple classes that serve only as data containers. These classes typically contain only accessor operations (operations to get() and set() the data) and perform little or no computation of their own \cite{Smith2000}.
+The  Figures \ref{fig:godclass} and \ref{fig:godclass2} describes an hypotetical system with a BLOB problem:
+The Fig. \ref{fig:godclass} presents a sample where the Blob class uses the features A,B,C,D,E,F and G of the hypotetical system; The Fig. \ref{fig:godclass2}  shows a static view where  a complex software entity instance, i.e. Sd, is connected to other software instances, e.g. Sa, Sb and Sc, through many dependencies \cite{Vetoio2011}\cite{Wert2013a}.
+
+
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{./images/BLOB.png}
+\caption{The God class\cite{Wert2013a}. }
+\label{fig:godclass}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{./images/blob2.png}
+\caption{The God class\cite{Vetoio2011}. }
+\label{fig:godclass2}
+\end{figure}
+
+Unbalanced Processing it's characterises for one scenario where a specific class of requests generates a pattern of execution within the system that tends to overload a particular resource. In other words the overloaded resource will be executing a certain type of job very often, thus in practice damaging other classes
+of jobs that will experience very long waiting times. Unbalanced Processing occurs in three different situations. The first case that cause unbalanced processing it is when processes cannot make effective use of available processors either because processors are dedicated to other tasks or because of single-threaded code. This manifestation has available processors and we need to ensure that the software is able to use them. Fig. \ref{fig:unbalanced}  shows a sample of the Unbalanced Processing. In The Fig. \ref{fig:unbalanced}, four tasks are performed. The task D it is waiting for the task C conclusion that are submmited to a heavy processing situation. 
+
+The pipe and filter architectures  and extensive processing antipattern represents a manifestation of the unbalanced processing antipattern. The pipe and filter architectures occurs when the throughput of the overall system is determined by the slowest filter. The  Fig. \ref{fig:pipefilter} describes a software S with a Pipe and Filter Architectures problem: (a) Static View, there is a software entity instance, e.g. Sa, offering an operation (operation x) whose resource demand (computation = \$compOpx, storage = \$storOpx, bandwidth = \$bandOpx) is quite high; (b) Dynamic View, the operation opx is invoked in a service  and the throughput of the service (\$Th(S)) is lower than the required one. The extensive processing occurs when a process monopolizes a processor and prevents a set of other jobs to be executed until it finishes its computation. The Fig. \ref{fig:extpro} describes a software S with a Extensive Processing problem: (a) Static View, there is a software entity instance, e.g. Sa, offering two operations (operation x, operation y) whose resource demand is quite unbalanced, since opx has a high demand (computation = \$compOpx, storage = \$storOpx, bandwidth = \$bandOpx), whereas opy has a low demand (computation = \$compOpy, storage = \$storOpy, bandwidth = \$bandOpy); (b) Dynamic View, the operations opx and opy are alternatively invoked in a service and the response time of the service (\$RT(S)) is larger than the required one \cite{Vetoio2011}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{./images/unbalanced.png}
+\caption{Unbalanced Processing sample \cite{Wert2013a}. }
+\label{fig:unbalanced}
+\end{figure}
+
+
+\begin{figure}[h]
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/pipe2.png}
+\caption{Pipe and Filter sample \cite{Vetoio2011}}
+\label{fig:pipefilter}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/extpro.png}
+\caption{Extensive Processing sample \cite{Vetoio2011}.}
+\label{fig:extpro}
+\end{minipage}
+\end{figure}
+
+
+Circuitous Treasure Hunt antipattern occurs when software retrieves data from a first componet, uses those results in a second component, retrieves data from the second component, and so on, until the last results are obtained \cite{Smith2002} \cite{Smith2003}. Circuitous Treasure Hunt 
+are typical performance antipatterns that causes unnecessarily frequent database requests. The Circuitous Treasure Hunt antipattern is a result from a bad database schema or query design. A common Circuitous Treasure Hunt design creates a data dependency between single queries. For instance, a query requires the
+result of a previous query as input. The longer the chain of
+dependencies between individual queries the more the Circuitous
+Treasure Hunt antipattern hurts performance \cite{Wert2014}. The Fig. \ref{fig:circuit}  shows a software S with a Circuitous Treasure Hunt problem: (a) Static View, there is a software entity instance e.g. Sa, retrieving information from the database; (b) Dynamic View, the software  S generates a large number of database calls by performing several queries up to the final operation \cite{Vetoio2011}.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{./images/circuit.png}
+\caption{Circuitous
+Treasure Hunt sample \cite{Vetoio2011}}
+\label{fig:circuit}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{./images/trucks.png}
+\caption{Empty Semi Trucks sample \cite{Vetoio2011}.}
+\label{fig:trucks}
+\end{figure}
+
+Empty Semi Trucks occurs when an excessive number of requests is required to perform a task. It may be due to inefficient use of available bandwidth, an inefficient interface, or both \cite{Arcelli2012}. There are a special case of Empty Semi Trucks that occurs  when many fields in a user interface must be retrieved from a
+remote system. Fig. shows a software S with a Empty Semi Trucks problem: (a) Static View, there is a software entity instance, e.g. Sa, retrieving some information from several instances (Remote Software 1, . . . , Remote Software n); (b) Dynamic View, the software instance Sa generates an excessive message traffic by sending a big amount of messages with low sizes, much lower than the network bandwidth, hence the network link might have a low utilization value \cite{Vetoio2011}.
+
+The Tower of Babel antipattern most often occurs when information is translated into an exchange format, such as XML, by the sending process then parsed and translated into an
+internal format by the receiving process. When the translation and parsing is excessive, the system spends most
+of its time doing this and relatively little doing real work \cite{Smith2003}. Fig. shows a system with a Tower of Babel problem: (a) Static View, there are some software entity instances, e.g. Sa, Sb, . . . , Sn; (b) Dynamic View, the software instances Sd performs many times the translation of format for communicating with other instances \cite{Vetoio2011}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{./images/babel2.png}
+\caption{Tower of Babel sample \cite{Vetoio2011}}
+\label{fig:babel}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{./images/onelane.png}
+\caption{One-Lane Bridge sample \cite{Vetoio2011}.}
+\label{fig:onelane}
+
+\end{figure}
+
+
+One-Lane Bridge is a antipattern that occurs when one or a few processes execute concurrently using a shared resource and other processes are waiting for use the shared resource. It frequently occurs in applications that access a database. Here, a lock ensures that only one process may update the associated portion of the database at a time. This antipatterns is common when many concurrent threads or processes are waiting for the same shared resources. These can either be passive resources (like semaphores or mutexes) or active resources (like CPU or hard disk). In the first case, we have a typical One Lane Bridge whose critical resource needs to be identified. Figure 3.10 shows a system with a One-Lane Bridge problem: (a) Static View, there is a software entity instance with a capacity of managing \$poolSize threads; (b) Dynamic View, the software instance Sc receives an excessive number of synchronous calls in a service S and the predicted response time is higher than the required \cite{Vetoio2011}.
+
+
+Using dynamic allocation, objects are created when they are first accessed and then destroyed when they are no longer needed. Excessive Dynamic Allocation, however, addresses frequent, unnecessary creation and destruction of objects of the same class. Dynamic allocation is expensive , an object created in memory must be allocated from the heap, and any initialization code for the object and the contained objects must be executed. When the object is no longer needed, necessary clean-up must be performed, and the reclaimed memory must be returned to the heap to avoid memory leaks \cite{Smith2002} \cite{Smith2003}.
+
+\begin{figure}[H]
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/excessivedynamicallocation.png}
+\caption{Excessive Dynamic Allocation.}
+\label{fig:dynallocation}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/jam.png}
+\caption{Traffic Jam Response Time \cite{Vetoio2011}.}
+\label{fig:jam}
+\end{minipage}
+\end{figure}
+
+The Fig. \ref{fig:dynallocation} shows a Excessive Dynamic Allocation sample. This example is drawn from a call (an offHook event), the switch creates a Call object to manage the call. When the call is completed, the Call object is destroyed. Constructing a single Call object it is not seem as excessive. A Call is a complex object that contains several other objects that must also be created. The Excessive Dynamic Allocation occurs when  a switch receive hundreds of thousands of offHook events. In a case like this, the overhead for dynamically allocating call objects adds substantial delays to the time needed to complete a call.
+
+The Traffic Jam antipattern occurs if many concurrent threads or processes are waiting for the same  active resources (like CPU or hard disk). This antipatterns produces a large backlog in jobs waiting for service. The performance impact of the Traffic Jam is the transient behavior that produces wide variability in response time. Sometimes it is fine, but at other times, it is unacceptably long. Figure \ref{fig:jam} describes a software with a Traffic Jam problem, the monitored response time of the operation shows a wide variability in response time which persists long \cite{Vetoio2011}. 
+
+
+\begin{figure}[H]
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=0.5\textwidth]{./images/ramp.png}
+\caption{The Ramp sample \cite{Vetoio2011}.}
+\label{fig:ramp}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/moreisless.png}
+\caption{More is Less sample \cite{Vetoio2011}.}
+\label{fig:moreisless}
+\end{minipage}
+\end{figure}
+
+The Ramp it is a antipattern where the processing time increases as the system is used. The Ramp can arise in several different ways. Any situation in which the amount of processing required to satisfy a request increases over time will produce the behavior. With the Ramp antipattern, the memory consumption of the application is growing over time. The root cause is Specific Data Structures which are growing during operation or which are not properly disposed \cite{Wert2014} \cite{Smith2003}. Fig. \ref{fig:ramp} shows a system  with The Ramp problem:  (i) the monitored response time of the operation opx at time t1, i.e. \$RT(opx, t1), is much lower than the monitored response time of the operation opx at time t2, i.e. \$RT(opx, t2), with t1 < t2; (ii) the monitored throughput of the operation opx at time t1, i.e. \$Th(opx, t1), is much larger than the monitored throughput of the operation opx at time t2, i.e. \$Th(opx, t2), with t1 < t2. 
+
+More is less occurs when a system spends more time "thrashing” than accomplishing real work because there are too many processes relative to available resources. More is Less are presented when it is running too many programs overtime. This antipattern causes too much system paging and systems spend all their time servicing page faults rather than processing requests. In distributed systems, there are more causes.They include: creating too many database connections and  allowing too many internet connection. Fig. \ref{fig:moreisless} describes a system  with a More Is Less problem: There is a processing node PN1 and the monitored runtime parameters (e.g. database connections, etc.) at time t1, i.e. \$Par(PN1[p], t1), are much larger than the same parameters at time t2, i.e. \$Par(PN1[p], t2), with t1 < t2. 
+
+
+
+
+
+

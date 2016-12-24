@@ -474,6 +474,8 @@ at the
 %\vfill
 \signature{ }{\choosecase{ Dsc. Pedro Porfirio Muniz de Farias} \\ Advisor - Universidade de Fortaleza}
 \signature{ }{\choosecase{ Dsc. Andre Coelho} \\ Co-Advisor - Universidade de Fortaleza}
+\signature{ }{\choosecase{ Dsc. Pedro } \\ Co-External Examiner - Universidade Federal do Piaui}
+
 %\unvbox\@titlesupervisor
 %\par
 %\vfill

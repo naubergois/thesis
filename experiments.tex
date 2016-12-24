@@ -32,7 +32,108 @@ The experiments addresses:
 \item Analyze and verify the best heuristics among those chosen to the experiments.
 \end{itemize}
 
-\pagebreak
+
+\subsection{Emulated Class Test Experiment}
+
+The first experiment aimed to perform performance, load, and stress testing on a simulated component. The purpose of using a simulated component was to be able to perform a greater number of generations in a shorter time available and eliminate variables such as the use of databases and application servers. The first experiment used a test class  named SimulateConcurrentAccess. This class has a static variable named \textit{x} and a set of methods that use the variable in a synchronized context ( Listing \ref{classsimulated}). The experiment was executed using the JMeter Java Request Sampler Component with IAdapter.
+
+\lstdefinestyle{outline}{
+		language=Java,
+         basicstyle=\scriptsize\ttfamily,
+         numberstyle=\tiny,
+         numbersep=5pt,
+         tabsize=2,
+         extendedchars=true,
+         breaklines=true,
+         keywordstyle=\color{black}\bf,
+         frame=b,  % <<<<<<<<<<<<<<<<<<<<<<<<<<
+         stringstyle=\color{green!40!black}\ttfamily,
+         showspaces=false,
+         showtabs=false,
+         numbers=left,
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framextopmargin=1pt, % <<<<<<<<<<<<<<<<<<<<<<
+         showstringspaces=false,
+         %backgroundcolor=\color[RGB]{200,200,200},
+         belowcaptionskip=0pt
+}
+
+\begin{lstlisting}[style=outline,caption={SimulateConcurrentAccess class},float,label=classsimulated]
+public class SimulateConcurrentAccess {
+  @Test
+  public void firstScenario() {		
+    synchronized (StaticClass.class) {
+			for (int i = 0; i <= 1000; i++) {
+				StaticClass.x += i;
+			}
+			StaticClass.x = 0;
+		}
+	}
+	
+	  @Test
+  public void secondScenario() {		
+    synchronized (StaticClass.class) {
+			for (int i = 0; i <= 2000; i++) {
+				StaticClass.x += i;
+			}
+			StaticClass.x = 0;
+		}
+	}
+\end{lstlisting}
+
+
+Fig.\ref{fig:exp1bestresults} presents the best results in 27 generations applied in the first experiment. The figure shows the results obtained with the algorithms with and without collaboration. The $x$ axis  represents the generation number, and the $y$ axis represents the best fitness value obtained until the current generation.
+A higher value in the figure means that the scenario has a greater response time by the application under test. The results of the experiment showed that the use of cooperation between the three algorithms resulted in finding the individuals with better fitness values.
+
+\begin{figure}[h]
+\centering
+\caption{Best results obtained in 27 generations}
+\includegraphics[width=1\textwidth]{./images/generationcomparative.png}
+\label{fig:exp1bestresults}
+\end{figure}
+
+Table \ref{tab:averagefirst} presents the results obtained by the hybrid metaheuristic (HM) approach, genetic algorithm (GA), simulated annealing (SA), and Tabu search (TS) from 27 generations in the first experiment. The values are the maximum fitness value obtained by each algorithm. 
+
+\begin{table}[h]
+\centering
+\caption{Maximum value of the fitness function by algorithm}
+\label{tab:averagefirst}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+GEN & HM & TS  & GA    & SA    \\ \hline
+1          & 11238 & 11238         & 11238 & 11238 \\ \hline
+2          & 11804 & 11596         & 11801 & 10677 \\ \hline
+3          & 11787 & 8932          & 8411  & 10869 \\ \hline
+4          & 11723 & 9753          & 9611  & 10760 \\ \hline
+5          & 8164  & 9780          & 10738 & 4794  \\ \hline
+6          & 11802 & 9781          & 11086 & 6120  \\ \hline
+7          & 9985  & 5782          & 11272 & 11798 \\ \hline
+8          & 11803 & 11749         & 10084 & 11309 \\ \hline
+9          & 11806 & 7284          & 11633 & 10766 \\ \hline
+10         & 11807 & 9386          & 11717 & 4557  \\ \hline
+11         & 11802 & 9653          & 11802 & 11151 \\ \hline
+12         & 11807 & 10594         & 11793 & 9434  \\ \hline
+13         & 11802 & 10848         & 10382 & 11805 \\ \hline
+14         & 11801 & 11551         & 7219  & 10237 \\ \hline
+15         & 11807 & 1701          & 7189  & 9338  \\ \hline
+16         & 11813 & 6203          & 11758 & 5321  \\ \hline
+17         & 11805 & 10720         & 10805 & 11748 \\ \hline
+18         & 9600  & 6371          & 11698 & 7818  \\ \hline
+19         & 11733 & 8160          & 11648 & 11509 \\ \hline
+20         & 9589  & 9428          & 11805 & 4813  \\ \hline
+21         & 11800 & 9463          & 11798 & 10801 \\ \hline
+22         & 11805 & 11799         & 11804 & 6029  \\ \hline
+23         & 11836 & 11655         & 11800 & 3579  \\ \hline
+24         & 11805 & 11512         & 11803 & 5761  \\ \hline
+25         & 11804 & 11573         & 11802 & 9680  \\ \hline
+26         & 11800 & 11575         & 11403 & 9388  \\ \hline
+27         & 11805 & 10691         & 11745 & 9465  \\ \hline
+\end{tabular}
+\end{table}
+
+The signed-rank Wilcoxon non-parametrical procedure was used for comparing the results with Z-value and W-value. The significant level adopted was 0.05. The Z-value obtained was -2.2736 and the p-value was 0.0232. The W-value obtained was 78. The critical value of W for N = 25 at p$$ 0.05 was 89.The result was significant at p$$ 0.05. The procedure showed that there was a significant improvement in the results with the collaborative approach.
+
 \section{The Ramp and Circuitous Treasure Hunt experiment}
 
 The experiment was carried out for 8 continuous hours.  All tests in the experiment were conducted without the need of a tester, automating the process of executing and designing performance test scenarios.In this experiment, Scenarios were generated with the Ramp and Circuitous Treasure antipattern as well as scenarios with Happy Scenario 1, Happy Scenario 2 and mixed scenarios. The Fig. \ref{fig:fitnessebygeneration1} and \ref{fig:fitnessebygeneration1-2} presents the fitnesse value obtained by each metaheuristic. The SA algorithm obtained the worst fitnesse values. Hybrid metaheuristic obtained the better fitnesse values. 
@@ -277,7 +378,7 @@ The small number of samples of the experiment is insufficient to give a statisti
 \centering
 \caption{Example of individuals obtained in the second experiment}
 \label{tab:secondexperiment1}
-\begin{tabular}{|p{0.2cm}|l|l|l|p{0.60cm}|p{0.60cm}|p{0.60cm}|}
+\begin{tabular}{|p{0.2cm}|l|l|l|p{1.00cm}|p{1.00cm}|p{1.00cm}|}
 \hline
 Id&Fit&Scenario&Users&90per&80per&70per\\ \hline
 \multirow{2}{*}{1} & \multirow{2}{*}{35800} & MyHome        & 31              & \multirow{2}{*}{30} & \multirow{2}{*}{29} & \multirow{2}{*}{10} \\ \cline{3-4}
