@@ -1,8 +1,8 @@
 \chapter{Experiments}
 
-In this section, We present the results of experiments which we carried out to verify the antipatterns  implementation, the fitnesse objective function and the metaheuristics used by the testbed tool. We conducted two experiments in order to verify the effectiveness of the testbed tool.
+In this section, We present the results of experiments which we carried out to verify the antipatterns  implementation, the fitness objective function and the metaheuristics used by the testbed tool. We conducted two experiments in order to verify the effectiveness of the testbed tool.
 
-The experiments ran for 17 generations. The experiments used an initial population of 4 individuals by metaheuristic. The genetic algorithm used the top 10 individuals from each generation in the crossover operation. The Tabu list was configured with the size of 10 individuals and expired every 2 generations.  The mutation operation was applied to 10\% of the population on each generation. The experiments uses tabu search, genetic algorithms and the hybrid metaheuristic approach proposed by Gois et al. \cite{Gois2016}. The objective function applied is intended to maximize the number of users and minimize the response time of the scenarios being tested.  In this experiments, better fitnesse values meaning to find scenarios with more users and a low values of response time. A penalty is applied when the response time is greater than the  maximum response time expected. The experiments used the following fitness (goal) function. :
+The experiments ran for 17 generations. The experiments used an initial population of 4 individuals by metaheuristic. The genetic algorithm used the top 10 individuals from each generation in the crossover operation. The Tabu list was configured with the size of 10 individuals and expired every 2 generations.  The mutation operation was applied to 10\% of the population on each generation. The experiments uses tabu search, genetic algorithms and the hybrid metaheuristic approach proposed by Gois et al. \cite{Gois2016}. The objective function applied is intended to maximize the number of users and minimize the response time of the scenarios being tested.  In this experiments, better fitness values meaning to find scenarios with more users and a low values of response time. A penalty is applied when the response time is greater than the  maximum response time expected. The experiments used the following fitness (goal) function. :
 
 \begin{equation}
 \begin{aligned}
@@ -136,15 +136,15 @@ The signed-rank Wilcoxon non-parametrical procedure was used for comparing the r
 
 \section{The Ramp and Circuitous Treasure Hunt experiment}
 
-The experiment was carried out for 8 continuous hours.  All tests in the experiment were conducted without the need of a tester, automating the process of executing and designing performance test scenarios.In this experiment, Scenarios were generated with the Ramp and Circuitous Treasure antipattern as well as scenarios with Happy Scenario 1, Happy Scenario 2 and mixed scenarios. The Fig. \ref{fig:fitnessebygeneration1} and \ref{fig:fitnessebygeneration1-2} presents the fitnesse value obtained by each metaheuristic. The SA algorithm obtained the worst fitnesse values. Hybrid metaheuristic obtained the better fitnesse values. 
+The experiment was carried out for 8 continuous hours.  All tests in the experiment were conducted without the need of a tester, automating the process of executing and designing performance test scenarios.In this experiment, Scenarios were generated with the Ramp and Circuitous Treasure antipattern as well as scenarios with Happy Scenario 1, Happy Scenario 2 and mixed scenarios. The Fig. \ref{fig:fitnessbygeneration1} and \ref{fig:fitnessbygeneration1-2} presents the fitness value obtained by each metaheuristic. The SA algorithm obtained the worst fitness values. Hybrid metaheuristic obtained the better fitness values. 
 
 
 \begin{figure}[H]
 
 \centering
 \includegraphics[width=0.7\textwidth]{./images/experiment1-1.png}
-\caption{Fitnesse value obtained by Search Method }
-\label{fig:fitnessebygeneration1}
+\caption{fitness value obtained by Search Method }
+\label{fig:fitnessbygeneration1}
 \end{figure}
 
 
@@ -152,8 +152,8 @@ The experiment was carried out for 8 continuous hours.  All tests in the experim
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{./images/experiment1-2.png}
-\caption{Fitnesse value obtained by Search Method without SA metaheuristic.}
-\label{fig:fitnessebygeneration1-2}
+\caption{fitness value obtained by Search Method without SA metaheuristic.}
+\label{fig:fitnessbygeneration1-2}
 
 \end{figure}
 
@@ -170,24 +170,24 @@ Despite having obtained the best fitness value in each generation, the Hybrid al
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{./images/experiment1-4.png}
-\caption{Average, median, maximum and minimal fitnesse value by Search Method}
+\caption{Average, median, maximum and minimal fitness value by Search Method}
 \label{fig:boxplot1}
 
 \end{figure}
 
-The Fig. \ref{fig:summaryboxplot1} presents the maximum, average, median and minimum fitnesse value by generation. The maximun fitnesse value increases at each generation. The Fig. \ref{fig:density1} presents the density graph of number of users by fitnesse value. The range between 100 and 150 users has the highest number of individuals found with higher fitnesse value.
+The Fig. \ref{fig:summaryboxplot1} presents the maximum, average, median and minimum fitness value by generation. The maximun fitness value increases at each generation. The Fig. \ref{fig:density1} presents the density graph of number of users by fitness value. The range between 100 and 150 users has the highest number of individuals found with higher fitness value.
 
 \begin{figure}[H]
 
 \centering
 \includegraphics[width=1\textwidth]{./images/experiment1-5.png}
-\caption{Fitnesse value by generation}
+\caption{fitness value by generation}
 \label{fig:summaryboxplot1}
 \end{figure}
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{./images/experiment1-6.png}
-\caption{Density graph of number of users by fitnesse value}
+\caption{Density graph of number of users by fitness value}
 \label{fig:density1}
 
 \end{figure}
@@ -205,7 +205,7 @@ Table \ref{tab:bestindividuals} shows 4 individuals with 143 to 146 users. These
 \label{tab:bestindividuals}
 \begin{tabular}{lllllll}
 \rowcolor[HTML]{C0C0C0} 
-\textbf{Search Method} & \textbf{Generation} & \textbf{Users} & \textbf{Fitnesse Value} & \textbf{Happy 2} & \textbf{Happy 1} & \textbf{Response Time} \\
+\textbf{Search Method} & \textbf{Generation} & \textbf{Users} & \textbf{fitness Value} & \textbf{Happy 2} & \textbf{Happy 1} & \textbf{Response Time} \\
 Hybrid & 17 & 145 & 432760 & 64 & 81 & 12 \\
 Hybrid & 17 & 145 & 432740 & 46 & 99 & 13 \\
 Hybrid & 17 & 146 & 431760 & 54 & 92 & 12 \\
@@ -213,7 +213,7 @@ Hybrid & 16 & 143 & 426740 & 30 & 113 & 13
 \end{tabular}
 \end{table}
 
-Fig. \ref{fig:responsetimegenerationalltests1} presents the response time by number of users of individuals with Happy Scenario 1 and Happy Scenario 2. The Figure illustrates that the individuals with best fitnesse value has more users and minor response time. The Fig. \ref{fig:fitnessegenerationalltests1-1} presents the response time by number of users of individuals with the Ramp and Circuitous Treasure antipatterns scenarios. The Figure illustrates the smallest number of individuals with the antipatterns when compared to individuals who use the happy scenarios.
+Fig. \ref{fig:responsetimegenerationalltests1} presents the response time by number of users of individuals with Happy Scenario 1 and Happy Scenario 2. The Figure illustrates that the individuals with best fitness value has more users and minor response time. The Fig. \ref{fig:fitnessgenerationalltests1-1} presents the response time by number of users of individuals with the Ramp and Circuitous Treasure antipatterns scenarios. The Figure illustrates the smallest number of individuals with the antipatterns when compared to individuals who use the happy scenarios.
 
 
 \begin{figure}[H]
@@ -228,11 +228,11 @@ Fig. \ref{fig:responsetimegenerationalltests1} presents the response time by num
 \centering
 \includegraphics[width=1\textwidth]{./images/experiment1-8.png}
 \caption{Response time by number of users of individuals with the Ramp and Circuitous Treasure antipatterns}
-\label{fig:fitnessegenerationalltests1-1}
+\label{fig:fitnessgenerationalltests1-1}
 
 \end{figure}
 
-In the first experiment, We conclude that the metaheuristics converged to scenarios with an happy path, excluding the scenarios with antipatterns. The hybrid metaheuristic returned individuals with higher fitness scores. However, the Hybrid metaheuristic made twice as many requests than Tabu Search to overcome it. The SA algorithm obtained the worst fitnesse values. The algorithm initially used a scenario with the Ramp and Circuitous Treasure antipatterns  and found neighbors that still using the antipatterns over the 17 generations of the experiment.
+In the first experiment, We conclude that the metaheuristics converged to scenarios with an happy path, excluding the scenarios with antipatterns. The hybrid metaheuristic returned individuals with higher fitness scores. However, the Hybrid metaheuristic made twice as many requests than Tabu Search to overcome it. The SA algorithm obtained the worst fitness values. The algorithm initially used a scenario with the Ramp and Circuitous Treasure antipatterns  and found neighbors that still using the antipatterns over the 17 generations of the experiment.
 
 
 
@@ -240,17 +240,17 @@ In the first experiment, We conclude that the metaheuristics converged to scenar
 \FloatBarrier
 \section{The Tower Babel  and Unbalanced Processing experiment}
 
-The experiment was carried out for 6 continuous hours. All tests in the experiment were conducted without the need of a tester. In this experiment, Scenarios were generated with Tower Babel and Unbalanced Processing antipattern as well as scenarios with Happy Scenario 1, Happy Scenario 2 and mixed scenarios. The Fig. \ref{fig:fitnessebygeneration2}  presents the fitnesse value obtained by each metaheuristic. The SA algorithm obtained the worst fitnesse values. Hybrid metaheuristic obtained the better fitnesse values.
+The experiment was carried out for 6 continuous hours. All tests in the experiment were conducted without the need of a tester. In this experiment, Scenarios were generated with Tower Babel and Unbalanced Processing antipattern as well as scenarios with Happy Scenario 1, Happy Scenario 2 and mixed scenarios. The Fig. \ref{fig:fitnessbygeneration2}  presents the fitness value obtained by each metaheuristic. The SA algorithm obtained the worst fitness values. Hybrid metaheuristic obtained the better fitness values.
 
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=.9\textwidth]{./images/experiment2-7.png}
 \caption{itnesse value obtained by Search Method}
-\label{fig:fitnessebygeneration2}
+\label{fig:fitnessbygeneration2}
 \end{figure}
 
-As in the first experiment, the Hybrid algorithm performs twice as many requests as the second one, the tabu search (Fig. \ref{fig:numberofrequestsbysearchmethod2}). The Fig. \ref{fig:boxplot2} shows the average, minimal e maximum value by search method. The Fig. \ref{fig:summaryboxplot2} presents the maximum, average, median and minimum fitnesse value by generation. The maximun fitnesse value increases at each generation. The Fig. \ref{fig:density2} presents the density graph of number of users by fitnesse value. The range between 100 and 150 users has the highest number of individuals found with higher fitnesse value.
+As in the first experiment, the Hybrid algorithm performs twice as many requests as the second one, the tabu search (Fig. \ref{fig:numberofrequestsbysearchmethod2}). The Fig. \ref{fig:boxplot2} shows the average, minimal e maximum value by search method. The Fig. \ref{fig:summaryboxplot2} presents the maximum, average, median and minimum fitness value by generation. The maximun fitness value increases at each generation. The Fig. \ref{fig:density2} presents the density graph of number of users by fitness value. The range between 100 and 150 users has the highest number of individuals found with higher fitness value.
 
 
 \begin{figure}[h]
@@ -289,7 +289,7 @@ As in the first experiment, the Hybrid algorithm performs twice as many requests
 
 Table \ref{tab:bestindividuals2} shows 4 individuals with 145 to 148 users.  The first individual has 72 users on Happy Scenario 2, 30 users on Happy Scenario 1, 46 user with the antipattern Tower Babel and a response time of 11 seconds. Despite the fact of doing 300 conversions of the JSON standard for XML. The antipattern implementation does not return a much higher response time than happy paths. While happy paths returns from 10 to 15 seconds from a single user, Tower Babel antipattern has a response time of 10 to 29 seconds. None of the best individuals found implements the Unbalanced Processing antipattern.
 
-Fig. \ref{fig:responsetimegenerationalltests2} presents the response time by number of users of individuals with Happy Scenario 1 and Happy Scenario 2. The Figure illustrates that the individuals with best fitnesse value has more users and minor response time. The Fig. \ref{fig:fitnessegenerationalltests2-1} presents the response time by number of users of individuals with with Unbalanced Processing antipatterns scenarios. The Figure illustrates the smallest number of individuals with the  Unbalanced Processing antipattern when compared to individuals who use the happy scenarios and the Tower Babel antipattern.
+Fig. \ref{fig:responsetimegenerationalltests2} presents the response time by number of users of individuals with Happy Scenario 1 and Happy Scenario 2. The Figure illustrates that the individuals with best fitness value has more users and minor response time. The Fig. \ref{fig:fitnessgenerationalltests2-1} presents the response time by number of users of individuals with with Unbalanced Processing antipatterns scenarios. The Figure illustrates the smallest number of individuals with the  Unbalanced Processing antipattern when compared to individuals who use the happy scenarios and the Tower Babel antipattern.
 
 
 
@@ -305,11 +305,11 @@ Fig. \ref{fig:responsetimegenerationalltests2} presents the response time by num
 \centering
 \includegraphics[width=1\textwidth]{./images/experiment2-6.png}
 \caption{Response time by number of users of individuals with Unbalanced Processing antipattern}
-\label{fig:fitnessegenerationalltests2-1}
+\label{fig:fitnessgenerationalltests2-1}
 \end{figure}
 
 
-We conclude that the metaheuristics converged to scenarios with an happy path and Tower Babel antipattern, excluding the scenarios with Unbalanced Processing antipattern. The hybrid metaheuristic returned individuals with higher fitness scores. However, the Hybrid metaheuristic made twice as many requests than Tabu Search to overcome it. The SA algorithm obtained the worst fitnesse values. The algorithm initially used a scenario with an antipattern and found neighbors that still using an antipattern over the 17 generations of the experiment. The individual with best fitnesse value has 72 users on Happy Scenario 2, 30 users on Happy Scenario 1, 46 user with the antipattern Tower Babel and a response time of 11 seconds.
+We conclude that the metaheuristics converged to scenarios with an happy path and Tower Babel antipattern, excluding the scenarios with Unbalanced Processing antipattern. The hybrid metaheuristic returned individuals with higher fitness scores. However, the Hybrid metaheuristic made twice as many requests than Tabu Search to overcome it. The SA algorithm obtained the worst fitness values. The algorithm initially used a scenario with an antipattern and found neighbors that still using an antipattern over the 17 generations of the experiment. The individual with best fitness value has 72 users on Happy Scenario 2, 30 users on Happy Scenario 1, 46 user with the antipattern Tower Babel and a response time of 11 seconds.
 
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
@@ -320,7 +320,7 @@ We conclude that the metaheuristics converged to scenarios with an happy path an
 \label{tab:bestindividuals2}
 \begin{tabular}{llllllll}
 \rowcolor[HTML]{FFCCC9} 
-\textbf{Search Method} & \textbf{Generation} & \textbf{Users} & \textbf{Fitnesse Value} & \textbf{Happy 2} & \textbf{Tower} & \textbf{Happy 1} & \textbf{Time} \\ 
+\textbf{Search Method} & \textbf{Generation} & \textbf{Users} & \textbf{fitness Value} & \textbf{Happy 2} & \textbf{Tower} & \textbf{Happy 1} & \textbf{Time} \\ 
 \multicolumn{1}{l}{Hybrid} & \multicolumn{1}{l}{17} & \multicolumn{1}{l}{148} & \multicolumn{1}{l}{437780} & \multicolumn{1}{l}{72} & \multicolumn{1}{l}{46} & \multicolumn{1}{l}{30} & \multicolumn{1}{l}{11} \\ 
 \multicolumn{1}{l}{Hybrid} & \multicolumn{1}{l}{17} & \multicolumn{1}{l}{145} & \multicolumn{1}{l}{432740} & \multicolumn{1}{l}{71} & \multicolumn{1}{l}{15} & \multicolumn{1}{l}{59} & \multicolumn{1}{l}{13} \\ 
 \multicolumn{1}{l}{Hybrid} & \multicolumn{1}{l}{16} & \multicolumn{1}{l}{146} & \multicolumn{1}{l}{431800} & \multicolumn{1}{l}{72} & \multicolumn{1}{l}{31} & \multicolumn{1}{l}{43} & \multicolumn{1}{l}{10} \\ 

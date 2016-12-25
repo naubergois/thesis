@@ -2,11 +2,6 @@
   \newcommand{\singleletter}[1]{#1} \newcommand{\switchargs}[2]{#2#1}
 \begin{thebibliography}{10}
 
-\bibitem{Afzal2009}
-{A systematic review of search-based testing for non-functional system
-  properties}.
-\newblock {\em Information and Software Technology}, 51(6):957--976, 2009.
-
 \bibitem{Afzal2009a}
 Wasif Afzal, Richard Torkar, and Robert Feldt.
 \newblock {A systematic review of search-based testing for non-functional
@@ -17,6 +12,12 @@ Wasif Afzal, Richard Torkar, and Robert Feldt.
 Jarmo T.~JT Alander, Timo Mantere, and Pekka Turunen.
 \newblock {Genetic Algorithm Based Software Testing}.
 \newblock In {\em Neural Nets and Genetic Algorithms}, 1998.
+
+\bibitem{Alba2008}
+Enrique Alba and Francisco Chicano.
+\newblock {Observations in using parallel and sequential evolutionary
+  algorithms for automatic software testing}.
+\newblock {\em Computers and Operations Research}, 35(10):3161--3183, 2008.
 
 \bibitem{Alesio2015}
 Stefano D~I Alesio, Lionel~C Briand, Shiva Nejati, and Arnaud Gotlieb.
@@ -95,6 +96,10 @@ Vittorio Cortellessa and Laurento Frittella.
 \newblock {A Framework for Automated Generation of Architectural Feedback from
   Software Performance Analysis}.
 \newblock pages 171--185, 2007.
+
+\bibitem{dean2003managing}
+Leffingwell Dean and Widrig Don.
+\newblock Managing software requirements: A use case approach, 2003.
 
 \bibitem{DiAlesio2013}
 S~{Di Alesio}, S~Nejati, L~Briand, and A~Gotlieb.
@@ -202,6 +207,13 @@ Mark Harman, Yue Jia, and Yuanyuan Zhang.
 \newblock {\em 8th IEEE International Conference on Software Testing,
   Verification and Validation (ICST)}, (Icst), 2015.
 
+\bibitem{Harman2010}
+Mark Harman and Phil McMinn.
+\newblock {A theoretical and empirical study of search-based testing: Local,
+  global, and hybrid search}.
+\newblock {\em IEEE Transactions on Software Engineering}, 36(2):226--247,
+  2010.
+
 \bibitem{J.WegenerK.GrimmM.GrochtmannH.Sthamer1996}
 B.~Jones {J. Wegener, K. Grimm, M. Grochtmann, H. Sthamer}.
 \newblock {Systematic testing of real-time systems}.
@@ -305,6 +317,11 @@ Michael~O Sullivan, Siegfried V\"{o}ssner, Joachim Wegener, and Daimler-benz
 El-Ghazali Talbi.
 \newblock {\em Metaheuristics: from design to implementation}, volume~74.
 \newblock John Wiley \& Sons, 2009.
+
+\bibitem{Talbi2012}
+El-Ghazali Talbi.
+\newblock {\em {Hybrid Metaheuristics}}, volume~2.
+\newblock 2012.
 
 \bibitem{Tracey1998}
 N~J Tracey, J~a Clark, and K~C Mander.

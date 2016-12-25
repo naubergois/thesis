@@ -166,7 +166,7 @@ The Fig. \ref{fig:testbedarch} presents the main architecture of the Testbed sol
 
 \subsubsection{Test Module}
 
-The Test Module is responsible for load all classes that extends AbstractAlgorithm in the classpath and perform the tests under the application. The Emulator Module provides successful scenarios and antipatterns implementations. The heuristics are executed in order to select the scenarios with failures or high response times. The Fig. \ref{fig:step1} presents the first feature of Test Module where a initial population it is created and IAdapter with JMeterEngine performs all tests and apply a fitnesse value to each workload.
+The Test Module is responsible for load all classes that extends AbstractAlgorithm in the classpath and perform the tests under the application. The Emulator Module provides successful scenarios and antipatterns implementations. The heuristics are executed in order to select the scenarios with failures or high response times. The Fig. \ref{fig:step1} presents the first feature of Test Module where a initial population it is created and IAdapter with JMeterEngine performs all tests and apply a fitness value to each workload.
 
 \begin{figure}[h]
 \begin{minipage}{.5\textwidth}
@@ -183,12 +183,12 @@ The Test Module is responsible for load all classes that extends AbstractAlgorit
 \end{minipage}
 \end{figure} 
 
-The Fig. \ref{fig:step2} presents the Test Module life cycle. The life cycle iterate over two steps: The first step apply a metaheurist to select or generate a new set of workloads based on selection criteria. The second step run each workload with the JMeterEngine and obtain a fitnesse value based on some objective function. The red circles represent the workload that contain errors. The green circles represents the workloads with no errors and low acceptable response time. The testbed tool uses as default objective function the equation:
+The Fig. \ref{fig:step2} presents the Test Module life cycle. The life cycle iterate over two steps: The first step apply a metaheurist to select or generate a new set of workloads based on selection criteria. The second step run each workload with the JMeterEngine and obtain a fitness value based on some objective function. The red circles represent the workload that contain errors. The green circles represents the workloads with no errors and low acceptable response time. The testbed tool uses as default objective function the equation:
 
 
 \begin{equation}
 \begin{aligned}
-fitnesse=90percentileweigth* 90percentiletime\\
+fitness=90percentileweigth* 90percentiletime\\
 +80percentileweigth*80percentiletime\\+
 70percentileweigth*70percentiletime+\\
 maxResponseWeigth*maxResponseTime+\\
@@ -196,7 +196,7 @@ numberOfUsersWeigth*numberOfUsers-penalty
 \end{aligned}
 \end{equation}
 
-The use of presented fitnesse value by each metaheuristic it's optional. Each Metaheuristic could define your own objective function. The proposed  fitness function uses a series of manually adjustable user-defined weights (90percentileweight, 80percentileweight,  70percentileweight, maxResponseWeight, and numberOfUsersWeight). These weights make it possible to customize the search plugin's functionality. A penalty is applied when an application under test takes a longer time to respond than the level of service. After all these steps the cycle begins until the maximum number of generations it is reached. The Fig. \ref{fig:heuristicclassdiagram} shows the  class diagram for custom and provided heuristics. All heuristic classes extends the class AbstractAlgorithm. The heuristics receives  as input a  list of workspaces and a list of testcases. The workspace represents each individual in the search space.
+The use of presented fitness value by each metaheuristic it's optional. Each Metaheuristic could define your own objective function. The proposed  fitness function uses a series of manually adjustable user-defined weights (90percentileweight, 80percentileweight,  70percentileweight, maxResponseWeight, and numberOfUsersWeight). These weights make it possible to customize the search plugin's functionality. A penalty is applied when an application under test takes a longer time to respond than the level of service. After all these steps the cycle begins until the maximum number of generations it is reached. The Fig. \ref{fig:heuristicclassdiagram} shows the  class diagram for custom and provided heuristics. All heuristic classes extends the class AbstractAlgorithm. The heuristics receives  as input a  list of workspaces and a list of testcases. The workspace represents each individual in the search space.
 
 
 Each metaheuristic class returns a list of workspaces (the individuals selected to the next generation). The Listing presents the method that performs the search of classes that extends Abstract Algorithm

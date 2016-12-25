@@ -166,10 +166,13 @@ There are  several approaches to design generative or descriptive workloads:
 
 \begin{itemize}
 \item Model-based Stress testing: a usage model is proposed to simulate users’ behaviors.
+\item Feedback-Directed Learning Software Testing:\cite{Luo2015} \cite{Wert2014}
 \item Search-based Stress testing:
 \end{itemize}
 
-Some research aproaches proposes models to simulate or  generate realistic loads. A User Community Modeling Language (UCML) is a set of symbols that can be used to create visual system usage models and depict associated parameters \cite{Wang2013}.
+\subsection{Model-based Stress Testing}
+
+Some research aproaches proposes models to simulate or  generate realistic loads. A User Community Modeling Language (UCML) is a set of symbols that can be used to create visual system usage models and depict associated parameters \cite{Wang2013}. The Fig. \ref{fig:ucml} shows a sample where all users realize a login into the application unde test. Once logged in, 40\% of the users navigates on the aplication, 30\%  of the users realizes downloads. 20\% of users realizes uploads and 10\% of users performs deletions.
 
 
 
@@ -181,10 +184,18 @@ Some research aproaches proposes models to simulate or  generate realistic loads
 
 \end{figure}
 
+Another technique to create workload models it is Stochastic Formcharts. Stochastic Formcharts are the combination of form oriented model and probability features. The Fig. \ref{fig:stform} shows a sample where all users have a probability of 100\% of realize a login into the application under test. Once logged in, users have a probability of 40\% of naviagte on the application and so on \cite{Draheim2006b}.
 
 
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{./images/stochastic.png}
+\caption{Stochastic Formcharts Example \cite{Draheim2006b} \cite{Wang2013}}
+\label{fig:stform}
+\end{figure}
 
-\section{Research Question 2:How How is a stress test executed and automated?}
+
+\section{Research Question 2: How is a stress test executed and automated?}
 
 The stress test execution phase consists of three phases:
 

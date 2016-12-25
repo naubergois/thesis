@@ -1,19 +1,19 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Performance antipatterns\relax }}{32}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Performance antipatterns\relax }}{31}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Distribution of the research studies over the range of applied metaheuristics\relax }}{47}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Distribution of the research studies over the range of applied metaheuristics\relax }}{46}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Maximum value of the fitness function by algorithm\relax }}{79}
-\contentsline {table}{\numberline {7.2}{\ignorespaces Best individuals found in the first experiment\relax }}{82}
-\contentsline {table}{\numberline {7.3}{\ignorespaces Best individuals found in the second experiment\relax }}{87}
-\contentsline {table}{\numberline {7.4}{\ignorespaces Results obtained from the second experiment\relax }}{88}
-\contentsline {table}{\numberline {7.5}{\ignorespaces Example of individuals obtained in the second experiment\relax }}{89}
-\contentsline {table}{\numberline {7.6}{\ignorespaces Percentage of genes in each scenario by generation \relax }}{89}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {7.1}{\ignorespaces Maximum value of the fitness function by algorithm\relax }}{74}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Best individuals found in the first experiment\relax }}{77}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Best individuals found in the second experiment\relax }}{82}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Results obtained from the second experiment\relax }}{83}
+\contentsline {table}{\numberline {7.5}{\ignorespaces Example of individuals obtained in the second experiment\relax }}{84}
+\contentsline {table}{\numberline {7.6}{\ignorespaces Percentage of genes in each scenario by generation \relax }}{84}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

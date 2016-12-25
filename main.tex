@@ -98,6 +98,13 @@ framexleftmargin=20pt
 \newmdenv[innerlinewidth=0.5pt, roundcorner=4pt,innerleftmargin=6pt,
 innerrightmargin=6pt,innertopmargin=6pt,innerbottommargin=6pt]{mybox}
 
+
+\usepackage{titlesec}
+\newcommand*{\justifyheading}{\raggedleft}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\justifyheading}{\chaptertitlename\ \thechapter}
+  {20pt}{\Huge}[{\titlerule[0.8pt]}]
+
 \begin{document}
 
 \include{cover}
