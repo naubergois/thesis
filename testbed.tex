@@ -80,8 +80,14 @@ numberOfUsersWeigth*numberOfUsers-penalty
 \end{aligned}
 \end{equation}
 
-The proposed solution's fitness function uses a series of manually adjustable user-defined weights (90percentileweight, 80percentileweight,  70percentileweight, maxResponseWeight, and numberOfUsersWeight). These weights make it possible to customize the search plugin's functionality. A penalty is applied when an application under test takes a longer time to respond than the level of service.
+The proposed solution's fitness function uses a series of manually adjustable user-defined weights (90percentileweight, 80percentileweight,  70percentileweight, maxResponseWeight, and numberOfUsersWeight). These weights make it possible to customize the search plugin's functionality. A penalty is applied when an application under test takes a longer time to respond than the level of service. The penalty is calculated by the follow equation:
 
+\begin{equation}
+\begin{aligned}
+penalty=100 * \Delta \\
+\Delta=(t_{Current Response Time} - t_{Maximum Response Time Expected})\\
+\end{aligned}
+\end{equation}
 
 
 \section{IAdapter}
@@ -121,10 +127,7 @@ WorkLoadThreadGroup is a component that creates an initial population and config
 \label{fig:tela1iadapter}
 \end{figure}
 
-WorkLoadThreadGroup component uses the GeneticAlgorithm, TabuSearch and SimulateAnnealing classes. The Listing \ref{tabusearchclass} shows the Tabu Search class. The class has one main method named verify that remove all workload that are contained in the tabu list. The workloads are removed from tabu list when a expiration criteria is attended.
-
-
-The WorkLoadSaver component is responsible for saving all data in the database. The operation of the component only requires its inclusion in the test script.
+WorkLoadThreadGroup component uses the GeneticAlgorithm, TabuSearch and SimulateAnnealing classes.  The WorkLoadSaver component is responsible for saving all data in the database. The operation of the component only requires its inclusion in the test script.
 
 WorkLoadController represents a scenario of the test. All actions necessary to test an application should be included in this component. All instances of the component need to login into the application under test and bring the application back to its original state.
 

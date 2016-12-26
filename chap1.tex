@@ -31,27 +31,6 @@ A stress test usually lasts for several hours or even a few days and only tests 
 
 Search-based testing is seen as a promising approach to verifying timing constraints \cite{Afzal2009a}. A common objective of a load search-based test is to find  scenarios that produce execution times that violate the specified timing constraints \cite{Sullivan}. 
 
-This paper has two main goals:
-
-\begin{itemize}
-\item  To ascertain whether hybrid algorithms are superior to single metaheuristics when solving stress testing problem.
-\item To improve the process of stress testing with a tool and a test model that evolves during its execution.
-\end{itemize}
-
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.25\textwidth]{./images/solution.png}
-\caption{Illustrative example showing how IAdapter should be used}
-\label{fig:solution}
-\end{figure}
-
-
-This paper proposes the use of a hybrid metaheuristic approach that combines genetic algorithms, simulated annealing, and tabu search algorithms in stress tests. A tool named IAdapter (www.iadapter.org, github.com/naubergois/newiadapter), a JMeter plugin for performing search-based load tests, was developed. Two experiments were conducted to validate the proposed approach. The first experiment was performed on an emulated component, and the second one was performed using an installed Moodle application.
-
-Fig. \ref{fig:solution} shows an example where IAdapter stress test automation finds two test scenarios. The first scenario presents a test that has an HTTP 500 error, and the second scenario presents a test that has a response time higher than 30 seconds. 
-
-
 \section{Motivation}
 
 There is strong empirical evidence, that deficient
@@ -68,19 +47,23 @@ growth in the complexity of software makes the cost of testing has only continue
 space are evaluated with respect to the fitness function using a metaheuristic search technique. Search-based software testing is the application of metaheuristic search techniques to generate software
 tests cases or perform test execution \cite{Afzal2009a} \cite{Gay}.
 
+Performance testing of enterprise applications is manual,laborious, costly, and not particulary effective. When running many different test cases and observing application’s behavior, testers intuitively sense that there are certain properties of test cases that are likely to reveal performance bugs. Distilling these properties automatically into rules that describe how these properties affect performance of the application is a subgoal of our approach \cite{Grechanik2012}.
 
 Experimentation is important to realistically and accurately test and evaluate search based tests. Experimentation on algorithms is usually made by simulation. Experiments involving search based tests are inherently complex and typically time-consuming to set up and execute. Such experiments are also extremely difficult to repeat. People who might want to duplicate published results, for example, must devote substantial resources to setting up and the environmental conditions are likely to be substantially different.
 
+Below we briefly describe the related research and practices on stress testing:
 
 
 
-\section{State of Research on the Search-Based Stress  Testing}
+\subsection{State of Research on the Search-Based Stress  Testing}
 
-In the academic context, a number of studies proving the efficacy of metaheuristics to automate test execution can be found in literature \cite{Afzal2009a}. 
+In the academic context, a number of studies proving the efficacy of metaheuristics to automate test execution can be found in literature. A variety of metaheuristic search techniques are found to be applicable for non-functional testing including simulated annealing, tabu search, genetic algorithms, ant colony methods, grammatical evolution, genetic programming and swarm intelligence methods. Most research studies are limited to making prototype.  The presented research work is distinguished from others by having extend a industrial tool using a hybrid approach and q-learning \cite{Afzal2009a}.  
 
-\section{State of Industrial Practices on Stress Tests}
+\subsection{State of Industrial Practices on Stress Tests}
 
-The stress testing process in the industry still follows a non-automated and ad-hoc model where the designer or tester is responsible for running the tests analyzing the results and deciding which new tests should be performed \cite{Lewis2005}. Current approaches to load testing suffer from limitations. Their cost-effectiveness is highly dependent on the particular test scenarios that are used yet there is no support for choosing those scenarios. A poor choice of scenarios could lead to underestimating system response time thereby missing an opportunity to detect a performance fault \cite{Zhang2011}.
+The stress testing process in the industry still follows a non-automated and ad-hoc model where the designer or tester is responsible for running the tests analyzing the results and deciding which new tests should be performed \cite{Lewis2005}. 
+
+Typically, performance testing is accomplished using test scripts, which are programs that test designers write to automate testing. These test scripts performs actions or mimicking user actions on GUI objects of the system to feed input data. Current approaches to load testing suffer from limitations. Their cost-effectiveness is highly dependent on the particular test scenarios that are used yet there is no support for choosing those scenarios. A poor choice of scenarios could lead to underestimating system response time thereby missing an opportunity to detect a performance \cite{Grechanik2012}.
 
 
 \section{Research Hypothesis}
@@ -107,7 +90,8 @@ In this section, we present an overview of the works presented in this thesis. T
 The major contributions of this thesis are:
 
 \begin{itemize}
-\item Hybrid Metaheuristic Approach \cite{Gois2016}: 
+\item Hybrid Metaheuristic Approach \cite{Gois2016}: We present a hybrid metaheuristic approach that uses Genetic Algorithms, Simulated Annealing and Tabu Search  in a collaborative mode.
+
 \item Q-Learning Metaheuristic Approach: 
 \item IAdapter JMeter Plugin:
 \item Testbed Tool: 

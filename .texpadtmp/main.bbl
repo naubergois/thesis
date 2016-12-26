@@ -2,6 +2,10 @@
   \newcommand{\singleletter}[1]{#1} \newcommand{\switchargs}[2]{#2#1}
 \begin{thebibliography}{10}
 
+\bibitem{Bertolino2008}
+{Model-based generation of testbeds for web services}.
+\newblock {\em Testing of Software and {\ldots}}, pages 266--282, 2008.
+
 \bibitem{Afzal2009a}
 Wasif Afzal, Richard Torkar, and Robert Feldt.
 \newblock {A systematic review of search-based testing for non-functional
@@ -188,6 +192,13 @@ Marcelo~Can\'{a}rio Gon\c{c}alves.
   Aplica\c{c}\~{o}es na Nuvem}.
 \newblock 2014.
 
+\bibitem{Grechanik2012}
+Mark Grechanik, Chen Fu, and Qing Xie.
+\newblock {Automatically finding performance problems with feedback-directed
+  learning software testing}.
+\newblock {\em 2012 34th International Conference on Software Engineering
+  (ICSE)}, pages 156--166, June 2012.
+
 \bibitem{Gross2000}
 Hg~Gross, Bryan~F Jones, and David~E Eyres.
 \newblock {Structural performance measure of evolutionary testing applied to
@@ -234,6 +245,23 @@ ZM~Jiang.
 William~E. Lewis, David Dobbs, and Gunasekaran Veerapillai.
 \newblock {\em {Software testing and continuous quality improvement}}.
 \newblock 2005.
+
+\bibitem{MarkUtting2012}
+Alexander~Pretschner {Mark Utting} and Bruno Legeard.
+\newblock {A taxonomy of model-based testing approaches}.
+\newblock {\em Software Testing Verification and Reliability}, 24(8):297--312,
+  2012.
+
+\bibitem{Menasce2002a}
+Daniel~A Menasc{\'{e}} and George Mason.
+\newblock {TPC-W : A Benchmark for E-commerce}.
+\newblock (June):1--6, 2002.
+
+\bibitem{MohammadS.Obaidat}
+Petros~Nicopolitidis {Mohammad S. Obaidat} and Faouzi Zarai.
+\newblock {\em {Modeling and Simulation of Computer Networks and Systems
+  Methodologies and Applications Modeling and Simulation of Computer Networks
+  and Systems Methodologies and}}.
 
 \bibitem{Molyneaux2009}
 Ian Molyneaux.
