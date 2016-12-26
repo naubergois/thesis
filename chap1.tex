@@ -31,6 +31,21 @@ A stress test usually lasts for several hours or even a few days and only tests 
 
 Search-based testing is seen as a promising approach to verifying timing constraints \cite{Afzal2009a}. A common objective of a load search-based test is to find  scenarios that produce execution times that violate the specified timing constraints \cite{Sullivan}. 
 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.4\textwidth]{./images/solution.png}
+\caption{Illustrative example showing how IAdapter should be used}
+\label{fig:solution}
+\end{figure}
+
+
+This research proposes the use of a hybrid metaheuristic approach that combines genetic algorithms, simulated annealing, and tabu search algorithms in stress tests. A tool named IAdapter (github.com/naubergois/newiadapter), a JMeter plugin for performing search-based load tests, was developed. Two experiments were conducted to validate the proposed approach. The first experiment was performed on an emulated component, and the second one was performed using an installed Moodle application.
+
+Fig. \ref{fig:solution} shows an example where IAdapter stress test automation finds two test scenarios. The first scenario presents a test that has an HTTP 500 error, and the second scenario presents a test that has a response time higher than 30 seconds. 
+
+The research also addresses the problem of comparing the use of several metaheuristics in search based tests. When comparing a new metaheuristic to existing ones, it is advantageous to test on the problem instances already tested by previous papers. Then, results will be comparable on a by-instance basis, allowing relative gap calculations between the two heuristics. In this paper, we propose a flexible testbed tool to evaluate various diversity combining metaheuristics in search based software testing. The IAdapter Testbed is an open-source facility that provides software tools for search based test research. The testbed tool emulates test scenarios in a controled environment using mock objects and implementing performance antipatterns. 
+
+
 \section{Motivation}
 
 There is strong empirical evidence, that deficient
@@ -92,17 +107,31 @@ The purpose of this thesis is to show the validity of this hypothesis through th
 
 The major contributions of this thesis are:
 
-\begin{itemize}
-\item Hybrid Metaheuristic Approach \cite{Gois2016}: We present a hybrid metaheuristic approach that uses Genetic Algorithms, Simulated Annealing and Tabu Search  in a collaborative mode.
+\subsection{Hybrid Metaheuristic Approach applied on Stress Testing} 
 
-\item Q-Learning Metaheuristic Approach: 
-\item IAdapter JMeter Plugin:
-\item Testbed Tool: 
-\end{itemize}
+
+
+We present a hybrid metaheuristic approach that uses Genetic Algorithms, Simulated Annealing and Tabu Search  in a collaborative mode. In the first experiment, The  signed-rank Wilcoxon non-parametrical procedure  showed that there was a significant improvement in the results with the Hybrid Metaheuristic approach \cite{Gois2016}.
+
+The second and third experiments ran for 17 generations. The experiments used an initial population of 4 individuals by metaheuristic. All tests in the experiment were conducted without the need of a tester, automating the execution of stress tests with the JMeter tool. In both experiments the hybrid metaheuristic returned individuals with higher fitness scores.
+
+\subsection{Q-Learning Metaheuristic Approach} 
+ 
+ 
+\subsection{IAdapter JMeter Plugin}
+
+\subsection{IAdapter Testbed Tool} 
+
 
 
 
 
 \section{Thesis Organization}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{./images/summarythesis.png}
+\caption{Thesis Organization}
+\label{fig:summarythesis}
+\end{figure}
 

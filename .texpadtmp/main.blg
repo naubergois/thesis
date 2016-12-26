@@ -19,11 +19,11 @@ Repeated entry---line 513 of file ../main.bib
  : @inproceedings{Gois2016
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1011 of file ../main.bib
+Repeated entry---line 1033 of file ../main.bib
  : @article{Bertolino2008
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1302 of file ../main.bib
+Repeated entry---line 1324 of file ../main.bib
  : @book{Halili2008
  :                 ,
 I'm skipping whatever remains of this entry
@@ -50,6 +50,8 @@ Warning--there's a number but no volume in Menasce2002a
 Warning--empty publisher in MohammadS.Obaidat
 Warning--empty year in MohammadS.Obaidat
 Warning--there's a number but no volume in Pohlheim2005
+Warning--can't use both volume and number fields in Tobergte2013
+Warning--empty publisher in Tobergte2013
 Warning--empty journal in Sandler2004
 Warning--empty journal in Sullivan
 Warning--empty year in Sullivan
@@ -57,45 +59,45 @@ Warning--can't use both volume and number fields in Talbi2012
 Warning--empty publisher in Talbi2012
 Warning--empty journal in Tracey1998
 Warning--there's a number but no volume in Wert2013a
-You've used 70 entries,
+You've used 71 entries,
             2118 wiz_defined-function locations,
-            921 strings with 16716 characters,
-and the built_in function-call counts, 22630 in all, are:
-= -- 2245
-> -- 987
-< -- 26
-+ -- 391
-- -- 320
-* -- 1460
-:= -- 3699
-add.period$ -- 206
-call.type$ -- 70
-change.case$ -- 358
+            929 strings with 16825 characters,
+and the built_in function-call counts, 22862 in all, are:
+= -- 2264
+> -- 994
+< -- 27
++ -- 394
+- -- 322
+* -- 1476
+:= -- 3737
+add.period$ -- 209
+call.type$ -- 71
+change.case$ -- 361
 chr.to.int$ -- 0
-cite$ -- 100
-duplicate$ -- 947
-empty$ -- 1743
-format.name$ -- 320
-if$ -- 4767
+cite$ -- 103
+duplicate$ -- 959
+empty$ -- 1765
+format.name$ -- 322
+if$ -- 4814
 int.to.chr$ -- 0
-int.to.str$ -- 70
-missing$ -- 77
-newline$ -- 349
-num.names$ -- 138
-pop$ -- 439
+int.to.str$ -- 71
+missing$ -- 79
+newline$ -- 354
+num.names$ -- 140
+pop$ -- 446
 preamble$ -- 2
-purify$ -- 300
+purify$ -- 303
 quote$ -- 0
-skip$ -- 712
+skip$ -- 719
 stack$ -- 0
-substring$ -- 1316
-swap$ -- 244
-text.length$ -- 26
+substring$ -- 1321
+swap$ -- 247
+text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 258
-warning$ -- 30
-while$ -- 235
-width$ -- 72
-write$ -- 723
+type$ -- 260
+warning$ -- 32
+while$ -- 237
+width$ -- 73
+write$ -- 733
 (There were 3 error messages)

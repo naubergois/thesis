@@ -294,10 +294,10 @@ JMeter has components organized  in a hierarchical manner. The Test Plan is the 
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[]
+\begin{table}[h]
 \centering
-\caption{My caption}
-\label{my-label}
+\caption{Comparison study presented by Pen˜a-Ortiz on the book Modeling and Simulation of Computer Networks and Systems Methodologies [F- Fully attended feature P-Partial attended feature] \cite{MohammadS.Obaidat} }
+\label{tab:loadtool}
 \begin{tabular}{llllll}
 \rowcolor[HTML]{C0C0C0} 
 \textbf{Feature}                                                                              & \textbf{Webstone}   & \textbf{SPECweb}                                                 & \textbf{SURGE}   & \textbf{Web polygraph} & \textbf{TPC-W}     \\
@@ -335,6 +335,7 @@ Open Source                                                                     
 \end{tabular}
 \end{table}
 
+Table \ref{tab:loadtool} summarizes the studied workloads generators as well as the grade (full or partial) in which they fulfill the features described bellow.
 
 \section{Research Question 3: What are the main problems found by stress tests?}
 
@@ -532,7 +533,19 @@ More is less occurs when a system spends more time "thrashing” than accomplish
 The system behavior recorded during the stress test execution phase needs to be analyzed to determine if there are any load-related functional or non-functional problems \cite{Jiang2010}. 
 
 
-There can be many formats of system behavior like resource usage data or end-to-end response time, which is recorded as response time for each individual request. These types of data need to be processed before comparing against threshold values. A proper data summarization technique is needed to describe these many data instances into one number. Some researchers advocate that the 90-percentile response time is a better measurement than the average/medium response time, as the former accounts for most of the peaks, while eliminating the outliers \cite{Jiang2010}.
+There can be many formats of system behavior like resource usage data or end-to-end response time, which is recorded as response time for each individual request. These types of data need to be processed before comparing against threshold values. A proper data summarization technique is needed to describe these many data instances into one number. 
+
+
+There are three types of data summarization techniques proposed in the literature. Jiang et al. use response time analysis as an example to describe the proposed data summarization techniques \cite{Jiang2010}:
+
+\begin{itemize}
+\item Maximum values;
+\item Average or Medium Vales;
+\item Percentile-values. 
+\end{itemize}
+
+
+Some researchers advocate that the 90-percentile response time is a better measurement than the average/medium response time, as the former accounts for most of the peaks, while eliminating the outliers \cite{Jiang2010}.
 
 
 

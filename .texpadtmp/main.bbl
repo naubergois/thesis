@@ -266,8 +266,7 @@ Daniel~A Menasc{\'{e}} and George Mason.
 \bibitem{MohammadS.Obaidat}
 Petros~Nicopolitidis {Mohammad S. Obaidat} and Faouzi Zarai.
 \newblock {\em {Modeling and Simulation of Computer Networks and Systems
-  Methodologies and Applications Modeling and Simulation of Computer Networks
-  and Systems Methodologies and}}.
+  Methodologies and Applications}}.
 
 \bibitem{Molyneaux2009}
 Ian Molyneaux.
@@ -316,6 +315,11 @@ G{\"u}nther~R Raidl, Jakob Puchinger, and Christian Blum.
 R~Raidl.
 \newblock {A Unified View on Hybrid Metaheuristics}.
 \newblock {\em Hybrid Metaheuristics (LNCS 4030)}, pages 1--12, 2006.
+
+\bibitem{Tobergte2013}
+Christian {Raidl, Gunther R and Puchinger, Jakob and Blum}.
+\newblock {\em {Hybrid Metaheuristics An Emerging Approach}}, volume~53.
+\newblock 2013.
 
 \bibitem{Sandler2004}
 Corey Sandler, Tom Badgett, and TM~Thomas.

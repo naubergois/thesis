@@ -19,7 +19,7 @@ generating test according to a test adequacy criterion,encoded as a fitness func
 
 Search–Based Testing uses metaheuristic algorithms to
 automate the generation of test inputs that meet a test
-adequacy criterion. Many algorithms have been considered in the past, including Simulated Annealing, Parallel Evolutionary Algorithms \cite{Alba2008},Evolution Strategies [1], Estimation of Distribution Algorithms [48], Scatter Search [11], Particle Swarm Optimization [57], Tabu Search [13] and the Alternating Variable Method [29]. An advantage of meta-heuristic algorithms is that they
+adequacy criterion. Many algorithms have been considered in the past, including Simulated Annealing, Parallel Evolutionary Algorithms \cite{Alba2008},Evolution Strategies, Estimation of Distribution Algorithms , Scatter Search , Particle Swarm Optimization , Tabu Search and the Alternating Variable Method. An advantage of meta-heuristic algorithms is that they
 are widely applicable to problems that are infeasible for analytic approaches. All one has to do is come up with a representation for candidate solutions and an objective function to evaluate those solution \cite{Baars2011}. 
 
 One of the most popular search techniques used in SBST belong to the family of Evolutionary Algorithms in what is known as Evolutionary Testing. Evolutionary Algorithms represent a class of adaptive search techniques based on natural genetics and Darwin’s theory of evolution. They are characterized by an iterative procedure that works in parallel on a number of potential solutions to a problem. Figure \ref{fig:evocycle}  shows the cycle
@@ -38,6 +38,12 @@ is created, usually at random. Starting with randomly
 generated individuals results in a spread of solutions ranging in fitness because they are scattered around the search–space. Next, each individual in the population is evaluated by calculating its fitness via a fitness function. The principle idea of an Evolutionary Algorithm is that fit individuals survive over time and form even fitter individuals in future
 generations. Selected individuals are then recombined
 via a crossover operator. After crossover, the resulting offspring individuals may be subjected to a mutation operator. The algorithm iterates until a global optimum is reached or another stopping condition is fulfilled \cite{Baars2011}. 
+
+The fitness evaluation is the most
+time consuming task of SBST. However, for time consuming functional testing of complex industrial systems, minimizing
+the number of generated individuals may also be highly desirable. This might be done using an assumption about
+the "potential" of individuals in order to predict which individuals are likely to contribute to any future improvement.
+This prediction could be achieved by using information about similar individuals that have been executed in earlier generations.
 
 
 

@@ -472,11 +472,11 @@ at the
 %\signature{Author}{\@department \\ \@thesisdate}
 %\par
 %\vfill
-\signature{ }{\choosecase{ Dsc. Pedro Porfirio Muniz de Farias} \\ Advisor - Universidade de Fortaleza}
-\signature{ }{\choosecase{ Dsc. Andre Luís Vasconcelos Coelho} \\ Co-Advisor - Universidade de Fortaleza}
-\signature{ }{\choosecase{ Dsc. Pedro de Alcantara dos Santos Neto} \\ External Examiner - Universidade Federal do Piaui}
-\signature{ }{\choosecase{ Dsc. Pedro de Alcantara dos Santos Neto} \\ External Examiner - Universidade Federal do Piaui}
-\signature{ }{\choosecase{ Dsc. Pedro de Alcantara dos Santos Neto} \\ External Examiner - Universidade Federal do Piaui}
+\signature{ }{\choosecase{ D.Sc. Pedro Porf\'{\i}rio Muniz de Farias} \\ Advisor - Universidade de Fortaleza}
+\signature{ }{\choosecase{ D.Sc. Andre Lu\'{\i}s Vasconcelos Coelho} \\ Co-Advisor - Universidade de Fortaleza}
+\signature{ }{\choosecase{ D.Sc. Pedro de Alcantara dos Santos Neto} \\ External Examiner - Universidade Federal do Piaui}
+\signature{ }{\choosecase{ Ph.D. Americo Tadeu Falcone Sampaio} \\ Universidade de Fortaleza}
+\signature{ }{\choosecase{ Ph.D. Nabor das Chagas Mendon\c{c}a} \\  Universidade de Fortaleza}
 
 %\unvbox\@titlesupervisor
 %\par

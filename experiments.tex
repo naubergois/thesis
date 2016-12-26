@@ -2,7 +2,7 @@
 
 In this chapter, We present the results of experiments which we carried out to verify the hybrid and q-learning algorithm approaches ,the antipatterns  implementation, the fitness objective function and the metaheuristics used by the testbed tool.
 
-\subsection{Emulated Class Test Experiment}
+\section{Emulated Class Test Experiment}
 
 
 The first experiment aimed to perform performance, load, and stress testing on a simulated component. The purpose of using a simulated component was to be able to perform a greater number of generations in a shorter time available and eliminate variables such as the use of databases and application servers. The first experiment used a test class  named SimulateConcurrentAccess. This class has a static variable named \textit{x} and a set of methods that use the variable in a synchronized context ( Listing \ref{classsimulated}). The experiment was executed using the JMeter Java Request Sampler Component with IAdapter.
@@ -118,7 +118,7 @@ GEN & HM & TS  & GA    & SA    \\ \hline
 \end{tabular}
 \end{table}
 
-The signed-rank Wilcoxon non-parametrical procedure was used for comparing the results with Z-value and W-value. The significant level adopted was 0.05. The Z-value obtained was -2.2736 and the p-value was 0.0232. The W-value obtained was 78. The critical value of W for N = 25 at p$$ 0.05 was 89.The result was significant at p$$ 0.05. The procedure showed that there was a significant improvement in the results with the collaborative approach.
+The signed-rank Wilcoxon non-parametrical procedure was used for comparing the results with Z-value and W-value. The significant level adopted was 0.05. The Z-value obtained was -2.2736 and the p-value was 0.0232. The W-value obtained was 78. The critical value of W for N = 25 at p $\leq$ 0.05 was 89.The result was significant at p $\leq$ 0.05. The procedure showed that there was a significant improvement in the results with the collaborative approach.
 
 \section{Testbed Tool Experiments}
 
@@ -341,7 +341,7 @@ We conclude that the metaheuristics converged to scenarios with an happy path an
 \end{tabular}
 \end{table}
 
-\subsection{Moodle Application Experiment}
+\section{Moodle Application Experiment}
 
 This experiment used a Moodle application installed in a machine with 500 GB of hard disk space and 8 GB of memory. The study used six application scenarios:
 
