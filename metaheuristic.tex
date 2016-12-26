@@ -1,5 +1,20 @@
 \chapter{Metaheuristics}
 
+
+Following the complexity of the problem, it may be solved by an exact method or an
+approximate method. Exact methods obtain optimal solutions and guarantee
+their optimality. Approximate (or heuristic) methods generate high quality
+solutions in a reasonable time for practical use, but there is no guarantee of finding a global optimal solution \cite{Talbi2013}.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{./images/optimization.png}
+\caption{Classical optimization methods \cite{Talbi2013}. }
+\label{fig:optimization}
+\end{figure}
+
+
 In the computer science, the term metaheuristic is accepted for general techniques which are not specific to a particular problem. A metaheuristic is formally defined as an iterative generation process which guides a subordinate heuristic by combining intelligently different concepts for exploring and exploiting the search space \cite{raidl2010metaheuristic}. 
 
 Metaheuristics are strategies that guide the search process to efficiently explore the search space in order to find optimal solutions. Metaheuristic algorithms are approximate and usually non-deterministic and sometimes incorporate mechanisms to avoid getting trapped in confined areas of the search space. There are different ways to classify and describe metaheuristic algorithm \cite{Blum2003}:
@@ -13,7 +28,17 @@ Metaheuristics are strategies that guide the search process to efficiently explo
 landscapes.
 \end{itemize}
 
-\section{Trajectory Methods}
+\section{Trajectory Methods or Single-Solution Based Metaheuristics}
+
+While solving optimization problems, single-solution based metaheuristics
+ improve a single solution. They could be viewed as "walks" through neighborhoods or search trajectories through the search space of the problem at hand.
+ 
+ \begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{./images/singlebased.png}
+\caption{ Main principles of single-based metaheuristics.}
+\label{fig:singlebased}
+\end{figure}
 
 Trajectory methods are characterized by a trajectory in the search space. Two common trajectory methods are Simulated Annealing and Tabu Search.
 
