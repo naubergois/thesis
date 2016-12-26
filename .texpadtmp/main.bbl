@@ -246,6 +246,12 @@ William~E. Lewis, David Dobbs, and Gunasekaran Veerapillai.
 \newblock {\em {Software testing and continuous quality improvement}}.
 \newblock 2005.
 
+\bibitem{Luo2015}
+Qi~Luo, Aswathy Nair, Mark Grechanik, and Denys Poshyvanyk.
+\newblock {FOREPOST: finding performance problems automatically with
+  feedback-directed learning software testing}.
+\newblock {\em Empirical Software Engineering}, pages 1--51, 2015.
+
 \bibitem{MarkUtting2012}
 Alexander~Pretschner {Mark Utting} and Bruno Legeard.
 \newblock {A taxonomy of model-based testing approaches}.
@@ -361,6 +367,11 @@ Nigel~James Tracey.
 \newblock {\em A search-based automated test-data generation framework for
   safety-critical software}.
 \newblock PhD thesis, Citeseer, 2000.
+
+\bibitem{Trent1995}
+G~Trent and M~Sake.
+\newblock {WebSTONE: The first generation in {\{}HTTP{\}} server benchmarking}.
+\newblock {\em WWW Conference'95}, 1995.
 
 \bibitem{Vetoio2011}
 Via Vetoio.

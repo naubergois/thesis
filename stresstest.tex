@@ -12,7 +12,7 @@ Stress testing investigates the behavior of the system under conditions
 that overload its resources. The stress testing verifies the system behavior against heavy workloads \cite{Sandler2004} \cite{Lewis2005}, which are executed to evaluate a system beyond its limits, validate system response in activity peaks, and verify whether the system is able to recover from these conditions. It differs from other kinds of testing in that the system is executed on or beyond its breakpoints, forcing the application or the supporting infrastructure to fail \cite{DiLucca2006} \cite{Molyneaux2009}.
 
 
-This chapter surveys the state of the art literature in stress testing research. This survey will be useful for stress testing practitioners and software engineering researchers with interests in testing and analyzing software systems. We proposed the following four research questions:
+This chapter surveys the state of the art literature in stress testing research. The thesis extends the survey presented by Jiang et al. to the Stress Testing context \cite{Jiang2010}.  This survey will be useful for stress testing practitioners and software engineering researchers with interests in testing and analyzing software systems. We proposed the following four research questions:
 
 
 \begin{itemize}
@@ -171,7 +171,7 @@ Another technique to create workload models it is Stochastic Formcharts. The wor
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=1\textwidth]{./images/stochastic.png}
+\includegraphics[width=0.8\textwidth]{./images/stochastic.png}
 \caption{Stochastic Formcharts Example \cite{Draheim2006b} \cite{Wang2013}}
 \label{fig:stform}
 \end{figure}
@@ -180,8 +180,8 @@ One way to capture the navigational pattern within a session is through the Cust
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=1\textwidth]{./images/cbmg.png}
-\caption{Example of a Customer Behavior Model Graph (CBMG)}
+\includegraphics[width=0.8\textwidth]{./images/cbmg.png}
+\caption{Example of a Customer Behavior Model Graph (CBMG)  \cite{Menasce2002a} \cite{Jiang2010} \cite{MohammadS.Obaidat}}
 \label{fig:cbmg}
 \end{figure}
 
@@ -225,11 +225,20 @@ The stress test execution  consists of deploy the system  and steup test executi
 \item Emulation Based Executions: The emulation based load test execution approach performs the load testing on special platforms and doesn't require a fully functional system and conduct load testing.
 \end{itemize}
 
-Usually, a stress test execution it is performed with Driver Based Executions approach \cite{Erinle2013} \cite{MohammadS.Obaidat} \cite{Wang2013}. There are three categories of load drivers: 
+Usually, a stress test execution it is performed with Driver Based Executions approach \cite{Erinle2013} \cite{MohammadS.Obaidat} \cite{Wang2013}. There are three categories of load drivers \cite{Jiang2010}: 
+
+\begin{itemize}
+\item Benchmark Suite: specialized load driver, designed for one type of system. For example, LoadGen is a load driver specified used to load test the Microsoft Exchange MailServer.
+\item  Centralized Load Drivers: refer to a single load driver, which generates the load.
+\item Peer-to-peer Load Drivers: refer to a set of load drivers, which collectively generate the target testing load. Peer-to-peer load drivers usually have a con- troller component, which coordinates the load generation among the peer load drivers. 
+\end{itemize}
+
 
 \subsection{Load Test Tools}
 
-A stress test need to perform hundreds or thousands of concurrent requests  to the application under test. Automated tools are needed to carry out serious load, stress, and performance testing. Sometimes, there is simply no practical way to provide reliable, repeatable performance tests without using some form of automation. The aim of any automated test tool is to simplify the testing process. Automated Test Tool  typically have the following components \cite{Molyneaux2009}:
+A stress test need to perform hundreds or thousands of concurrent requests  to the application under test. Automated tools are needed to carry out serious load, stress, and performance testing. Sometimes, there is simply no practical way to provide reliable, repeatable performance tests without using some form of automation. The aim of any automated test tool is to simplify the testing process. 
+
+Workload generators are software products based on workload models to generate request sequences similar to real requests. They are designed and implemented as versatile software tools for performing tuning or capacity planning studies. Workload generators typically have the following components \cite{Molyneaux2009}:
 
 \begin{itemize}
 \item Scripting module: Enable recording of end-user activities in different middleware protocols;
@@ -243,7 +252,18 @@ There are several tool to execution of Stress testing. In this tools, the proced
 
 Normally, load test tools uses test scripts. Test scripts are written in a GUI testing framework or a backend server-directed performance tool such as JMeter. These frameworks are the basis on which performance testing is mostly done in industry. Performance test scripts imitate large numbers of users to create a significant load on the application under tests \cite{Grechanik2012}.
 
-TPC Benchmarkt (TPC-W) is a transactional Web benchmark defined by the Transaction Processing Performance Council that models a representative e-commerce evaluating the architecture performance on a generic profile.The models uses a remote browser emulator to generate requests to server under test. TPC-W adopts the CBMG model to define the workloads in spite of this model only characterizing user dynamic behavior partially \cite{MohammadS.Obaidat} \cite{Menasce2002a}.
+Comparing Web workload generators is a laborious and difficult task since they offer a large amount and diversity of features. In this section we contrast generators according to a wide set of features and capabilities, focusing on their ability to realize search-based tests or have learning capacities.
+
+WebStone was designed by Silicon Graphics in 1996 to measure the perfor- mance of Web server software and hardware products. Nowadays, both executable and source actualized code for WebStone are available for free. The benchmark generates a Web server load by simulating multiple Web clients navigating a website. All the testing done by the benchmark is controlled by a Webmaster, which is a program that can be run on one of the client computers or on a different one \cite{MohammadS.Obaidat} \cite{Trent1995} . 
+
+TPC Benchmarkt (TPC-W) is a transactional Web benchmark defined by the Transaction Processing Performance Council that models a representative e-commerce evaluating the architecture performance on a generic profile.The models uses a remote browser emulator to generate requests to server under test. TPC-W adopts the CBMG model to define the workloads in spite of this model only characterizing user dynamic behavior partially. The remote browser emulators are located in the client side and generate workload towards the e-commerce Web application, which is located in the server side (e-commerce server) \cite{MohammadS.Obaidat} \cite{Menasce2002a}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{./images/tpcw.png}
+\caption{TPC-W architecture \cite{MohammadS.Obaidat} \cite{Menasce2002a}}
+\label{fig:tpcw}
+\end{figure}
 
 
 Open STA is an open source software developed in C++, and released under the GPL licence. OpenSTA provides a script language which permits to simulate the activity of a user. This language can describe HTTP/S scenario and all the test executions is managed in a graphical interface. The composition of the test is
@@ -263,8 +283,6 @@ LoadRunner is one of the most popular industry-standard software products for fu
 
 WebLOAD is a software tool for Web performance commercialized by RadView. It is oriented to explore the performance of critical Web applications by quantifying the utilization of the main server resources. The tool creates scenarios that try to mimic the navigations of real users. To this end, it provides facilities to record, edit and debug test scripts, which are used to define the scenarios on workload characterization. The execution environment is a console to manage test execution, whose results are analyzed in the Analytics application. Since WebLOAD is a distributed system, it is possible to deploy several load generators to reproduce the desired load. Load generators can also be used as probing clients where a single virtual user is simulated to evaluate specific statistics of a single user. These probing clients resemble the experience of a real user using the system while it is under load \cite{MohammadS.Obaidat}.
 
-\subsubsection{Apache JMeter}
-
 Apache JMeter is a free open source stress testing tool.  It has a large user base and offers lots of plugins to aid testing. JMeter is a desktop application designed to test and measure the performance and functional behavior of applications. The application it's purely Java-based and is highly extensible through a provided API (Application Programming Interface). JMeter works by acting as the client of a client/server application. JMeter allows multiple concurrent users to be simulated on the application \cite{Halili2008} \cite{Erinle2013}. 
 
 JMeter has components organized  in a hierarchical manner. The Test Plan is the main component in a JMeter script. A typical test plan will consist of one or more Thread Groups, logic controllers, listeners, timers, assertions, and configuration elements:
@@ -273,6 +291,49 @@ JMeter has components organized  in a hierarchical manner. The Test Plan is the 
 \end{itemize}
 
 
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{llllll}
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Feature}                                                                              & \textbf{Webstone}   & \textbf{SPECweb}                                                 & \textbf{SURGE}   & \textbf{Web polygraph} & \textbf{TPC-W}     \\
+\begin{tabular}[c]{@{}l@{}}Analytical-Based\\ Architecture\end{tabular}                       & F                   & F                                                                & F                & F                      & F                  \\
+\begin{tabular}[c]{@{}l@{}}Distributed\\ Architecture\end{tabular}                            & F                   & F                                                                & F                & F                      &                    \\
+\begin{tabular}[c]{@{}l@{}}Business-Based\\ Architecture\end{tabular}                         &                     & P                                                                &                  & P                      & F                  \\
+\begin{tabular}[c]{@{}l@{}}Client\\ Parameterization\end{tabular}                             & F                   & F                                                                &                  & P                      & F                  \\
+Workload Types                                                                                &                     & F                                                                &                  &                        & F                  \\
+Multi-platform                                                                                & F                   & F                                                                & F                & F                      & F                  \\
+Open Source                                                                                   & F                   &                                                                  & F                & P                      & F                  \\
+\rowcolor[HTML]{FFFC9E} 
+\textbf{\begin{tabular}[c]{@{}l@{}}Search-based Testing\\  or Learning features\end{tabular}} & \textbf{}           & \textbf{}                                                        & \textbf{}        & \textbf{}              & \textbf{}          \\
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Feature}                                                                              & \textbf{LoadRunner} & \textbf{WebLoad}                                                 & \textbf{JMeter}  & \textbf{S-Clients}     & \textbf{WebJammma} \\
+\begin{tabular}[c]{@{}l@{}}Analytical-Based\\ Architecture\end{tabular}                       & P                   & P                                                                & P                &                        &                    \\
+\begin{tabular}[c]{@{}l@{}}Distributed\\ Architecture\end{tabular}                            & F                   & F                                                                &                  &                        &                    \\
+\begin{tabular}[c]{@{}l@{}}Business-Based\\ Architecture\end{tabular}                         & F                   & F                                                                & F                &                        &                    \\
+\begin{tabular}[c]{@{}l@{}}Client\\ Parameterization\end{tabular}                             & F                   & F                                                                & F                &                        & F                  \\
+Workload Types                                                                                & F                   & F                                                                & P                &                        &                    \\
+Multi-platform                                                                                & F                   & F                                                                & F                & F                      & F                  \\
+Open Source                                                                                   &                     &                                                                  & F                & F                      & F                  \\
+\rowcolor[HTML]{FFFC9E} 
+\textbf{\begin{tabular}[c]{@{}l@{}}Search-based Testing\\  or Learning features\end{tabular}} & \textbf{}           & \textbf{}                                                        & \textbf{}        & \textbf{}              & \textbf{}          \\
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Feature}                                                                              & \textbf{Deluge}     & \textbf{\begin{tabular}[c]{@{}l@{}}HAMMER\\ HEAD 2\end{tabular}} & \textbf{PTester} & \textbf{Siege}         & \textbf{Locust}    \\
+\begin{tabular}[c]{@{}l@{}}Analytical-Based\\  Architecture\end{tabular}                      &                     &                                                                  &                  &                        & P                  \\
+\begin{tabular}[c]{@{}l@{}}Distributed\\ Architecture\end{tabular}                            &                     &                                                                  &                  &                        &                    \\
+\begin{tabular}[c]{@{}l@{}}Business-Based\\ Architecture\end{tabular}                         &                     &                                                                  &                  &                        & F                  \\
+\begin{tabular}[c]{@{}l@{}}Client\\ Parameterization\end{tabular}                             &                     &                                                                  &                  &                        & F                  \\
+Workload Types                                                                                &                     &                                                                  &                  &                        & P                  \\
+Multi-platform                                                                                & F                   & P                                                                & F                & P                      & F                  \\
+Open Source                                                                                   & F                   & F                                                                & F                & F                      & F                  \\
+\rowcolor[HTML]{FFFC9E} 
+\textbf{\begin{tabular}[c]{@{}l@{}}Search-based Testing\\  or Learning features\end{tabular}} & \textbf{}           & \textbf{}                                                        & \textbf{}        & \textbf{}              & \textbf{}         
+\end{tabular}
+\end{table}
 
 
 \section{Research Question 3: What are the main problems found by stress tests?}

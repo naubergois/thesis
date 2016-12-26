@@ -12,8 +12,6 @@ A level-1 auxiliary file: qlearning.aux
 A level-1 auxiliary file: testbed.aux
 A level-1 auxiliary file: experiments.aux
 A level-1 auxiliary file: conclusion.aux
-A level-1 auxiliary file: appa.aux
-A level-1 auxiliary file: appb.aux
 A level-1 auxiliary file: biblio.aux
 The style file: plain.bst
 Database file #1: ../main.bib
@@ -25,11 +23,10 @@ Repeated entry---line 1011 of file ../main.bib
  : @article{Bertolino2008
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1280 of file ../main.bib
+Repeated entry---line 1302 of file ../main.bib
  : @book{Halili2008
  :                 ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Luo2015"
 Warning--to sort, need author or key in Bertolino2008
 Warning--empty author in Bertolino2008
 Warning--empty journal in Canfora
@@ -60,45 +57,45 @@ Warning--can't use both volume and number fields in Talbi2012
 Warning--empty publisher in Talbi2012
 Warning--empty journal in Tracey1998
 Warning--there's a number but no volume in Wert2013a
-You've used 68 entries,
+You've used 70 entries,
             2118 wiz_defined-function locations,
-            913 strings with 16400 characters,
-and the built_in function-call counts, 21971 in all, are:
-= -- 2180
-> -- 951
-< -- 25
-+ -- 377
-- -- 308
-* -- 1419
-:= -- 3586
-add.period$ -- 200
-call.type$ -- 68
-change.case$ -- 346
+            921 strings with 16716 characters,
+and the built_in function-call counts, 22630 in all, are:
+= -- 2245
+> -- 987
+< -- 26
++ -- 391
+- -- 320
+* -- 1460
+:= -- 3699
+add.period$ -- 206
+call.type$ -- 70
+change.case$ -- 358
 chr.to.int$ -- 0
-cite$ -- 98
-duplicate$ -- 921
-empty$ -- 1699
-format.name$ -- 308
-if$ -- 4630
+cite$ -- 100
+duplicate$ -- 947
+empty$ -- 1743
+format.name$ -- 320
+if$ -- 4767
 int.to.chr$ -- 0
-int.to.str$ -- 68
-missing$ -- 75
-newline$ -- 339
-num.names$ -- 134
-pop$ -- 427
+int.to.str$ -- 70
+missing$ -- 77
+newline$ -- 349
+num.names$ -- 138
+pop$ -- 439
 preamble$ -- 2
-purify$ -- 290
+purify$ -- 300
 quote$ -- 0
-skip$ -- 691
+skip$ -- 712
 stack$ -- 0
-substring$ -- 1287
-swap$ -- 237
-text.length$ -- 25
+substring$ -- 1316
+swap$ -- 244
+text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 250
+type$ -- 258
 warning$ -- 30
-while$ -- 228
-width$ -- 70
-write$ -- 702
+while$ -- 235
+width$ -- 72
+write$ -- 723
 (There were 3 error messages)

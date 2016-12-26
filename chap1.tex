@@ -57,7 +57,11 @@ Below we briefly describe the related research and practices on stress testing:
 
 \subsection{State of Research on the Search-Based Stress  Testing}
 
-In the academic context, a number of studies proving the efficacy of metaheuristics to automate test execution can be found in literature. A variety of metaheuristic search techniques are found to be applicable for non-functional testing including simulated annealing, tabu search, genetic algorithms, ant colony methods, grammatical evolution, genetic programming and swarm intelligence methods. Most research studies are limited to making prototype.  The presented research work is distinguished from others by having extend a industrial tool using a hybrid approach and q-learning \cite{Afzal2009a}.  
+In the academic context, a number of studies proving the efficacy of metaheuristics to automate test execution can be found in literature. A variety of metaheuristic search techniques are found to be applicable for non-functional testing including simulated annealing, tabu search, genetic algorithms, ant colony methods, grammatical evolution, genetic programming and swarm intelligence methods. However, most research studies are limited to making prototypes \cite{Afzal2009a}.  
+
+Garousi and Alesio presents functional tools to Systems from safety-critical domains. Garousi presented a stress test methodology aimed at increasing chances of discovering faults related to distributed traffic in distributed systems. Alesio describe stress test case generation as a search problem over the space of task arrival times. The research search for worst case scenarios maximizing deadline misses where each scenario characterizes a test case. The paper combine two strategies, GA and Constraint Programming (CP) \cite{Garousi2006} \cite{Garousi2010} \cite{DiAlesio2013} \cite{DiAlesio2014} \cite{Alesio2015}. 
+
+ 
 
 \subsection{State of Industrial Practices on Stress Tests}
 
@@ -66,10 +70,9 @@ The stress testing process in the industry still follows a non-automated and ad-
 Typically, performance testing is accomplished using test scripts, which are programs that test designers write to automate testing. These test scripts performs actions or mimicking user actions on GUI objects of the system to feed input data. Current approaches to load testing suffer from limitations. Their cost-effectiveness is highly dependent on the particular test scenarios that are used yet there is no support for choosing those scenarios. A poor choice of scenarios could lead to underestimating system response time thereby missing an opportunity to detect a performance \cite{Grechanik2012}.
 
 
+
+
 \section{Research Hypothesis}
-
-
-
 
 
 Our underlying research hypothesis is as follows:
@@ -81,9 +84,9 @@ The use of metaheuristics and hybrid metaheuristics in combination with Q-learni
 The purpose of this thesis is to show the validity of this hypothesis through the development of a testbed tool, algorithms that use hybrid metaheuristics and the Q-learning technique and application of validation experiments. This thesis will be useful for load test practitioners and software engineering researchers interested in large-scale testing software systems.
 
 
-\section{Thesis Overview}
+%\section{Thesis Overview}
 
-In this section, we present an overview of the works presented in this thesis. This thesis has five main chapters
+%In this section, we present an overview %of the works presented in this thesis. %This thesis has five main chapters
 
 \section{Thesis Contributions}
 

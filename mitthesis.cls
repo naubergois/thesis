@@ -473,13 +473,15 @@ at the
 %\par
 %\vfill
 \signature{ }{\choosecase{ Dsc. Pedro Porfirio Muniz de Farias} \\ Advisor - Universidade de Fortaleza}
-\signature{ }{\choosecase{ Dsc. Andre Coelho} \\ Co-Advisor - Universidade de Fortaleza}
-\signature{ }{\choosecase{ Dsc. Pedro } \\ Co-External Examiner - Universidade Federal do Piaui}
+\signature{ }{\choosecase{ Dsc. Andre Luís Vasconcelos Coelho} \\ Co-Advisor - Universidade de Fortaleza}
+\signature{ }{\choosecase{ Dsc. Pedro de Alcantara dos Santos Neto} \\ External Examiner - Universidade Federal do Piaui}
+\signature{ }{\choosecase{ Dsc. Pedro de Alcantara dos Santos Neto} \\ External Examiner - Universidade Federal do Piaui}
+\signature{ }{\choosecase{ Dsc. Pedro de Alcantara dos Santos Neto} \\ External Examiner - Universidade Federal do Piaui}
 
 %\unvbox\@titlesupervisor
 %\par
 %\vfill
-\signature{Accepted by}{\@chairmanname \\ \@chairmantitle}
+%\signature{Accepted by}{\@chairmanname \\ \@chairmantitle}
 \vfill
 \end{titlepage}}
 
