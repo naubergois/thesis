@@ -28,7 +28,7 @@ Metaheuristics are strategies that guide the search process to efficiently explo
 landscapes.
 \end{itemize}
 
-\section{Trajectory Methods or Single-Solution Based Metaheuristics}
+\section{Single-Solution Based Metaheuristics}
 
 While solving optimization problems, single-solution based metaheuristics
  improve a single solution. They could be viewed as "walks" through neighborhoods or search trajectories through the search space of the problem at hand.
@@ -40,7 +40,26 @@ While solving optimization problems, single-solution based metaheuristics
 \label{fig:singlebased}
 \end{figure}
 
-Trajectory methods are characterized by a trajectory in the search space. Two common trajectory methods are Simulated Annealing and Tabu Search.
+
+\subsection{Neighborhood}
+
+The definition of Neighborhood is a required common step for the design of any Single-Solution metaheuristic (S-metaheuristic). The neighborhood structure it is a important piece in the performance of an S-metaheuristic. If the neighborhood structure is not adequate to the problem,
+any S-metaheuristic will fail to solve the problem. The neighborhood function N is a mapping: $ N : S \rightarrow N\textsuperscript{2} $ that assigns to each solution s of \textit{S} a set of solutions \textit{N(s)}$\subset$ S \cite{Talbi2013}.
+
+The neighborhood definition depends  representation associated with the problem. For permutation-based representations, a usual neighborhood is based on the swap operator that consists in swapping the location of two elements $s_i$ and $s_j$ of the permutation \cite{Talbi2013}.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{./images/neighborhood.png}
+\caption{ An example of neighborhood for a permutation \cite{Talbi2013}.}
+\label{fig:sperneighborhood}
+\end{figure}
+
+
+
+Single-Solution Based Metaheuristics methods are characterized by a trajectory in the search space. Two common S-metaheuristics methods are Simulated Annealing and Tabu Search.
+
 
 \subsection{Simulated Annealing}
 

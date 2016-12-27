@@ -147,12 +147,21 @@ There are  several approaches to design generative or descriptive workloads:
 \begin{itemize}
 \item Model-based Stress testing: a usage model is proposed to simulate users’ behaviors.
 \item Feedback-Directed Learning Software Testing: is an adaptive, feedback-directed learning testing system that learns rules from system execution \cite{Luo2015} \cite{Wert2014}.
-\item Search-based Stress testing:
+\item Search-based Stress testing. 
 \end{itemize}
+
+
+Search-Based Stress testing will be detail explained in the chapter 3.
 
 \subsection{Model-based Stress Testing}
 
 Model-based testing is an application  of models to represent the desired behavior of a System Under Test or to represent testing strategies in a test. Some research aproaches proposes models to simulate or  generate realistic loads. Model-based testing (MBT) is a variant of testing that relies on explicit behaviour models that encode the intended behaviours of a system under test. Test cases are generated from one of these models or their combination \cite{MarkUtting2012} \cite{Bertolino2008}. 
+
+The model paradgim is what paradigm and notation are used to describe the model. There are many different modelling notations that have been used for modelling the behaviour of systems for test generation purposes \cite{MarkUtting2012}. These paradigms are also used in the MBT state of the art survey provided by Dias-Neto et al. The overview article of Hierons et al.  discusses many of these paradigms in more detail \cite{Hierons2009} \cite{MarkUtting2012}. 
+
+\begin{itemize}
+\item State-Based (or Pre/Post) Notations. These model a system as a collection of variables, which represent a snapshot of the internal state of the system, plus some operations that modify those variables. Each operation is usually defined by a precondition and a postcondition, or the postcondition may be written as explicit code that updates the state \cite{MarkUtting2012}.
+\end{itemize}
 
 A User Community Modeling Language (UCML) is a set of symbols that can be used to create visual system usage models and depict associated parameters \cite{Wang2013}. The Fig. \ref{fig:ucml} shows a sample where all users realize a login into the application unde test. Once logged in, 40\% of the users navigates on the aplication, 30\%  of the users realizes downloads. 20\% of users realizes uploads and 10\% of users performs deletions.
 

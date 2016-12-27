@@ -199,6 +199,11 @@ Mark Grechanik, Chen Fu, and Qing Xie.
 \newblock {\em 2012 34th International Conference on Software Engineering
   (ICSE)}, pages 156--166, June 2012.
 
+\bibitem{Greenwald2003}
+Amy Greenwald, Keith Hall, and R~Serrano.
+\newblock {Correlated Q-learning}.
+\newblock {\em Icml}, (3):84--89, 2003.
+
 \bibitem{Gross2000}
 Hg~Gross, Bryan~F Jones, and David~E Eyres.
 \newblock {Structural performance measure of evolutionary testing applied to
@@ -224,6 +229,14 @@ Mark Harman and Phil McMinn.
   global, and hybrid search}.
 \newblock {\em IEEE Transactions on Software Engineering}, 36(2):226--247,
   2010.
+
+\bibitem{Hierons2009}
+Robert~M Hierons, Kirill Bogdanov, Jonathan~P Bowen, Rance Cleaveland, John
+  Derrick, Jeremy Dick, Marian Gheorghe, Mark Harman, Kalpesh Kapoor, Paul
+  Krause, Gerald L{\"{u}}ttgen, Anthony J~H Simons, Sergiy Vilkomir, Martin~R
+  Woodward, and Hussein Zedan.
+\newblock {Using formal specifications to support testing}.
+\newblock {\em ACM Comput. Surv.}, 41(2):1--76, 2009.
 
 \bibitem{J.WegenerK.GrimmM.GrochtmannH.Sthamer1996}
 B.~Jones {J. Wegener, K. Grimm, M. Grochtmann, H. Sthamer}.
@@ -257,6 +270,11 @@ Alexander~Pretschner {Mark Utting} and Bruno Legeard.
 \newblock {A taxonomy of model-based testing approaches}.
 \newblock {\em Software Testing Verification and Reliability}, 24(8):297--312,
   2012.
+
+\bibitem{McMinn2004}
+Philip McMinn, Regent Court, Software Testing, and Portobello Street.
+\newblock {Search-based software test data generation: a survey}.
+\newblock {\em Software testing, Verification and reliability}, 14:1--58, 2004.
 
 \bibitem{Menasce2002a}
 Daniel~A Menasc{\'{e}} and George Mason.
@@ -325,6 +343,12 @@ Christian {Raidl, Gunther R and Puchinger, Jakob and Blum}.
 Corey Sandler, Tom Badgett, and TM~Thomas.
 \newblock {The Art of Software Testing}.
 \newblock page 200, September 2004.
+
+\bibitem{shousha2003performance}
+Marwa Shousha.
+\newblock {\em Performance Stress Testing of Real-Time Systems Using Genetic
+  Algorithms}.
+\newblock PhD thesis, Carleton University Ottawa, 2003.
 
 \bibitem{Smith2000}
 Connie~U. Smith and Lloyd~G. Williams.
