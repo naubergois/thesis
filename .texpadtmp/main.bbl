@@ -418,6 +418,14 @@ Via Vetoio.
   feedback from software performance analysis results Catia Trubiani}.
 \newblock {\em Language}, 2011.
 
+\bibitem{Vogele2016}
+Christian Vogele, Andr{\'{e}} van Hoorn, Eike Schulz, Wilhelm Hasselbring, and
+  Helmut Krcmar.
+\newblock {WESSBAS: extraction of probabilistic workload specifications for
+  load testing and performance prediction???a model-driven approach for
+  session-based application systems}.
+\newblock {\em Software and Systems Modeling}, (October):1--35, 2016.
+
 \bibitem{Wang2013}
 Xingen Wang, Bo~Zhou, and Wei Li.
 \newblock {Model-based load testing of web applications}.

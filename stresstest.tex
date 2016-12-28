@@ -204,6 +204,8 @@ them are standard in mainstream development methodologies and others are needed 
 \label{fig:modelbased}
 \end{figure}
 
+Vogele et al. presents an approach that aims to automate the extraction and transformation of workload specifications for an model-based performance prediction of session-based application systems. The approach comprises three main components. First, a system- and tool-agnostic domain-specific language (DSL) allows the layered modeling of workload specifications of session-based systems. Second, instances of this DSL are automatically extracted. from recorded session logs of production systems. Third, these instances are transformed into executable workload specifications of load generation tools and model-based performance evaluation tools. We present transformations to the common load testing tool Apache JMeter and to the Palladio Component Model \cite{Vogele2016}.
+
 \subsection{Feedback-Directed Learning Software Testing}
 
 Feedback-ORiEnted PerfOrmance Software Testing (FOREPOST) is an adaptive, feedback-directed learning testing system that learns rules from system execution traces and uses these learned rules to select test input data automatically to find more performance problems in applications when compared to exploratory random performance testing \cite{Grechanik2012}.
@@ -557,4 +559,25 @@ There are three types of data summarization techniques proposed in the literatur
 Some researchers advocate that the 90-percentile response time is a better measurement than the average/medium response time, as the former accounts for most of the peaks, while eliminating the outliers \cite{Jiang2010}.
 
 
+\section{Conclusion}
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[H]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{lllllll}
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Test Design}                                                                   & \textbf{\begin{tabular}[c]{@{}l@{}}Test \\ Execution\end{tabular}}                 & \textbf{Load Driver}                                                                       & \textbf{\begin{tabular}[c]{@{}l@{}}Test Tool \\ License\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Search-Based \\ Stress Test \\ Application\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Search-Based \\ Test \\ Metaheuris.\end{tabular}}         & \textbf{\begin{tabular}[c]{@{}l@{}}Test \\ Results\end{tabular}}                  \\
+\begin{tabular}[c]{@{}l@{}}Model-Based\\ Testing\end{tabular}                          & \begin{tabular}[c]{@{}l@{}}Live-User\\ Based\end{tabular}                          & \begin{tabular}[c]{@{}l@{}}Benchmark\\ Suite\end{tabular}                                  & Comercial                                                             & Real-Time                                                                                   & \cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}Genetic \\ Algorithms\\ (GA)\end{tabular} & Average                                                                           \\
+FOREPOST                                                                               & \cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}Driver-\\ Based\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Centralized \\ L. Drivers\end{tabular}                          & \cellcolor[HTML]{9AFF99}Open-source                                   & \cellcolor[HTML]{9AFF99}Industrial                                                          & \cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}Simulated\\ Annealing\end{tabular}        & \cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}90- \\ Percentile\end{tabular} \\
+\cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}Search-Based\\ Testing\end{tabular} & \cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}Emulation-\\ Based\end{tabular} & \cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}Peer-to-peer \\ L. Drivers\end{tabular} &                                                                       &                                                                                             & \cellcolor[HTML]{9AFF99}Tabu Search                                                          & \cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}80-\\ Percentile\end{tabular}  \\
+                                                                                       &                                                                                    &                                                                                            &                                                                       &                                                                                             & Ant Colony                                                                                   & \cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}70- \\ Percentile\end{tabular} \\
+                                                                                       &                                                                                    &                                                                                            &                                                                       &                                                                                             & \begin{tabular}[c]{@{}l@{}}Particle \\ Swarm\end{tabular}                                    & \cellcolor[HTML]{9AFF99}Maximum                                                   \\
+                                                                                       &                                                                                    &                                                                                            &                                                                       &                                                                                             & \begin{tabular}[c]{@{}l@{}}Hill \\ Climbing\end{tabular}                                     & \cellcolor[HTML]{9AFF99}Minimal                                                  
+\end{tabular}
+\end{table}
 
