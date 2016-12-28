@@ -31,40 +31,41 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3-1}{\ignorespaces Evolutionary Algorithm Search Based Test Cycle\cite {Baars2011}. \relax }}{52}
 \contentsline {figure}{\numberline {3-2}{\ignorespaces Range of metaheuristics by Type of non-functional Search Based Test\cite {Afzal2009a}. \relax }}{54}
+\contentsline {figure}{\numberline {3-3}{\ignorespaces Genome representation \cite {Penta2007}. \relax }}{59}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4-1}{\ignorespaces Classical optimization methods \cite {Talbi2013}. \relax }}{60}
-\contentsline {figure}{\numberline {4-2}{\ignorespaces Main principles of single-based metaheuristics.\relax }}{61}
-\contentsline {figure}{\numberline {4-3}{\ignorespaces An example of neighborhood for a permutation \cite {Talbi2013}.\relax }}{62}
-\contentsline {figure}{\numberline {4-4}{\ignorespaces Categories of metaheuristc combinations \cite {Puchinger2005} \relax }}{65}
+\contentsline {figure}{\numberline {4-1}{\ignorespaces Classical optimization methods \cite {Talbi2013}. \relax }}{61}
+\contentsline {figure}{\numberline {4-2}{\ignorespaces Main principles of single-based metaheuristics.\relax }}{62}
+\contentsline {figure}{\numberline {4-3}{\ignorespaces An example of neighborhood for a permutation \cite {Talbi2013}.\relax }}{63}
+\contentsline {figure}{\numberline {4-4}{\ignorespaces Categories of metaheuristc combinations \cite {Puchinger2005} \relax }}{67}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6-1}{\ignorespaces Use of the algorithms independently\relax }}{69}
-\contentsline {figure}{\numberline {6-2}{\ignorespaces Use of the algorithms collaboratively\relax }}{70}
-\contentsline {figure}{\numberline {6-3}{\ignorespaces Solution representation and crossover example\relax }}{71}
-\contentsline {figure}{\numberline {6-4}{\ignorespaces Tabu search and simulated annealing neighbor strategy\relax }}{72}
-\contentsline {figure}{\numberline {6-5}{\ignorespaces IAdapter architecture\relax }}{74}
-\contentsline {figure}{\numberline {6-6}{\ignorespaces IAdapter life cycle\relax }}{75}
-\contentsline {figure}{\numberline {6-7}{\ignorespaces WorkLoadThreadGroup component\relax }}{76}
-\contentsline {figure}{\numberline {6-8}{\ignorespaces testbed main architecture.\relax }}{77}
-\contentsline {figure}{\numberline {6-9}{\ignorespaces Heuristic class diagram.\relax }}{78}
-\contentsline {figure}{\numberline {6-10}{\ignorespaces Test Module first feature.\relax }}{79}
-\contentsline {figure}{\numberline {6-11}{\ignorespaces Test Module life cycle.\relax }}{79}
-\contentsline {figure}{\numberline {6-12}{\ignorespaces Heuristic class diagram.\relax }}{80}
+\contentsline {figure}{\numberline {6-1}{\ignorespaces Use of the algorithms independently\relax }}{70}
+\contentsline {figure}{\numberline {6-2}{\ignorespaces Use of the algorithms collaboratively\relax }}{71}
+\contentsline {figure}{\numberline {6-3}{\ignorespaces Solution representation and crossover example\relax }}{72}
+\contentsline {figure}{\numberline {6-4}{\ignorespaces Tabu search and simulated annealing neighbor strategy\relax }}{73}
+\contentsline {figure}{\numberline {6-5}{\ignorespaces IAdapter architecture\relax }}{75}
+\contentsline {figure}{\numberline {6-6}{\ignorespaces IAdapter life cycle\relax }}{76}
+\contentsline {figure}{\numberline {6-7}{\ignorespaces WorkLoadThreadGroup component\relax }}{77}
+\contentsline {figure}{\numberline {6-8}{\ignorespaces testbed main architecture.\relax }}{78}
+\contentsline {figure}{\numberline {6-9}{\ignorespaces Heuristic class diagram.\relax }}{79}
+\contentsline {figure}{\numberline {6-10}{\ignorespaces Test Module first feature.\relax }}{80}
+\contentsline {figure}{\numberline {6-11}{\ignorespaces Test Module life cycle.\relax }}{80}
+\contentsline {figure}{\numberline {6-12}{\ignorespaces Heuristic class diagram.\relax }}{81}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7-1}{\ignorespaces Best results obtained in 27 generations\relax }}{85}
-\contentsline {figure}{\numberline {7-2}{\ignorespaces fitness value obtained by Search Method \relax }}{88}
-\contentsline {figure}{\numberline {7-3}{\ignorespaces fitness value obtained by Search Method without SA metaheuristic.\relax }}{88}
-\contentsline {figure}{\numberline {7-4}{\ignorespaces Number of requests by Search Method\relax }}{89}
-\contentsline {figure}{\numberline {7-5}{\ignorespaces Average, median, maximum and minimal fitness value by Search Method\relax }}{89}
-\contentsline {figure}{\numberline {7-6}{\ignorespaces fitness value by generation\relax }}{90}
-\contentsline {figure}{\numberline {7-7}{\ignorespaces Density graph of number of users by fitness value\relax }}{90}
-\contentsline {figure}{\numberline {7-8}{\ignorespaces Response time by number of users of individuals with Happy Scenario 1 and Happy Scenario 2\relax }}{91}
-\contentsline {figure}{\numberline {7-9}{\ignorespaces Response time by number of users of individuals with the Ramp and Circuitous Treasure antipatterns\relax }}{92}
-\contentsline {figure}{\numberline {7-10}{\ignorespaces itnesse value obtained by Search Method\relax }}{93}
-\contentsline {figure}{\numberline {7-11}{\ignorespaces Number of requests by Search Method\relax }}{93}
-\contentsline {figure}{\numberline {7-12}{\ignorespaces Fitness value by generation in all tests\relax }}{93}
-\contentsline {figure}{\numberline {7-13}{\ignorespaces Response time by generation in all tests scenarios\relax }}{94}
-\contentsline {figure}{\numberline {7-14}{\ignorespaces Finesse value by generation in all tests\relax }}{94}
-\contentsline {figure}{\numberline {7-15}{\ignorespaces Response time by number of users of individuals with Happy Scenario 1, Happy Scenario 2 and Tower Babel antipattern\relax }}{95}
-\contentsline {figure}{\numberline {7-16}{\ignorespaces Response time by number of users of individuals with Unbalanced Processing antipattern\relax }}{96}
+\contentsline {figure}{\numberline {7-1}{\ignorespaces Best results obtained in 27 generations\relax }}{86}
+\contentsline {figure}{\numberline {7-2}{\ignorespaces fitness value obtained by Search Method \relax }}{89}
+\contentsline {figure}{\numberline {7-3}{\ignorespaces fitness value obtained by Search Method without SA metaheuristic.\relax }}{89}
+\contentsline {figure}{\numberline {7-4}{\ignorespaces Number of requests by Search Method\relax }}{90}
+\contentsline {figure}{\numberline {7-5}{\ignorespaces Average, median, maximum and minimal fitness value by Search Method\relax }}{90}
+\contentsline {figure}{\numberline {7-6}{\ignorespaces fitness value by generation\relax }}{91}
+\contentsline {figure}{\numberline {7-7}{\ignorespaces Density graph of number of users by fitness value\relax }}{91}
+\contentsline {figure}{\numberline {7-8}{\ignorespaces Response time by number of users of individuals with Happy Scenario 1 and Happy Scenario 2\relax }}{92}
+\contentsline {figure}{\numberline {7-9}{\ignorespaces Response time by number of users of individuals with the Ramp and Circuitous Treasure antipatterns\relax }}{93}
+\contentsline {figure}{\numberline {7-10}{\ignorespaces itnesse value obtained by Search Method\relax }}{94}
+\contentsline {figure}{\numberline {7-11}{\ignorespaces Number of requests by Search Method\relax }}{94}
+\contentsline {figure}{\numberline {7-12}{\ignorespaces Fitness value by generation in all tests\relax }}{94}
+\contentsline {figure}{\numberline {7-13}{\ignorespaces Response time by generation in all tests scenarios\relax }}{95}
+\contentsline {figure}{\numberline {7-14}{\ignorespaces Finesse value by generation in all tests\relax }}{95}
+\contentsline {figure}{\numberline {7-15}{\ignorespaces Response time by number of users of individuals with Happy Scenario 1, Happy Scenario 2 and Tower Babel antipattern\relax }}{96}
+\contentsline {figure}{\numberline {7-16}{\ignorespaces Response time by number of users of individuals with Unbalanced Processing antipattern\relax }}{97}
 \addvspace {10\p@ }

@@ -26,33 +26,34 @@
 \contentsline {section}{\numberline {3.3}Non-functional Search-Based Testing}{53}
 \contentsline {section}{\numberline {3.4}Search-Based Stress Testing}{53}
 \contentsline {subsection}{\numberline {3.4.1}Search-Based Stress Tesing on Safety-critical systems}{56}
-\contentsline {subsection}{\numberline {3.4.2}Search-Based Stress Testing on Industrial Systems}{58}
-\contentsline {chapter}{\numberline {4}Metaheuristics}{59}
-\contentsline {section}{\numberline {4.1}Single-Solution Based Metaheuristics}{61}
-\contentsline {subsection}{\numberline {4.1.1}Neighborhood}{61}
-\contentsline {subsection}{\numberline {4.1.2}Simulated Annealing}{62}
-\contentsline {subsection}{\numberline {4.1.3}Tabu Search}{63}
-\contentsline {section}{\numberline {4.2}Population-based metaheuristics}{64}
-\contentsline {section}{\numberline {4.3}Hybrid Metaheuristics}{65}
-\contentsline {chapter}{\numberline {5}Q-Learning}{67}
-\contentsline {chapter}{\numberline {6}Improving Stress Search Based Testing using Q-Learning and Hybrid Metaheuristic Approach}{68}
-\contentsline {section}{\numberline {6.1}Hybrid Approach}{68}
-\contentsline {subsection}{\numberline {6.1.1}Representation}{69}
-\contentsline {subsection}{\numberline {6.1.2}Initial population}{70}
-\contentsline {subsection}{\numberline {6.1.3}Objective (fitness) function}{71}
-\contentsline {section}{\numberline {6.2}IAdapter}{73}
-\contentsline {subsection}{\numberline {6.2.1}IAdapter Life Cycle}{73}
-\contentsline {subsection}{\numberline {6.2.2}IAdapter Components}{73}
-\contentsline {subsection}{\numberline {6.2.3}IAdapter Testbed Tool}{74}
-\contentsline {subsubsection}{Testbed Architecture}{76}
-\contentsline {subsubsection}{Test Module}{76}
-\contentsline {subsubsection}{Emulator Module}{79}
-\contentsline {chapter}{\numberline {7}Experiments}{83}
-\contentsline {section}{\numberline {7.1}Emulated Class Test Experiment}{83}
-\contentsline {section}{\numberline {7.2}Testbed Tool Experiments}{86}
-\contentsline {subsection}{\numberline {7.2.1}The Ramp and Circuitous Treasure Hunt experiment}{87}
-\contentsline {subsection}{\numberline {7.2.2}The Tower Babel and Unbalanced Processing experiment}{92}
-\contentsline {section}{\numberline {7.3}Moodle Application Experiment}{95}
-\contentsline {chapter}{\numberline {8}Conclusion}{99}
-\contentsline {section}{\numberline {8.1}Achievements}{99}
-\contentsline {section}{\numberline {8.2}Open Issues and future works}{101}
+\contentsline {subsection}{\numberline {3.4.2}Search-Based Stress Testing on Industrial systems}{58}
+\contentsline {chapter}{\numberline {4}Metaheuristics}{60}
+\contentsline {section}{\numberline {4.1}Single-Solution Based Metaheuristics}{62}
+\contentsline {subsection}{\numberline {4.1.1}Neighborhood}{62}
+\contentsline {subsection}{\numberline {4.1.2}Simulated Annealing}{63}
+\contentsline {subsection}{\numberline {4.1.3}Tabu Search}{64}
+\contentsline {section}{\numberline {4.2}Population-based metaheuristics}{65}
+\contentsline {subsection}{\numberline {4.2.1}Genetic Algorithms}{65}
+\contentsline {section}{\numberline {4.3}Hybrid Metaheuristics}{66}
+\contentsline {chapter}{\numberline {5}Q-Learning}{68}
+\contentsline {chapter}{\numberline {6}Improving Stress Search Based Testing using Q-Learning and Hybrid Metaheuristic Approach}{69}
+\contentsline {section}{\numberline {6.1}Hybrid Approach}{69}
+\contentsline {subsection}{\numberline {6.1.1}Representation}{70}
+\contentsline {subsection}{\numberline {6.1.2}Initial population}{71}
+\contentsline {subsection}{\numberline {6.1.3}Objective (fitness) function}{72}
+\contentsline {section}{\numberline {6.2}IAdapter}{74}
+\contentsline {subsection}{\numberline {6.2.1}IAdapter Life Cycle}{74}
+\contentsline {subsection}{\numberline {6.2.2}IAdapter Components}{74}
+\contentsline {subsection}{\numberline {6.2.3}IAdapter Testbed Tool}{75}
+\contentsline {subsubsection}{Testbed Architecture}{77}
+\contentsline {subsubsection}{Test Module}{77}
+\contentsline {subsubsection}{Emulator Module}{80}
+\contentsline {chapter}{\numberline {7}Experiments}{84}
+\contentsline {section}{\numberline {7.1}Emulated Class Test Experiment}{84}
+\contentsline {section}{\numberline {7.2}Testbed Tool Experiments}{87}
+\contentsline {subsection}{\numberline {7.2.1}The Ramp and Circuitous Treasure Hunt experiment}{88}
+\contentsline {subsection}{\numberline {7.2.2}The Tower Babel and Unbalanced Processing experiment}{93}
+\contentsline {section}{\numberline {7.3}Moodle Application Experiment}{96}
+\contentsline {chapter}{\numberline {8}Conclusion}{100}
+\contentsline {section}{\numberline {8.1}Achievements}{100}
+\contentsline {section}{\numberline {8.2}Open Issues and future works}{102}

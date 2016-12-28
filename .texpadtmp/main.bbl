@@ -238,6 +238,12 @@ Robert~M Hierons, Kirill Bogdanov, Jonathan~P Bowen, Rance Cleaveland, John
 \newblock {Using formal specifications to support testing}.
 \newblock {\em ACM Comput. Surv.}, 41(2):1--76, 2009.
 
+\bibitem{hong2000simultaneously}
+Tzung-Pei Hong, Hong-Shung Wang, and Wei-Chou Chen.
+\newblock Simultaneously applying multiple mutation operators in genetic
+  algorithms.
+\newblock {\em Journal of heuristics}, 6(4):439--455, 2000.
+
 \bibitem{J.WegenerK.GrimmM.GrochtmannH.Sthamer1996}
 B.~Jones {J. Wegener, K. Grimm, M. Grochtmann, H. Sthamer}.
 \newblock {Systematic testing of real-time systems}.
