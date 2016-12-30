@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.13)  30 DEC 2016 09:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.13)  30 DEC 2016 10:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2203,8 +2203,13 @@ Package pdftex.def Info: ./images/mdp1.png used on input line 44.
 [72 <./images/agentenv.png>]
 Underfull \vbox (badness 2781) has occurred while \output is active []
 
- [73 <./images/mdp1.png>] [74] <./images/grid1.png, id=329, 609.27625pt x 608.2
-725pt>
+ [73 <./images/mdp1.png>] [74]
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 98.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/t1txtt.fd
+File: t1txtt.fd 2000/12/15 v3.1
+)
+<./images/grid1.png, id=329, 609.27625pt x 608.2725pt>
 File: ./images/grid1.png Graphic file (type png)
 
 <use ./images/grid1.png>
@@ -2215,7 +2220,7 @@ Package pdftex.def Info: ./images/grid1.png used on input line 104.
 
  (./testbed.tex
 Chapter 6.
-<./images/independ.png, id=337, 354.23682pt x 268.49918pt>
+<./images/independ.png, id=338, 354.23682pt x 268.49918pt>
 File: ./images/independ.png Graphic file (type png)
 
 <use ./images/independ.png>
@@ -2233,14 +2238,14 @@ Underfull \vbox (badness 1264) has occurred while \output is active []
 
 
 ]
-<./images/collaborative.png, id=341, 654.445pt x 302.12875pt>
+<./images/collaborative.png, id=342, 654.445pt x 302.12875pt>
 File: ./images/collaborative.png Graphic file (type png)
 
 <use ./images/collaborative.png>
 Package pdftex.def Info: ./images/collaborative.png used on input line 28.
 (pdftex.def)             Requested size: 433.62pt x 200.1847pt.
  [78 <./images/independ.png>]
-<./images/genomerepresentation1.png, id=346, 600.2425pt x 559.08875pt>
+<./images/genomerepresentation1.png, id=347, 600.2425pt x 559.08875pt>
 File: ./images/genomerepresentation1.png Graphic file (type png)
 
 <use ./images/genomerepresentation1.png>
@@ -2251,7 +2256,7 @@ Package pdftex.def Info: ./images/genomerepresentation1.png used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images/neighbor.png, id=347, 550.055pt x 343.2825pt>
+<./images/neighbor.png, id=348, 550.055pt x 343.2825pt>
 File: ./images/neighbor.png Graphic file (type png)
 
 <use ./images/neighbor.png>
@@ -2267,7 +2272,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [80 <./images/genomerepresentation1.png>]
 Underfull \vbox (badness 1910) has occurred while \output is active []
 
- [81 <./images/neighbor.png>] <./images/iadapter1.png, id=361, 572.1375pt x 676
+ [81 <./images/neighbor.png>] <./images/iadapter1.png, id=362, 572.1375pt x 676
 .5275pt>
 File: ./images/iadapter1.png Graphic file (type png)
 
@@ -2278,7 +2283,7 @@ Package pdftex.def Info: ./images/iadapter1.png used on input line 101.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images/lifecycle2.png, id=362, 488.82625pt x 440.64626pt>
+<./images/lifecycle2.png, id=363, 488.82625pt x 440.64626pt>
 File: ./images/lifecycle2.png Graphic file (type png)
 
 <use ./images/lifecycle2.png>
@@ -2288,7 +2293,7 @@ Package pdftex.def Info: ./images/lifecycle2.png used on input line 114.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images/tela1iadapter.png, id=363, 997.7275pt x 674.52pt>
+<./images/tela1iadapter.png, id=364, 997.7275pt x 674.52pt>
 File: ./images/tela1iadapter.png Graphic file (type png)
 
 <use ./images/tela1iadapter.png>
@@ -2302,7 +2307,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 6592) has occurred while \output is active []
 
  [84 <./images/lifecycle2.png>]
-<./images/testbedarch.png, id=376, 569.12625pt x 452.69125pt>
+<./images/testbedarch.png, id=377, 569.12625pt x 452.69125pt>
 File: ./images/testbedarch.png Graphic file (type png)
 
 <use ./images/testbedarch.png>
@@ -2312,7 +2317,7 @@ Package pdftex.def Info: ./images/testbedarch.png used on input line 156.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images/myheuristic.png, id=377, 665.48625pt x 554.07pt>
+<./images/myheuristic.png, id=378, 665.48625pt x 554.07pt>
 File: ./images/myheuristic.png Graphic file (type png)
 
 <use ./images/myheuristic.png>
@@ -2323,13 +2328,13 @@ Package pdftex.def Info: ./images/myheuristic.png used on input line 163.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [85 <./images/tela1iadapter.png>]
-<./images/step1.png, id=383, 355.3275pt x 647.41875pt>
+<./images/step1.png, id=384, 355.3275pt x 647.41875pt>
 File: ./images/step1.png Graphic file (type png)
 
 <use ./images/step1.png>
 Package pdftex.def Info: ./images/step1.png used on input line 177.
 (pdftex.def)             Requested size: 216.81pt x 395.0434pt.
- <./images/step2.png, id=384, 517.935pt x 768.8725pt>
+ <./images/step2.png, id=385, 517.935pt x 768.8725pt>
 File: ./images/step2.png Graphic file (type png)
 
 <use ./images/step2.png>
@@ -2356,7 +2361,7 @@ Overfull \hbox (4.59602pt too wide) in paragraph at lines 211--212
  []
 
 [88 <./images/step1.png> <./images/step2.png>]
-<./images/emulator.png, id=398, 504.88625pt x 702.625pt>
+<./images/emulator.png, id=399, 504.88625pt x 702.625pt>
 File: ./images/emulator.png Graphic file (type png)
 
 <use ./images/emulator.png>
@@ -2370,10 +2375,7 @@ Underfull \vbox (badness 7012) has occurred while \output is active []
 
  (./experiments.tex
 Chapter 7.
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 32.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/t1txtt.fd
-File: t1txtt.fd 2000/12/15 v3.1
-)
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [92
@@ -2600,7 +2602,7 @@ fonts/txsy.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a
 /local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
 Output written on /Users/naubergois/Downloads/templates-2/.texpadtmp/main.pdf (
-115 pages, 11818853 bytes).
+115 pages, 11819766 bytes).
 PDF statistics:
  564 PDF objects out of 1000 (max. 8388607)
  297 compressed objects within 3 object streams
