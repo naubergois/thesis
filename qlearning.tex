@@ -1,3 +1,81 @@
 \chapter{Q-Learning}
 
-Q-learning, it is a multiagent learning algorithm that learns equilibrium policies in Markov games, just as Q-learning learns to optimal policies in Markov decision processes \cite{Greenwald2003}. 
+
+
+
+\section{Reinforcement Learning}
+
+Reinforcement learning (RL) refers to both a learning problem and a subfield of machine
+learning. As a learning problem, it refers to learning to control a system so as to maximize
+some numerical value which represents a long-term objective. A typical setting where
+reinforcement learning operates is shown in Figure 1: A controller receives the controlled
+system’s state and a reward associated with the last state transition. It then calculates an
+action which is sent back to the system.
+
+
+The basis idea of Reinforcement learning  is simply to capture the most important aspects of the real problem facing a learning agent interacting with its environment to achieve a goal \cite{Sutton2012}. Reinforcement learning is learning what to do—how to map situations to actions—so as to maximize a numerical reward signal. The learner need to discover which actions yield the most reward by trying them \cite{Sutton2012}.
+
+In Reinforcement Learning, an agent wanders in an unknown environment and tries to maximize its long term return by performing actions and receiving rewards. The challenge is to understand how a current action will affect future rewards. A good way to model this task is with Markov Decision Processes (MDP), which have become the dominant approach in Reinforcement Learning.
+
+One of the challenges that arise in reinforcement learning is the trade-off between exploration and exploitation. To obtain a lot of reward, a reinforcement learning
+agent must prefer actions that it has tried in the past and found to be effective in producing reward.
+But to discover such actions, it has to try actions that it has not selected before. The agent has to exploit what it already knows in order to obtain reward, but it also has to explore in order to make better action selections in the future.
+
+
+\subsection{Markov decision processes}
+
+Markov decision processes (MDPs) provide a mathematical framework for modeling decision making. the six main elements of a MDP are:(1) state of the system, (2) actions, (3) transition probabilities, (4) transition rewards, (5) a policy, and (6) a performance metric \cite{Sutton2012}.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{./images/mdp1.png}
+\caption{Example of a simple MDP with three states and two actions}
+\label{fig:mdp}
+\end{figure}
+
+
+The state of a system is a parameter or a set of parameters that can be used to describe a system. For example the geographical coordinates of a robot can be used to
+describe its state. A system whose state changes with time is called a dynamic system. Then it is not hard to see why a moving robot produces a dynamic system.
+
+Actions are the controls allowed for an agent. Transition Probability denotes the probability of going from state i to state j under the influence of action a in one step. If an MDP has 3 states and 2 actions, there are 9 transition probabilities per action. Usually, the system receives an immediate reward ,which could be positive or negative, when it transitions from one state to another
+
+A policy defines the learning agent’s way of behaving at a given time. Roughly speaking, a policy is a mapping from perceived states of the environment
+to actions to be taken when in those states. It corresponds to what in
+psychology would be called a set of stimulus–response rules or associations.  
+
+Performance Metric: Associated with any given policy, there exists a so-called performance
+metric — with which the performance of the policy is judged. Our goal is to select the policy
+that has the best performance metric. 
+
+\subsection{Types of Control Learnings}
+
+
+Fig. shows the basic types of control learning problems. The first criterion that the space of problems is split upon is whether the learner can actively influence the observations.In case she can, then we talk about interactive learning, otherwise one is facing a non-interactive learning problem.
+
+Interactive learning is potentially easier since the learner has the additional option to influence the distribution of the sample. However, the goal of
+learning is usually different in the two cases, making these problems incomparable in general.
+
+In the case of non-interactive learning, the natural goal is to find a good policy given the observations.
+A common situation is when the sample is fixed. For example, the sample can be the result of some experimentation with some physical system that happened before learning started. 
+
+Consider now interactive learning. One possibility is that learning happens while interacting
+with a real system in a closed-loop fashion. A reasonable goal then is to optimize online performance,
+making the learning problem an instance of online learning. Online performance
+can be measured in different ways. A natural measure is to use the sum of rewards incurred
+during learning. 
+
+
+
+\section{Q-Learning}
+
+Q-learning is a model-free reinforcement learning technique. Q-learning, it is a multiagent learning algorithm that learns equilibrium policies in Markov games, just as Q-learning learns to optimal policies in Markov decision processes \cite{Greenwald2003}. 
+
+Q-learning and related algorithms tries to learn the optimal policy from its history of interaction with the environment. A history of an agent is a sequence of state-action-rewards.Where $s_{n}$ it is a state, $a_{n}$ it is an action and $r_{n}$ is a reward:
+
+\begin{equation}
+<s_{0},a_{0},r_{1},s_{1},a_{1},r_{2},s_{2},a_{2},r_{3},s_{3},a_{3},r_{4},s_{4}....>,
+\end{equation}
+
+
+In Q-Learning, the system's objective is to learn a control policy $\pi = \sum_{n=0}^{\infty} \gamma\textsuperscript{n}  r_{t}+n $, where $\pi$  is the discounted cumulative reward, $\gamma$ is the discount rate ($01$) and $r_{t}$ is the reward reiceved after execution an action at time t.
+

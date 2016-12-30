@@ -381,6 +381,11 @@ Michael~O Sullivan, Siegfried V\"{o}ssner, Joachim Wegener, and Daimler-benz
   Using Genetic Algorithms and Cluster Analysis ---}.
 \newblock pages 1--20.
 
+\bibitem{Sutton2012}
+Richard~S. Sutton and Andrew~G. Barto.
+\newblock {Reinforcement learning}.
+\newblock {\em Learning}, 3(9):322, 2012.
+
 \bibitem{talbi2009metaheuristics}
 El-Ghazali Talbi.
 \newblock {\em Metaheuristics: from design to implementation}, volume~74.

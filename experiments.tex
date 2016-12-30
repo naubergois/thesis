@@ -149,7 +149,7 @@ The experiments addresses:
 
 \subsection{The Ramp and Circuitous Treasure Hunt experiment}
 
-The experiment was carried out for 8 continuous hours.  All tests in the experiment were conducted without the need of a tester, automating the process of executing and designing performance test scenarios.In this experiment, Scenarios were generated with the Ramp and Circuitous Treasure antipattern as well as scenarios with Happy Scenario 1, Happy Scenario 2 and mixed scenarios. The Fig. \ref{fig:fitnessbygeneration1} and \ref{fig:fitnessbygeneration1-2} presents the fitness value obtained by each metaheuristic. The SA algorithm obtained the worst fitness values. Hybrid metaheuristic obtained the better fitness values. 
+The experiment was carried out for 8 continuous hours.  All tests in the experiment were conducted without the need of a tester, automating the process of executing and designing performance test scenarios.In this experiment, Scenarios were generated with the Ramp and Circuitous Treasure antipattern as well as scenarios with Happy Scenario 1, Happy Scenario 2 and mixed scenarios. The Fig. \ref{fig:fitnessbygeneration1}  presents the fitness value obtained by each metaheuristic. HybridQ metaheuristic obtained the better fitness values. 
 
 
 \begin{figure}[H]
@@ -162,15 +162,8 @@ The experiment was carried out for 8 continuous hours.  All tests in the experim
 
 
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{./images/experiment1-2.png}
-\caption{fitness value obtained by Search Method without SA metaheuristic.}
-\label{fig:fitnessbygeneration1-2}
 
-\end{figure}
-
-Despite having obtained the best fitness value in each generation, the Hybrid algorithm performs twice as many requests as the second one, the tabu search (Fig. \ref{fig:numberofrequestsbysearchmethod}). The Fig. \ref{fig:boxplot1} shows the average, minimal e maximum value by search method.
+Despite having obtained the best fitness value in each generation, the Hybrid algorithm performs twice as many requests as the  tabu search (Fig. \ref{fig:numberofrequestsbysearchmethod}). The HybridQ algorithm obtained the best fitness value The Fig. \ref{fig:boxplot1} shows the average, minimal e maximum value by search method.
 
 
 \begin{figure}[H]
@@ -205,7 +198,7 @@ The Fig. \ref{fig:summaryboxplot1} presents the maximum, average, median and min
 
 \end{figure}
 
-Table \ref{tab:bestindividuals} shows 4 individuals with 143 to 146 users. These are the scenarios with the maximum number of users found with the best response time. The first individual has 64 users on Happy Scenario 2, 81 users on Happy Scenario 1 and a response time of 12 seconds. None of the best individuals has one of the antipatterns used in the experiment.
+Table \ref{tab:bestindividuals} shows 4 individuals with 164 to 169 users. These are the scenarios with the maximum number of users found with the best response time. The first individual has 153 users on Happy Scenario 2, 16 users on Happy Scenario 1 and a response time of 13 seconds. None of the best individuals has one of the antipatterns used in the experiment.
 
 
 
@@ -219,10 +212,10 @@ Table \ref{tab:bestindividuals} shows 4 individuals with 143 to 146 users. These
 \begin{tabular}{lllllll}
 \rowcolor[HTML]{C0C0C0} 
 \textbf{Search Method} & \textbf{Generation} & \textbf{Users} & \textbf{fitness Value} & \textbf{Happy 2} & \textbf{Happy 1} & \textbf{Response Time} \\
-Hybrid & 17 & 145 & 432760 & 64 & 81 & 12 \\
-Hybrid & 17 & 145 & 432740 & 46 & 99 & 13 \\
-Hybrid & 17 & 146 & 431760 & 54 & 92 & 12 \\
-Hybrid & 16 & 143 & 426740 & 30 & 113 & 13
+HybridQ & 17 & 169 & 500740 & 153 & 16 & 13 \\
+HybridQ & 16 & 169 & 500700 & 153 & 16 & 15 \\
+HybridQ & 13 & 164 & 489740 & 149 & 15 & 13 \\
+HybridQ & 15 & 164 & 489740 & 149 & 15 & 13
 \end{tabular}
 \end{table}
 
@@ -245,9 +238,7 @@ Fig. \ref{fig:responsetimegenerationalltests1} presents the response time by num
 
 \end{figure}
 
-In the first experiment, We conclude that the metaheuristics converged to scenarios with an happy path, excluding the scenarios with antipatterns. The hybrid metaheuristic returned individuals with higher fitness scores. However, the Hybrid metaheuristic made twice as many requests than Tabu Search to overcome it. The SA algorithm obtained the worst fitness values. The algorithm initially used a scenario with the Ramp and Circuitous Treasure antipatterns  and found neighbors that still using the antipatterns over the 17 generations of the experiment.
-
-
+In the first experiment, We conclude that the metaheuristics converged to scenarios with an happy path, excluding the scenarios with antipatterns. The hybridQ and hybrid metaheuristic returned individuals with higher fitness scores. However, the Hybrid metaheuristic made twice as many requests than Tabu Search to overcome it. 
 
 
 \FloatBarrier

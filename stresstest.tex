@@ -157,10 +157,30 @@ Search-Based Stress testing will be detail explained in the chapter 3.
 
 Model-based testing is an application  of models to represent the desired behavior of a System Under Test or to represent testing strategies in a test. Some research aproaches proposes models to simulate or  generate realistic loads. Model-based testing (MBT) is a variant of testing that relies on explicit behaviour models that encode the intended behaviours of a system under test. Test cases are generated from one of these models or their combination \cite{MarkUtting2012} \cite{Bertolino2008}. 
 
-The model paradgim is what paradigm and notation are used to describe the model. There are many different modelling notations that have been used for modelling the behaviour of systems for test generation purposes \cite{MarkUtting2012}. These paradigms are also used in the MBT state of the art survey provided by Dias-Neto et al. The overview article of Hierons et al.  discusses many of these paradigms in more detail \cite{Hierons2009} \cite{MarkUtting2012}. 
+The model paradgim is what paradigm and notation are used to describe the model. There are many different modelling notations that have been used for modelling the behaviour of systems for test generation purposes \cite{MarkUtting2012} \cite{Hierons2009}. 
 
 \begin{itemize}
 \item State-Based (or Pre/Post) Notations. These model a system as a collection of variables, which represent a snapshot of the internal state of the system, plus some operations that modify those variables. Each operation is usually defined by a precondition and a postcondition, or the postcondition may be written as explicit code that updates the state \cite{MarkUtting2012}.
+\item Transition-based Notations. These focus on describing the transitions between different states
+of the system. Typically, they are graphical node-and-arc notations, like finite state machines
+(FSMs). Examples of transition-based notations used for MBT include FSMs themselves, statecharts, labelled transition systems and I/O automata \cite{MarkUtting2012}.
+\item History-based Notations. These notations model a system by describing the allowable traces
+of its behaviour over time. Message-sequence charts and related formalisms are also included in this group. These are
+graphical and textual notations for specifying sequences of interactions between components \cite{MarkUtting2012}.
+\item Functional Notations. These describe a system as a collection of mathematical functions. The
+functions may be first-order only, as in the case of algebraic specifications, or higher-order, as in
+notations like HOL \cite{MarkUtting2012}.
+\item Operational Notations. These describe a system as a collection of executable processes,
+executing in parallel. They are particularly suited to describing distributed systems and
+communications protocols. Examples include process algebras such as CSP or CCS as well as
+Petri net notations. Slightly stretching this category, hardware description languages like VHDL
+or Verilog are also included in this category \cite{MarkUtting2012}.
+\item Stochastic Notations. These describe a system by a probabilistic model of the events and input
+values and tend to be used to model environments rather than SUTs. For example, Markov chains
+are used to model expected usage profiles, so that the generated tests scenarios \cite{MarkUtting2012}.
+\item Data-Flow Notations. These notations concentrate on the data rather than the control flow.
+Prominent examples are Lustre, and the block diagrams of Matlab Simulink, which are often used
+to model continuous systems \cite{MarkUtting2012}.
 \end{itemize}
 
 A User Community Modeling Language (UCML) is a set of symbols that can be used to create visual system usage models and depict associated parameters \cite{Wang2013}. The Fig. \ref{fig:ucml} shows a sample where all users realize a login into the application unde test. Once logged in, 40\% of the users navigates on the aplication, 30\%  of the users realizes downloads. 20\% of users realizes uploads and 10\% of users performs deletions.
@@ -205,6 +225,15 @@ them are standard in mainstream development methodologies and others are needed 
 \end{figure}
 
 Vogele et al. presents an approach that aims to automate the extraction and transformation of workload specifications for an model-based performance prediction of session-based application systems. The approach comprises three main components. First, a system- and tool-agnostic domain-specific language (DSL) allows the layered modeling of workload specifications of session-based systems. Second, instances of this DSL are automatically extracted. from recorded session logs of production systems. Third, these instances are transformed into executable workload specifications of load generation tools and model-based performance evaluation tools. We present transformations to the common load testing tool Apache JMeter and to the Palladio Component Model \cite{Vogele2016}.
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.6\textwidth]{./images/vogel.png}
+\caption{Exemplary workload model (without think times in the Behavior Models)}
+\label{fig:modelbased}
+\end{figure}
+
 
 \subsection{Feedback-Directed Learning Software Testing}
 
