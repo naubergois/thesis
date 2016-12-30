@@ -40,33 +40,35 @@
 \contentsline {figure}{\numberline {4-4}{\ignorespaces Categories of metaheuristc combinations \cite {Puchinger2005} \relax }}{70}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5-1}{\ignorespaces Example of a simple MDP with three states and two actions\relax }}{72}
+\contentsline {figure}{\numberline {5-2}{\ignorespaces Example of a simple MDP with three states and two actions\relax }}{73}
+\contentsline {figure}{\numberline {5-3}{\ignorespaces Example of a simple MDP with three states and two actions\relax }}{75}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6-1}{\ignorespaces Use of the algorithms independently\relax }}{76}
-\contentsline {figure}{\numberline {6-2}{\ignorespaces Use of the algorithms collaboratively\relax }}{77}
-\contentsline {figure}{\numberline {6-3}{\ignorespaces Solution representation and crossover example\relax }}{78}
-\contentsline {figure}{\numberline {6-4}{\ignorespaces Tabu search and simulated annealing neighbor strategy\relax }}{79}
-\contentsline {figure}{\numberline {6-5}{\ignorespaces IAdapter architecture\relax }}{81}
-\contentsline {figure}{\numberline {6-6}{\ignorespaces IAdapter life cycle\relax }}{82}
-\contentsline {figure}{\numberline {6-7}{\ignorespaces WorkLoadThreadGroup component\relax }}{83}
-\contentsline {figure}{\numberline {6-8}{\ignorespaces testbed main architecture.\relax }}{84}
-\contentsline {figure}{\numberline {6-9}{\ignorespaces Heuristic class diagram.\relax }}{85}
-\contentsline {figure}{\numberline {6-10}{\ignorespaces Test Module first feature.\relax }}{86}
-\contentsline {figure}{\numberline {6-11}{\ignorespaces Test Module life cycle.\relax }}{86}
-\contentsline {figure}{\numberline {6-12}{\ignorespaces Heuristic class diagram.\relax }}{87}
+\contentsline {figure}{\numberline {6-1}{\ignorespaces Use of the algorithms independently\relax }}{78}
+\contentsline {figure}{\numberline {6-2}{\ignorespaces Use of the algorithms collaboratively\relax }}{79}
+\contentsline {figure}{\numberline {6-3}{\ignorespaces Solution representation and crossover example\relax }}{80}
+\contentsline {figure}{\numberline {6-4}{\ignorespaces Tabu search and simulated annealing neighbor strategy\relax }}{81}
+\contentsline {figure}{\numberline {6-5}{\ignorespaces IAdapter architecture\relax }}{83}
+\contentsline {figure}{\numberline {6-6}{\ignorespaces IAdapter life cycle\relax }}{84}
+\contentsline {figure}{\numberline {6-7}{\ignorespaces WorkLoadThreadGroup component\relax }}{85}
+\contentsline {figure}{\numberline {6-8}{\ignorespaces testbed main architecture.\relax }}{86}
+\contentsline {figure}{\numberline {6-9}{\ignorespaces Heuristic class diagram.\relax }}{87}
+\contentsline {figure}{\numberline {6-10}{\ignorespaces Test Module first feature.\relax }}{88}
+\contentsline {figure}{\numberline {6-11}{\ignorespaces Test Module life cycle.\relax }}{88}
+\contentsline {figure}{\numberline {6-12}{\ignorespaces Heuristic class diagram.\relax }}{89}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7-1}{\ignorespaces Best results obtained in 27 generations\relax }}{92}
-\contentsline {figure}{\numberline {7-2}{\ignorespaces fitness value obtained by Search Method \relax }}{95}
-\contentsline {figure}{\numberline {7-3}{\ignorespaces Number of requests by Search Method\relax }}{95}
-\contentsline {figure}{\numberline {7-4}{\ignorespaces Average, median, maximum and minimal fitness value by Search Method\relax }}{96}
-\contentsline {figure}{\numberline {7-5}{\ignorespaces fitness value by generation\relax }}{96}
-\contentsline {figure}{\numberline {7-6}{\ignorespaces Density graph of number of users by fitness value\relax }}{97}
-\contentsline {figure}{\numberline {7-7}{\ignorespaces Response time by number of users of individuals with Happy Scenario 1 and Happy Scenario 2\relax }}{98}
-\contentsline {figure}{\numberline {7-8}{\ignorespaces Response time by number of users of individuals with the Ramp and Circuitous Treasure antipatterns\relax }}{98}
-\contentsline {figure}{\numberline {7-9}{\ignorespaces itnesse value obtained by Search Method\relax }}{99}
-\contentsline {figure}{\numberline {7-10}{\ignorespaces Number of requests by Search Method\relax }}{100}
-\contentsline {figure}{\numberline {7-11}{\ignorespaces Fitness value by generation in all tests\relax }}{100}
-\contentsline {figure}{\numberline {7-12}{\ignorespaces Response time by generation in all tests scenarios\relax }}{100}
-\contentsline {figure}{\numberline {7-13}{\ignorespaces Finesse value by generation in all tests\relax }}{100}
-\contentsline {figure}{\numberline {7-14}{\ignorespaces Response time by number of users of individuals with Happy Scenario 1, Happy Scenario 2 and Tower Babel antipattern\relax }}{101}
-\contentsline {figure}{\numberline {7-15}{\ignorespaces Response time by number of users of individuals with Unbalanced Processing antipattern\relax }}{102}
+\contentsline {figure}{\numberline {7-1}{\ignorespaces Best results obtained in 27 generations\relax }}{94}
+\contentsline {figure}{\numberline {7-2}{\ignorespaces fitness value obtained by Search Method \relax }}{97}
+\contentsline {figure}{\numberline {7-3}{\ignorespaces Number of requests by Search Method\relax }}{97}
+\contentsline {figure}{\numberline {7-4}{\ignorespaces Average, median, maximum and minimal fitness value by Search Method\relax }}{98}
+\contentsline {figure}{\numberline {7-5}{\ignorespaces fitness value by generation\relax }}{98}
+\contentsline {figure}{\numberline {7-6}{\ignorespaces Density graph of number of users by fitness value\relax }}{99}
+\contentsline {figure}{\numberline {7-7}{\ignorespaces Response time by number of users of individuals with Happy Scenario 1 and Happy Scenario 2\relax }}{100}
+\contentsline {figure}{\numberline {7-8}{\ignorespaces Response time by number of users of individuals with the Ramp and Circuitous Treasure antipatterns\relax }}{100}
+\contentsline {figure}{\numberline {7-9}{\ignorespaces itnesse value obtained by Search Method\relax }}{101}
+\contentsline {figure}{\numberline {7-10}{\ignorespaces Number of requests by Search Method\relax }}{102}
+\contentsline {figure}{\numberline {7-11}{\ignorespaces Fitness value by generation in all tests\relax }}{102}
+\contentsline {figure}{\numberline {7-12}{\ignorespaces Response time by generation in all tests scenarios\relax }}{102}
+\contentsline {figure}{\numberline {7-13}{\ignorespaces Finesse value by generation in all tests\relax }}{102}
+\contentsline {figure}{\numberline {7-14}{\ignorespaces Response time by number of users of individuals with Happy Scenario 1, Happy Scenario 2 and Tower Babel antipattern\relax }}{103}
+\contentsline {figure}{\numberline {7-15}{\ignorespaces Response time by number of users of individuals with Unbalanced Processing antipattern\relax }}{104}
 \addvspace {10\p@ }

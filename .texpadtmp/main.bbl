@@ -386,6 +386,12 @@ Richard~S. Sutton and Andrew~G. Barto.
 \newblock {Reinforcement learning}.
 \newblock {\em Learning}, 3(9):322, 2012.
 
+\bibitem{Szepesvari2010}
+Csaba Szepesv{\'{a}}ri and Gabor Bartok.
+\newblock {Algorithms for Reinforcement Learning}.
+\newblock {\em Synthesis Lectures on Artificial Intelligence and Machine
+  Learning}, 4(x):1--103, 2010.
+
 \bibitem{talbi2009metaheuristics}
 El-Ghazali Talbi.
 \newblock {\em Metaheuristics: from design to implementation}, volume~74.
