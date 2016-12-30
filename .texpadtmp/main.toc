@@ -58,8 +58,8 @@
 \contentsline {section}{\numberline {7.1}Emulated Class Test Experiment}{92}
 \contentsline {section}{\numberline {7.2}Testbed Tool Experiments}{95}
 \contentsline {subsection}{\numberline {7.2.1}The Ramp and Circuitous Treasure Hunt experiment}{96}
-\contentsline {subsection}{\numberline {7.2.2}The Tower Babel and Unbalanced Processing experiment}{101}
-\contentsline {section}{\numberline {7.3}Moodle Application Experiment}{104}
-\contentsline {chapter}{\numberline {8}Conclusion}{107}
-\contentsline {section}{\numberline {8.1}Achievements}{107}
-\contentsline {section}{\numberline {8.2}Open Issues and future works}{109}
+\contentsline {subsection}{\numberline {7.2.2}The Tower Babel and Unbalanced Processing experiment}{102}
+\contentsline {section}{\numberline {7.3}Moodle Application Experiment}{105}
+\contentsline {chapter}{\numberline {8}Conclusion}{108}
+\contentsline {section}{\numberline {8.1}Achievements}{108}
+\contentsline {section}{\numberline {8.2}Open Issues and future works}{110}

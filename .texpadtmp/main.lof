@@ -64,11 +64,12 @@
 \contentsline {figure}{\numberline {7-6}{\ignorespaces Density graph of number of users by fitness value\relax }}{99}
 \contentsline {figure}{\numberline {7-7}{\ignorespaces Response time by number of users of individuals with Happy Scenario 1 and Happy Scenario 2\relax }}{100}
 \contentsline {figure}{\numberline {7-8}{\ignorespaces Response time by number of users of individuals with the Ramp and Circuitous Treasure antipatterns\relax }}{100}
-\contentsline {figure}{\numberline {7-9}{\ignorespaces itnesse value obtained by Search Method\relax }}{101}
-\contentsline {figure}{\numberline {7-10}{\ignorespaces Number of requests by Search Method\relax }}{102}
-\contentsline {figure}{\numberline {7-11}{\ignorespaces Fitness value by generation in all tests\relax }}{102}
-\contentsline {figure}{\numberline {7-12}{\ignorespaces Response time by generation in all tests scenarios\relax }}{102}
-\contentsline {figure}{\numberline {7-13}{\ignorespaces Finesse value by generation in all tests\relax }}{102}
-\contentsline {figure}{\numberline {7-14}{\ignorespaces Response time by number of users of individuals with Happy Scenario 1, Happy Scenario 2 and Tower Babel antipattern\relax }}{103}
-\contentsline {figure}{\numberline {7-15}{\ignorespaces Response time by number of users of individuals with Unbalanced Processing antipattern\relax }}{104}
+\contentsline {figure}{\numberline {7-9}{\ignorespaces Markov decision process of experiment with Circuitous Treasure antipatterns\relax }}{101}
+\contentsline {figure}{\numberline {7-10}{\ignorespaces Fitness value obtained by Search Method\relax }}{102}
+\contentsline {figure}{\numberline {7-11}{\ignorespaces Number of requests by Search Method\relax }}{103}
+\contentsline {figure}{\numberline {7-12}{\ignorespaces Fitness value by generation in all tests\relax }}{103}
+\contentsline {figure}{\numberline {7-13}{\ignorespaces Response time by generation in all tests scenarios\relax }}{103}
+\contentsline {figure}{\numberline {7-14}{\ignorespaces Finesse value by generation in all tests\relax }}{103}
+\contentsline {figure}{\numberline {7-15}{\ignorespaces Response time by number of users of individuals with Happy Scenario 1, Happy Scenario 2 and Tower Babel antipattern\relax }}{104}
+\contentsline {figure}{\numberline {7-16}{\ignorespaces Response time by number of users of individuals with Unbalanced Processing antipattern\relax }}{105}
 \addvspace {10\p@ }

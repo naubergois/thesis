@@ -211,7 +211,7 @@ Table \ref{tab:bestindividuals} shows 4 individuals with 164 to 169 users. These
 \label{tab:bestindividuals}
 \begin{tabular}{lllllll}
 \rowcolor[HTML]{C0C0C0} 
-\textbf{Search Method} & \textbf{Generation} & \textbf{Users} & \textbf{fitness Value} & \textbf{Happy 2} & \textbf{Happy 1} & \textbf{Response Time} \\
+\textbf{Search Method} & \textbf{Generation} & \textbf{Users} & \textbf{fitness Value} & \textbf{Happy 2} & \textbf{Happy 1} & \textbf{Resp. Time} \\
 HybridQ & 17 & 169 & 500740 & 153 & 16 & 13 \\
 HybridQ & 16 & 169 & 500700 & 153 & 16 & 15 \\
 HybridQ & 13 & 164 & 489740 & 149 & 15 & 13 \\
@@ -238,8 +238,17 @@ Fig. \ref{fig:responsetimegenerationalltests1} presents the response time by num
 
 \end{figure}
 
+Fig. \ref{fig:mdpexperiment1} presents the markov decision process of the exper
+
 In the first experiment, We conclude that the metaheuristics converged to scenarios with an happy path, excluding the scenarios with antipatterns. The hybridQ and hybrid metaheuristic returned individuals with higher fitness scores. However, the Hybrid metaheuristic made twice as many requests than Tabu Search to overcome it. 
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{./images/mdpexperiment.png}
+\caption{Markov decision process of experiment with Circuitous Treasure antipatterns}
+\label{fig:mdpexperiment1}
+
+\end{figure}
 
 \FloatBarrier
 \subsection{The Tower Babel  and Unbalanced Processing experiment}
@@ -250,7 +259,7 @@ The experiment was carried out for 6 continuous hours. All tests in the experime
 \begin{figure}[h]
 \centering
 \includegraphics[width=.9\textwidth]{./images/experiment2-7.png}
-\caption{itnesse value obtained by Search Method}
+\caption{Fitness value obtained by Search Method}
 \label{fig:fitnessbygeneration2}
 \end{figure}
 

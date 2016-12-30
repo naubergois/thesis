@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.13)  30 DEC 2016 10:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.13)  30 DEC 2016 20:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2439,7 +2439,7 @@ Package pdftex.def Info: ./images/experiment1-6.png used on input line 195.
 Underfull \vbox (badness 1400) has occurred while \output is active []
 
  [98 <./images/experiment1-4.png> <./images/experiment1-5.png>]
-Overfull \hbox (43.84799pt too wide) in paragraph at lines 212--220
+Overfull \hbox (24.9pt too wide) in paragraph at lines 212--220
  [][] 
  []
 
@@ -2458,84 +2458,94 @@ File: ./images/experiment1-8.png Graphic file (type png)
 Package pdftex.def Info: ./images/experiment1-8.png used on input line 235.
 (pdftex.def)             Requested size: 433.62pt x 206.33069pt.
  [100 <./images/experiment1-7.png> <./images/experiment1-8.png>]
-<./images/experiment2-7.png, id=457, 752.8125pt x 472.76625pt>
+<./images/mdpexperiment.png, id=457, 517.935pt x 852.18375pt>
+File: ./images/mdpexperiment.png Graphic file (type png)
+
+<use ./images/mdpexperiment.png>
+Package pdftex.def Info: ./images/mdpexperiment.png used on input line 247.
+(pdftex.def)             Requested size: 303.53267pt x 499.44221pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [101 <./images/mdpexperiment.png>]
+<./images/experiment2-7.png, id=462, 582.175pt x 427.5975pt>
 File: ./images/experiment2-7.png Graphic file (type png)
 
 <use ./images/experiment2-7.png>
-Package pdftex.def Info: ./images/experiment2-7.png used on input line 252.
-(pdftex.def)             Requested size: 390.25534pt x 245.08961pt.
+Package pdftex.def Info: ./images/experiment2-7.png used on input line 261.
+(pdftex.def)             Requested size: 390.25534pt x 286.6389pt.
 
-<./images/experiment2-1.png, id=458, 680.5425pt x 427.5975pt>
+<./images/experiment2-1.png, id=463, 680.5425pt x 427.5975pt>
 File: ./images/experiment2-1.png Graphic file (type png)
 
 <use ./images/experiment2-1.png>
-Package pdftex.def Info: ./images/experiment2-1.png used on input line 263.
+Package pdftex.def Info: ./images/experiment2-1.png used on input line 272.
 (pdftex.def)             Requested size: 216.81pt x 136.2272pt.
 
-<./images/experiment2-2.png, id=459, 680.5425pt x 427.5975pt>
+<./images/experiment2-2.png, id=464, 680.5425pt x 427.5975pt>
 File: ./images/experiment2-2.png Graphic file (type png)
 
 <use ./images/experiment2-2.png>
-Package pdftex.def Info: ./images/experiment2-2.png used on input line 269.
+Package pdftex.def Info: ./images/experiment2-2.png used on input line 278.
 (pdftex.def)             Requested size: 216.81pt x 136.2272pt.
 
-Overfull \hbox (2.28pt too wide) in paragraph at lines 261--273
+Overfull \hbox (2.28pt too wide) in paragraph at lines 270--282
 []$[]$ $[]$ 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images/experiment2-3.png, id=460, 1204.5pt x 573.14125pt>
+<./images/experiment2-3.png, id=465, 1204.5pt x 573.14125pt>
 File: ./images/experiment2-3.png Graphic file (type png)
 
 <use ./images/experiment2-3.png>
-Package pdftex.def Info: ./images/experiment2-3.png used on input line 281.
+Package pdftex.def Info: ./images/experiment2-3.png used on input line 290.
 (pdftex.def)             Requested size: 216.81pt x 103.16096pt.
 
-<./images/experiment2-4.png, id=461, 752.8125pt x 472.76625pt>
+<./images/experiment2-4.png, id=466, 752.8125pt x 472.76625pt>
 File: ./images/experiment2-4.png Graphic file (type png)
 
 <use ./images/experiment2-4.png>
-Package pdftex.def Info: ./images/experiment2-4.png used on input line 287.
+Package pdftex.def Info: ./images/experiment2-4.png used on input line 296.
 (pdftex.def)             Requested size: 216.81pt x 136.15369pt.
 
-Overfull \hbox (2.28pt too wide) in paragraph at lines 279--291
+Overfull \hbox (2.28pt too wide) in paragraph at lines 288--300
 []$[]$ $[]$ 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[101 <./images/experiment2-7.png>]
+[102 <./images/experiment2-7.png>]
 Underfull \vbox (badness 3780) has occurred while \output is active []
 
- [102 <./images/experiment2-1.png> <./images/experiment2-2.png> <./images/exper
+ [103 <./images/experiment2-1.png> <./images/experiment2-2.png> <./images/exper
 iment2-3.png> <./images/experiment2-4.png>]
-<./images/experiment2-5.png, id=473, 1204.5pt x 573.14125pt>
+<./images/experiment2-5.png, id=479, 1204.5pt x 573.14125pt>
 File: ./images/experiment2-5.png Graphic file (type png)
 
 <use ./images/experiment2-5.png>
-Package pdftex.def Info: ./images/experiment2-5.png used on input line 302.
+Package pdftex.def Info: ./images/experiment2-5.png used on input line 311.
 (pdftex.def)             Requested size: 433.62pt x 206.33069pt.
 
-<./images/experiment2-6.png, id=474, 1204.5pt x 573.14125pt>
+<./images/experiment2-6.png, id=480, 1204.5pt x 573.14125pt>
 File: ./images/experiment2-6.png Graphic file (type png)
 
 <use ./images/experiment2-6.png>
-Package pdftex.def Info: ./images/experiment2-6.png used on input line 310.
+Package pdftex.def Info: ./images/experiment2-6.png used on input line 319.
 (pdftex.def)             Requested size: 433.62pt x 206.33069pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (36.94798pt too wide) in paragraph at lines 325--333
+Overfull \hbox (36.94798pt too wide) in paragraph at lines 334--342
  [][] 
  []
 
-[103 <./images/experiment2-5.png>] [104 <./images/experiment2-6.png>]
-Overfull \hbox (4.30554pt too wide) in paragraph at lines 387--387
+[104 <./images/experiment2-5.png>] [105 <./images/experiment2-6.png>]
+Overfull \hbox (4.30554pt too wide) in paragraph at lines 396--396
 []|\T1/txr/m/n/12 Id| 
  []
 
@@ -2545,25 +2555,25 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [105] [106]
+) [106] [107]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
 Chapter 8.
-[107
+[108
 
 
 
-] [108]) [109]
+] [109]) [110]
 \openout2 = `biblio.aux'.
 
  (./biblio.tex
-(/Users/naubergois/Downloads/templates-2/.texpadtmp/main.bbl [110
+(/Users/naubergois/Downloads/templates-2/.texpadtmp/main.bbl [111
 
 
 
-] [111]
-[112] [113] [114])) [115]
+] [112]
+[113] [114] [115])) [116]
 (/Users/naubergois/Downloads/templates-2/.texpadtmp/main.aux
 (/Users/naubergois/Downloads/templates-2/.texpadtmp/cover.aux)
 (/Users/naubergois/Downloads/templates-2/.texpadtmp/publications.aux)
@@ -2582,10 +2592,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27302 strings out of 493089
- 507979 string characters out of 6134842
- 846453 words of memory out of 5000000
- 30038 multiletter control sequences out of 15000+600000
+ 27308 strings out of 493089
+ 508139 string characters out of 6134842
+ 845466 words of memory out of 5000000
+ 30043 multiletter control sequences out of 15000+600000
  58045 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,20n,94p,10406b,1439s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2602,10 +2612,10 @@ fonts/txsy.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a
 /local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
 Output written on /Users/naubergois/Downloads/templates-2/.texpadtmp/main.pdf (
-115 pages, 11819766 bytes).
+116 pages, 11968527 bytes).
 PDF statistics:
- 564 PDF objects out of 1000 (max. 8388607)
- 297 compressed objects within 3 object streams
+ 569 PDF objects out of 1000 (max. 8388607)
+ 299 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 358 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 363 words of extra memory for PDF output out of 10000 (max. 10000000)
 
