@@ -15,8 +15,8 @@
 \contentsline {subsection}{\numberline {2.1.1}Stress Test Process}{23}
 \contentsline {section}{\numberline {2.2}Research Question 1:How is a proper stress designed?}{25}
 \contentsline {subsection}{\numberline {2.2.1}Model-based Stress Testing}{28}
-\contentsline {subsection}{\numberline {2.2.2}Feedback-Directed Learning Software Testing}{32}
-\contentsline {section}{\numberline {2.3}Research Question 2: How is a stress test executed and automated?}{34}
+\contentsline {subsection}{\numberline {2.2.2}Feedback-Directed Learning Software Testing}{34}
+\contentsline {section}{\numberline {2.3}Research Question 2: How is a stress test executed and automated?}{35}
 \contentsline {subsection}{\numberline {2.3.1}Load Test Tools}{36}
 \contentsline {section}{\numberline {2.4}Research Question 3: What are the main problems found by stress tests?}{40}
 \contentsline {section}{\numberline {2.5}Research Question 4: How are the stress tests results analysed?}{50}
@@ -59,7 +59,7 @@
 \contentsline {section}{\numberline {7.2}Testbed Tool Experiments}{95}
 \contentsline {subsection}{\numberline {7.2.1}The Ramp and Circuitous Treasure Hunt experiment}{96}
 \contentsline {subsection}{\numberline {7.2.2}The Tower Babel and Unbalanced Processing experiment}{102}
-\contentsline {section}{\numberline {7.3}Moodle Application Experiment}{105}
+\contentsline {section}{\numberline {7.3}Moodle Application Experiment}{104}
 \contentsline {chapter}{\numberline {8}Conclusion}{108}
 \contentsline {section}{\numberline {8.1}Achievements}{108}
 \contentsline {section}{\numberline {8.2}Open Issues and future works}{110}

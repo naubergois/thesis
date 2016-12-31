@@ -224,14 +224,16 @@ them are standard in mainstream development methodologies and others are needed 
 \label{fig:modelbased}
 \end{figure}
 
-Vogele et al. presents an approach that aims to automate the extraction and transformation of workload specifications for an model-based performance prediction of session-based application systems. The approach comprises three main components. First, a system- and tool-agnostic domain-specific language (DSL) allows the layered modeling of workload specifications of session-based systems. Second, instances of this DSL are automatically extracted. from recorded session logs of production systems. Third, these instances are transformed into executable workload specifications of load generation tools and model-based performance evaluation tools. We present transformations to the common load testing tool Apache JMeter and to the Palladio Component Model \cite{Vogele2016}.
+Vogele et al. presents an approach that aims to automate the extraction and transformation of workload specifications for an model-based performance prediction of session-based application systems.  The research also presents transformations to the common load testing tool Apache JMeter and to the Palladio Component Model \cite{Vogele2016}. The workload specification formalism (Workload Model) consists of the following components, which are detailed below and illustrated in Fig. \ref{fig:vogel}:
+\begin{itemize}\item An Application Model, specifying allowed sequences of service invocations and SUT-specific details for generating valid requests.\item A set of Behavior Models,each providing a probabilistic representation of user sessions in terms of invoked services.\item A Behavior Mix, specified as probabilities for the individual Behavior Models to occur during workload gen- eration.\item A Workload Intensity that includes a function which specifies the number of concurrent users during the workload generation execution.
+\end{itemize}
 
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.6\textwidth]{./images/vogel.png}
-\caption{Exemplary workload model (without think times in the Behavior Models)}
-\label{fig:modelbased}
+\caption{Exemplary workload model}
+\label{fig:vogel}
 \end{figure}
 
 

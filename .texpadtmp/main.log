@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.13)  30 DEC 2016 20:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.13)  31 DEC 2016 02:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1512,11 +1512,8 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 (/Users/naubergois/Downloads/templates-2/.texpadtmp/publications.aux)
 (/Users/naubergois/Downloads/templates-2/.texpadtmp/contents.aux)
 (/Users/naubergois/Downloads/templates-2/.texpadtmp/chap1.aux)
-(/Users/naubergois/Downloads/templates-2/.texpadtmp/stresstest.aux
-
-LaTeX Warning: Label `fig:modelbased' multiply defined.
-
-) (/Users/naubergois/Downloads/templates-2/.texpadtmp/searchbased.aux)
+(/Users/naubergois/Downloads/templates-2/.texpadtmp/stresstest.aux)
+(/Users/naubergois/Downloads/templates-2/.texpadtmp/searchbased.aux)
 (/Users/naubergois/Downloads/templates-2/.texpadtmp/metaheuristic.aux)
 (/Users/naubergois/Downloads/templates-2/.texpadtmp/qlearning.aux
 
@@ -1786,58 +1783,56 @@ File: ./images/modelmethodology.png Graphic file (type png)
 <use ./images/modelmethodology.png>
 Package pdftex.def Info: ./images/modelmethodology.png used on input line 222.
 (pdftex.def)             Requested size: 433.62pt x 308.2783pt.
- [31 <./images/stochastic.png> <./images/cbmg.png>] <./images/vogel.png, id=133
-, 526.96875pt x 1072.005pt>
+ [31 <./images/stochastic.png> <./images/cbmg.png>] [32 <./images/modelmethodol
+ogy.png>]
+<./images/vogel.png, id=137, 526.96875pt x 1072.005pt>
 File: ./images/vogel.png Graphic file (type png)
 
 <use ./images/vogel.png>
-Package pdftex.def Info: ./images/vogel.png used on input line 232.
+Package pdftex.def Info: ./images/vogel.png used on input line 238.
 (pdftex.def)             Requested size: 260.17464pt x 529.29463pt.
 
-Overfull \hbox (2.89133pt too wide) in paragraph at lines 240--241
+Overfull \hbox (2.89133pt too wide) in paragraph at lines 246--247
 \T1/txr/m/n/12 Feedback-ORiEnted Per-fOr-mance Soft-ware Test-ing (FORE-POST) i
 s an adap-tive, feedback-
  []
 
-[32 <./images/modelmethodology.png>]
-Overfull \hbox (6.08405pt too wide) in paragraph at lines 242--243
+[33 <./images/vogel.png>]
+Overfull \hbox (6.08405pt too wide) in paragraph at lines 248--249
 \T1/txr/m/n/12 chine learn-ing tech-niques and au-to-mated test scripts to re-d
 uce large amounts of performance-
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33 <./images/vogel.png>] <./images/FOREPOST.png, id=142, 430.60875pt x 486.81
-876pt>
+<./images/FOREPOST.png, id=142, 430.60875pt x 486.81876pt>
 File: ./images/FOREPOST.png Graphic file (type png)
 
 <use ./images/FOREPOST.png>
-Package pdftex.def Info: ./images/FOREPOST.png used on input line 251.
+Package pdftex.def Info: ./images/FOREPOST.png used on input line 257.
 (pdftex.def)             Requested size: 303.53267pt x 343.1627pt.
- [34] [35 <./images/FOREPOST.png>] [36]
-<./images/tpcw.png, id=153, 503.8825pt x 385.44pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34]
+[35 <./images/FOREPOST.png>] [36] [37]
+<./images/tpcw.png, id=157, 503.8825pt x 385.44pt>
 File: ./images/tpcw.png Graphic file (type png)
  <use ./images/tpcw.png>
-Package pdftex.def Info: ./images/tpcw.png used on input line 303.
+Package pdftex.def Info: ./images/tpcw.png used on input line 309.
 (pdftex.def)             Requested size: 346.89731pt x 265.35399pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[37] <./images/loadrunner.png, id=158, 578.16pt x 203.76125pt>
+<./images/loadrunner.png, id=158, 578.16pt x 203.76125pt>
 File: ./images/loadrunner.png Graphic file (type png)
 
 <use ./images/loadrunner.png>
-Package pdftex.def Info: ./images/loadrunner.png used on input line 317.
+Package pdftex.def Info: ./images/loadrunner.png used on input line 323.
 (pdftex.def)             Requested size: 433.62pt x 152.82056pt.
  [38 <./images/tpcw.png>] [39 <./images/loadrunner.png>]
-Overfull \hbox (61.33199pt too wide) in paragraph at lines 347--382
+Overfull \hbox (61.33199pt too wide) in paragraph at lines 353--388
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 26.56934pt on input line 382.
+LaTeX Warning: Float too large for page by 26.56934pt on input line 388.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1846,150 +1841,138 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: ./images/symptoms.png Graphic file (type png)
 
 <use ./images/symptoms.png>
-Package pdftex.def Info: ./images/symptoms.png used on input line 394.
+Package pdftex.def Info: ./images/symptoms.png used on input line 400.
 (pdftex.def)             Requested size: 346.89731pt x 203.93068pt.
- [40 <./images/symptoms.png>] [41]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[40] [41 <./images/symptoms.png>]
 <./images/BLOB.png, id=175, 456.70625pt x 398.48875pt>
 File: ./images/BLOB.png Graphic file (type png)
  <use ./images/BLOB.png>
-Package pdftex.def Info: ./images/BLOB.png used on input line 446.
+Package pdftex.def Info: ./images/BLOB.png used on input line 452.
 (pdftex.def)             Requested size: 346.89731pt x 302.68434pt.
 
 <./images/blob2.png, id=176, 525.965pt x 351.3125pt>
 File: ./images/blob2.png Graphic file (type png)
  <use ./images/blob2.png>
-Package pdftex.def Info: ./images/blob2.png used on input line 452.
+Package pdftex.def Info: ./images/blob2.png used on input line 458.
 (pdftex.def)             Requested size: 346.89731pt x 231.71686pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [42 <./images/BLOB.png>]
-<./images/unbalanced.png, id=181, 442.65375pt x 419.5675pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43 <./images/blob2.png>] <./images/unbalanced.png, id=186, 442.65375pt x 419.
+5675pt>
 File: ./images/unbalanced.png Graphic file (type png)
 
 <use ./images/unbalanced.png>
-Package pdftex.def Info: ./images/unbalanced.png used on input line 464.
+Package pdftex.def Info: ./images/unbalanced.png used on input line 470.
 (pdftex.def)             Requested size: 216.81pt x 205.50664pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./images/pipe2.png, id=182, 508.90125pt x 245.91875pt>
+<./images/pipe2.png, id=187, 508.90125pt x 245.91875pt>
 File: ./images/pipe2.png Graphic file (type png)
 
 <use ./images/pipe2.png>
-Package pdftex.def Info: ./images/pipe2.png used on input line 473.
+Package pdftex.def Info: ./images/pipe2.png used on input line 479.
 (pdftex.def)             Requested size: 216.81pt x 104.77112pt.
 
-<./images/extpro.png, id=183, 498.86375pt x 373.395pt>
+<./images/extpro.png, id=188, 498.86375pt x 373.395pt>
 File: ./images/extpro.png Graphic file (type png)
 
 <use ./images/extpro.png>
-Package pdftex.def Info: ./images/extpro.png used on input line 479.
+Package pdftex.def Info: ./images/extpro.png used on input line 485.
 (pdftex.def)             Requested size: 216.81pt x 162.27737pt.
 
-Overfull \hbox (2.28pt too wide) in paragraph at lines 471--483
+Overfull \hbox (2.28pt too wide) in paragraph at lines 477--489
 []$[]$ $[]$ 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [43 <./images/blob2.png>] [44 <./images/unbalanced.png> <./images/pipe2.png> <
-./images/extpro.png>] <./images/circuit.png, id=195, 527.9725pt x 394.47375pt>
+[44 <./images/unbalanced.png> <./images/pipe2.png> <./images/extpro.png>]
+<./images/circuit.png, id=195, 527.9725pt x 394.47375pt>
 File: ./images/circuit.png Graphic file (type png)
 
 <use ./images/circuit.png>
-Package pdftex.def Info: ./images/circuit.png used on input line 495.
+Package pdftex.def Info: ./images/circuit.png used on input line 501.
 (pdftex.def)             Requested size: 433.62pt x 323.97617pt.
 
 <./images/trucks.png, id=196, 521.95pt x 544.0325pt>
 File: ./images/trucks.png Graphic file (type png)
  <use ./images/trucks.png>
-Package pdftex.def Info: ./images/trucks.png used on input line 504.
+Package pdftex.def Info: ./images/trucks.png used on input line 510.
 (pdftex.def)             Requested size: 346.89731pt x 361.57784pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [45 <./images/circuit.png>]
-<./images/babel2.png, id=201, 521.95pt x 533.995pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46 <./images/trucks.png>] <./images/babel2.png, id=205, 521.95pt x 533.995pt>
 File: ./images/babel2.png Graphic file (type png)
- <use ./images/babel2.png>
-Package pdftex.def Info: ./images/babel2.png used on input line 518.
+
+<use ./images/babel2.png>
+Package pdftex.def Info: ./images/babel2.png used on input line 524.
 (pdftex.def)             Requested size: 260.17464pt x 266.18204pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./images/onelane.png, id=202, 557.08125pt x 245.91875pt>
+<./images/onelane.png, id=206, 557.08125pt x 245.91875pt>
 File: ./images/onelane.png Graphic file (type png)
 
 <use ./images/onelane.png>
-Package pdftex.def Info: ./images/onelane.png used on input line 525.
+Package pdftex.def Info: ./images/onelane.png used on input line 531.
 (pdftex.def)             Requested size: 433.62pt x 191.42183pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [46 <./images/trucks.png>]
-<./images/excessivedynamicallocation.png, id=207, 514.92375pt x 211.79124pt>
+[47 <./images/babel2.png>]
+<./images/excessivedynamicallocation.png, id=211, 514.92375pt x 211.79124pt>
 File: ./images/excessivedynamicallocation.png Graphic file (type png)
 
 <use ./images/excessivedynamicallocation.png>
 Package pdftex.def Info: ./images/excessivedynamicallocation.png used on input 
-line 540.
+line 546.
 (pdftex.def)             Requested size: 216.81pt x 89.1747pt.
 
-<./images/jam.png, id=208, 445.665pt x 262.9825pt>
+<./images/jam.png, id=212, 445.665pt x 262.9825pt>
 File: ./images/jam.png Graphic file (type png)
  <use ./images/jam.png>
-Package pdftex.def Info: ./images/jam.png used on input line 546.
+Package pdftex.def Info: ./images/jam.png used on input line 552.
 (pdftex.def)             Requested size: 216.81pt x 127.9396pt.
 
-Overfull \hbox (2.28pt too wide) in paragraph at lines 538--550
+Overfull \hbox (2.28pt too wide) in paragraph at lines 544--556
 []$[]$ $[]$ 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [47 <./images/babel2.png>] [48 <./images/onelane.png> <./images/excessivedynam
-icallocation.png> <./images/jam.png>]
-<./images/ramp.png, id=219, 279.0425pt x 418.56375pt>
+[48 <./images/onelane.png> <./images/excessivedynamicallocation.png> <./images/
+jam.png>] <./images/ramp.png, id=219, 279.0425pt x 418.56375pt>
 File: ./images/ramp.png Graphic file (type png)
- <use ./images/ramp.png>
-Package pdftex.def Info: ./images/ramp.png used on input line 560.
+
+<use ./images/ramp.png>
+Package pdftex.def Info: ./images/ramp.png used on input line 566.
 (pdftex.def)             Requested size: 108.405pt x 162.6069pt.
 
 <./images/moreisless.png, id=220, 367.3725pt x 198.7425pt>
 File: ./images/moreisless.png Graphic file (type png)
 
 <use ./images/moreisless.png>
-Package pdftex.def Info: ./images/moreisless.png used on input line 566.
+Package pdftex.def Info: ./images/moreisless.png used on input line 572.
 (pdftex.def)             Requested size: 216.81pt x 117.29344pt.
 
-Overfull \hbox (2.28pt too wide) in paragraph at lines 558--570
+Overfull \hbox (2.28pt too wide) in paragraph at lines 564--576
 []$[]$ $[]$ 
  []
 
-[49 <./images/ramp.png> <./images/moreisless.png>]
-Overfull \hbox (84.64801pt too wide) in paragraph at lines 607--617
+[49 <./images/ramp.png> <./images/moreisless.png>] [50]
+Overfull \hbox (84.64801pt too wide) in paragraph at lines 613--623
  [][] 
  []
 
-
-Underfull \vbox (badness 5077) has occurred while \output is active []
-
- [50])
-[51] [52]
+) [51] [52]
 \openout2 = `searchbased.aux'.
 
  (./searchbased.tex
@@ -2475,19 +2458,19 @@ File: ./images/experiment2-7.png Graphic file (type png)
 Package pdftex.def Info: ./images/experiment2-7.png used on input line 261.
 (pdftex.def)             Requested size: 390.25534pt x 286.6389pt.
 
-<./images/experiment2-1.png, id=463, 680.5425pt x 427.5975pt>
+<./images/experiment2-1.png, id=463, 582.175pt x 427.5975pt>
 File: ./images/experiment2-1.png Graphic file (type png)
 
 <use ./images/experiment2-1.png>
 Package pdftex.def Info: ./images/experiment2-1.png used on input line 272.
-(pdftex.def)             Requested size: 216.81pt x 136.2272pt.
+(pdftex.def)             Requested size: 216.81pt x 159.23947pt.
 
-<./images/experiment2-2.png, id=464, 680.5425pt x 427.5975pt>
+<./images/experiment2-2.png, id=464, 582.175pt x 427.5975pt>
 File: ./images/experiment2-2.png Graphic file (type png)
 
 <use ./images/experiment2-2.png>
 Package pdftex.def Info: ./images/experiment2-2.png used on input line 278.
-(pdftex.def)             Requested size: 216.81pt x 136.2272pt.
+(pdftex.def)             Requested size: 216.81pt x 159.23947pt.
 
 Overfull \hbox (2.28pt too wide) in paragraph at lines 270--282
 []$[]$ $[]$ 
@@ -2503,12 +2486,12 @@ File: ./images/experiment2-3.png Graphic file (type png)
 Package pdftex.def Info: ./images/experiment2-3.png used on input line 290.
 (pdftex.def)             Requested size: 216.81pt x 103.16096pt.
 
-<./images/experiment2-4.png, id=466, 752.8125pt x 472.76625pt>
+<./images/experiment2-4.png, id=466, 582.175pt x 427.5975pt>
 File: ./images/experiment2-4.png Graphic file (type png)
 
 <use ./images/experiment2-4.png>
 Package pdftex.def Info: ./images/experiment2-4.png used on input line 296.
-(pdftex.def)             Requested size: 216.81pt x 136.15369pt.
+(pdftex.def)             Requested size: 216.81pt x 159.23947pt.
 
 Overfull \hbox (2.28pt too wide) in paragraph at lines 288--300
 []$[]$ $[]$ 
@@ -2518,7 +2501,7 @@ Overfull \hbox (2.28pt too wide) in paragraph at lines 288--300
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [102 <./images/experiment2-7.png>]
-Underfull \vbox (badness 3780) has occurred while \output is active []
+Underfull \vbox (badness 2285) has occurred while \output is active []
 
  [103 <./images/experiment2-1.png> <./images/experiment2-2.png> <./images/exper
 iment2-3.png> <./images/experiment2-4.png>]
@@ -2543,6 +2526,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Overfull \hbox (36.94798pt too wide) in paragraph at lines 334--342
  [][] 
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [104 <./images/experiment2-5.png>] [105 <./images/experiment2-6.png>]
 Overfull \hbox (4.30554pt too wide) in paragraph at lines 396--396
@@ -2592,10 +2578,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27308 strings out of 493089
- 508139 string characters out of 6134842
- 845466 words of memory out of 5000000
- 30043 multiletter control sequences out of 15000+600000
+ 27309 strings out of 493089
+ 508150 string characters out of 6134842
+ 846476 words of memory out of 5000000
+ 30044 multiletter control sequences out of 15000+600000
  58045 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,20n,94p,10406b,1439s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2612,7 +2598,7 @@ fonts/txsy.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a
 /local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
 Output written on /Users/naubergois/Downloads/templates-2/.texpadtmp/main.pdf (
-116 pages, 11968527 bytes).
+116 pages, 11963765 bytes).
 PDF statistics:
  569 PDF objects out of 1000 (max. 8388607)
  299 compressed objects within 3 object streams
