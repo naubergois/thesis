@@ -8,7 +8,7 @@
 Reinforcement learning (RL) refers to both a learning problem and a subfield of machine
 learning. As a learning problem, it refers to learning to control a system so as to maximize
 some numerical value which represents a long-term objective. A typical setting where
-reinforcement learning operates is shown in Figure 1: A controller receives the controlled
+reinforcement learning operates is shown in Figure \ref{fig:agentenv}: A controller receives the controlled
 system’s state and a reward associated with the last state transition. It then calculates an
 action which is sent back to the system.
 
@@ -95,22 +95,37 @@ In Q-Learning, the system's objective is to learn a control policy $\pi = \sum_{
 
 \section{GridWorld Example}
 
-The GridWorld problem is an example of using reinforcement learning with Q-Learning. In this example, extracted from \url{http://www.cs.ubc.ca/~poole/demos/rl/q.html}, there are four rewarding states (apart from the walls), one worth +10 (at position (9,8); 9 across and 8 down), one worth +3 (at position (8,3)), one worth -5 (at position (4,5)) and one -10 (at position (4,8)). In each if these states the agent gets the reward when it carries out an action in that state.
+The GridWorld problem is an example of using reinforcement learning with Q-Learning. In this example, extracted from \url{http://www.cs.ubc.ca/~poole/demos/rl/q.html}, there are four rewarding states:
 
-The numbers in the squares shows the Q-values of the square for each action. The blue arrows show the optimal action based on the current value function.
+\begin{itemize}
+\item one worth +10 (at position (9,8));
+\item one worth +3 (at position (8,3));
+\item one worth -5 (at position (4,5));
+\item one worth -10 (at position (4,8)).
+\end{itemize}
 
-\begin{figure}
+
+The numbers in the squares shows the Q-values of the square for each action. The blue arrows show the optimal action based on the current value function. There are 4 actions available: up, down, left and right. The initial discount rate is 0.9. It is interesting to try the Q-learning at different discount rates.
+
+\begin{figure}[h]
+\begin{minipage}{.5\textwidth}
 \centering
-\includegraphics[width=0.7\textwidth]{./images/grid1.png}
-\caption{Example of a simple MDP with three states and two actions}
-\label{fig:mdp}
+\includegraphics[width=1\textwidth]{./images/grid1.png}
+\caption{GridWorld initial states}
+\label{fig:gridworld1}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/gridworld2.png}
+\caption{GridWorld states before exploration phase}
+\label{fig:gridworld2}
+\end{minipage}
+
+The figures show  \ref{fig:gridworld1} and \ref{fig:gridworld2} the states of the game before and after the exploration phase. In the first image, all frames have the accumulated reward value equals to zero. In the second image the reward values increase as the agent moves to the upper diagonal and the bottom right of the figure.
+
 \end{figure}
 
 
-
-There are 4 actions available: up, down, left and right. If it carries out one of these actions, it have a 0.7 chance of going one step in the desired direction and a 0.1 change in going one step in any of the other three directions. If it bumps into the outside wall (i.e., the square computed as above is outside the grid), there is a penalty on 1 (i.e., a reward of -1) and the agent doesn't actually move. When an agent acts in one of the states with positive reward, it is flung, at random, to one of the 4 corners of the grid world (no matter what action it does). Again this is the same as the value iteration applet.
-
-The initial discount rate is 0.9. It is interesting to try the Q-learning at different discount rates (using the "Increment Discount" and "Decrement Discount" buttons, or just typing it in).
 
 
 

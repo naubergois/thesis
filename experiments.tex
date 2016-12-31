@@ -238,14 +238,14 @@ Fig. \ref{fig:responsetimegenerationalltests1} presents the response time by num
 
 \end{figure}
 
-Fig. \ref{fig:mdpexperiment1} presents the markov decision process of the exper
+Fig. \ref{fig:mdpexperiment1} presents the markov decision process for the experiment. When the response time it is bellow or equal the service level, the action with major reward it is increase the number of users and include more positions with the Happy Scenario 2 (Happy 2). When the response time is above the service level, the action with major reward value it is decrease the number of users and include more positions with the Happy Scenario 2. The actions  with minor value of reward contais the both antipatterns Circuitous Treasure (CTH) and The Ramp antipatterns (Ramp).
 
 In the first experiment, We conclude that the metaheuristics converged to scenarios with an happy path, excluding the scenarios with antipatterns. The hybridQ and hybrid metaheuristic returned individuals with higher fitness scores. However, the Hybrid metaheuristic made twice as many requests than Tabu Search to overcome it. 
 
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
-\includegraphics[width=0.7\textwidth]{./images/mdpexperiment.png}
-\caption{Markov decision process of experiment with Circuitous Treasure antipatterns}
+\includegraphics[width=0.6\textwidth]{./images/mdpexperiment.png}
+\caption{Markov decision process of experiment with Circuitous Treasure and The Ramp antipatterns}
 \label{fig:mdpexperiment1}
 
 \end{figure}
