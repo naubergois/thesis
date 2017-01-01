@@ -12,6 +12,7 @@ A level-1 auxiliary file: qlearning.aux
 A level-1 auxiliary file: testbed.aux
 A level-1 auxiliary file: experiments.aux
 A level-1 auxiliary file: conclusion.aux
+A level-1 auxiliary file: appa.aux
 A level-1 auxiliary file: biblio.aux
 The style file: plain.bst
 Database file #1: ../main.bib
@@ -69,7 +70,7 @@ Warning--there's a number but no volume in Vogele2016
 Warning--there's a number but no volume in Wert2013a
 You've used 80 entries,
             2118 wiz_defined-function locations,
-            981 strings with 18540 characters,
+            982 strings with 18548 characters,
 and the built_in function-call counts, 26075 in all, are:
 = -- 2568
 > -- 1199

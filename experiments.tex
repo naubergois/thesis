@@ -288,7 +288,7 @@ As in the first experiment, the Hybrid algorithm performs twice as many requests
 \begin{minipage}{.5\textwidth}
 \centering
 \includegraphics[width=1\textwidth]{./images/experiment2-3.png}
-\caption{Response time by generation in all tests scenarios}
+    \caption{Response time by generation in all tests scenarios}
 \label{fig:summaryboxplot2}
 \end{minipage}
 \begin{minipage}{.5\textwidth}
@@ -300,9 +300,9 @@ As in the first experiment, the Hybrid algorithm performs twice as many requests
 
 \end{figure}
 
-Table \ref{tab:bestindividuals2} shows 4 individuals with 145 to 148 users.  The first individual has 72 users on Happy Scenario 2, 30 users on Happy Scenario 1, 46 user with the antipattern Tower Babel and a response time of 11 seconds. Despite the fact of doing 300 conversions of the JSON standard for XML. The antipattern implementation does not return a much higher response time than happy paths. While happy paths returns from 10 to 15 seconds from a single user, Tower Babel antipattern has a response time of 10 to 29 seconds. None of the best individuals found implements the Unbalanced Processing antipattern.
+Table \ref{tab:bestindividuals2} shows 4 individuals with 279 to 292 users.  The first individual has 121 users on Happy Scenario 2, 171 users on Happy Scenario 1 and a response time of 11 seconds. None of the best individuals found implements the Unbalanced Processing or Tower Babel antipattern.
 
-Fig. \ref{fig:responsetimegenerationalltests2} presents the response time by number of users of individuals with Happy Scenario 1 and Happy Scenario 2. The Figure illustrates that the individuals with best fitness value has more users and minor response time. The Fig. \ref{fig:fitnessgenerationalltests2-1} presents the response time by number of users of individuals with with Unbalanced Processing antipatterns scenarios. The Figure illustrates the smallest number of individuals with the  Unbalanced Processing antipattern when compared to individuals who use the happy scenarios and the Tower Babel antipattern.
+Fig. \ref{fig:responsetimegenerationalltests2} presents the response time by number of users of individuals with Happy Scenario 1 and Happy Scenario 2. The Figure illustrates that the individuals with best fitness value has more users and minor response time. The Fig. \ref{fig:fitnessgenerationalltests2-1} presents the response time by number of users of individuals with with Unbalanced Processing and Tower Babel antipatterns scenarios. The Figure illustrates the smallest number of individuals with the  Unbalanced Processing and Tower Babel antipattern when compared to individuals who use the happy scenarios and the Tower Babel antipattern.
 
 
 
@@ -322,7 +322,7 @@ Fig. \ref{fig:responsetimegenerationalltests2} presents the response time by num
 \end{figure}
 
 
-We conclude that the metaheuristics converged to scenarios with an happy path and Tower Babel antipattern, excluding the scenarios with Unbalanced Processing antipattern. The hybrid metaheuristic returned individuals with higher fitness scores. However, the Hybrid metaheuristic made twice as many requests than Tabu Search to overcome it. The SA algorithm obtained the worst fitness values. The algorithm initially used a scenario with an antipattern and found neighbors that still using an antipattern over the 17 generations of the experiment. The individual with best fitness value has 72 users on Happy Scenario 2, 30 users on Happy Scenario 1, 46 user with the antipattern Tower Babel and a response time of 11 seconds.
+We conclude that the metaheuristics converged to scenarios with an happy path, excluding the scenarios with Unbalanced Processing and Tower Babel antipattern. The hybrid metaheuristic with Q-Learning (HybridQ) returned individuals with higher fitness scores. The Hybrid metaheuristic (Hybrid) made twice as many requests than Tabu Search to overcome it. The SA algorithm obtained the worst fitness values. The algorithm initially used a scenario with an antipattern and found neighbors that still using an antipattern over the 17 generations of the experiment. The individual with best fitness value has 121 users on Happy Scenario 2, 171 users on Happy Scenario 1 and a response time of 11 seconds.
 
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
@@ -331,13 +331,13 @@ We conclude that the metaheuristics converged to scenarios with an happy path an
 \centering
 \caption{Best individuals found in the second experiment}
 \label{tab:bestindividuals2}
-\begin{tabular}{llllllll}
+\begin{tabular}{lllllll}
 \rowcolor[HTML]{FFCCC9} 
-\textbf{Search Method} & \textbf{Generation} & \textbf{Users} & \textbf{fitness Value} & \textbf{Happy 2} & \textbf{Tower} & \textbf{Happy 1} & \textbf{Time} \\ 
-\multicolumn{1}{l}{Hybrid} & \multicolumn{1}{l}{17} & \multicolumn{1}{l}{148} & \multicolumn{1}{l}{437780} & \multicolumn{1}{l}{72} & \multicolumn{1}{l}{46} & \multicolumn{1}{l}{30} & \multicolumn{1}{l}{11} \\ 
-\multicolumn{1}{l}{Hybrid} & \multicolumn{1}{l}{17} & \multicolumn{1}{l}{145} & \multicolumn{1}{l}{432740} & \multicolumn{1}{l}{71} & \multicolumn{1}{l}{15} & \multicolumn{1}{l}{59} & \multicolumn{1}{l}{13} \\ 
-\multicolumn{1}{l}{Hybrid} & \multicolumn{1}{l}{16} & \multicolumn{1}{l}{146} & \multicolumn{1}{l}{431800} & \multicolumn{1}{l}{72} & \multicolumn{1}{l}{31} & \multicolumn{1}{l}{43} & \multicolumn{1}{l}{10} \\ 
-\multicolumn{1}{l}{Hybrid} & \multicolumn{1}{l}{17} & \multicolumn{1}{l}{145} & \multicolumn{1}{l}{428780} & \multicolumn{1}{l}{71} & \multicolumn{1}{l}{32} & \multicolumn{1}{l}{42} & \multicolumn{1}{l}{11} \\ 
+\textbf{Search Method} & \textbf{Generation} & \textbf{Users} & \textbf{fitness Value} & \textbf{Happy 2} & \textbf{Happy 1} & \textbf{Time} \\ 
+\multicolumn{1}{l}{HybridQ} & \multicolumn{1}{l}{17} & \multicolumn{1}{l}{292} & \multicolumn{1}{l}{869780}  & \multicolumn{1}{l}{121} & \multicolumn{1}{l}{171} & \multicolumn{1}{l}{11} \\ 
+\multicolumn{1}{l}{HybridQ} & \multicolumn{1}{l}{16} & \multicolumn{1}{l}{288} & \multicolumn{1}{l}{857780} &  \multicolumn{1}{l}{103} & \multicolumn{1}{l}{185} & \multicolumn{1}{l}{11} \\ 
+\multicolumn{1}{l}{HybridQ} & \multicolumn{1}{l}{16} & \multicolumn{1}{l}{284} & \multicolumn{1}{l}{845880} &  \multicolumn{1}{l}{167} & \multicolumn{1}{l}{117} & \multicolumn{1}{l}{6} \\ 
+\multicolumn{1}{l}{HybridQ} & \multicolumn{1}{l}{16} & \multicolumn{1}{l}{279} & \multicolumn{1}{l}{830780} &  \multicolumn{1}{l}{144} & \multicolumn{1}{l}{135} & \multicolumn{1}{l}{11} \\ 
 \end{tabular}
 \end{table}
 

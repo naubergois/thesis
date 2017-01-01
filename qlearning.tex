@@ -63,9 +63,7 @@ that has the best performance metric.
 \subsection{Types of Control Learnings}
 
 
-Fig. shows the basic types of control learning problems. The first criterion that the space of problems is split upon is whether the learner can actively influence the observations.In case she can, then we talk about interactive learning, otherwise one is facing a non-interactive learning problem.
-
-Interactive learning is potentially easier since the learner has the additional option to influence the distribution of the sample. However, the goal of
+Fig. shows the basic types of control learning problems. Interactive learning is potentially easier since the learner has the additional option to influence the distribution of the sample. However, the goal of
 learning is usually different in the two cases, making these problems incomparable in general.
 
 In the case of non-interactive learning, the natural goal is to find a good policy given the observations.
@@ -93,39 +91,33 @@ Q-learning and related algorithms tries to learn the optimal policy from its his
 
 In Q-Learning, the system's objective is to learn a control policy $\pi = \sum_{n=0}^{\infty} \gamma\textsuperscript{n}  r_{t}+n $, where $\pi$  is the discounted cumulative reward, $\gamma$ is the discount rate ($01$) and $r_{t}$ is the reward reiceved after execution an action at time t.
 
-\section{GridWorld Example}
 
-The GridWorld problem is an example of using reinforcement learning with Q-Learning. In this example, extracted from \url{http://www.cs.ubc.ca/~poole/demos/rl/q.html}, there are four rewarding states:
-
-\begin{itemize}
-\item one worth +10 (at position (9,8));
-\item one worth +3 (at position (8,3));
-\item one worth -5 (at position (4,5));
-\item one worth -10 (at position (4,8)).
-\end{itemize}
-
-
-The numbers in the squares shows the Q-values of the square for each action. The blue arrows show the optimal action based on the current value function. There are 4 actions available: up, down, left and right. The initial discount rate is 0.9. It is interesting to try the Q-learning at different discount rates.
-
-\begin{figure}[h]
-\begin{minipage}{.5\textwidth}
+\begin{figure}[h!]
 \centering
-\includegraphics[width=1\textwidth]{./images/grid1.png}
-\caption{GridWorld initial states}
-\label{fig:gridworld1}
-\end{minipage}
-\begin{minipage}{.5\textwidth}
-\centering
-\includegraphics[width=1\textwidth]{./images/gridworld2.png}
-\caption{GridWorld states before exploration phase}
-\label{fig:gridworld2}
-\end{minipage}
-
-The figures show  \ref{fig:gridworld1} and \ref{fig:gridworld2} the states of the game before and after the exploration phase. In the first image, all frames have the accumulated reward value equals to zero. In the second image the reward values increase as the agent moves to the upper diagonal and the bottom right of the figure.
-
+\includegraphics[width=0.8\textwidth]{./images/qalgo.png}
+\caption{Q Learning algorithm}
+\label{fig:qalgo}
 \end{figure}
 
 
+\section{GridWorld Example}
+
+The GridWorld problem is an example of using reinforcement learning with Q-Learning. In this example,  The agent's goal is to reach the reward state.  There are one rewarding states with value +1 (Gray square at position (3,1)). The agent receives +0.02 of reward if it get closer to the reward state  As the agent moves away from the reward state, he receives -0.01 of reward.The agente receive +0 points of reward if it is the same distance to the reward state.
+
+The numbers in the squares shows the Q-values  for four available actions: up (u), left (l), right(r) and down(d). The blue arrows show the optimal action based on the current value function. The initial discount rate is 0.9. It is interesting to try the Q-learning at different discount rates.
+
+The figures show  \ref{fig:gridworld1} the states of the game before and after  four steps of the exploration phase. In the first image, all frames have the accumulated reward value equals to zero. In the second image the reward values increase as the agent moves to the right and up, the reward value it's. The first step, it's a random action to the right, the first square it is reward.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{./images/mdpgrid1.png}
+\caption{GridWorld initial states}
+\label{fig:gridworld1}
+\centering
+\includegraphics[width=0.8\textwidth]{./images/mdpgrid1-2.png}
+\caption{GridWorld after four initial actions}
+\label{fig:gridworld2}
+\end{figure}
 
 
 
