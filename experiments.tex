@@ -57,7 +57,7 @@ The experiment used the following fitness function:
 
 \begin{equation}
 \begin{aligned}
-fit=0.9* 90percentiletime\\
+fitness=0.9* 90percentiletime\\
 +0.1*80percentiletime\\+
 0.1*70percentiletime+\\
 0.1*maxResponseTime+\\
@@ -129,7 +129,7 @@ The objective function applied is intended to maximize the number of users and m
 
 \begin{equation}
 \begin{aligned}
-fit=3000*numberOfUsers\\
+fitness=3000*numberOfUsers\\
 -20* 90percentiletime\\
 -20*80percentiletime\\
 -20*70percentiletime\\
@@ -336,7 +336,7 @@ We conclude that the metaheuristics converged to scenarios with an happy path, e
 \textbf{Search Method} & \textbf{Generation} & \textbf{Users} & \textbf{fitness Value} & \textbf{Happy 2} & \textbf{Happy 1} & \textbf{Time} \\ 
 \multicolumn{1}{l}{HybridQ} & \multicolumn{1}{l}{17} & \multicolumn{1}{l}{292} & \multicolumn{1}{l}{869780}  & \multicolumn{1}{l}{121} & \multicolumn{1}{l}{171} & \multicolumn{1}{l}{11} \\ 
 \multicolumn{1}{l}{HybridQ} & \multicolumn{1}{l}{16} & \multicolumn{1}{l}{288} & \multicolumn{1}{l}{857780} &  \multicolumn{1}{l}{103} & \multicolumn{1}{l}{185} & \multicolumn{1}{l}{11} \\ 
-\multicolumn{1}{l}{HybridQ} & \multicolumn{1}{l}{16} & \multicolumn{1}{l}{284} & \multicolumn{1}{l}{845880} &  \multicolumn{1}{l}{167} & \multicolumn{1}{l}{117} & \multicolumn{1}{l}{6} \\ 
+\multicolumn{1}{l}{HybridQ} & \multicolumn{1}{l}{16} & \multicolumn{1}{l}{284} & \multicolumn{1}{l}{845880} &  \multicolumn{1}{l}{167} & \multicolumn{1}{l}{117} & \multicolumn{1}{l}{10} \\ 
 \multicolumn{1}{l}{HybridQ} & \multicolumn{1}{l}{16} & \multicolumn{1}{l}{279} & \multicolumn{1}{l}{830780} &  \multicolumn{1}{l}{144} & \multicolumn{1}{l}{135} & \multicolumn{1}{l}{11} \\ 
 \end{tabular}
 \end{table}
@@ -353,6 +353,18 @@ This experiment used a Moodle application installed in a machine with 500 GB of 
 \item Start Page: This scenario shows the initial start page of the application.
 \item Badge: This scenario involves entering the badge page.
 \end{itemize}
+
+The experiment used the following fitness function:
+
+\begin{equation}
+\begin{aligned}
+fitness=0.9* 90percentiletime\\
++0.1*80percentiletime\\+
+0.1*70percentiletime+\\
+0.1*maxResponseTime+\\
+0.2*numberOfUsers-penalty
+\end{aligned}
+\end{equation}
 
 The maximum tolerated response time in the test was 30 seconds.  Any  individuals who obtained a time longer than the stipulated maximum time suffered penalties.  The whole process of stress and performance tests, which took 3 days and about 1800 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of six generations previously established. 
 
@@ -452,5 +464,30 @@ Table \ref{fig:gened} presents the percentage of genes in all test scenarios by 
 %\includegraphics[width=0.5\textwidth]{./images/gened.png}
 %\label{fig:gened}
 %\end{figure}
+
+\section{JPetStore Application Experiments}
+
+Two experiments were conducted to test the use of the HybridQ algorithm in a real implemented application. The chosen application was the JPetStore, available at \url{https://hub.docker.com/r/pocking/jpetstore/}. The maximum tolerated response time in the test was 10 seconds.  Any  individuals who obtained a time longer than the stipulated maximum time suffered penalties.  The whole process of stress and performance tests, which took 2 days and about 1800 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of eleven generations previously established.
+
+The experiment used the following fitness function:
+
+\begin{equation}
+\begin{aligned}
+fitness=\begin{cases} n*\{3000*numberOfUsers-20* 90percentiletime-20*80percentiletime\\-20*70percentiletime
+-20*maxResponseTime-penalty\} , \textsf{where n is the }\\\ \textsf{ number of scenarios used by the test in a set of previous selected scenarios}
+\end{cases}
+\end{aligned}
+\end{equation}
+
+\section{JPetStore experiment }
+
+This first experiment tries to find the scenarios with maximal number of users and best response time in a configuration that
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{./images/experiment3-1.png}
+\caption{GridWorld - exploration phase (Step 10 to 13)}
+\label{fig:gridworld4}
+\end{figure}
 
 

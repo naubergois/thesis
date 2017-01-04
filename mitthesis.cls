@@ -476,7 +476,7 @@ at the
 \signature{ }{\choosecase{ D.Sc. Andre Lu\'{\i}s Vasconcelos Coelho} \\ Co-Advisor - Universidade de Fortaleza}
 \signature{ }{\choosecase{ D.Sc. Pedro de Alcantara dos Santos Neto} \\ External Examiner - Universidade Federal do Piaui}
 \signature{ }{\choosecase{ Ph.D. Americo Tadeu Falcone Sampaio} \\ Universidade de Fortaleza}
-\signature{ }{\choosecase{ Ph.D. Nabor das Chagas Mendon\c{c}a} \\  Universidade de Fortaleza}
+%\signature{ }{\choosecase{ Ph.D. Nabor das Chagas Mendon\c{c}a} \\  Universidade de Fortaleza}
 
 %\unvbox\@titlesupervisor
 %\par

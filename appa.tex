@@ -1,19 +1,18 @@
 \chapter{Tables}
 
-
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
 \begin{table}[h!]
 \centering
-\caption{My caption}
-\label{my-label}
+\caption{Best individuals found in the second Testbed Tool experiments}
+\label{tab:bestexperiment2}
 \begin{tabular}{llllllll}
 \rowcolor[HTML]{EFEFEF} 
-\textbf{METHOD} & \textbf{Resp.Time} & \textbf{USERS} & \textbf{Fitnesse} & \textbf{HAPPY 1} & \textbf{TOWER BABEL} & \textbf{HAPPY 2} & \textbf{UNBALANCED} \\
+\textbf{Method} & \textbf{Resp.Time} & \textbf{Users} & \textbf{Fitnesse} & \textbf{Happy 1} & \textbf{Tower} & \textbf{Happy 2} & \textbf{Unbalanced} \\
 HybridQ                & 11                     & 292            & 869780                  & 171              & 0                    & 121              & 0                   \\
 HybridQ                & 11                     & 288            & 857780                  & 185              & 0                    & 103              & 0                   \\
-HybridQ                & 6                      & 284            & 845880                  & 117              & 0                    & 167              & 0                   \\
+HybridQ                & 10                      & 284            & 845880                  & 117              & 0                    & 167              & 0                   \\
 HybridQ                & 11                     & 279            & 830780                  & 135              & 0                    & 144              & 0                   \\
 HybridQ                & 75                     & 277            & 823500                  & 147              & 35                   & 77               & 18                  \\
 HybridQ                & 12                     & 265            & 788760                  & 127              & 0                    & 138              & 0                   \\
@@ -27,6 +26,53 @@ HybridQ                & 12                     & 252            & 749760       
 HybridQ                & 74                     & 252            & 748520                  & 130              & 32                   & 77               & 13                  \\
 HybridQ                & 10                     & 251            & 746800                  & 130              & 30                   & 77               & 14                  \\
 HybridQ                & 12                     & 248            & 737760                  & 130              & 29                   & 76               & 13                  \\
-HybridQ                & 3                      & 247            & 734940                  & 155              & 0                    & 92               & 0                  
+HybridQ                & 10                      & 247            & 734940                  & 155              & 0                    & 92               & 0                  
 \end{tabular}
 \end{table}
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[h]
+\centering
+\caption{Comparison study presented by Pen˜a-Ortiz on the book Modeling and Simulation of Computer Networks and Systems Methodologies [F- Fully attended feature P-Partial attended feature] \cite{MohammadS.Obaidat} }
+\label{tab:loadtool}
+\begin{tabular}{llllll}
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Feature}                                                                              & \textbf{Webstone}   & \textbf{SPECweb}                                                 & \textbf{SURGE}   & \textbf{Web polygraph} & \textbf{TPC-W}     \\
+\begin{tabular}[c]{@{}l@{}}Analytical-Based\\ Architecture\end{tabular}                       & F                   & F                                                                & F                & F                      & F                  \\
+\begin{tabular}[c]{@{}l@{}}Distributed\\ Architecture\end{tabular}                            & F                   & F                                                                & F                & F                      &                    \\
+\begin{tabular}[c]{@{}l@{}}Business-Based\\ Architecture\end{tabular}                         &                     & P                                                                &                  & P                      & F                  \\
+\begin{tabular}[c]{@{}l@{}}Client\\ Parameterization\end{tabular}                             & F                   & F                                                                &                  & P                      & F                  \\
+Workload Types                                                                                &                     & F                                                                &                  &                        & F                  \\
+Multi-platform                                                                                & F                   & F                                                                & F                & F                      & F                  \\
+Open Source                                                                                   & F                   &                                                                  & F                & P                      & F                  \\
+\rowcolor[HTML]{FFFC9E} 
+\textbf{\begin{tabular}[c]{@{}l@{}}Search-based Testing\\  or Learning features\end{tabular}} & \textbf{}           & \textbf{}                                                        & \textbf{}        & \textbf{}              & \textbf{}          \\
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Feature}                                                                              & \textbf{LoadRunner} & \textbf{WebLoad}                                                 & \textbf{JMeter}  & \textbf{S-Clients}     & \textbf{WebJammma} \\
+\begin{tabular}[c]{@{}l@{}}Analytical-Based\\ Architecture\end{tabular}                       & P                   & P                                                                & P                &                        &                    \\
+\begin{tabular}[c]{@{}l@{}}Distributed\\ Architecture\end{tabular}                            & F                   & F                                                                &                  &                        &                    \\
+\begin{tabular}[c]{@{}l@{}}Business-Based\\ Architecture\end{tabular}                         & F                   & F                                                                & F                &                        &                    \\
+\begin{tabular}[c]{@{}l@{}}Client\\ Parameterization\end{tabular}                             & F                   & F                                                                & F                &                        & F                  \\
+Workload Types                                                                                & F                   & F                                                                & P                &                        &                    \\
+Multi-platform                                                                                & F                   & F                                                                & F                & F                      & F                  \\
+Open Source                                                                                   &                     &                                                                  & F                & F                      & F                  \\
+\rowcolor[HTML]{FFFC9E} 
+\textbf{\begin{tabular}[c]{@{}l@{}}Search-based Testing\\  or Learning features\end{tabular}} & \textbf{}           & \textbf{}                                                        & \textbf{}        & \textbf{}              & \textbf{}          \\
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Feature}                                                                              & \textbf{Deluge}     & \textbf{\begin{tabular}[c]{@{}l@{}}HAMMER\\ HEAD 2\end{tabular}} & \textbf{PTester} & \textbf{Siege}         & \textbf{Locust}    \\
+\begin{tabular}[c]{@{}l@{}}Analytical-Based\\  Architecture\end{tabular}                      &                     &                                                                  &                  &                        & P                  \\
+\begin{tabular}[c]{@{}l@{}}Distributed\\ Architecture\end{tabular}                            &                     &                                                                  &                  &                        &                    \\
+\begin{tabular}[c]{@{}l@{}}Business-Based\\ Architecture\end{tabular}                         &                     &                                                                  &                  &                        & F                  \\
+\begin{tabular}[c]{@{}l@{}}Client\\ Parameterization\end{tabular}                             &                     &                                                                  &                  &                        & F                  \\
+Workload Types                                                                                &                     &                                                                  &                  &                        & P                  \\
+Multi-platform                                                                                & F                   & P                                                                & F                & P                      & F                  \\
+Open Source                                                                                   & F                   & F                                                                & F                & F                      & F                  \\
+\rowcolor[HTML]{FFFC9E} 
+\textbf{\begin{tabular}[c]{@{}l@{}}Search-based Testing\\  or Learning features\end{tabular}} & \textbf{}           & \textbf{}                                                        & \textbf{}        & \textbf{}              & \textbf{}         
+\end{tabular}
+\end{table}
+
+

@@ -13,32 +13,35 @@ A level-1 auxiliary file: testbed.aux
 A level-1 auxiliary file: experiments.aux
 A level-1 auxiliary file: conclusion.aux
 A level-1 auxiliary file: appa.aux
+A level-1 auxiliary file: appb.aux
 A level-1 auxiliary file: biblio.aux
 The style file: plain.bst
 Database file #1: ../main.bib
-Repeated entry---line 513 of file ../main.bib
+Repeated entry---line 622 of file ../main.bib
  : @inproceedings{Gois2016
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1166 of file ../main.bib
+Repeated entry---line 1275 of file ../main.bib
  : @article{Bertolino2008
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1180 of file ../main.bib
+Repeated entry---line 1289 of file ../main.bib
  : @article{MarkUtting2012
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1457 of file ../main.bib
+Repeated entry---line 1566 of file ../main.bib
  : @book{Halili2008
  :                 ,
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in Bertolino2008
 Warning--empty author in Bertolino2008
+Warning--empty publisher in Battiti2009
 Warning--empty journal in Canfora
 Warning--empty year in Canfora
 Warning--empty journal in Cortellessa2007
 Warning--empty year in DiAlesio2014
 Warning--empty publisher in Erinle2013
+Warning--empty journal in Gambardella1995
 Warning--empty journal in Garousi2006
 Warning--there's a number but no volume in Garousi2006
 Warning--empty journal in Gay
@@ -48,9 +51,12 @@ Warning--empty journal in Goncalves2014
 Warning--there's a number but no volume in Greenwald2003
 Warning--empty publisher in Halili2008
 Warning--there's a number but no volume in Harman2015
+Warning--empty publisher in Havelund2006
 Warning--empty publisher in Jaziri2008
 Warning--empty school in Jiang2010
 Warning--empty publisher in Lewis2005
+Warning--empty journal in Matsuura2015
+Warning--there's a number but no volume in Matsuura2015
 Warning--empty journal in Menasce2002a
 Warning--there's a number but no volume in Menasce2002a
 Warning--empty publisher in MohammadS.Obaidat
@@ -68,45 +74,45 @@ Warning--empty publisher in Talbi2013
 Warning--empty journal in Tracey1998
 Warning--there's a number but no volume in Vogele2016
 Warning--there's a number but no volume in Wert2013a
-You've used 80 entries,
+You've used 88 entries,
             2118 wiz_defined-function locations,
-            982 strings with 18548 characters,
-and the built_in function-call counts, 26075 in all, are:
-= -- 2568
-> -- 1199
-< -- 28
-+ -- 475
-- -- 394
-* -- 1749
-:= -- 4302
-add.period$ -- 236
-call.type$ -- 80
-change.case$ -- 422
+            1029 strings with 19916 characters,
+and the built_in function-call counts, 28667 in all, are:
+= -- 2824
+> -- 1317
+< -- 30
++ -- 521
+- -- 432
+* -- 1932
+:= -- 4731
+add.period$ -- 261
+call.type$ -- 88
+change.case$ -- 463
 chr.to.int$ -- 0
-cite$ -- 116
-duplicate$ -- 1057
-empty$ -- 1972
-format.name$ -- 394
-if$ -- 5438
+cite$ -- 129
+duplicate$ -- 1156
+empty$ -- 2177
+format.name$ -- 432
+if$ -- 5974
 int.to.chr$ -- 0
-int.to.str$ -- 80
-missing$ -- 88
-newline$ -- 399
-num.names$ -- 158
-pop$ -- 499
+int.to.str$ -- 88
+missing$ -- 98
+newline$ -- 439
+num.names$ -- 174
+pop$ -- 549
 preamble$ -- 2
-purify$ -- 357
+purify$ -- 392
 quote$ -- 0
-skip$ -- 779
+skip$ -- 845
 stack$ -- 0
-substring$ -- 1486
-swap$ -- 258
-text.length$ -- 28
+substring$ -- 1647
+swap$ -- 273
+text.length$ -- 30
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 294
-warning$ -- 36
-while$ -- 268
-width$ -- 82
-write$ -- 831
+type$ -- 322
+warning$ -- 41
+while$ -- 295
+width$ -- 90
+write$ -- 915
 (There were 4 error messages)
