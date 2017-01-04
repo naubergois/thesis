@@ -288,6 +288,13 @@ ZM~Jiang.
 \newblock {\em {Automated analysis of load testing results}}.
 \newblock PhD thesis, 2010.
 
+\bibitem{Kamali2007}
+Kaivan Kamali, L.~J. Jiang, John Yen, and K.~W. Wang.
+\newblock {Using Q-Learning and Genetic Algorithms to Improve the Efficiency of
+  Weight Adjustments for Optimal Control and Design Problems}.
+\newblock {\em Journal of Computing and Information Science in Engineering},
+  7(December 2007):302, 2007.
+
 \bibitem{Lewis2005}
 William~E. Lewis, David Dobbs, and Gunasekaran Veerapillai.
 \newblock {\em {Software testing and continuous quality improvement}}.
@@ -315,6 +322,13 @@ Jackson Matsuura and Reinaldo A~C Bianchi.
 Philip McMinn, Regent Court, Software Testing, and Portobello Street.
 \newblock {Search-based software test data generation: a survey}.
 \newblock {\em Software testing, Verification and reliability}, 14:1--58, 2004.
+
+\bibitem{Meinke2010}
+Karl Meinke and Fei Niu.
+\newblock {A learning-based approach to unit testing of numerical software}.
+\newblock {\em Lecture Notes in Computer Science (including subseries Lecture
+  Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, 6435
+  LNCS:221--235, 2010.
 
 \bibitem{Menasce2002a}
 Daniel~A Menasc{\'{e}} and George Mason.

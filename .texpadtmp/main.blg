@@ -17,19 +17,19 @@ A level-1 auxiliary file: appb.aux
 A level-1 auxiliary file: biblio.aux
 The style file: plain.bst
 Database file #1: ../main.bib
-Repeated entry---line 622 of file ../main.bib
+Repeated entry---line 653 of file ../main.bib
  : @inproceedings{Gois2016
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1275 of file ../main.bib
+Repeated entry---line 1306 of file ../main.bib
  : @article{Bertolino2008
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1289 of file ../main.bib
+Repeated entry---line 1320 of file ../main.bib
  : @article{MarkUtting2012
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1566 of file ../main.bib
+Repeated entry---line 1597 of file ../main.bib
  : @book{Halili2008
  :                 ,
 I'm skipping whatever remains of this entry
@@ -74,45 +74,45 @@ Warning--empty publisher in Talbi2013
 Warning--empty journal in Tracey1998
 Warning--there's a number but no volume in Vogele2016
 Warning--there's a number but no volume in Wert2013a
-You've used 88 entries,
+You've used 90 entries,
             2118 wiz_defined-function locations,
-            1029 strings with 19916 characters,
-and the built_in function-call counts, 28667 in all, are:
-= -- 2824
-> -- 1317
+            1042 strings with 20328 characters,
+and the built_in function-call counts, 29341 in all, are:
+= -- 2890
+> -- 1353
 < -- 30
-+ -- 521
-- -- 432
-* -- 1932
-:= -- 4731
-add.period$ -- 261
-call.type$ -- 88
-change.case$ -- 463
++ -- 535
+- -- 444
+* -- 1985
+:= -- 4848
+add.period$ -- 267
+call.type$ -- 90
+change.case$ -- 475
 chr.to.int$ -- 0
-cite$ -- 129
-duplicate$ -- 1156
-empty$ -- 2177
-format.name$ -- 432
-if$ -- 5974
+cite$ -- 131
+duplicate$ -- 1178
+empty$ -- 2226
+format.name$ -- 444
+if$ -- 6109
 int.to.chr$ -- 0
-int.to.str$ -- 88
-missing$ -- 98
-newline$ -- 439
-num.names$ -- 174
-pop$ -- 549
+int.to.str$ -- 90
+missing$ -- 100
+newline$ -- 449
+num.names$ -- 178
+pop$ -- 557
 preamble$ -- 2
-purify$ -- 392
+purify$ -- 402
 quote$ -- 0
-skip$ -- 845
+skip$ -- 860
 stack$ -- 0
-substring$ -- 1647
-swap$ -- 273
+substring$ -- 1691
+swap$ -- 275
 text.length$ -- 30
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 322
+type$ -- 330
 warning$ -- 41
-while$ -- 295
-width$ -- 90
-write$ -- 915
+while$ -- 302
+width$ -- 92
+write$ -- 937
 (There were 4 error messages)
