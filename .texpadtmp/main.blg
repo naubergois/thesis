@@ -17,33 +17,51 @@ A level-1 auxiliary file: appb.aux
 A level-1 auxiliary file: biblio.aux
 The style file: plain.bst
 Database file #1: ../main.bib
-Repeated entry---line 653 of file ../main.bib
+Repeated entry---line 397 of file ../main.bib
+ : @article{Avritzer1995
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1039 of file ../main.bib
  : @inproceedings{Gois2016
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1306 of file ../main.bib
+Repeated entry---line 1066 of file ../main.bib
+ : @article{Avritzer1995
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1160 of file ../main.bib
+ : @article{Acharya2009
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1695 of file ../main.bib
  : @article{Bertolino2008
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1320 of file ../main.bib
+Repeated entry---line 1709 of file ../main.bib
  : @article{MarkUtting2012
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1597 of file ../main.bib
+Repeated entry---line 1986 of file ../main.bib
  : @book{Halili2008
  :                 ,
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in Bertolino2008
+Warning--to sort, need author or key in Catelani2011
 Warning--empty author in Bertolino2008
+Warning--empty author in Catelani2011
+Warning--empty journal in Abu-nimeh2001
+Warning--there's a number but no volume in Afzal2008
+Warning--empty publisher in Avritzer2012a
+Warning--empty journal in Barna2013
 Warning--empty publisher in Battiti2009
 Warning--empty journal in Canfora
 Warning--empty year in Canfora
 Warning--empty journal in Cortellessa2007
 Warning--empty year in DiAlesio2014
+Warning--empty publisher in Dustin1999
 Warning--empty publisher in Erinle2013
 Warning--empty journal in Gambardella1995
-Warning--empty journal in Garousi2006
-Warning--there's a number but no volume in Garousi2006
+Warning--empty school in Garousi2006
 Warning--empty journal in Gay
 Warning--empty year in Gay
 Warning--empty publisher in GendreauMichelandPotvin2010
@@ -54,13 +72,18 @@ Warning--there's a number but no volume in Harman2015
 Warning--empty publisher in Havelund2006
 Warning--empty publisher in Jaziri2008
 Warning--empty school in Jiang2010
+Warning--empty publisher in Kaczanowski2012
 Warning--empty publisher in Lewis2005
+Warning--empty journal in Malik2013a
 Warning--empty journal in Matsuura2015
 Warning--there's a number but no volume in Matsuura2015
+Warning--empty booktitle in Mayo2013
 Warning--empty journal in Menasce2002a
 Warning--there's a number but no volume in Menasce2002a
 Warning--empty publisher in MohammadS.Obaidat
 Warning--empty year in MohammadS.Obaidat
+Warning--empty journal in Nevedrov2007
+Warning--empty publisher in Perry2004
 Warning--there's a number but no volume in Pohlheim2005
 Warning--can't use both volume and number fields in Tobergte2013
 Warning--empty publisher in Tobergte2013
@@ -74,45 +97,46 @@ Warning--empty publisher in Talbi2013
 Warning--empty journal in Tracey1998
 Warning--there's a number but no volume in Vogele2016
 Warning--there's a number but no volume in Wert2013a
-You've used 90 entries,
+Warning--there's a number but no volume in Yan2012
+You've used 128 entries,
             2118 wiz_defined-function locations,
-            1042 strings with 20328 characters,
-and the built_in function-call counts, 29341 in all, are:
-= -- 2890
-> -- 1353
-< -- 30
-+ -- 535
-- -- 444
-* -- 1985
-:= -- 4848
-add.period$ -- 267
-call.type$ -- 90
-change.case$ -- 475
+            1274 strings with 27235 characters,
+and the built_in function-call counts, 43435 in all, are:
+= -- 4343
+> -- 1943
+< -- 52
++ -- 767
+- -- 638
+* -- 2893
+:= -- 7060
+add.period$ -- 383
+call.type$ -- 128
+change.case$ -- 681
 chr.to.int$ -- 0
-cite$ -- 131
-duplicate$ -- 1178
-empty$ -- 2226
-format.name$ -- 444
-if$ -- 6109
+cite$ -- 181
+duplicate$ -- 1777
+empty$ -- 3283
+format.name$ -- 638
+if$ -- 9158
 int.to.chr$ -- 0
-int.to.str$ -- 90
-missing$ -- 100
-newline$ -- 449
-num.names$ -- 178
-pop$ -- 557
+int.to.str$ -- 128
+missing$ -- 139
+newline$ -- 638
+num.names$ -- 252
+pop$ -- 787
 preamble$ -- 2
-purify$ -- 402
+purify$ -- 575
 quote$ -- 0
-skip$ -- 860
+skip$ -- 1348
 stack$ -- 0
-substring$ -- 1691
-swap$ -- 275
-text.length$ -- 30
+substring$ -- 2651
+swap$ -- 479
+text.length$ -- 52
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 330
-warning$ -- 41
-while$ -- 302
-width$ -- 92
-write$ -- 937
-(There were 4 error messages)
+type$ -- 476
+warning$ -- 53
+while$ -- 454
+width$ -- 131
+write$ -- 1345
+(There were 7 error messages)

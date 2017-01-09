@@ -2,6 +2,14 @@
 
 Load, performance, and stress testing are typically done to locate bottlenecks in a system, to support a performance-tuning effort, and to collect other performance-related indicators to help stakeholders get informed about the quality of the application being tested \cite{Sandler2004} \cite{Corporation2007}. 
 
+Typically, the most common kind of performance testing for Internet applications is load testing. Application load can be assessed in a variety of ways \cite{Perry2004}:
+
+\begin{itemize}
+\item Concurrency. Concurrency testing seeks to validate the performance of an application with a given number of concurrent interactive users \cite{Perry2004}.
+\item Stress. Stress testing seeks to validate the performance of an application when certain aspects of the application are stretched to their maximum limits. This can include maximum number of users, and can also include maximizing table values and data values \cite{Perry2004}.
+\item Throughput. Throughput testing seeks to validate the number of transactions to be processed by an application during a given period of time. For example, one type of throughput test might be to attempt to process 100,000 transactions in one hour \cite{Perry2004}.
+\end{itemize}
+
 
 The performance testing aims at verifying a specified system performance. This kind of test is executed by simulating hundreds of simultaneous users or more over a defined time interval \cite{DiLucca2006}. The purpose of this assessment is to demonstrate that the system reaches its performance objectives \cite{Sandler2004}.  Term often used interchangeably with “stress” and “load” testing. Ideally “performance” testing is defined in requirements documentation or QA or Test Plans \cite{Lewis2005}.
 
@@ -23,6 +31,35 @@ This chapter surveys the state of the art literature in stress testing research.
 \end{itemize}
 
 The population in this study is the domain of software testing. Intervention includes application of stress test techniques to test different types of non-functional properties.
+
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{./images/loadtestingbuble.png}
+\caption{Bubble chart for results of search with the keyword 'Load Testing'}
+\label{fig:testprocess}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.7\textwidth]{./images/wordcloudloadtesting.png}
+\caption{Word cloud for results of search with the keyword 'Load Testing'}
+\label{fig:testprocess}
+\end{figure}
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{./images/stresstestingbuble.png}
+\caption{Bubble chart for results of search with the keyword 'Stress Testing'}
+\label{fig:testprocess}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.7\textwidth]{./images/wordcloudstresstesting.png}
+\caption{Word cloud for results of search with the keyword 'Stress Testing'}
+\label{fig:testprocess}
+\end{figure}
 
 
 \section{Background}
@@ -122,7 +159,7 @@ In descriptive models, one finds different levels of abstraction on the one hand
 \begin{figure}[!ht]
 
 \centering
-\includegraphics[width=0.8\textwidth]{./images/workloadmodel1300dpi.png}
+\includegraphics[width=0.6\textwidth]{./images/workloadmodel1300dpi.png}
 \caption{Workload modeling based on statistical data \cite{DiLucca2006}}
 \label{fig:descriptivemodel}
 \end{figure}
@@ -133,7 +170,7 @@ Generative models are indirect in the sense that they do not model the statistic
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.8\textwidth]{./images/workloadmodel2300dpi.png}
+\includegraphics[width=0.6\textwidth]{./images/workloadmodel2300dpi.png}
 \caption{Workload modeling based on the generative model \cite{DiLucca2006}}
 \label{fig:generativemodel}
 
@@ -209,7 +246,7 @@ One way to capture the navigational pattern within a session is through the Cust
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.8\textwidth]{./images/cbmg.png}
+\includegraphics[width=0.6\textwidth]{./images/cbmg.png}
 \caption{Example of a Customer Behavior Model Graph (CBMG)  \cite{Menasce2002a} \cite{Jiang2010} \cite{MohammadS.Obaidat}}
 \label{fig:cbmg}
 \end{figure}
@@ -219,7 +256,7 @@ them are standard in mainstream development methodologies and others are needed 
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=1\textwidth]{./images/modelmethodology.png}
+\includegraphics[width=0.8\textwidth]{./images/modelmethodology.png}
 \caption{Model-based stress test methodology}
 \label{fig:modelbased}
 \end{figure}
@@ -293,6 +330,8 @@ Workload generators are software products based on workload models to generate r
 There are several tool to execution of Stress testing. In this tools, the procedure is semi-automated, whereas the execution of the tests itself is performed by a tool, the choice of scenarios to be executed as well as the decision to start new execution batteries are activities of the test designer or tester.
 
 Normally, load test tools uses test scripts. Test scripts are written in a GUI testing framework or a backend server-directed performance tool such as JMeter. These frameworks are the basis on which performance testing is mostly done in industry. Performance test scripts imitate large numbers of users to create a significant load on the application under tests \cite{Grechanik2012}.
+
+Performance testing tools, such as Rational’s PerformanceStudio, allow for load testing, where the tool can be programmed to run a number of client machines simultaneously to load the client/server system and measure response time. Load testing typically involves various scenarios to analyze how the client/server system responds under various loads \cite{Dustin1999}. 
 
 Comparing Web workload generators is a laborious and difficult task since they offer a large amount and diversity of features. In this section we contrast generators according to a wide set of features and capabilities, focusing on their ability to realize search-based tests or have learning capacities.
 

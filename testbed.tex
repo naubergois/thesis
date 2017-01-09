@@ -19,8 +19,7 @@ In the first approach , the algorithms do not share their best individuals among
 
 
 
-The second approach uses the algorithms in a collaborative mode (hybrid metaheuristic). In this approach, the three algorithms share their best individuals found (Fig. \ref{fig:secondapproach}). The next subsections present details about the used metaheuristic algorithms (Representation, initial population and fitness function).
-
+The second approach uses the algorithms in a collaborative mode (hybrid metaheuristic). In this approach, the three algorithms share their best individuals found (Fig. \ref{fig:secondapproach}). The next subsections present details about the used metaheuristic algorithms (Representation, initial population and fitness function). 
 
 
 
@@ -91,7 +90,7 @@ penalty=100 * \Delta \\
 
 \section{Hybrid Metaheuristic with Q-Learning Approach}
 
-The HybridQ algorithm uses the GA, SA and Tabu Search algorithms in a collaborative approach in conjunction with Q-Learning technique.
+The HybridQ algorithm uses the GA, SA and Tabu Search algorithms in a collaborative approach in conjunction with Q-Learning technique. The biggest difference between the Hybrid and HybridQ algorithms is the application of a series of modifications on individuals based on the Q-Learning algorithm before each generation.
 
 \begin{figure}[h!]
 \center
@@ -100,19 +99,54 @@ The HybridQ algorithm uses the GA, SA and Tabu Search algorithms in a collaborat
 \label{fig:hybridq}
 \end{figure}
 
+Figure \ref{fig:mdphybridq} shows the proposed MDP model for HybridQ. The model has three main states based on response time. A test may have a response time greater than 1.2 times the maximum response time alloowed, between 0.8 and 1.2 times the maximum response time allowed or less than 0.8 times the maximum response time allowed. A test receives a positive reward when an action increases fitnesse value and a negative reward when an action reduces the fitnesse value. The possible actions in MDP are the change of one of the test scenarios and increase or decrease of the number of users.
+
 \begin{figure}[h!]
 \center
 \includegraphics[width=0.7\textwidth]{./images/mdp3.png}
-\caption{IAdapter architecture}
-\label{fig:iadapterarchitecture}
+\caption{Markov Decision Process used by HybridQ}
+\label{fig:mdphybridq}
 \end{figure}
+
+
+Unlike the traditional approach, The update of Q values for each action also occurs in the explotation phase. The exploit phase ends when no value of Q it is equals zero for a state, ie, unlike the traditional approach an agent belonging to one state may be in the exploration phase while another agent may be in the explotation phase. The table presents an hyphotetical Q-values for a test. In the table \ref{pab:mdp}, it can be observed that the agents in the Service Level state are in the exploitation phase because there is no other value of Q equals to zero.
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[]
+\centering
+\caption{Hypothetical MDP Q-values }
+\label{pab:mdp}
+\begin{tabular}{lll}
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Above Service Level}  & \textbf{Scenario 1} & \textbf{Scenario 2} \\
+Increment Users               & 0.2                 & 0.0                 \\
+Reduce Users                  & 0.1                 & 0.2                 \\
+Phase                         & Exploration         & Exploration         \\
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Service Level}        & \textbf{Scenario 1} & \textbf{Scenario 2} \\
+Increment Users               & 0.2                 & 0.11                \\
+Reduce Users                  & 0.1                 & -0.2                \\
+\rowcolor[HTML]{F8FF00} 
+Phase                         & Explotation         & Explotation         \\
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Bellow Service Level} & \textbf{Scenario 1} & \textbf{Scenario 2} \\
+Increment Users               & 0.0                 & 0.2                 \\
+Reduce Users                  & 0.1                 & 0.0                 \\
+Phase                         & Exploration         & Exploration        
+\end{tabular}
+\end{table}
+
+The Fig. \ref{fig:neighservice} presents how one of the neighbors of a test is generated using Q-Learning. The solution uses a service called Q-Neighborhood Service to generate the neighbor from the action that has the highest value of Q.
 
 
 \begin{figure}[h]
 \center
 \includegraphics[width=0.8\textwidth]{./images/q-neighborservice.png}
-\caption{IAdapter architecture}
-\label{fig:iadapterarchitecture}
+\caption{HybridQ NeighborHood Service}
+\label{fig:neighservice}
 \end{figure}
 
 

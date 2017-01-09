@@ -1,16 +1,47 @@
 \newcommand{\noopsort}[1]{} \newcommand{\printfirst}[2]{#1}
   \newcommand{\singleletter}[1]{#1} \newcommand{\switchargs}[2]{#2#1}
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{Bertolino2008}
 {Model-based generation of testbeds for web services}.
 \newblock {\em Testing of Software and {\ldots}}, pages 266--282, 2008.
+
+\bibitem{Catelani2011}
+{Software automated testing: A solution to maximize the test plan coverage and
+  to increase software reliability and quality in use}.
+\newblock {\em Computer Standards and Interfaces}, 33(2):152--158, 2011.
+
+\bibitem{Abu-nimeh2001}
+Saeed Abu-nimeh, Suku Nair, and Marco Marchetti.
+\newblock {Avoiding Denial of Service via Stress Testing}.
+\newblock 2001.
+
+\bibitem{Acharya2009}
+Mithun Acharya and Vamshidhar Kommineni.
+\newblock {Mining health models for performance monitoring of services}.
+\newblock {\em ASE2009 - 24th IEEE/ACM International Conference on Automated
+  Software Engineering}, pages 409--420, 2009.
+
+\bibitem{Afzal2008}
+Wasif Afzal, Richard Torkar, and Robert Feldt.
+\newblock {A systematic mapping study on non-functional search-based software
+  testing}.
+\newblock {\em Proceedings of the Twentieth International Conference on
+  Software Engineering {\&} Knowledge Engineering (SEKE'2008)}, (October
+  2015):488--493, 2008.
 
 \bibitem{Afzal2009a}
 Wasif Afzal, Richard Torkar, and Robert Feldt.
 \newblock {A systematic review of search-based testing for non-functional
   system properties}.
 \newblock {\em Information and Software Technology}, 51(6):957--976, 2009.
+
+\bibitem{Ag2006}
+Daimler~Chrysler Ag, D~Berlin, and Stefan Wappler.
+\newblock {Improving Evolutionary Real-Time Testing Categories and Subject
+  Descriptors}.
+\newblock {\em Proceedings of the 8th annual conference on Genetic and
+  evolutionary computation}, pages 1917--1924, 2006.
 
 \bibitem{Alander}
 Jarmo T.~JT Alander, Timo Mantere, and Pekka Turunen.
@@ -42,6 +73,30 @@ Davide Arcelli, Vittorio Cortellessa, and Catia Trubiani.
 \newblock {\em Proceedings of the 8th international ACM SIGSOFT conference on
   Quality of Software Architectures (QoSA '12)}, pages 33--42, 2012.
 
+\bibitem{Avritzer1995}
+A.~Avritzer and E.J. Weyuker.
+\newblock {The automatic generation of load test suites and the assessment of
+  the resulting software}.
+\newblock {\em Software Engineering, IEEE {\ldots}}, 21(9):705--716, 1995.
+
+\bibitem{Avritzer2012a}
+Alberto Avritzer and Andre~B. Bondi.
+\newblock {Resilience Assessment Based on Performance Testing}.
+\newblock In {\em Resilience Assessment and Evaluation of Computing Systems},
+  pages 305--322. 2012.
+
+\bibitem{Avritzer1993d}
+Alberto Avritzer and Brian Larson.
+\newblock {Load Testing Software Using Deterministic State Testing}.
+\newblock In {\em ACM SIGSOFT Software Engineering Notes}, ISSTA '93, pages
+  82--88, New York, NY, USA, 1993. ACM.
+
+\bibitem{Avritzer1994}
+Alberto Avritzer and EJ~Weyuker.
+\newblock {Generating test suites for software load testing}.
+\newblock {\em \ldots international symposium on Software testing \ldots},
+  pages 44--57, 1994.
+
 \bibitem{Baars2011}
 Arthur~I Baars, Kiran Lakhotia, Tanja E~J Vos, and Joachim Wegener.
 \newblock {Search-based testing, the underlying engine of Future Internet
@@ -55,15 +110,34 @@ C~Babbar, N~Bajpai, and Dk~Sarmah.
   Testing}.
 \newblock {\em International Journal of Technology}, 2011.
 
+\bibitem{Barber2004}
+S~Barber.
+\newblock {Creating effective load models for performance testing with
+  incomplete empirical data}.
+\newblock {\em {\ldots} Energy Conference, 2004. INTELEC 2004. 26th {\ldots}},
+  pages 1--13, 2004.
+
 \bibitem{Barna2011}
 Cornel Barna, M~Litoiu, and H~Ghanbari.
 \newblock {Autonomic load-testing framework}.
 \newblock {\em International conference on Autonomi}, pages 91--100, 2011.
 
+\bibitem{Barna2013}
+Cornel Barna, Mark Shtern, Michael Smit, Vassilios Tzerpos, and Marin Litoiu.
+\newblock {Mitigating DoS Attacks using Performance Model-driven Adaptive
+  Algorithms}.
+\newblock X(February), 2013.
+
 \bibitem{Battiti2009}
 Roberto Battiti, Mauro Brunato, and Franco Mascia.
 \newblock {\em {Reactive search and intelligent optimization}}, volume~45.
 \newblock 2009.
+
+\bibitem{Bayan2008}
+Mohamad Bayan and Jo{\~{a}}o~W. Cangussu.
+\newblock {Automatic feedback, control-based, stress and load testing}.
+\newblock {\em Proceedings of the 2008 ACM symposium on Applied computing - SAC
+  '08}, page 661, 2008.
 
 \bibitem{Bennett2006}
 Kristin~P Bennett.
@@ -95,11 +169,23 @@ Lionel~C. Briand, Yvan Labiche, and Marwa Shousha.
 \newblock {\em Proceedings of the 2005 conference on Genetic and evolutionary
   computation - GECCO '05}, page 1021, 2005.
 
+\bibitem{Brown2003}
+Matthew~a Brown and Eli Tapolcsanyi.
+\newblock {Mock Object Patterns}.
+\newblock {\em Matrix}, pages 1--17, 2003.
+
 \bibitem{brown1998antipatterns}
 William~H Brown, Raphael~C Malveau, Hays~W McCormick, and Thomas~J Mowbray.
 \newblock {\em AntiPatterns: refactoring software, architectures, and projects
   in crisis}.
 \newblock John Wiley \& Sons, Inc., 1998.
+
+\bibitem{Cai2007}
+Yuhong Cai, John Grundy, and John Hosking.
+\newblock {Synthesizing client load models for performance engineering via web
+  crawling}.
+\newblock {\em Proceedings of the twenty-second IEEE/ACM international
+  conference on Automated software engineering - ASE '07}, page 353, 2007.
 
 \bibitem{Canfora}
 Gerardo Canfora, Massimiliano~Di Penta, Raffaele Esposito, and Maria~Luisa
@@ -120,6 +206,13 @@ Vittorio Cortellessa and Laurento Frittella.
 \bibitem{dean2003managing}
 Leffingwell Dean and Widrig Don.
 \newblock Managing software requirements: A use case approach, 2003.
+
+\bibitem{Deb2011}
+Kalyanmoy Deb.
+\newblock {Multi-objective optimization using evolutionary algorithms: an
+  introduction}.
+\newblock {\em Multi-objective evolutionary optimisation for product design and
+  manufacturing}, pages 1--24, 2011.
 
 \bibitem{DiAlesio2013}
 S~{Di Alesio}, S~Nejati, L~Briand, and A~Gotlieb.
@@ -146,6 +239,23 @@ D.~Draheim, J.~Grundy, J.~Hosking, C.~Lutteroth, and G.~Weber.
 \newblock In {\em Conference on Software Maintenance and Reengineering
   (CSMR'06)}, 2006.
 
+\bibitem{Dumitrescu2004}
+Catalin Dumitrescu, Ioan Raicu, Matei Ripeanu, and Ian Foster.
+\newblock {DiPerF: An automated distributed Performance testing framework}.
+\newblock {\em Proceedings - IEEE/ACM International Workshop on Grid
+  Computing}, pages 289--296, 2004.
+
+\bibitem{Dustin1999}
+Elfriede Dustin, Jeff Rashka, and John Paul.
+\newblock {\em {Automated Software Testing: Introduction, Management, and
+  Performance}}.
+\newblock 1999.
+
+\bibitem{El-far2001}
+Ibrahim~K El-far and James~a Whittaker.
+\newblock Model based software testing.
+\newblock {\em Encyclopedia of Software Engineering}, pages 1--22, 2001.
+
 \bibitem{Erinle2013}
 Bayo Erinle.
 \newblock {\em {Performance Testing With JMeter 2.9}}.
@@ -165,9 +275,9 @@ Luca~M Gambardella and Marco Dorigo.
 
 \bibitem{Garousi2006}
 Vahid Garousi.
-\newblock {Traffic-aware Stress Testing of Distributed Real-Time Systems based
-  on UML Models using Genetic Algorithms}.
-\newblock (August), 2006.
+\newblock {\em {Traffic-aware Stress Testing of Distributed Real-Time Systems
+  based on UML Models using Genetic Algorithms}}.
+\newblock PhD thesis, 2006.
 
 \bibitem{Garousi2008}
 Vahid Garousi.
@@ -283,10 +393,32 @@ Wassim Jaziri.
 \newblock {\em {Local Search Techniques: Focus on Tabu Search}}.
 \newblock 2008.
 
+\bibitem{Jiang2015}
+Zhen~Ming Jiang and Ahmed Hassan.
+\newblock {A Survey on Load Testing of Large-Scale Software Systems}.
+\newblock {\em IEEE Transactions on Software Engineering}, 5589(2):1--1, 2015.
+
+\bibitem{Jiang2009a}
+Zhen~Ming Jiang, Ahmed~E Hassan, Gilbert Hamann, and Parminder Flora.
+\newblock {Automated performance analysis of load tests}.
+\newblock {\em 2009 IEEE International Conference on Software Maintenance},
+  pages 125--134, 2009.
+
+\bibitem{Jiang2008b}
+Zhen Ming~ZM Jiang, Ahmed E.~AE Hassan, Gilbert Hamann, and Parminder Flora.
+\newblock {Automatic identification of load testing problems}.
+\newblock In {\em IEEE International Conference on Software Maintenance, ICSM},
+  pages 307--316, 2008.
+
 \bibitem{Jiang2010}
 ZM~Jiang.
 \newblock {\em {Automated analysis of load testing results}}.
 \newblock PhD thesis, 2010.
+
+\bibitem{Kaczanowski2012}
+Tomasz Kaczanowski.
+\newblock {\em {Practical unit testing with testNG and Mockito}}.
+\newblock 2012.
 
 \bibitem{Kamali2007}
 Kaivan Kamali, L.~J. Jiang, John Yen, and K.~W. Wang.
@@ -306,6 +438,18 @@ Qi~Luo, Aswathy Nair, Mark Grechanik, and Denys Poshyvanyk.
   feedback-directed learning software testing}.
 \newblock {\em Empirical Software Engineering}, pages 1--51, 2015.
 
+\bibitem{Malik2010b}
+Haroon Malik.
+\newblock {A methodology to support load test analysis}.
+\newblock {\em Software Engineering, 2010 ACM/IEEE 32nd \ldots}, 2:421--424,
+  2010.
+
+\bibitem{Malik2013a}
+Haroon Malik, Hadi Hemmati, and Ahmed~E Hassan.
+\newblock {Automatic Detection of Performance Deviations in the Load Testing of
+  Large Scale Systems}.
+\newblock pages 1012--1021, 2013.
+
 \bibitem{MarkUtting2012}
 Alexander~Pretschner {Mark Utting} and Bruno Legeard.
 \newblock {A taxonomy of model-based testing approaches}.
@@ -317,6 +461,13 @@ Jackson Matsuura and Reinaldo A~C Bianchi.
 \newblock {Heuristically Accelerated Q – Learning : a new approach to speed
   up Reinforcement Learning}.
 \newblock (March), 2015.
+
+\bibitem{Mayo2013}
+Michael Mayo and Simon Spacey.
+\newblock {Predicting Regression Test Failures Using Genetic Algorithm-Selected
+  Dynamic Performance Analysis Metrics}.
+\newblock Lecture Notes in Computer Science, pages 158--171. Springer Berlin
+  Heidelberg, jan 2013.
 
 \bibitem{McMinn2004}
 Philip McMinn, Regent Court, Software Testing, and Portobello Street.
@@ -353,11 +504,28 @@ F.~Mueller and J.~Wegener.
 \newblock {\em Proceedings. Fourth IEEE Real-Time Technology and Applications
   Symposium (Cat. No.98TB100245)}, 1998.
 
+\bibitem{Nevedrov2007}
+Dmitri Nevedrov.
+\newblock {Using JMeter to Performance Test Web Services}.
+\newblock pages 1--11, 2007.
+
+\bibitem{Nguyen2011}
+Thanh H~D Nguyen, Bram Adams, Zhen~Ming Jiang, Ahmed~E. Hassan, Mohamed Nasser,
+  and Parminder Flora.
+\newblock {Automated verification of load tests using control charts}.
+\newblock {\em Proceedings - Asia-Pacific Software Engineering Conference,
+  APSEC}, pages 282--289, 2011.
+
 \bibitem{Penta2007}
 Massimiliano~Di Penta, Gerardo Canfora, and Gianpiero Esposito.
 \newblock {Search-based testing of service level agreements}.
 \newblock In {\em Proceedings of the 9th annual conference on Genetic and
   evolutionary computation}, pages 1090--1097, 2007.
+
+\bibitem{Perry2004}
+William~E. Perry.
+\newblock {\em {Effective methods for software testing}}.
+\newblock 2004.
 
 \bibitem{Piel2010}
 {\'{E}}ric Piel, Alberto Gonz{\'{a}}lez-Sanchez, and Hans-Gerhard Gro{\ss}.
@@ -403,6 +571,12 @@ Corey Sandler, Tom Badgett, and TM~Thomas.
 \newblock {The Art of Software Testing}.
 \newblock page 200, September 2004.
 
+\bibitem{Santos2011}
+I~de~Sousa Santos, AR~Santos, and PA~dos~Santos Neto.
+\newblock {Reusing Functional Testing in order to Decrease Performance and
+  Stress Testing Costs.}
+\newblock {\em SEKE}, 2011.
+
 \bibitem{sato2015automatic}
 Yuji Sato and Taku Sugihara.
 \newblock Automatic generation of specification-based test cases by applying
@@ -410,11 +584,24 @@ Yuji Sato and Taku Sugihara.
 \newblock In {\em International Workshop on Structured Object-Oriented Formal
   Language and Method}, pages 59--71. Springer, 2015.
 
+\bibitem{Shoaib2011}
+Yasir Shoaib and Olivia Das.
+\newblock {Web Application Performance Modeling Using Layered Queueing
+  Networks}.
+\newblock {\em Electronic Notes in Theoretical Computer Science}, 275:123--142,
+  2011.
+
 \bibitem{shousha2003performance}
 Marwa Shousha.
 \newblock {\em Performance Stress Testing of Real-Time Systems Using Genetic
   Algorithms}.
 \newblock PhD thesis, Carleton University Ottawa, 2003.
+
+\bibitem{Shousha2003}
+Marwa Shousha.
+\newblock {\em {Performance Stress Testing of Real-Time Systems Using
+  Genetic-Algorithms}}.
+\newblock PhD thesis, Carleton University, 2003.
 
 \bibitem{Smith2000}
 Connie~U. Smith and Lloyd~G. Williams.
@@ -484,10 +671,17 @@ G~Trent and M~Sake.
 \newblock {\em WWW Conference'95}, 1995.
 
 \bibitem{Vetoio2011}
-Via Vetoio.
+Catia Trubiani.
 \newblock {PhD Thesis in Computer Science Automated generation of architectural
   feedback from software performance analysis results Catia Trubiani}.
 \newblock {\em Language}, 2011.
+
+\bibitem{Vasar2012}
+Martti Vasar, Satish~Narayana Srirama, and Marlon Dumas.
+\newblock {Framework for monitoring and testing web application scalability on
+  the cloud}.
+\newblock {\em Proceedings of the WICSA/ECSA 2012 Companion Volume on -
+  WICSA/ECSA '12}, page~53, 2012.
 
 \bibitem{Vogele2016}
 Christian Vogele, Andr{\'{e}} van Hoorn, Eike Schulz, Wilhelm Hasselbring, and
@@ -496,6 +690,12 @@ Christian Vogele, Andr{\'{e}} van Hoorn, Eike Schulz, Wilhelm Hasselbring, and
   load testing and performance prediction???a model-driven approach for
   session-based application systems}.
 \newblock {\em Software and Systems Modeling}, (October):1--35, 2016.
+
+\bibitem{Wang2010}
+Xingen Wang, Bo~Zhou, and Wei Li.
+\newblock {Model Based Load Testing of Web Applications}.
+\newblock {\em International Symposium on Parallel and Distributed Processing
+  with Applications}, pages 483--490, 2010.
 
 \bibitem{Wang2013}
 Xingen Wang, Bo~Zhou, and Wei Li.
@@ -534,5 +734,36 @@ Alexander Wert, Marius Oehler, Christoph Heger, and Roozbeh Farahbod.
 \newblock {\em QoSA 2014 - Proceedings of the 10th International ACM SIGSOFT
   Conference on Quality of Software Architectures (Part of CompArch 2014)},
   pages 3--12, 2014.
+
+\bibitem{Weyuker2000}
+EJ~Weyuker and FI~Vokolos.
+\newblock {Experience with performance testing of software systems: issues, an
+  approach, and case study}.
+\newblock {\em IEEE transactions on software engineering}, 26(12):1147--1156,
+  2000.
+
+\bibitem{Yan2012}
+Minzhi Yan, Hailong Sun, Xu~Wang, and Xudong Liu.
+\newblock {Building a TaaS Platform for Web Service Load Testing}.
+\newblock {\em 2012 IEEE International Conference on Cluster Computing},
+  (2):576--579, 2012.
+
+\bibitem{Yang1996}
+Cheer-Sun~D Yang and Lori~L Pollock.
+\newblock {Towards a Structural Load Testing Tool}.
+\newblock {\em SIGSOFT Softw. Eng. Notes}, 21(3):201--208, 1996.
+
+\bibitem{Yu2010a}
+Lian Yu, Wei~Tek Tsai, Xiangji Chen, Linqing Liu, Yan Zhao, Liangjie Tang, and
+  Wei Zhao.
+\newblock {Testing as a service over cloud}.
+\newblock In {\em Proceedings - 5th IEEE International Symposium on
+  Service-Oriented System Engineering, SOSE 2010}, pages 181--188, 2010.
+
+\bibitem{Zhang2011}
+Pingyu Zhang, Sebastian Elbaum, and Matthew~B Dwyer.
+\newblock {Automatic generation of load tests}.
+\newblock {\em Proceedings of the 2011 26th IEEE/ACM International Conference
+  on Automated Software Engineering}, pages 43--52, 2011.
 
 \end{thebibliography}

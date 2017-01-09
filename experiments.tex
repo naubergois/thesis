@@ -1,6 +1,6 @@
 \chapter{Experiments}
 
-In this chapter, We present the results of experiments which we carried out to verify the hybrid and q-learning algorithm approaches ,the antipatterns  implementation, the fitness objective function and the metaheuristics used by the testbed tool.
+In this chapter, We present the results of experiments which we carried out to verify the hybrid and q-learning algorithm approaches ,the antipatterns  implementation, the fitness objective function and the metaheuristics used by the testbed tool.   Six experiments were conducted to validate the proposed approach. The first experiment was performed on an emulated component. The second and third experiments are conducted in an testbed developed appplication. The fourth  experiment was performed using an installed Moodle application. The fifth and sixth experiments are performned using an installed JPetStore application.
 
 \section{Emulated Class Test Experiment}
 
@@ -467,27 +467,96 @@ Table \ref{fig:gened} presents the percentage of genes in all test scenarios by 
 
 \section{JPetStore Application Experiments}
 
-Two experiments were conducted to test the use of the HybridQ algorithm in a real implemented application. The chosen application was the JPetStore, available at \url{https://hub.docker.com/r/pocking/jpetstore/}. The maximum tolerated response time in the test was 10 seconds.  Any  individuals who obtained a time longer than the stipulated maximum time suffered penalties.  The whole process of stress and performance tests, which took 2 days and about 1800 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of eleven generations previously established.
+Two experiments were conducted to test the use of the HybridQ algorithm in a real implemented application. The chosen application was the JPetStore, available at \url{https://hub.docker.com/r/pocking/jpetstore/}. The maximum tolerated response time in the test was 10 seconds.  Any  individuals who obtained a time longer than the stipulated maximum time suffered penalties.  The whole process of stress and performance tests, which took 2 days and about 1800 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of eleven generations previously established. The experiments use the follow application features:
+
+
+\begin{itemize}
+\item Enter in the Catalog: the application presents the catalog of pets.
+\item Fishs: The application shows the recorded fishs items.
+\item Register:  a new user realize the register in the system.
+\item Dogs: The application shows the recorded dogs items.
+\item Shopping Cart: the application presents the shopping cart.
+\item Add or Remove in Shopping Cart: the application adds and removes items from shopping cart.
+\end{itemize}
+
 
 The experiment used the following fitness function:
 
 \begin{equation}
 \begin{aligned}
 fitness=\begin{cases} n*\{3000*numberOfUsers-20* 90percentiletime-20*80percentiletime\\-20*70percentiletime
--20*maxResponseTime-penalty\} , \textsf{where n is the }\\\ \textsf{ number of scenarios used by the test in a set of previous selected scenarios}
+-20*maxResponseTime-penalty\} , \textsf{where n is the }\\\ \textsf{ number of features used by the test in a set of previous selected application} \\ \textsf{features}
 \end{cases}
 \end{aligned}
 \end{equation}
 
-\section{JPetStore experiment }
 
-This first experiment tries to find the scenarios with maximal number of users and best response time in a configuration that
+The purpose of the fitness function is to maximize the number of users and minimize the response time in the tests containing the selected functionalities. For example, it is possible double the fitness value for tests that have the fish lookup feature and user registration.
+
+\subsection{JPetStore  Cart and Register experiment }
+
+This first experiment tries to find the scenarios with maximal number of users and best response time tests that contains the Cart and Register features. The Fig. \ref{fig:experiment31} and \ref{fig:experiment32} show the fitness value by generation. The HybridQ obtained the best fitness values in all generations.
+
+\begin{figure}[h]
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/experiment3-1.png}
+\caption{Fitness value by generation on JPetStore First experiment}
+\label{fig:experiment31}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/experiment3-2.png}
+\caption{Fitness value by generation on JPetStore First experiment}
+\label{fig:experiment32}
+\end{minipage}
+\end{figure}
+
+The Fig. \ref{fig:numberofrequestsbysearchmethod3} shows the fitness value by number of request by each Search Method. In the Figure, it is possible to observe that HybridQ obtained the best fitness value to same number of requests of the other algorithms.
+
+\begin{figure}[h]
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/experiment3-3.png}
+\caption{Number of requests by Search Method}
+\label{fig:numberofrequestsbysearchmethod3}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/experiment3-4.png}
+\caption{Fitness value by generation in all tests}
+\label{fig:boxplot3}
+\end{minipage}
+
+\end{figure}
+
+The Fig. \ref{fig:summaryboxplot3} presents the maximum, average, median and minimum fitness value by generation. The maximun fitness value increases at each generation. Table \ref{tab:bestindividuals3} shows 4 individuals with 233 to 398 users.  The first individual has 73 users on Fishs scenario, 17 users on Dogs scenario, 50 users on Cart scenario, 33 Users on register scenario  and a response time of 357 seconds. 
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth]{./images/experiment3-1.png}
-\caption{GridWorld - exploration phase (Step 10 to 13)}
-\label{fig:gridworld4}
+\includegraphics[width=1\textwidth]{./images/experiment3-5.png}
+\caption{Average, median and minimum fitness value by Search Method }
+\label{fig:summaryboxplot3}
 \end{figure}
 
 
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[h!]
+\centering
+\caption{Best individuals found in JPetStore first experiment}
+\label{tab:bestindividuals3}
+\begin{tabular}{lllllllll}
+\rowcolor[HTML]{C0C0C0} 
+\textbf{Search Method} & \textbf{Response} & \textbf{Users} & \textbf{Gen} & \textbf{Fitness} & \textbf{Fishs} & \textbf{Dogs} & \textbf{Cart} & \textbf{Register} \\
+HybridQ                & 357               & 173            & 9            & 44773            & 73             & 17            & 50            & 33                \\
+HybridQ                & 398               & 171            & 10           & 44831            & 57             & 33            & 48            & 33                \\
+HybridQ                & 331               & 164            & 9            & 44774            & 71             & 14            & 51            & 28                \\
+HybridQ                & 233               & 159            & 9            & 44783            & 63             & 31            & 32            & 33               
+\end{tabular}
+\end{table}
+
+We conclude that the individuals with major number of uses the four scenarios. The scenario with major number of users is the Fish search feature. The hybrid metaheuristic with Q-Learning (HybridQ) returned individuals with higher fitness scores.  The individual with best fitness value has 73 users on Fishs scenario, 17 users on Dogs scenario, 50 users on Cart scenario, 33 Users on register scenario  and a response time of 357 seconds. 

@@ -1,23 +1,27 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Performance antipatterns\relax }}{42}
-\contentsline {table}{\numberline {2.2}{\ignorespaces My caption\relax }}{52}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Performance antipatterns\relax }}{44}
+\contentsline {table}{\numberline {2.2}{\ignorespaces My caption\relax }}{54}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Distribution of the research studies over the range of applied metaheuristics\relax }}{58}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Q-value for some states of the test \cite {Piel2010}\relax }}{78}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Distribution of the research studies over the range of applied metaheuristics\relax }}{60}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Maximum value of the fitness function by algorithm\relax }}{99}
-\contentsline {table}{\numberline {7.2}{\ignorespaces Best individuals found in the first experiment\relax }}{103}
-\contentsline {table}{\numberline {7.3}{\ignorespaces Best individuals found in the second experiment\relax }}{108}
-\contentsline {table}{\numberline {7.4}{\ignorespaces Results obtained from the second experiment\relax }}{110}
-\contentsline {table}{\numberline {7.5}{\ignorespaces Example of individuals obtained in the second experiment\relax }}{111}
-\contentsline {table}{\numberline {7.6}{\ignorespaces Percentage of genes in each scenario by generation \relax }}{111}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Q-value for some states of the test \cite {Piel2010}\relax }}{80}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Hypothetical MDP Q-values \relax }}{88}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {7.1}{\ignorespaces Maximum value of the fitness function by algorithm\relax }}{102}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Best individuals found in the first experiment\relax }}{106}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Best individuals found in the second experiment\relax }}{111}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Results obtained from the second experiment\relax }}{113}
+\contentsline {table}{\numberline {7.5}{\ignorespaces Example of individuals obtained in the second experiment\relax }}{114}
+\contentsline {table}{\numberline {7.6}{\ignorespaces Percentage of genes in each scenario by generation \relax }}{114}
+\contentsline {table}{\numberline {7.7}{\ignorespaces Best individuals found in JPetStore first experiment\relax }}{117}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Best individuals found in the second Testbed Tool experiments\relax }}{117}
-\contentsline {table}{\numberline {A.2}{\ignorespaces Comparison study presented by Pen\IeC {\textasciitilde }a-Ortiz on the book Modeling and Simulation of Computer Networks and Systems Methodologies [F- Fully attended feature P-Partial attended feature] \cite {MohammadS.Obaidat} \relax }}{118}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Best individuals found in the second Testbed Tool experiments\relax }}{121}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Researches found using keyword 'Load Testing'\relax }}{122}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Researches found using keyword 'Stress Testing'\relax }}{123}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Comparison study presented by Pen\IeC {\textasciitilde }a-Ortiz on the book Modeling and Simulation of Computer Networks and Systems Methodologies [F- Fully attended feature P-Partial attended feature] \cite {MohammadS.Obaidat} \relax }}{124}
 \addvspace {10\p@ }
