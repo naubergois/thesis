@@ -128,6 +128,12 @@ Cornel Barna, Mark Shtern, Michael Smit, Vassilios Tzerpos, and Marin Litoiu.
   Algorithms}.
 \newblock X(February), 2013.
 
+\bibitem{Barros2007}
+Marcelo~De Barros and Jing Shiau.
+\newblock {Web services wind tunnel: On performance testing large-scale
+  stateful web services}.
+\newblock {\em \ldots and Networks, 2007. \ldots}, 2007.
+
 \bibitem{Battiti2009}
 Roberto Battiti, Mauro Brunato, and Franco Mascia.
 \newblock {\em {Reactive search and intelligent optimization}}, volume~45.
@@ -708,6 +714,13 @@ J~Wegener and M~Grochtmann.
 \newblock {Verifying timing constraints of real-time systems by means of
   evolutionary testing}.
 \newblock {\em Real-Time Systems}, 15(3):275--298, 1998.
+
+\bibitem{Wegener1999}
+J.~Wegener, H.~Sthamer, and H.~Pohlheim.
+\newblock {Testing the temporal behavior of real-time tasks using extended
+  evolutionary algorithms}.
+\newblock {\em Proceedings 20th IEEE Real-Time Systems Symposium (Cat.
+  No.99CB37054)}, 1999.
 
 \bibitem{Wegener1997}
 Joachim Wegener, Harmen Sthamer, Bryan~F Jones, and David~E Eyres.

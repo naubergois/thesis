@@ -45,6 +45,21 @@ Repeated entry---line 1986 of file ../main.bib
  : @book{Halili2008
  :                 ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Oliner2011"
+Warning--I didn't find a database entry for "Geiger"
+Warning--I didn't find a database entry for "Nivas2011"
+Warning--I didn't find a database entry for "Alshahwan2001"
+Warning--I didn't find a database entry for "Bazilinskyy2013"
+Warning--I didn't find a database entry for "Gias2014"
+Warning--I didn't find a database entry for "Alebrahim"
+Warning--I didn't find a database entry for "Avritzer1995b"
+Warning--I didn't find a database entry for "Aguilera2003"
+Warning--I didn't find a database entry for "Kiran2015"
+Warning--I didn't find a database entry for "Fritzsche2007"
+Warning--I didn't find a database entry for "Lutteroth2008"
+Warning--I didn't find a database entry for "Garousi2010d"
+Warning--I didn't find a database entry for "White2010"
+Warning--I didn't find a database entry for "Ganapathi2009"
 Warning--to sort, need author or key in Bertolino2008
 Warning--to sort, need author or key in Catelani2011
 Warning--empty author in Bertolino2008
@@ -98,45 +113,45 @@ Warning--empty journal in Tracey1998
 Warning--there's a number but no volume in Vogele2016
 Warning--there's a number but no volume in Wert2013a
 Warning--there's a number but no volume in Yan2012
-You've used 128 entries,
+You've used 130 entries,
             2118 wiz_defined-function locations,
-            1274 strings with 27235 characters,
-and the built_in function-call counts, 43435 in all, are:
-= -- 4343
-> -- 1943
+            1314 strings with 27958 characters,
+and the built_in function-call counts, 43946 in all, are:
+= -- 4391
+> -- 1974
 < -- 52
-+ -- 767
-- -- 638
-* -- 2893
-:= -- 7060
-add.period$ -- 383
-call.type$ -- 128
-change.case$ -- 681
++ -- 779
+- -- 648
+* -- 2922
+:= -- 7156
+add.period$ -- 389
+call.type$ -- 130
+change.case$ -- 692
 chr.to.int$ -- 0
-cite$ -- 181
-duplicate$ -- 1777
-empty$ -- 3283
-format.name$ -- 638
-if$ -- 9158
+cite$ -- 183
+duplicate$ -- 1797
+empty$ -- 3317
+format.name$ -- 648
+if$ -- 9259
 int.to.chr$ -- 0
-int.to.str$ -- 128
-missing$ -- 139
-newline$ -- 638
-num.names$ -- 252
-pop$ -- 787
+int.to.str$ -- 130
+missing$ -- 141
+newline$ -- 648
+num.names$ -- 256
+pop$ -- 798
 preamble$ -- 2
-purify$ -- 575
+purify$ -- 584
 quote$ -- 0
-skip$ -- 1348
+skip$ -- 1363
 stack$ -- 0
-substring$ -- 2651
-swap$ -- 479
+substring$ -- 2661
+swap$ -- 481
 text.length$ -- 52
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 476
+type$ -- 484
 warning$ -- 53
-while$ -- 454
-width$ -- 131
-write$ -- 1345
+while$ -- 458
+width$ -- 133
+write$ -- 1365
 (There were 7 error messages)
