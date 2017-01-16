@@ -17,49 +17,34 @@ A level-1 auxiliary file: appb.aux
 A level-1 auxiliary file: biblio.aux
 The style file: plain.bst
 Database file #1: ../main.bib
-Repeated entry---line 397 of file ../main.bib
+Repeated entry---line 559 of file ../main.bib
  : @article{Avritzer1995
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1039 of file ../main.bib
+Repeated entry---line 1201 of file ../main.bib
  : @inproceedings{Gois2016
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1066 of file ../main.bib
+Repeated entry---line 1228 of file ../main.bib
  : @article{Avritzer1995
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1160 of file ../main.bib
+Repeated entry---line 1322 of file ../main.bib
  : @article{Acharya2009
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1695 of file ../main.bib
+Repeated entry---line 1857 of file ../main.bib
  : @article{Bertolino2008
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1709 of file ../main.bib
+Repeated entry---line 1871 of file ../main.bib
  : @article{MarkUtting2012
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1986 of file ../main.bib
+Repeated entry---line 2148 of file ../main.bib
  : @book{Halili2008
  :                 ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Oliner2011"
-Warning--I didn't find a database entry for "Geiger"
-Warning--I didn't find a database entry for "Nivas2011"
-Warning--I didn't find a database entry for "Alshahwan2001"
-Warning--I didn't find a database entry for "Bazilinskyy2013"
-Warning--I didn't find a database entry for "Gias2014"
-Warning--I didn't find a database entry for "Alebrahim"
-Warning--I didn't find a database entry for "Avritzer1995b"
-Warning--I didn't find a database entry for "Aguilera2003"
-Warning--I didn't find a database entry for "Kiran2015"
-Warning--I didn't find a database entry for "Fritzsche2007"
-Warning--I didn't find a database entry for "Lutteroth2008"
-Warning--I didn't find a database entry for "Garousi2010d"
-Warning--I didn't find a database entry for "White2010"
-Warning--I didn't find a database entry for "Ganapathi2009"
 Warning--to sort, need author or key in Bertolino2008
 Warning--to sort, need author or key in Catelani2011
 Warning--empty author in Bertolino2008
@@ -76,10 +61,13 @@ Warning--empty year in DiAlesio2014
 Warning--empty publisher in Dustin1999
 Warning--empty publisher in Erinle2013
 Warning--empty journal in Gambardella1995
+Warning--empty school in Ganapathi2009
 Warning--empty school in Garousi2006
 Warning--empty journal in Gay
 Warning--empty year in Gay
+Warning--empty journal in Geiger
 Warning--empty publisher in GendreauMichelandPotvin2010
+Warning--can't use both volume and number fields in Gias2014
 Warning--empty journal in Goncalves2014
 Warning--there's a number but no volume in Greenwald2003
 Warning--empty publisher in Halili2008
@@ -112,46 +100,47 @@ Warning--empty publisher in Talbi2013
 Warning--empty journal in Tracey1998
 Warning--there's a number but no volume in Vogele2016
 Warning--there's a number but no volume in Wert2013a
+Warning--empty journal in White2010
 Warning--there's a number but no volume in Yan2012
-You've used 130 entries,
+You've used 142 entries,
             2118 wiz_defined-function locations,
-            1314 strings with 27958 characters,
-and the built_in function-call counts, 43946 in all, are:
-= -- 4391
-> -- 1974
-< -- 52
-+ -- 779
-- -- 648
-* -- 2922
-:= -- 7156
-add.period$ -- 389
-call.type$ -- 130
-change.case$ -- 692
+            1351 strings with 29872 characters,
+and the built_in function-call counts, 47585 in all, are:
+= -- 4741
+> -- 2137
+< -- 58
++ -- 843
+- -- 700
+* -- 3133
+:= -- 7760
+add.period$ -- 425
+call.type$ -- 142
+change.case$ -- 752
 chr.to.int$ -- 0
-cite$ -- 183
-duplicate$ -- 1797
-empty$ -- 3317
-format.name$ -- 648
-if$ -- 9259
+cite$ -- 199
+duplicate$ -- 1962
+empty$ -- 3604
+format.name$ -- 700
+if$ -- 10031
 int.to.chr$ -- 0
-int.to.str$ -- 130
-missing$ -- 141
-newline$ -- 648
-num.names$ -- 256
-pop$ -- 798
+int.to.str$ -- 142
+missing$ -- 153
+newline$ -- 708
+num.names$ -- 280
+pop$ -- 875
 preamble$ -- 2
-purify$ -- 584
+purify$ -- 634
 quote$ -- 0
-skip$ -- 1363
+skip$ -- 1489
 stack$ -- 0
-substring$ -- 2661
-swap$ -- 481
-text.length$ -- 52
+substring$ -- 2817
+swap$ -- 525
+text.length$ -- 58
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 484
-warning$ -- 53
-while$ -- 458
-width$ -- 133
-write$ -- 1365
+type$ -- 530
+warning$ -- 57
+while$ -- 493
+width$ -- 145
+write$ -- 1490
 (There were 7 error messages)

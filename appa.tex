@@ -139,11 +139,11 @@ HybridQ                & 10                      & 247            & 734940      
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[]
-\centering
+\begin{longtable}{llll}
+%\centering
 \caption{My caption}
-\label{my-label}
-\begin{tabular}{llll}
+\label{my-label} \\
+%\begin{tabular}{llll}
 \rowcolor[HTML]{C0C0C0} 
 \textbf{Year} & \textbf{Type}    & \textbf{Researches}             & \textbf{Classification}          \\
 1999          & Book             & \cite{Dustin1999}               & Automated Software Testing       \\
@@ -174,14 +174,13 @@ HybridQ                & 10                      & 247            & 734940      
 2008          & Conference Paper & \cite{Jiang2008b}               & Analysis of load testing results \\
 2010          & Conference Paper & \cite{Yu2010a}                  & Testing as Service               \\
 2011          & Conference Paper & \cite{Nivas2011}                & Performance Testing              \\
-2011          & Conference Paper & \cite{Alshahwan2001}            & Load Search-Based Test           \\
-2012          & Conference Paper & \cite{Arcelli2012}              & Anti-patterns                    \\
+    2012          & Conference Paper & \cite{Arcelli2012}              & Anti-patterns                    \\
 2013          & Conference Paper & \cite{Bazilinskyy2013}          & Performance Testing              \\
 2014          & Conference Paper & \cite{Gias2014}                 & Performance Testing              \\
 2015          & Conference Paper & \cite{Alebrahim}                & Anti-patterns                    \\
 2016          & Conference Paper & \cite{Gois2016}                 & Stress Search-Based Test         \\
 1994          & Journal          & \cite{Avritzer1994}             & Load Testing                     \\
-1995          & Journal          & \cite{Avritzer1995b}            & Load Testing                     \\
+1995          & Journal          & \cite{Avritzer1995}            & Load Testing                     \\
 1995          & Journal          & \cite{Trent1995}                & Load Testing                     \\
 1996          & Journal          & \cite{Yang1996}                 & Load Test Tool                   \\
 2000          & Journal          & \cite{Weyuker2000}              & Performance Testing              \\
@@ -213,7 +212,7 @@ HybridQ                & 10                      & 247            & 734940      
 2009          & Journal          & \cite{Hierons2009}              & Formal Tests                     \\
 2010          & Journal          & \cite{Wang2010}                 & Load Testing                     \\
 2010          & Journal          & \cite{Malik2010b}               & Analysis of load testing results \\
-2010          & Journal          & \cite{Garousi2010d}             & Stress Search-Based Test         \\
+2010          & Journal          & \cite{Garousi2010}             & Stress Search-Based Test         \\
 2010          & Journal          & \cite{White2010}                & Survey                           \\
 2011          & Journal          & \cite{Babbar2011}               & Analysis of load testing results \\
 2011          & Journal          & \cite{Baars2011}                & Stress Search-Based Test         \\
@@ -243,8 +242,8 @@ HybridQ                & 10                      & 247            & 734940      
 2010          & Thesis           & \cite{Jiang2010}                & Analysis of load testing results \\
 2009          & Thesis           & \cite{Ganapathi2009}            & Performance Model                \\
 2011          & Thesis           & \cite{Vetoio2011}               & Analysis of load testing results
-\end{tabular}
-\end{table}
+%\end{tabular}
+\end{longtable}
 
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}

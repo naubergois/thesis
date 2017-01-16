@@ -467,18 +467,55 @@ Table \ref{fig:gened} presents the percentage of genes in all test scenarios by 
 
 \section{JPetStore Application Experiments}
 
-Two experiments were conducted to test the use of the HybridQ algorithm in a real implemented application. The chosen application was the JPetStore, available at \url{https://hub.docker.com/r/pocking/jpetstore/}. The maximum tolerated response time in the test was 5 seconds.  Any  individuals who obtained a time longer than the stipulated maximum time suffered penalties.  The whole process of stress and performance tests, which took 2 days and about 1800 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of eleven generations previously established. The experiments use the follow application features:
+One experiment was conducted to test the use of the HybridQ algorithm in a real implemented application. The chosen application was the JPetStore, available at \url{https://hub.docker.com/r/pocking/jpetstore/}. The maximum tolerated response time in the test was 500 seconds.  Any  individuals who obtained a time longer than the stipulated maximum time suffered penalties.  The whole process of stress and performance tests, which took 2 days and about 1800 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of eleven generations previously established. The experiments use the follow application features:
 
 
 \begin{itemize}
 \item Enter in the Catalog: the application presents the catalog of pets.
-\item Fishs: The application shows the recorded fishs items.
+\item Fish: The application shows the recorded fish items.
 \item Register:  a new user realize the register in the system.
 \item Dogs: The application shows the recorded dogs items.
 \item Shopping Cart: the application presents the shopping cart.
 \item Add or Remove in Shopping Cart: the application adds and removes items from shopping cart.
 \end{itemize}
 
+The Table \ref{tab:isolated} presents the maximum number of users found in each scenario who obtained a time lower than the stipulated maximum time of 500 seconds.
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[h!]
+\centering
+\caption{Maximum number of users of isolated test scenarios }
+\label{tab:isolated}
+\begin{tabular}{ll}
+\rowcolor[HTML]{FFCCC9} 
+\textbf{Scenario}    & \textbf{Max number of Users} \\
+Fish                 & 85                           \\
+Enter in The Catalog & 60                           \\
+Dogs                 & 75                           \\
+Cart                 & 70                           \\
+Register             & 90                          
+\end{tabular}
+\end{table}
+
+The Fig. \ref{fig:surface} and \ref{fig:surface2} presents the search space of individuals found by generation.
+
+\begin{figure}[h]
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/SearchSurface.png}
+\caption{Search space of individuals found in the experiment by search method}
+\label{fig:surface}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/searchsurface2.png}
+\caption{Search space of individuals found in the experiment by fitness value}
+\label{fig:surface2}
+\end{minipage}
+\end{figure}
 
 The experiment used the following fitness function:
 
@@ -491,11 +528,9 @@ fitness=\begin{cases} n*\{3000*numberOfUsers-20* 90percentiletime-20*80percentil
 \end{equation}
 
 
-The purpose of the fitness function is to maximize the number of users and minimize the response time in the tests containing the selected functionalities. For example, it is possible double the fitness value for tests that have the fish lookup feature and user registration.
+The purpose of the fitness function is to maximize the number of users and minimize the response time in the tests containing a selected \textit{n} functionalities. For example, it is possible double the fitness value for tests that have the fish and user registration scenario. 
 
-\subsection{JPetStore  Cart and Register experiment }
-
-This first experiment tries to find the scenarios with maximal number of users and best response time tests that contains the Cart and Register features. The Fig. \ref{fig:experiment31} and \ref{fig:experiment32} show the fitness value by generation. The HybridQ obtained the best fitness values in all generations.
+This experiment tries to find the scenarios with maximal number of users and best response time tests that contains the Cart and Register features. The Fig. \ref{fig:experiment31} and \ref{fig:experiment32} show the fitness value by generation. The HybridQ obtained the best fitness values in all generations.
 
 \begin{figure}[h]
 \begin{minipage}{.5\textwidth}
@@ -530,17 +565,7 @@ The Fig. \ref{fig:numberofrequestsbysearchmethod3} shows the fitness value by nu
 
 \end{figure}
 
-The Fig. \ref{fig:summaryboxplot3} presents the maximum, average, median and minimum fitness value by generation. The maximun fitness value increases at each generation. Table \ref{tab:bestindividuals3} shows 4 individuals with 233 to 398 users.  The first individual has 73 users on Fishs scenario, 17 users on Dogs scenario, 50 users on Cart scenario, 33 Users on register scenario  and a response time of 357 seconds. 
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=1\textwidth]{./images/experiment3-5.png}
-\caption{Average, median and minimum fitness value by Search Method }
-\label{fig:summaryboxplot3}
-\end{figure}
-
-
-
+Table \ref{tab:bestindividuals3} shows 4 individuals with 233 to 398 users.  The first individual has 73 users on fish scenario, 17 users on Dogs scenario, 50 users on Cart scenario, 33 Users on register scenario  and a response time of 357 seconds. 
 
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
@@ -551,7 +576,7 @@ The Fig. \ref{fig:summaryboxplot3} presents the maximum, average, median and min
 \label{tab:bestindividuals3}
 \begin{tabular}{lllllllll}
 \rowcolor[HTML]{C0C0C0} 
-\textbf{Search Method} & \textbf{Response} & \textbf{Users} & \textbf{Gen} & \textbf{Fitness} & \textbf{Fishs} & \textbf{Dogs} & \textbf{Cart} & \textbf{Register} \\
+\textbf{Search Method} & \textbf{Response} & \textbf{Users} & \textbf{Gen} & \textbf{Fitness} & \textbf{fish} & \textbf{Dogs} & \textbf{Cart} & \textbf{Register} \\
 HybridQ                & 357               & 173            & 9            & 44773            & 73             & 17            & 50            & 33                \\
 HybridQ                & 398               & 171            & 10           & 44831            & 57             & 33            & 48            & 33                \\
 HybridQ                & 331               & 164            & 9            & 44774            & 71             & 14            & 51            & 28                \\
@@ -559,4 +584,5 @@ HybridQ                & 233               & 159            & 9            & 447
 \end{tabular}
 \end{table}
 
-We conclude that the individuals with major number of uses the four scenarios. The scenario with major number of users is the Fish search feature. The hybrid metaheuristic with Q-Learning (HybridQ) returned individuals with higher fitness scores.  The individual with best fitness value has 73 users on Fishs scenario, 17 users on Dogs scenario, 50 users on Cart scenario, 33 Users on register scenario  and a response time of 357 seconds. 
+We conclude that HybridQ found the individuals with major number of uses. The scenario with major number of users is the Fish search feature. The hybrid metaheuristic with Q-Learning (HybridQ) returned individuals with higher fitness scores.  The individual with best fitness value has 73 users on fish scenario, 17 users on Dogs scenario, 50 users on Cart scenario, 33 Users on register scenario  and a response time of 357 seconds. 
+
