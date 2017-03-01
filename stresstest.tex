@@ -19,8 +19,53 @@ In a load testing, the system is evaluated at predefined load levels \cite{DiLuc
 Stress testing investigates the behavior of the system under conditions
 that overload its resources. The stress testing verifies the system behavior against heavy workloads \cite{Sandler2004} \cite{Lewis2005}, which are executed to evaluate a system beyond its limits, validate system response in activity peaks, and verify whether the system is able to recover from these conditions. It differs from other kinds of testing in that the system is executed on or beyond its breakpoints, forcing the application or the supporting infrastructure to fail \cite{DiLucca2006} \cite{Molyneaux2009}.
 
+The main difference between load tests, performance tests and stress tests are:
 
-This chapter surveys the state of the art literature in stress testing research. The thesis extends the survey presented by Jiang et al. to the Stress Testing context \cite{Jiang2010}.  This survey will be useful for stress testing practitioners and software engineering researchers with interests in testing and analyzing software systems. We proposed the following four research questions:
+\begin{itemize}
+
+\item Performance tests demonstrate that the system reaches its performance objectives.
+\item Load tests necessary use a load (concurrent or simultaneous users).
+\item Stress tests differs from other kinds of testing in that the system is executed on or beyond its break-points, forcing the application or the supporting infrastructure to fail.
+\end{itemize}
+
+\section{Method}
+
+This paper surveys the state of the art literature in stress testing research. The thesis extends the survey presented by Jiang et al. \cite{Jiang2010}  and Afzal et al. \cite{Afzal2009a} to the Stress Testing context .  This survey will be useful for stress testing practitioners and software engineering researchers with interests in testing and analyzing software systems. The paper use the systematic review method proposed by Kitchenham \cite{Kitchenham2007b}.
+
+
+
+The aim of a systematic review is to find as many primary studies relating to the research question as possible using an unbiased search strategy. The rigour of the search process is one factor that distinguishes systematic reviews from traditional reviews \cite{Kitchenham2007b}.
+
+Figure \ref{fig:RESUME} presents the summary result of systematic review process. The systematic review is based on a comprehensive set of 97 articles obtained after a multi-stage selection process and have been published in the time span 1994–2016.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{./images/systematic.png}
+\caption{Bubble chart for results of search with the keyword 'Load Testing'}
+\label{fig:RESUME}
+\end{figure}
+
+\subsection{Planning a Systematic Review}
+
+A systematic review of the literature details a protocol describing the process and the methods to be applied. The most important activity during the
+planning phase is the formulation of research questions. To Kitchenham,
+before undertaking a systematic review researchers must ensure that it is necessary and the protocol should be able to answer some questions \cite{Marinho2014}:
+
+\begin{itemize}
+\item What are the objectives of this review?
+\item What sources were searched to identify primary studies? Were there any restrictions?
+\item What were the criteria for inclusion / exclusion and how they are applied? 
+\item What criteria were used to evaluate the quality of the primary studies?
+\item How were the quality criteria applied?
+\item How was the data extracted from primary studies?
+\item What were the differences between studies investigated?
+\item  Because the data were combined?
+\end{itemize}
+
+
+\subsection{Research Questions}
+
+In order to examine the evidence of stress testing properties, we proposed the following four research questions:
 
 
 \begin{itemize}
@@ -30,24 +75,48 @@ This chapter surveys the state of the art literature in stress testing research.
 \item How are the stress tests results analysed?
 \end{itemize}
 
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=1\textwidth]{./images/systematic.png}
-\caption{Bubble chart for results of search with the keyword 'Load Testing'}
-\label{fig:testprocess}
-\end{figure}
-
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=1\textwidth]{./images/type.png}
-\caption{Bubble chart for results of search with the keyword 'Load Testing'}
-\label{fig:testprocess}
-\end{figure}
 
 
 
-The population in this study is the domain of software testing. Intervention includes application of stress test techniques to test different types of non-functional properties. We used the following search terms:
+
+
+
+\subsection{Generation of search strategy}
+
+
+The population in this study is the domain of software testing. Intervention includes application of stress test techniques to test different types of non-functional properties. The primary studies used in this review were obtained from
+searching databases of peer-reviewed software engineering research that met the following criteria:
+\begin{itemize}
+\item  Contains peer-reviewed software engineering journals articles, conference proceedings, and book chapters.
+\item   Contains multiple journals and conference proceedings,
+which include volumes that range from 1996 to 2017.
+\item  Used in other software engineering systematic reviews.
+\end{itemize}
+
+The resulting list of databases was:
+
+\begin{itemize}
+\item  ACM Digital Library
+\item  Google Scholar
+\item  IEEE Electronic Library
+\item  Inspec
+\item  Scirus (Elsevier)
+\item SpringerLink
+\end{itemize}
+
+
+The search strategy was based on the following steps:
+
+\begin{itemize}
+\item  Identification of alternate words and synonyms for terms used
+in the research questions. This is done to minimize the effect
+of differences in terminologies.
+\item  Identify common stress testing properties for searching.
+\item Use of Boolean OR to join alternate words and synonyms.
+\item Use of Boolean AND to join major terms
+\end{itemize}
+
+We used the following search terms:
 
 \begin{itemize}
 \item Load Testing: load test, Load Testing
@@ -56,59 +125,114 @@ The population in this study is the domain of software testing. Intervention inc
 \item Test tools: jmeter, load runner, performance tester
 \end{itemize}
 
+All papers found are listed in \url{https://www.mendeley.com/community/pesquisatesteperformance}. Figures \ref{fig:bubbleload} and \ref{fig:bubblestress} show the bubble chart for 'Load Testing'  and 'Stress Testing' keywords. Figures \ref{fig:wordcloudloadtesting} and \ref{fig:wordcloudloadtesting} present the word cloud extracted for title and abstract of the papers found with keywords 'Load testing' and'Stress testing'.
 
-\begin{figure}[!ht]
+
+\begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth]{./images/loadtestingbuble.png}
+\includegraphics[width=0.6\textwidth]{./images/loadtestingbuble.png}
 \caption{Bubble chart for results of search with the keyword 'Load Testing'}
-\label{fig:testprocess}
-\end{figure}
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.7\textwidth]{./images/wordcloudloadtesting.png}
-\caption{Word cloud for results of search with the keyword 'Load Testing'}
-\label{fig:testprocess}
+\label{fig:bubbleload}
 \end{figure}
 
-
-\begin{figure}[!ht]
+\begin{figure}[h]
 \centering
-\includegraphics[width=1\textwidth]{./images/stresstestingbuble.png}
+\includegraphics[width=0.7\textwidth]{./images/stresstestingbuble.png}
 \caption{Bubble chart for results of search with the keyword 'Stress Testing'}
-\label{fig:testprocess}
+\label{fig:bubblestress}
 \end{figure}
-\begin{figure}[!ht]
+
+
+
+\begin{figure}[h]
+\begin{minipage}{0.5\textwidth}
 \centering
-\includegraphics[width=0.7\textwidth]{./images/wordcloudstresstesting.png}
+\includegraphics[width=1\textwidth]{./images/wordcloudloadtesting.png}
+\caption{Word cloud for results of search with the keyword 'Load Testing'}
+\label{fig:wordcloudloadtesting}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/wordcloudstresstesting.png}
 \caption{Word cloud for results of search with the keyword 'Stress Testing'}
 \label{fig:testprocess}
+\end{minipage}
 \end{figure}
 
+\subsection{Study selection criteria and procedures for including and excluding
+primary studies}
 
-\section{Background}
-
-
-Stress testing is boundary testing. Some of the resources that stress testing subjects to heavy loads include \cite{Lewis2005}:
-
+The idealized selection process was done in two parts: an initial document selection of the results that could reasonably satisfy the selection criteria based on a title and the articles abstract reading, followed by a final selection of the initially selected papers based on the introduction and conclusion reading of the papers. The following exclusion criteria is applicable in this review, i.e. exclude studies that:
 \begin{itemize}
-\item Memory
-\item Networks
-\item Transaction queues
-\item Transaction schedulers
-\item User of the system
+\item Do not relate to stress testing.
+\item Do not relate to load testing tool.
+\item Do not relate to load/stress testing model.
 \end{itemize}
 
-The following are the suggested steps for stress testing \cite{Lewis2005}:
+From 366 initial papers, 97 papers was selected.
+
+\subsection{Data Synthesis}
+
+Data synthesis involves collating and summarising the results of the included primary studies. Synthesis can be descriptive (non-quantitative).  The studies was categorized by: 
 
 \begin{itemize}
-\item Perform simple multitask tests.
-\item After the simple stress defects are corrected, stress the system to
-the breaking point.
-\item Perform the stress tests repeatedly for every development spiral.
+\item Type of stress test properties;
+\item Type of research paper (Thesis, Journal Article, Conference Paper, Book Section or Book)  
+\item Methodology used by the test (Model based Test, FOREPOST, Search-based Tests)
 \end{itemize}
 
-While load testing is the process of assessing non-functional quality related problems under load. Performance testing is used to measure and/or evaluate performance
-related aspects (e.g., response time, throughput and resource utilizations) of algorithms, designs/architectures, modules, configurations, or the overall systems. Stress tests puts a system under extreme conditions to verify the robustness of the system and/or detect various functional bugs (e.g., memory leaks and deadlocks) \cite{Afzal2009a}. The next subsections present details about the stress test process, automated stress test tools and the stress test results.
+Figure \ref{fig:SUMMARY} presents the type of research paper by year.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{./images/type.png}
+\caption{Summary of type of research paper by year}
+\label{fig:SUMMARY}
+\end{figure}
+
+Table \ref{tab:stresstesting} show the number of papers by type of stress testing found un the systematic review.
+
+\begin{table}[h] \centering 
+  \caption{Number of papers by type of Stress Testing} 
+  \label{tab:stresstesting} 
+\begin{tabular}{@{\extracolsep{5pt}} cccccccccccccccccccccccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Analysis of load testing results & Anti-patterns & Automated Software Testing \\
+$9$ & $5$ & $1$ \\
+\hline \\[-1.8ex] 
+Complex Systems & Formal Tests & Load Search-Based Test \\
+$1$ & $2$ & $1$ \\
+\hline \\[-1.8ex] 
+Load Test Tool & Load Testing & Method for Software Testing\\
+$5$ & $16$ & $1$ \\
+\hline \\[-1.8ex] 
+Mock Objects & Model-Based Test & Performance Model\\
+$1$ & $1$ & $5$ \\
+\hline \\[-1.8ex] 
+Performance Monitoring & Performance Testing & Software Testing\\
+$2$ & $7$ & $2$ \\
+\hline \\[-1.8ex] 
+Stress Search-Based Test & Stress Testing & Survey \\
+$21$ & $4$ & $5$ \\
+\hline \\[-1.8ex] 
+Systematic Map & Test Coverage & Test Monitoring \\
+$1$ & $1$ & $1$ \\
+\hline \\[-1.8ex] 
+Testbed & Testing as Service & Unit Test \\
+$1$ & $1$ & $1$ \\
+\hline \\[-1.8ex] 
+WorkLoad Modeling & WorkLoad Prediction & FOREPOST \\ 
+$1$ & $1$ & $2$  \\ 
+\hline \\[-1.8ex] 
+\\[-1.8ex]\hline 
+\end{tabular} 
+\end{table} 
+
+
+
+
+
 
 \subsection{Stress Test Process}
 
@@ -609,24 +733,23 @@ Some researchers advocate that the 90-percentile response time is a better measu
 
 
 \section{Conclusion}
+This systematic review investigated the use of stress test techniques. Figure \ref{fig:systematicreview} present the results summary of the systematic review. The Test Design phase could use Realistic Load and Fault-Inducing Load. Realistic Load just try to mimic the phenomena observed in the workload, whereas generative models try to emulate the process that generated the workload in the first place. There are  several approaches to design generative or descriptive workloads. 
+
+In Model-based Stress testing, usage model is proposed to simulate users’ behaviours. The model paradigm is what paradigm and notation are used to describe the model. There are many different modelling notations that have been used for modelling the behaviour of systems for test generation purposes: State-Based (or Pre/Post) Notations;
+Transition-based Notations; History-based Notations; Functional Notations; Operational Notations; Stochastic Notations and Data-Flow Notations. There are many kinds of non-functional search based tests: Execution time, Quality of service, Security, Usability and  Safety. 
+
+Feedback-ORiEnted PerfOrmance Software Testing (FOREPOST) is an adaptive, feedback-directed learning testing system that learns rules from system execution traces and uses these learned rules to select test input data automatically to find more performance problems in applications when compared to exploratory random performance testing. 
+
+Search-Based Testing is the process of automatically generating test according to a test adequacy criterion. The application of SBST algorithms to  stress tests involves finding the best- and worst-case execution times (B/WCET) to determine whether timing constraints are fulfilled. There are two measurement units normally associated with the fitness function in stress test: processor cycles and execution time. The processor cycle approach describes a fitness function in terms of processor cycles. The execution time approach involves executing the application under test and measuring the execution time.
+
+The stress test execution  consists of deploy the system  and setup test execution ; generating the workloads according to the configurations and terminating the load when the load test is completed and recording the system behaviour. There are three general approaches of load test executions: Live-User Based, Driver-Based and Emulation-Based. In Live-User Based Executions, The test examines a system’s behavior when the system is simultaneously used by many users or execute a load test by employing a group of human testers. The driver based execution approach automatically generate thousands or millions of concurrent requests for a long period of time using a software tool. The emulation based load test execution approach performs the load testing on special platforms and doesn't require a fully functional system and conduct load testing.
 
 
-% Please add the following required packages to your document preamble:
-% \usepackage[table,xcdraw]{xcolor}
-% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[H]
+There are several antipatterns that details features about  common performance problems. Blob is an antipattern whose problem is on the excessive message traffic generated by a single class or component. Unbalanced Processing it's characterises for one scenario where a specific class of requests generates a pattern of execution within the system that tends to overload a particular resource.
+
+\begin{figure}[H]
 \centering
-\caption{My caption}
-\label{my-label}
-\begin{tabular}{lllllll}
-\rowcolor[HTML]{C0C0C0} 
-\textbf{Test Design}                                                                   & \textbf{\begin{tabular}[c]{@{}l@{}}Test \\ Execution\end{tabular}}                 & \textbf{Load Driver}                                                                       & \textbf{\begin{tabular}[c]{@{}l@{}}Test Tool \\ License\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Search-Based \\ Stress Test \\ Application\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Search-Based \\ Test \\ Metaheuris.\end{tabular}}         & \textbf{\begin{tabular}[c]{@{}l@{}}Test \\ Results\end{tabular}}                  \\
-\begin{tabular}[c]{@{}l@{}}Model-Based\\ Testing\end{tabular}                          & \begin{tabular}[c]{@{}l@{}}Live-User\\ Based\end{tabular}                          & \begin{tabular}[c]{@{}l@{}}Benchmark\\ Suite\end{tabular}                                  & Comercial                                                             & Real-Time                                                                                   & \cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}Genetic \\ Algorithms\\ (GA)\end{tabular} & Average                                                                           \\
-FOREPOST                                                                               & \cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}Driver-\\ Based\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Centralized \\ L. Drivers\end{tabular}                          & \cellcolor[HTML]{9AFF99}Open-source                                   & \cellcolor[HTML]{9AFF99}Industrial                                                          & \cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}Simulated\\ Annealing\end{tabular}        & \cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}90- \\ Percentile\end{tabular} \\
-\cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}Search-Based\\ Testing\end{tabular} & \cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}Emulation-\\ Based\end{tabular} & \cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}Peer-to-peer \\ L. Drivers\end{tabular} &                                                                       &                                                                                             & \cellcolor[HTML]{9AFF99}Tabu Search                                                          & \cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}80-\\ Percentile\end{tabular}  \\
-                                                                                       &                                                                                    &                                                                                            &                                                                       &                                                                                             & Ant Colony                                                                                   & \cellcolor[HTML]{9AFF99}\begin{tabular}[c]{@{}l@{}}70- \\ Percentile\end{tabular} \\
-                                                                                       &                                                                                    &                                                                                            &                                                                       &                                                                                             & \begin{tabular}[c]{@{}l@{}}Particle \\ Swarm\end{tabular}                                    & \cellcolor[HTML]{9AFF99}Maximum                                                   \\
-                                                                                       &                                                                                    &                                                                                            &                                                                       &                                                                                             & \begin{tabular}[c]{@{}l@{}}Hill \\ Climbing\end{tabular}                                     & \cellcolor[HTML]{9AFF99}Minimal                                                  
-\end{tabular}
-\end{table}
-
+\includegraphics[width=1\textwidth]{./images/summary1.png}
+\caption{Results summary of the systematic review.}
+\label{fig:systematicreview}
+\end{figure}

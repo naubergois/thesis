@@ -1,0 +1,76 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{15}
+\contentsline {section}{\numberline {1.1}Motivation}{18}
+\contentsline {subsection}{\numberline {1.1.1}State of Research on the Search-Based Stress Testing}{19}
+\contentsline {subsection}{\numberline {1.1.2}State of Industrial Practices on Stress Tests}{19}
+\contentsline {section}{\numberline {1.2}Research Hypothesis}{20}
+\contentsline {section}{\numberline {1.3}Thesis Contributions}{20}
+\contentsline {subsection}{\numberline {1.3.1}Hybrid Metaheuristic Approach applied on Stress Testing}{20}
+\contentsline {subsection}{\numberline {1.3.2}Q-Learning Metaheuristic Approach}{21}
+\contentsline {subsection}{\numberline {1.3.3}IAdapter JMeter Plugin}{21}
+\contentsline {subsection}{\numberline {1.3.4}IAdapter Testbed Tool}{21}
+\contentsline {section}{\numberline {1.4}Thesis Organization}{21}
+\contentsline {chapter}{\numberline {2}A Survey on Stress Testing Software Systems}{22}
+\contentsline {section}{\numberline {2.1}Method}{23}
+\contentsline {subsection}{\numberline {2.1.1}Planning a Systematic Review}{24}
+\contentsline {subsection}{\numberline {2.1.2}Research Questions}{25}
+\contentsline {subsection}{\numberline {2.1.3}Generation of search strategy}{25}
+\contentsline {subsection}{\numberline {2.1.4}Study selection criteria and procedures for including and excluding primary studies}{27}
+\contentsline {subsection}{\numberline {2.1.5}Data Synthesis}{28}
+\contentsline {subsection}{\numberline {2.1.6}Stress Test Process}{28}
+\contentsline {section}{\numberline {2.2}Research Question 1:How is a proper stress designed?}{32}
+\contentsline {subsection}{\numberline {2.2.1}Model-based Stress Testing}{35}
+\contentsline {subsection}{\numberline {2.2.2}Feedback-Directed Learning Software Testing}{39}
+\contentsline {section}{\numberline {2.3}Research Question 2: How is a stress test executed and automated?}{41}
+\contentsline {subsection}{\numberline {2.3.1}Load Test Tools}{42}
+\contentsline {section}{\numberline {2.4}Research Question 3: What are the main problems found by stress tests?}{47}
+\contentsline {section}{\numberline {2.5}Research Question 4: How are the stress tests results analysed?}{57}
+\contentsline {section}{\numberline {2.6}Conclusion}{57}
+\contentsline {chapter}{\numberline {3}Search-Based Stress Testing}{61}
+\contentsline {section}{\numberline {3.1}Introduction}{61}
+\contentsline {section}{\numberline {3.2}Search-Based Testing}{62}
+\contentsline {section}{\numberline {3.3}Non-functional Search-Based Testing}{63}
+\contentsline {section}{\numberline {3.4}Search-Based Stress Testing}{64}
+\contentsline {subsection}{\numberline {3.4.1}Search-Based Stress Tesing on Safety-critical systems}{66}
+\contentsline {subsection}{\numberline {3.4.2}Search-Based Stress Testing on Industrial systems}{69}
+\contentsline {chapter}{\numberline {4}Metaheuristics}{71}
+\contentsline {section}{\numberline {4.1}Single-Solution Based Metaheuristics}{72}
+\contentsline {subsection}{\numberline {4.1.1}Neighborhood}{73}
+\contentsline {subsection}{\numberline {4.1.2}Simulated Annealing}{74}
+\contentsline {subsection}{\numberline {4.1.3}Tabu Search}{74}
+\contentsline {section}{\numberline {4.2}Population-based metaheuristics}{75}
+\contentsline {subsection}{\numberline {4.2.1}Genetic Algorithms}{76}
+\contentsline {section}{\numberline {4.3}Hybrid Metaheuristics}{76}
+\contentsline {section}{\numberline {4.4}Multi-Objective Optimization}{78}
+\contentsline {chapter}{\numberline {5}Q-Learning}{79}
+\contentsline {section}{\numberline {5.1}Reinforcement Learning}{79}
+\contentsline {subsection}{\numberline {5.1.1}Markov decision processes}{81}
+\contentsline {section}{\numberline {5.2}Q-Learning}{82}
+\contentsline {section}{\numberline {5.3}GridWorld Example}{83}
+\contentsline {section}{\numberline {5.4}Relationships Between Reinforcement Learning and Optimization}{84}
+\contentsline {section}{\numberline {5.5}Software Testing with Reinforcement Learning}{85}
+\contentsline {chapter}{\numberline {6}Improving Stress Search Based Testing using Q-Learning and Hybrid Metaheuristic Approach}{87}
+\contentsline {section}{\numberline {6.1}Hybrid Approach}{87}
+\contentsline {subsection}{\numberline {6.1.1}Representation}{88}
+\contentsline {subsection}{\numberline {6.1.2}Initial population}{89}
+\contentsline {subsection}{\numberline {6.1.3}Objective (fitness) function}{90}
+\contentsline {section}{\numberline {6.2}Hybrid Metaheuristic with Q-Learning Approach}{92}
+\contentsline {section}{\numberline {6.3}IAdapter}{94}
+\contentsline {subsection}{\numberline {6.3.1}IAdapter Life Cycle}{94}
+\contentsline {subsection}{\numberline {6.3.2}IAdapter Components}{95}
+\contentsline {subsection}{\numberline {6.3.3}IAdapter Testbed Tool}{96}
+\contentsline {subsubsection}{Testbed Architecture}{98}
+\contentsline {subsubsection}{Test Module}{98}
+\contentsline {subsubsection}{Emulator Module}{101}
+\contentsline {chapter}{\numberline {7}Experiments}{105}
+\contentsline {section}{\numberline {7.1}Emulated Class Test Experiment}{105}
+\contentsline {section}{\numberline {7.2}Testbed Tool Experiments}{108}
+\contentsline {subsection}{\numberline {7.2.1}The Ramp and Circuitous Treasure Hunt experiment}{109}
+\contentsline {subsection}{\numberline {7.2.2}The Tower Babel and Unbalanced Processing experiment}{115}
+\contentsline {section}{\numberline {7.3}Moodle Application Experiment}{118}
+\contentsline {section}{\numberline {7.4}JPetStore Application Experiments}{121}
+\contentsline {chapter}{\numberline {8}Conclusion}{125}
+\contentsline {section}{\numberline {8.1}Achievements}{126}
+\contentsline {section}{\numberline {8.2}Open Issues and future works}{127}
+\contentsline {chapter}{\numberline {A}Tables}{128}
+\contentsline {chapter}{\numberline {B}Figures}{136}
