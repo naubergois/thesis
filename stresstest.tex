@@ -421,7 +421,7 @@ Vogele et al. presents an approach that aims to automate the extraction and tran
 \end{figure}
 
 
-\subsection{Feedback-Directed Learning Software Testing}
+\subsection{Feedback-ORiEnted PerfOrmance Software Testing}
 
 Feedback-ORiEnted PerfOrmance Software Testing (FOREPOST) is an adaptive, feedback-directed learning testing system that learns rules from system execution traces and uses these learned rules to select test input data automatically to find more performance problems in applications when compared to exploratory random performance testing \cite{Grechanik2012}.
 
@@ -519,7 +519,57 @@ JMeter has components organized  in a hierarchical manner. The Test Plan is the 
 \end{itemize}
 
 
-Table \ref{tab:loadtool} summarizes the studied workloads generators as well as the grade (full or partial) in which they fulfill the features described bellow. None of the presented tools uses heuristic or learning resources when choosing the scenarios to be tested or the workloads to be applied in the test.
+The stress test tools was categorized in three different groups \cite{MohammadS.Obaidat}:
+
+\begin{itemize}
+\item Benchmarks that model the client and server paradigm in Web context. 
+\item Software products to evaluate performance and functionality of a given Web application, such as LoadRunner, WebLOAD and JMeter.
+\item Testing tools and other approaches for traffic generation based on HTTP traces.
+\end{itemize}
+
+The tools are compared using 12 features \cite{MohammadS.Obaidat}:
+
+\begin{itemize}
+\item Distributed architecture. This refers to the ability to distribute the generation process among different nodes.
+\item Analytical-based architecture. This feature represents the capability to use analytical and mathematical models to define the workload. 
+\item Business-based architecture. When defining a testing environment, the simulator architecture should implement the same features as the real environment.
+\item Client parameterization. This is the ability to parameterize generator nodes.
+\item Workload types. Some generators organize the workload in categories or types.
+\item Testing the Web application functionality (functional testing).
+\item Multiplatform refers to a software package that is implemented in multiple types of computer platforms, interoperating among them.
+\item Differences between LAN and WAN. 
+\item The generator should be a friendly application.
+\item The load test tool has performance reports.
+\item The load test tool is open-source.
+\item Users’ dynamism. The users has the hability of change they behaviour in during the test.
+\end{itemize}
+
+
+Figures \ref{fig:group1},\ref{fig:group2} and \ref{fig:group3} summarizes the studied workloads generators as well as the grade (full or partial) in which they fulfill the features described bellow. None of the presented tools uses heuristic or learning resources when choosing the scenarios to be tested or the workloads to be applied in the test.
+
+\begin{figure}[h]
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/group1.png}
+\caption{Group I- Benchmarks that model the client and server paradigm in Web context. 
+\cite{MohammadS.Obaidat} }
+\label{fig:group1}
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+\centering
+\includegraphics[width=1\textwidth]{./images/group2.png}
+\caption{Group II- Software products to evaluate performance and functionality\cite{MohammadS.Obaidat}. }
+\label{fig:group2}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{./images/group3.png}
+\caption{Group III- Testing tools and other approaches for traffic generation based on HTTP traces \cite{MohammadS.Obaidat}. }
+\label{fig:group3}
+\end{figure}
+
 
 \section{Research Question 3: What are the main problems found by stress tests?}
 
@@ -547,7 +597,7 @@ their causes to others, and prescribing solutions \cite{brown1998antipatterns}. 
 % \usepackage{multirow}
 % \usepackage[table,xcdraw]{xcolor}
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[H]
+\begin{table}[h]
 \centering
 \caption{Performance antipatterns}
 \label{antipatterns}
@@ -743,7 +793,6 @@ Feedback-ORiEnted PerfOrmance Software Testing (FOREPOST) is an adaptive, feedba
 Search-Based Testing is the process of automatically generating test according to a test adequacy criterion. The application of SBST algorithms to  stress tests involves finding the best- and worst-case execution times (B/WCET) to determine whether timing constraints are fulfilled. There are two measurement units normally associated with the fitness function in stress test: processor cycles and execution time. The processor cycle approach describes a fitness function in terms of processor cycles. The execution time approach involves executing the application under test and measuring the execution time.
 
 The stress test execution  consists of deploy the system  and setup test execution ; generating the workloads according to the configurations and terminating the load when the load test is completed and recording the system behaviour. There are three general approaches of load test executions: Live-User Based, Driver-Based and Emulation-Based. In Live-User Based Executions, The test examines a system’s behavior when the system is simultaneously used by many users or execute a load test by employing a group of human testers. The driver based execution approach automatically generate thousands or millions of concurrent requests for a long period of time using a software tool. The emulation based load test execution approach performs the load testing on special platforms and doesn't require a fully functional system and conduct load testing.
-
 
 There are several antipatterns that details features about  common performance problems. Blob is an antipattern whose problem is on the excessive message traffic generated by a single class or component. Unbalanced Processing it's characterises for one scenario where a specific class of requests generates a pattern of execution within the system that tends to overload a particular resource.
 
