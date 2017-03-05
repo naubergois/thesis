@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.13)  1 MAR 2017 12:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.13)  1 MAR 2017 13:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2745,33 +2745,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: ./images/SearchSurface.png Graphic file (type png)
 
 <use ./images/SearchSurface.png>
-Package pdftex.def Info: ./images/SearchSurface.png used on input line 508.
+Package pdftex.def Info: ./images/SearchSurface.png used on input line 509.
 (pdftex.def)             Requested size: 216.81pt x 223.36504pt.
 
 <./images/searchsurface2.png, id=570, 555.07375pt x 491.8375pt>
 File: ./images/searchsurface2.png Graphic file (type png)
 
 <use ./images/searchsurface2.png>
-Package pdftex.def Info: ./images/searchsurface2.png used on input line 514.
+Package pdftex.def Info: ./images/searchsurface2.png used on input line 515.
 (pdftex.def)             Requested size: 216.81pt x 192.10854pt.
 
-Overfull \hbox (2.28pt too wide) in paragraph at lines 506--518
+Overfull \hbox (2.28pt too wide) in paragraph at lines 507--519
 []$[]$ $[]$ 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [122]
-LaTeX Font Info:    Try loading font information for T1+txss on input line 525.
+LaTeX Font Info:    Try loading font information for T1+txss on input line 526.
 
  (/usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/t1txss.fd
 File: t1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 525.
+(Font)              scaled to size 11.39996pt on input line 526.
 
-Overfull \hbox (24.75029pt too wide) detected at line 528
+Overfull \hbox (24.75029pt too wide) detected at line 529
 [] []
  []
 
@@ -2779,44 +2776,47 @@ Overfull \hbox (24.75029pt too wide) detected at line 528
 File: ./images/experiment3-1.png Graphic file (type png)
 
 <use ./images/experiment3-1.png>
-Package pdftex.def Info: ./images/experiment3-1.png used on input line 538.
+Package pdftex.def Info: ./images/experiment3-1.png used on input line 539.
 (pdftex.def)             Requested size: 216.81pt x 153.2229pt.
 
 <./images/experiment3-2.png, id=575, 359.3425pt x 253.94875pt>
 File: ./images/experiment3-2.png Graphic file (type png)
 
 <use ./images/experiment3-2.png>
-Package pdftex.def Info: ./images/experiment3-2.png used on input line 544.
+Package pdftex.def Info: ./images/experiment3-2.png used on input line 545.
 (pdftex.def)             Requested size: 216.81pt x 153.2229pt.
 
-Overfull \hbox (2.28pt too wide) in paragraph at lines 536--548
+Overfull \hbox (2.28pt too wide) in paragraph at lines 537--549
 []$[]$ $[]$ 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images/experiment3-3.png, id=576, 752.8125pt x 486.81876pt>
+[123 <./images/SearchSurface.png> <./images/searchsurface2.png>]
+<./images/experiment3-3.png, id=582, 752.8125pt x 486.81876pt>
 File: ./images/experiment3-3.png Graphic file (type png)
 
 <use ./images/experiment3-3.png>
-Package pdftex.def Info: ./images/experiment3-3.png used on input line 555.
+Package pdftex.def Info: ./images/experiment3-3.png used on input line 556.
 (pdftex.def)             Requested size: 216.81pt x 140.20071pt.
 
-<./images/experiment3-4.png, id=577, 752.8125pt x 552.0625pt>
+<./images/experiment3-4.png, id=583, 752.8125pt x 552.0625pt>
 File: ./images/experiment3-4.png Graphic file (type png)
 
 <use ./images/experiment3-4.png>
-Package pdftex.def Info: ./images/experiment3-4.png used on input line 561.
+Package pdftex.def Info: ./images/experiment3-4.png used on input line 562.
 (pdftex.def)             Requested size: 216.81pt x 158.9905pt.
 
-Overfull \hbox (2.28pt too wide) in paragraph at lines 553--565
+Overfull \hbox (2.28pt too wide) in paragraph at lines 554--566
 []$[]$ $[]$ 
  []
 
-[123 <./images/SearchSurface.png> <./images/searchsurface2.png>] [124 <./images
-/experiment3-1.png> <./images/experiment3-2.png> <./images/experiment3-3.png> <
-./images/experiment3-4.png>]) [125]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [124 <./images/experiment3-1.png> <./images/experiment3-2.png> <./images/expe
+riment3-3.png> <./images/experiment3-4.png>] [125]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
@@ -2973,7 +2973,7 @@ al/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
 Output written on /Users/naubergois/Downloads/templates-2/.texpadtmp/main.pdf (
-151 pages, 13137286 bytes).
+151 pages, 13136238 bytes).
 PDF statistics:
  738 PDF objects out of 1000 (max. 8388607)
  382 compressed objects within 4 object streams

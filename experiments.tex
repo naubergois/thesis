@@ -467,19 +467,19 @@ Table \ref{fig:gened} presents the percentage of genes in all test scenarios by 
 
 \section{JPetStore Application Experiments}
 
-One experiment was conducted to test the use of the HybridQ algorithm in a real implemented application. The chosen application was the JPetStore, available at \url{https://hub.docker.com/r/pocking/jpetstore/}. The maximum tolerated response time in the test was 500 seconds.  Any  individuals who obtained a time longer than the stipulated maximum time suffered penalties.  The whole process of stress and performance tests, which took 2 days and about 1800 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of eleven generations previously established. The experiments use the follow application features:
+One experiment was conducted to test the use of the HybridQ algorithm in a real implemented application. The chosen application was the JPetStore, available at \url{https://hub.docker.com/r/pocking/jpetstore/}. The maximum tolerated response time in the test was 500 seconds.  Any  individuals who obtained a time longer than the stipulated maximum time suffered penalties.  The whole process of stress and performance tests, which run for 2 days and  with about 1.800 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of eleven generations previously established. The experiments use the follow application features:
 
 
 \begin{itemize}
 \item Enter in the Catalog: the application presents the catalog of pets.
 \item Fish: The application shows the recorded fish items.
-\item Register:  a new user realize the register in the system.
-\item Dogs: The application shows the recorded dogs items.
-\item Shopping Cart: the application presents the shopping cart.
+\item Register:  a new user is registered into the system.
+\item Dogs: The application shows the recorded dogs supplies.
+\item Shopping Cart: the application displays the shopping cart.
 \item Add or Remove in Shopping Cart: the application adds and removes items from shopping cart.
 \end{itemize}
 
-The Table \ref{tab:isolated} presents the maximum number of users found in each scenario who obtained a time lower than the stipulated maximum time of 500 seconds.
+Table \ref{tab:isolated} presents the maximum number of users found in each scenario who obtained a time lower than the stipulated maximum time of 500 seconds.
 
 
 % Please add the following required packages to your document preamble:
@@ -500,7 +500,8 @@ Register             & 90
 \end{tabular}
 \end{table}
 
-The Fig. \ref{fig:surface} and \ref{fig:surface2} presents the search space of individuals found by generation.
+The Fig. \ref{fig:surface} and \ref{fig:surface2} present the response time by generation and by the number of users.
+
 
 \begin{figure}[h]
 \begin{minipage}{.5\textwidth}
