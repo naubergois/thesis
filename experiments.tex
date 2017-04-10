@@ -587,3 +587,114 @@ HybridQ                & 233               & 159            & 9            & 447
 
 We conclude that HybridQ found the individuals with major number of uses. The scenario with major number of users is the Fish search feature. The hybrid metaheuristic with Q-Learning (HybridQ) returned individuals with higher fitness scores.  The individual with best fitness value has 73 users on fish scenario, 17 users on Dogs scenario, 50 users on Cart scenario, 33 Users on register scenario  and a response time of 357 seconds. 
 
+
+\section{Experimental Results}
+
+In this section, We present the result of the experiment which we carried out to verify the multiobjective NSGA-II   implementation. The experiment was conducted to validate the use of NSGA-II multiobjective algorithm with a real implemented application. The chosen application was the JPetStore, available at \url{https://hub.docker.com/r/pocking/jpetstore/}. The maximum tolerated response time in the test was 500 seconds.  The whole process of stress  tests, which run for 3 days and 492 executions, was carried out without the need for monitoring by a test designer. The tool automatically selected the next scenarios to be run up to the limit of 123 generations previously established by algorithm. The experiments use the follow application features:
+
+
+\begin{itemize}
+\item Enter in the Catalog: the application presents the catalog of pets.
+\item Fish: The application shows the recorded fish items.
+\item Register:  a new user is registered into the system.
+\item Dogs: The application shows the recorded dogs supplies.
+\item Shopping Cart: the application displays the shopping cart.
+\item Add or Remove in Shopping Cart: the application adds and removes items from shopping cart.
+\end{itemize}
+
+The experiments used an initial population of 4 individuals by metaheuristic. The genetic algorithm used the top 10 individuals from each generation in the crossover operation  The mutation operation was applied to 10\% of the population on each generation. The objective functions applied is intended to minimize the number of users and maximize the response time of the scenarios being tested. A penalty is applied when an application under test takes a longer time to respond than the maximum response time expected. 
+
+The experiment used the following objective equations:
+
+\begin{equation}
+\begin{aligned}
+objective function 1 =-3*numberOfUsers\\
+-penalty\\
+\end{aligned}
+\end{equation}
+
+
+\begin{equation}
+\begin{aligned}
+objective function 2 =responsetime\\
+-penalty\\
+\end{aligned}
+\end{equation}
+
+The first objective function seeks to find workloads with greater number of users and shorter response time. The second objective function seeks to find workloads with fewer users and longer response times. The penalty is calculated by the follow equation:
+
+\begin{equation}
+\begin{aligned}
+penalty=100 * \Delta \\
+\Delta=(t_{Current Response Time} - t_{Maximum Response Time Expected})\\
+\end{aligned}
+\end{equation}
+
+
+
+\subsection{Experiment Research Questions}
+
+The following research question is addressed:
+\begin{itemize}
+\item Does the NSGA-II algorithm find relevant workload scenarios according to the two test objectives?
+\end{itemize}
+
+\subsection{Variables}
+
+The independent variable is the NSGA-II algorithm used in the test. The dependent variables are: the optimal workload scenario found by the algorithm.
+
+\subsection{Hypotheses}
+
+\begin{itemize}
+\item With regard to multi-objectives applied in the experiment:
+\begin{itemize}
+\item $H_{0}$ (A null hypothesis) :The NSGA-II doesn't found workloads that meet the two objective functions used in the experiment.
+\item $H_{1}$  : The NSGA-II  algorithm found workloads that meet the two objective functions used in the experiment.
+\end{itemize}
+\end{itemize}
+
+\subsection{Results}
+
+Fig. \ref{fig:paretofrontier1} and Table \ref{tab:results} present the results obtained in the experiment. The experiment found 9 optimal workloads (Pareto Frontier) that present a lower number of users with high response times. The workload number 1 with a single user accessing the dog scenario presented the response time of 245 seconds.  The workload number 2 with a single user accessing the dog scenario, 7 users accessing the Enter Catalog feature and 3 users in register functionality presented the response time of 400 seconds.
+
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{./images/pareto0curve.png}
+    \caption{Experiment Pareto Frontier}
+\label{fig:paretofrontier1}
+\end{figure}
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[]
+\centering
+\caption{Pareto Frontier workloads results}
+\label{tab:results}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{N.} & \textbf{\begin{tabular}[c]{@{}l@{}}OBJ.\\ 1\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}OBJ. \\ 2\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Dogs\\ Users\end{tabular}}} & \textbf{\begin{tabular}[c]{@{}l@{}}Enter\\ Catalog\\ Users\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Fish\\ Users\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Register\\ Users\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Add\\ Rem.\\ Cart\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Cart\\ Users\end{tabular}} \\ \hline
+\ding{202}           & -3                                                        & 245                                                        & 1                                                          &                                                                  &               &                   &                                                                    &               \\ \hline
+\ding{203}           & -33                                                       & 400                                                        & 1                                                          & 7                                                                &               & 3                 &                                                                    &               \\ \hline
+\ding{204}           & -87                                                       & 416                                                        & 5                                                          & 15                                                               & 4             & 5                 &                                                                    &               \\ \hline
+\ding{205}          & -102                                                      & 434                                                        & 16                                                         & 17                                                               &               &                   &                                                                    & 1             \\ \hline
+\ding{206}           & -105                                                      & 436                                                        & 15                                                         & 4                                                                & 8             & 3                 & 5                                                                  &               \\ \hline
+\ding{207}           & -111                                                      & 472                                                        & 7                                                          & 13                                                               & 7             & 3                 & 7                                                                  &               \\ \hline
+\ding{208}           & -141                                                      & 493                                                        & 7                                                          & 11                                                               & 11            & 7                 & 7                                                                  & 4             \\ \hline
+\ding{209}           & -112                                                      & 496                                                        & 6                                                          &                                                                  & 12            & 8                 & 19                                                                 & 9             \\ \hline
+\ding{210}           & -255                                                      & 499                                                        &                                                            & 54                                                               & 12            &                   & 7                                                                  & 12            \\ \hline
+\end{tabular}
+\end{table}
+
+
+\subsection{Threats to validity}
+\begin{itemize}
+\item Construct Validity: 
+In this work, we just evaluate the use of one multiobjective algorithm. However, several multiobjective algorithms could be applied.  There is still a reasonable distance between the Pareto frontier and the data obtained for the second objective, and more experiments are needed to validate the results.
+\item Conclusion Validity: 
+The workloads found by NSGA-II may be the result of the elitist strategy used in the algorithm that can be applied in the genetic algorithm.
+\end{itemize}
+

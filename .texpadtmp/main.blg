@@ -45,6 +45,11 @@ Repeated entry---line 2148 of file ../main.bib
  : @book{Halili2008
  :                 ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Kitchenham2007b"
+Warning--I didn't find a database entry for "Marinho2014"
+Warning--I didn't find a database entry for "el2014local"
+Warning--I didn't find a database entry for "Deb2000"
+Warning--I didn't find a database entry for "Harman2007"
 Warning--to sort, need author or key in Bertolino2008
 Warning--to sort, need author or key in Catelani2011
 Warning--empty author in Bertolino2008
@@ -102,45 +107,45 @@ Warning--there's a number but no volume in Vogele2016
 Warning--there's a number but no volume in Wert2013a
 Warning--empty journal in White2010
 Warning--there's a number but no volume in Yan2012
-You've used 142 entries,
+You've used 141 entries,
             2118 wiz_defined-function locations,
-            1351 strings with 29872 characters,
-and the built_in function-call counts, 47585 in all, are:
-= -- 4741
-> -- 2137
-< -- 58
-+ -- 843
-- -- 700
-* -- 3133
-:= -- 7760
-add.period$ -- 425
-call.type$ -- 142
-change.case$ -- 752
+            1354 strings with 29781 characters,
+and the built_in function-call counts, 47264 in all, are:
+= -- 4706
+> -- 2130
+< -- 57
++ -- 840
+- -- 698
+* -- 3117
+:= -- 7710
+add.period$ -- 422
+call.type$ -- 141
+change.case$ -- 748
 chr.to.int$ -- 0
-cite$ -- 199
-duplicate$ -- 1962
-empty$ -- 3604
-format.name$ -- 700
-if$ -- 10031
+cite$ -- 198
+duplicate$ -- 1946
+empty$ -- 3577
+format.name$ -- 698
+if$ -- 9959
 int.to.chr$ -- 0
-int.to.str$ -- 142
-missing$ -- 153
-newline$ -- 708
-num.names$ -- 280
-pop$ -- 875
+int.to.str$ -- 141
+missing$ -- 152
+newline$ -- 703
+num.names$ -- 278
+pop$ -- 871
 preamble$ -- 2
-purify$ -- 634
+purify$ -- 631
 quote$ -- 0
-skip$ -- 1489
+skip$ -- 1476
 stack$ -- 0
-substring$ -- 2817
-swap$ -- 525
-text.length$ -- 58
+substring$ -- 2793
+swap$ -- 519
+text.length$ -- 57
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 530
+type$ -- 526
 warning$ -- 57
-while$ -- 493
-width$ -- 145
-write$ -- 1490
+while$ -- 488
+width$ -- 144
+write$ -- 1479
 (There were 7 error messages)

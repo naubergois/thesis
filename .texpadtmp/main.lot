@@ -1,29 +1,30 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Number of papers by type of Stress Testing\relax }}{30}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Performance antipatterns\relax }}{51}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Number of papers by type of Stress Testing\relax }}{32}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Performance antipatterns\relax }}{53}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Distribution of the research studies over the range of applied metaheuristics\relax }}{67}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Q-value for some states of the test \cite {Piel2010}\relax }}{87}
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Hypothetical MDP Q-values \relax }}{95}
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Maximum value of the fitness function by algorithm\relax }}{109}
-\contentsline {table}{\numberline {7.2}{\ignorespaces Best individuals found in the first experiment\relax }}{113}
-\contentsline {table}{\numberline {7.3}{\ignorespaces Best individuals found in the second experiment\relax }}{118}
-\contentsline {table}{\numberline {7.4}{\ignorespaces Results obtained from the second experiment\relax }}{120}
-\contentsline {table}{\numberline {7.5}{\ignorespaces Example of individuals obtained in the second experiment\relax }}{121}
-\contentsline {table}{\numberline {7.6}{\ignorespaces Percentage of genes in each scenario by generation \relax }}{121}
-\contentsline {table}{\numberline {7.7}{\ignorespaces Maximum number of users of isolated test scenarios \relax }}{122}
-\contentsline {table}{\numberline {7.8}{\ignorespaces Best individuals found in JPetStore first experiment\relax }}{125}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Distribution of the research studies over the range of applied metaheuristics\relax }}{69}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Best individuals found in the second Testbed Tool experiments\relax }}{129}
-\contentsline {table}{\numberline {A.4}{\ignorespaces My caption}}{129}
-\contentsline {table}{\numberline {A.2}{\ignorespaces Researches found using keyword 'Load Testing'\relax }}{134}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Researches found using keyword 'Stress Testing'\relax }}{135}
-\contentsline {table}{\numberline {A.5}{\ignorespaces Comparison study presented by Pen\IeC {\textasciitilde }a-Ortiz on the book Modeling and Simulation of Computer Networks and Systems Methodologies [F- Fully attended feature P-Partial attended feature] \cite {MohammadS.Obaidat} \relax }}{136}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Q-value for some states of the test \cite {Piel2010}\relax }}{91}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Hypothetical MDP Q-values \relax }}{99}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {7.1}{\ignorespaces Maximum value of the fitness function by algorithm\relax }}{111}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Best individuals found in the first experiment\relax }}{115}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Best individuals found in the second experiment\relax }}{120}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Results obtained from the second experiment\relax }}{122}
+\contentsline {table}{\numberline {7.5}{\ignorespaces Example of individuals obtained in the second experiment\relax }}{123}
+\contentsline {table}{\numberline {7.6}{\ignorespaces Percentage of genes in each scenario by generation \relax }}{123}
+\contentsline {table}{\numberline {7.7}{\ignorespaces Maximum number of users of isolated test scenarios \relax }}{124}
+\contentsline {table}{\numberline {7.8}{\ignorespaces Best individuals found in JPetStore first experiment\relax }}{127}
+\contentsline {table}{\numberline {7.9}{\ignorespaces Pareto Frontier workloads results\relax }}{130}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Best individuals found in the second Testbed Tool experiments\relax }}{134}
+\contentsline {table}{\numberline {A.4}{\ignorespaces My caption}}{134}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Researches found using keyword 'Load Testing'\relax }}{139}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Researches found using keyword 'Stress Testing'\relax }}{140}
+\contentsline {table}{\numberline {A.5}{\ignorespaces Comparison study presented by Pen\IeC {\textasciitilde }a-Ortiz on the book Modeling and Simulation of Computer Networks and Systems Methodologies [F- Fully attended feature P-Partial attended feature] \cite {MohammadS.Obaidat} \relax }}{141}
 \addvspace {10\p@ }

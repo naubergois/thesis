@@ -176,7 +176,49 @@ The work uses a type of collaborative combination with sequential execution with
 
 \section{Multi-Objective Optimization}
 
-Evolutionary multi-objective optimization (EMO) has become a popular and useful field of research and application \cite{Deb2011}. A multi-objective optimization problem involves a number of objective functions which are to be either minimized or maximized. As in a single-objective optimization problem, the multi-objective optimization problem may contain a number of constraints which any feasible solution must satisfy:
+Many real optimization problems require optimizing multiple conflicting objectives with each other. There is no single optimal solution, but a set of alternative solutions. The objectives that have to be optimised are often in competition with one another and may be contradictory; we may find ourselves trying to balance the different optimisation objectives of several different goals \cite{Harman2010} \cite{el2014local}.
+
+The image of all the efficient solutions for is called Pareto front or Pareto curve or surface. The shape of the Pareto surface indicates the nature of the trade-off between the different objective functions. An example of a Pareto curve is reported in Fig. \ref{fig:pareto1}. Multiobjective optimization methods have as main purposes to minimize the distance between the non-dominated front and the Pareto optimal front and find a set of solutions that are as diverse as possible. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.4\textwidth]{./images/paretofront.png}
+\caption{An mimization pareto front example}
+\label{fig:pareto1}
+\end{figure}
+
+What distinguishes multi-objective EAs from singleobjective metaheuristics is how they rank and select individuals in the population. If there is only one objective, individuals are naturally ranked according to this objective, and it is clear which individuals are best and should be selected as
+parents. In case of multiple objectives, it is still necessary to rank the individuals, but it is no longer obvious how to do this. Most people probably agree that a good approximation to the Pareto front is characterized by:
+
+\begin{itemize}
+\item  a small distance of the solutions to the true Pareto frontier,
+\item  a wide range of solutions, i.e., an approximation
+of the extreme values, and
+\item a good distribution of solutions, i.e., an even
+spread along the Pareto frontier.
+\end{itemize}
+
+Multi-objective metaheuristics rank individuals according to how much they contribute to the above goals.
+
+\subsection{NSGA-II Multiobjective heuristics}
+
+Deb et al.  proposed the NSGA II taking into account the need to reduce computational complexity in non-dominated classification, introduce elitism and eliminate subjectivity in the allocation of the sharing parameter \cite{Deb2000}. NSGA II (Non-dominated Sorting Genetic Algorithm II)  is a multiobjective algorithm, based on Genetic Algorithms  and that implements the concept of Dominance, that is, to classify the Total Population in fronts according to the degree of dominance. According to NSGA II, the individuals that are located on the first front are considered the best solutions of that generation, while in the last front are the worst. Using this concept, one can find more consistent results, points closer to the Pareto region, and that are better adapted to the type of problem. 
+
+The NSGA algorithm II applies a fitness evaluation in an initial population (Figure \ref{fig:nsga2}- \ding{202} and \ding{203}). The population are ranked using multiple tournament selection, which consists of comparing two solutions (Figure \ref{fig:nsga2}- \ding{204}). In order to estimate the density of the solutions surrounding a particular solution in the population, the common distance between the previous solution and the posterior solution is calculated over each of the objectives. This distance serves as an estimate of the size of the largest cuboid that includes solution i without including any other solution of the population. A solution i wins another solution if:
+
+\begin{itemize}
+\item Solution i has a better rank, then $Rank_i$ <$Rank_j$.
+\item Both solutions have the same rank, but i has a
+Distance better than j, then $Rank_i$ = $Rank_j$ and $Distance_i$>$Distance_j$.
+\end{itemize}
+
+At the end of each analysis a certain group of individuals are classified as belonging to a specific category called the front and upon completion of the classification process all individuals will be inserted into one of the n fronts. Front 1 is made up of all non-dominated solutions. Front 2 can be achieved by considering all non-dominated solutions excluding solutions from front 1. For the determination of front 3, solutions previously classified on front 1 and 2 are excluded, and so on until all individuals have been Classified on some front.
+
+After selection, recombination and mutation are performed as in conventional Genetic Algorithms (Figure \ref{fig:nsga2}- \ding{205}). The two sets (father and son of the same dimension) are united in a single population (dimension 2) and the classification is applied in dominance fronts. In this way, elitism is guaranteed preserving the best solutions (fronts not dominated) in the later population (Figure \ref{fig:nsga2}- \ding{207}).
+
+However, not all fronts can be included in the new population. Thus, Deb et al. proposed a method called crowd distance , which combines the fronts not included in the set, to compose the last spaces of the current population, guaranteeing the diversity of the population \cite{Deb2000}. The NSGA-II algorithm creates a set of front lines, each front containing only non–dominating solutions. Within a front, individuals are rewarded for being ‘spread out’. The algorithm also ensures that the lowest ranked individual of a front still has a better fitness value than the highest ranked individual of the next front \cite{Harman2007}.
+
+
 
 
 
